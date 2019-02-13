@@ -1,8 +1,8 @@
-title:             Clean Blog
+title:             The Datalyst
 email:             your-email@example.com
-description:       A Blog Theme by Start Bootstrap
-author:            Start Bootstrap
-baseurl:           "/thedatalyst"
+description:       A Blog about Data, Machine Learning, Deep Learning, Business Intelligence and Analytics
+author:            Matheus Jacques
+baseurl:           "/"
 url:               "http://thedatalyst.com"
 
 # Social Profiles
