@@ -6,9 +6,9 @@ baseurl:           "/"
 url:               "http://thedatalyst.com"
 
 # Social Profiles
-twitter_username:  SBootstrap
-github_username:   BlackrockDigital
-facebook_username: StartBootstrap
+twitter_username:  qisso
+github_username:   jacquesmats
+facebook_username: 
 
 # Build settings
 markdown:          kramdown
@@ -17,3 +17,6 @@ paginate_path:     "/posts/page:num/"
 plugins:
   - jekyll-feed
   - jekyll-paginate
+
+# Google Analytics
+google_analytics: UA-133857192-1
