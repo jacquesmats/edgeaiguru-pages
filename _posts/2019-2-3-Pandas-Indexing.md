@@ -1,6 +1,10 @@
 ---
 layout: post
-title: Localizando dados em um Dataframe usando Pandas LOC e ILOC
+title: Indexando um Dataframe em Pandas
+subtitle: "Localizando dados em um Dataframe usando Pandas LOC e ILOC"
+date:   2019-2-4 23:45:13 -0400
+background: '/img/posts/img-pandas-index.jpg'
+autor: Matheus Jacques
 ---
 
 Há muitas maneiras de extrair os elementos, linhas e colunas de um DataFrame. Alguns métodos de indexação são muito semelhantes, mas se comportam de maneira muito diferente. O objetivo deste post é identificar uma estratégia única para extrair dados de um DataFrame que seja simples de interpretar e produza resultados confiáveis. 
@@ -15,14 +19,14 @@ Para começar, criamos um pequeno dataset usando dados da Wikipedia sobre as mon
 
 
 
-<pre bgcolor="#FF0000">
+```ruby
 import pandas as pd
 
 #Cria um pequeno dataset
 data = {'Nome':['Mount Everest', 'K2', 'Kangchenjunga', 'Lhotse'], 'Altitude':[8848,8611,8586,8616],'Primeira ascensão':[1953,1954,1955,1956],'Cordilheira':['Himalaia', 'Karakoram', 'Himalaia', 'Himalaia']}
 df = pd.DataFrame(data)
 display(df)
-</pre>
+```
 
 
 <div>
