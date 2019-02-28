@@ -5,6 +5,7 @@ subtitle: "Localizando dados em um Dataframe usando Pandas LOC e ILOC"
 date:   2019-2-4 23:45:13 -0400
 background: '/img/posts/img-pandas-index.jpg'
 autor: Matheus Jacques
+comments: true
 ---
 
 Há muitas maneiras de extrair os elementos, linhas e colunas de um DataFrame. Alguns métodos de indexação são muito semelhantes, mas se comportam de maneira muito diferente. O objetivo deste post é identificar uma estratégia única para extrair dados de um DataFrame que seja simples de interpretar e produza resultados confiáveis. 
