@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Document Settings -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Base Meta -->
+    <!-- dynamically fixing the title for tag/author pages -->
+
+
+
+    <title>Introduction to Neural Networks</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Styles'n'Scripts -->
+    <link rel="stylesheet" type="text/css" href="/assets/built/screen.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/built/screen.edited.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/built/syntax.css" />
+    <!-- highlight.js -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <style>.hljs { background: none; }</style>
+
+    <!--[if IE]>
+        <style>
+            p, ol, ul{
+                width: 100%;
+            }
+            blockquote{
+                width: 100%;
+            }
+        </style>
+    <![endif]-->
+    
+    <!-- This tag outputs SEO meta+structured data and other important settings -->
+    <meta name="description" content="The guidance through your Artificial Intelligence journey" />
+    <link rel="shortcut icon" href="http://localhost:4000/assets/images/favicon.png" type="image/png" />
+    <link rel="canonical" href="http://localhost:4000/Introduction-to-Neural-Networks" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+
+     <!--title below is coming from _includes/dynamic_title-->
+    <meta property="og:site_name" content="Edge AI Guru" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Introduction to Neural Networks" />
+    <meta property="og:description" content="Learn the main concepts behind Neural Networks, one of Deep Learning’s pillars. English version will be released soon. Introdução A Inteligência Artificial vem revolucionando a indústria nos últimos anos e resolvendo problemas, que antes eram onerosos em tempo e dinheiro, de maneira muito mais eficaz. Problemas de visão computacional, processamento" />
+    <meta property="og:url" content="http://localhost:4000/Introduction-to-Neural-Networks" />
+    <meta property="og:image" content="http://localhost:4000/assets/images/nn-intro/cover.jpg" />
+    <meta property="article:publisher" content="https://www.facebook.com/" />
+    <meta property="article:author" content="https://www.facebook.com/" />
+    <meta property="article:published_time" content="2020-05-03T07:18:00-03:00" />
+    <meta property="article:modified_time" content="2020-05-03T07:18:00-03:00" />
+    <meta property="article:tag" content="Back-to-basics" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Introduction to Neural Networks" />
+    <meta name="twitter:description" content="Learn the main concepts behind Neural Networks, one of Deep Learning’s pillars. English version will be released soon. Introdução A Inteligência Artificial vem revolucionando a indústria nos últimos anos e resolvendo problemas, que antes eram onerosos em tempo e dinheiro, de maneira muito mais eficaz. Problemas de visão computacional, processamento" />
+    <meta name="twitter:url" content="http://localhost:4000/" />
+    <meta name="twitter:image" content="http://localhost:4000/assets/images/nn-intro/cover.jpg" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="Edge AI Guru" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="Back-to-basics" />
+    <meta name="twitter:site" content="@" />
+    <meta name="twitter:creator" content="@" />
+    <meta property="og:image:width" content="1400" />
+    <meta property="og:image:height" content="933" />
+
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Website",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Edge AI Guru",
+        "logo": "http://localhost:4000/assets/images/blog-icon.png"
+    },
+    "url": "http://localhost:4000/Introduction-to-Neural-Networks",
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://localhost:4000/assets/images/nn-intro/cover.jpg",
+        "width": 2000,
+        "height": 666
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://localhost:4000/Introduction-to-Neural-Networks"
+    },
+    "description": "Learn the main concepts behind Neural Networks, one of Deep Learning’s pillars. English version will be released soon. Introdução A Inteligência Artificial vem revolucionando a indústria nos últimos anos e resolvendo problemas, que antes eram onerosos em tempo e dinheiro, de maneira muito mais eficaz. Problemas de visão computacional, processamento"
+}
+    </script>
+
+    <!-- <script type="text/javascript" src="https://demo.ghost.io/public/ghost-sdk.min.js?v=724281a32e"></script>
+    <script type="text/javascript">
+    ghost.init({
+    	clientId: "ghost-frontend",
+    	clientSecret: "f84a07a72b17"
+    });
+    </script> -->
+
+    <meta name="generator" content="Jekyll 3.6.2" />
+    <link rel="alternate" type="application/rss+xml" title="Introduction to Neural Networks" href="/feed.xml" />
+
+
+</head>
+<body class="post-template">
+
+    <div class="site-wrapper">
+        <!-- All the main content gets inserted here, index.hbs, post.hbs, etc -->
+        <!-- default -->
+
+<!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template -->
+
+<header class="site-header outer">
+    <div class="inner">
+        <nav class="site-nav">
+    <div class="site-nav-left">
+        
+            
+                <a class="site-nav-logo" href="http://localhost:4000/"><img src="/assets/images/blog-icon.png" alt="Edge AI Guru" /></a>
+            
+        
+        
+            <ul class="nav" role="menu">
+    <li class="nav-home" role="menuitem"><a href="/">Home</a></li>
+    <li class="nav-back-to-basics" role="menuitem"><a href="/tag/back-to-basics/">Back to Basics</a></li>
+    <li class="nav-tutorials" role="menuitem"><a href="/tag/tutorials/">Tutorials</a></li>
+    <li class="nav-about" role="menuitem"><a href="/about/">About</a></li>
+</ul>
+
+        
+    </div>
+    <div class="site-nav-right">
+        <div class="social-links">
+            
+            
+        </div>
+        
+            <a class="subscribe-button" href="#subscribe">Subscribe</a>
+        
+    </div>
+</nav>
+
+    </div>
+</header>
+
+<!-- Everything inside the #post tags pulls data from the post -->
+<!-- #post -->
+
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+
+        <article class="post-full post tag-back-to-basics ">
+
+            <header class="post-full-header">
+                <section class="post-full-meta">
+                    <time class="post-full-meta-date" datetime=" 3 May 2020"> 3 May 2020</time>
+                    
+                        <span class="date-divider">/</span>
+                        
+                            
+                               <a href='/tag/back-to-basics/'>BACK-TO-BASICS</a>,
+                            
+                        
+                            
+                               <a href='/tag/neural-networks/'>NEURAL-NETWORKS</a>
+                            
+                        
+                    
+                </section>
+                <h1 class="post-full-title">Introduction to Neural Networks</h1>
+            </header>
+
+            
+            <figure class="post-full-image" style="background-image: url(/assets/images/nn-intro/cover.jpg)">
+            </figure>
+            
+
+            <section class="post-full-content">
+                <div class="kg-card-markdown">
+                    <p>Learn the main concepts behind Neural Networks, one of Deep Learning’s pillars.</p>
+
+<p>English version will be released soon.</p>
+
+<h2 id="introdução">Introdução</h2>
+
+<p>A Inteligência Artificial vem revolucionando a indústria nos últimos anos e resolvendo problemas, que antes eram onerosos em tempo e dinheiro, de maneira muito mais eficaz. Problemas de visão computacional, processamento de linguagem natural e diversas outras aplicações só são possíveis graças aos avanços em Aprendizagem Profunda.</p>
+
+<p>As Redes Neurais Artificiais (RNA) são um dos principais pilares dessa tecnologia. Inspiradas no cérebro humano, as RNA levam esse nome pois tem conexões e motivações biológicas. Assim como no cérebro humano, onde unidade mais básica de processamento é o neurônio, as RNA possuem um elemento que processa impulsos, ou entradas, e que também é chamado de neurônio ou nó.</p>
+
+<p><img src="assets/images/nn-intro/artificial-vs-biological-neuron.png" alt="Artificial vs Biological Neuron" /></p>
+
+<p><em>Neurônio Biológico vs Neurônio Artificial. Fonte: <a href="https://www.datacamp.com/community/tutorials/deep-learning-python">Keras Tutorial: Deep Learning in Python</a></em></p>
+
+<p>Ambas estruturas compartilham o mesmo funcionamento para a transferência de informações: recebem uma entrada (impulso) que é carregada através do nó (corpo da célula) e ativam um certa saída (terminais axônicos). De mesma forma como nos neurônios biológicos, esse impulso nervoso que ativa o neurônios é reproduzida nas RNA através de funções de ativação.</p>
+
+<p>Logo, esse elemento básico das redes neurais podem ser representado pela seguinte figura, retirada do curso <a href="https://www.coursera.org/learn/neural-networks-deep-learning">Neural Networks and Deep Learning</a>:</p>
+
+<p><img src="assets/images/nn-intro/generic-neuron.png" alt="Generic Neuron" /></p>
+
+<p>Onde, através do exemplo da necessidade de prever o preço de casas baseado no seu tamanho, podemos traçar um função que consiga representar esse problema. Nesse exemplo, uma função ReLU encaixa perfeitamente nos dados. Então, a mínima representação de um neurônio seria colocarmos na entrada a área de uma casa e, baseado na função matemática colocada “dentro” do neurônio, podemos estimar um preço para essa residência.</p>
+
+<p>Dessa forma, treinamos cada neurônio para ser ativado quando um certo padrão aparece. Assim, o agrupamento de diversos neurônios em série e em paralelo, permite as Redes Neurais a aprender a reconhecer padrões em imagens, textos, áudios e nas mais diversas formas de dados.</p>
+
+<p>Nesse artigo, será aprensentado os principais componentes das Redes Neurais Artificiais, algumas das principais arquiteturas, as funções de ativações mais comuns.</p>
+
+<h2 id="redes-neurais-artificias">Redes Neurais Artificias</h2>
+
+<p>Apesar das Redes Neurais terem algumas semelhanças com os neurônios do cérebro humano, essas são infinitamente mais simples do que seu correspondente biológico. Essas arquiteturas são compostas por blocos matemáticos que podem ser explicados utilizando álgebra e cálculo, muito diferentemente das diversas partes do cérebro que ainda não conseguimos entender.</p>
+
+<p>Os principais componentes das RNA são: a camada de entrada, as camadas ocultas e as camadas de saída. Essas camadas são ligadas através de conexões que têm pesos, esses definem o quão importante aquela conexão é para a rede. Além disso, como vimos anteriormente, na saída de cada neurônio existe um função de ativação que definirá se o neurônio irá ativar ou não.</p>
+
+<h2 id="blocos-de-uma-rede-neural-artificial">Blocos de uma Rede Neural Artificial</h2>
+
+<p><img src="assets/images/nn-intro/generic-3-layers-neural-network.png" alt="Generic 3 Layer Neural Network" /></p>
+
+<p><em>Arquitetura de uma Rede Neural Genérica de 3 Camadas. Fonte: <a href="https://cs231n.github.io/neural-networks-1/#nn">Stanford CS231n</a></em></p>
+
+<h3 id="camada-de-entrada"><em>Camada de Entrada</em></h3>
+
+<p>Um bloco de neurônios pode ser chamado de camada. Mas perceba que apesar de os neurônios se interligarem entre camadas, eles não tem conexões dentro da mesma camada. Como mostra a figura acima, a primeira camada de uma Rede Neural é a camada de entrada. Esta tem apenas a função de passar as entradas do sistema para a próxima camada e não realiza nenhuma função matemática.</p>
+
+<h3 id="camadas-ocultas"><em>Camadas Ocultas</em></h3>
+
+<p>Essa camada é responsável por uma das principais funções das redes neurais: processar os dados e enviá-los para a camada seguinte. O valor de cada neurônio é encontrado multiplicando o pesos W pela entrada X e somando um viés b. Esse valor então passa por uma função de ativação e é enviada a próxima camada, como mostra a Fig. 2.</p>
+
+<p><img src="assets/images/nn-intro/hidden-layer-mathematics.png" alt="Hidden Layer Mathematics" /></p>
+
+<p><em>Operações Matemáticas dentro do Neurônio. Fonte: Fonte: <a href="https://cs231n.github.io/neural-networks-1/#nn">Stanford CS231n</a> Modificada.</em></p>
+
+<p>Assim, se isolarmos o primeiro neurônio da primeira camada oculta, o valor de saída do neurônio será igual a z1. Onde <em>s1</em> é a entrada do neurônio, onde multiplicamos os pesos pelas entradas e somamos um viés b. Após essa operação, é aplicada então uma função de transferência <em>g</em> sobre o <em>s1.</em></p>
+
+<p>É importante notar que <em>X</em> e <em>W</em> na primeira equação são matrizes nesse caso, e representam todas as entradas e todos os pesos, respectivamente.</p>
+
+<p>Chamamos essa camada de “Camada Oculta” pois durante o treinamento de redes neurais temos as entradas que são conhecidas e as saídas que são esperadas. Mas não vemos quais os valores dentro dos neurônios dessa camada. Esse bloco pode conter diversas camadas ocultas, e quanto mais camadas mais “profunda” é a rede neural, e mais padrões ela consegue aprender.</p>
+
+<h3 id="camadas-de-saída"><em>Camadas de Saída</em></h3>
+
+<p>A camada de saída é a responsável por mostrar os resultados obtidos através dos cálculos feitos nas camadas ocultas. Normalmente é utilizada uma função de ativação, assim como a dos neurônios das camadas anteriores, para simplificar o resultado.</p>
+
+<h3 id="pesos-e-viés"><em>Pesos e Viés</em></h3>
+
+<p>Os pesos são responsáveis por definir o quão importante aquela conexão é para a rede neural. Como existem diversas conexões dentro das RNA, é dessa forma que essa arquitetura entende quais padrões ela deve aprender e quais ela deve ignorar. Além disso, comumente é utilizado um valor chamado de viés junto aos pesos e as entradas. Esse valor ajuda a fazer um ajuste fino na rede neural. Dessa forma, se tivermos um neurônio i em uma camada e um neurônio j na camada seguinte, teremos um ligação com o peso Wij e um viés bij.</p>
+
+<h3 id="funções-de-ativação"><em>Funções de Ativação</em></h3>
+
+<p>Também chamada de função de transferência, é o último processamento matemático que acontece antes da informação sair do neurônio. Esta equação matemática define se o neurônio será ativado ou não, podendo ser pode ser uma função degrau, uma função linear ou uma função não linear.</p>
+
+<p>A função de ativação mais simples seria a utilização de um degrau unitário. Onde o neurônio iria ativar somente caso a entrada fosse superior a um <em>threshold,</em> e o sinal de entrada seria totalmente reproduzido na saída do nó.</p>
+
+<p><img src="assets/images/nn-intro/step-function.png" alt="Step Function" /></p>
+
+<p>Esta pode retornar valores de 0 e 1, utilizado em problemas de classificação, ou entre 0 e 1, utilizado em problemas que estamos mais interessados em saber a probabilidade de certa entrada fazer parte de certa classe.</p>
+
+<h2 id="principais-tipos-de-redes-neurais-artificiais"><em>Principais Tipos de Redes Neurais Artificiais</em></h2>
+
+<p>Existem dois tipos principais de Redes Neurais: Redes Neurais Feedforward e Redes Neurais Recorrentes.</p>
+
+<h3 id="redes-neurais-feedforward-rnf"><em>Redes Neurais Feedforward (RNF)</em></h3>
+
+<p>Essa arquitetura é a mais comumente encontrada na literatura. Nela, a informação move-se em apenas uma direção: da entrada, passando pela camada oculta até o nós de saída, e não existem ciclos.</p>
+
+<p>A unidade mais simples dessa topologia é o Perceptron, a rede neural mais simples que é composta apenas por um nó.</p>
+
+<p><img src="assets/images/nn-intro/perceptron.png" alt="Perceptron" /></p>
+
+<p><em>O Perceptron</em></p>
+
+<p>Alguns problemas simples podem ser resolvidos com o Perceptron, pois ele só funciona com funções linearmente separáveis.</p>
+
+<p>Com a necessidade de resolver problemas mais complexos e a partir dessa unidade básica, surge o <strong>Perceptron Multicamadas (MLP)</strong>. Composto por diversas camadas desses nós, sendo muito mais úteis e podendo aprender funções não lineares.</p>
+
+<p><img src="assets/images/nn-intro/multi-layer-perceptron.png" alt="Multilayer Perceptron" /></p>
+
+<p><em>Uma arquitetura de um Perceptron Multicamadas. Fonte:<a href="https://www.researchgate.net/figure/Architecture-of-a-multilayer-perceptron-neural-network_fig5_316351306">Advanced Methods for the Processing and Analysis of Multidimensional Signals: Application to Wind Speed</a></em></p>
+
+<p>E por fim, temos as <strong>Redes Neurais Convolucionais (CNN)</strong>, que são o exemplo mais comum das Redes Neurais Feedforward. Inspiradas no Córtex Visual, essa topologia divide os dados em pequenos pedaços e tentar aprender padrões essenciais. Essa operação é chamada de Convolução. Mais eficientes que os MLP, essa topologia é encontrada vastamente em aplicações de visão computacional, vídeo e linguagem natural. Essa topologia possui seus blocos característicos próprios, como as camadas de convolução e de <em>pooling.</em></p>
+
+<p><img src="assets/images/nn-intro/convolution-neural-network.png" alt="Convolutional Neural Network" /></p>
+
+<p><em>Exemplo de Rede Neural Convolucional. Fonte: <a href="https://missinglink.ai/guides/convolutional-neural-networks/convolutional-neural-network-tutorial-basic-advanced/">Convolutional Neural Network Tutorial</a></em></p>
+
+<h3 id="redes-neurais-recorrentes-rnn"><em>Redes Neurais Recorrentes (RNN)</em></h3>
+
+<p>Diferente das Redes Neurais Feedforward, nas RNN a informação flui não somente para frente, mas para trás também, formando um ciclo. Para isso, assim como as CNN, elas usam diversos blocos próprios, como um bloco de memória por exemplo. Isso permite essa topologia capturar padrões dinâmicos temporais e serem vastamente utilizados em problemas de reconhecimento de voz e problemas que exigem uma ligação sequencial.</p>
+
+<p><img src="assets/images/nn-intro/recorrent-neural-network.png" alt="Recurrent Neural Network" /></p>
+
+<p><em>Exemplo de Rede Neural Recorrente Fonte: <a href="https://commons.wikimedia.org/wiki/File:Recurrent_neural_network_unfold.svg">wikimedia</a></em></p>
+
+<h2 id="tipos-de-funções-de-ativação">Tipos de Funções de Ativação</h2>
+
+<p>Além da função degrau unitário, que acredito não ser usada na prática, existem diversas outras funções de ativação. Além de determinarem a saída de um modelo, elas também ajudam na precisão dos resultados e na eficiência com que o modelo será treinado. Na prática, os modelos modernos usam funções de ativação não-linear, que são capazes de capturar padrões em dados mais complexos.</p>
+
+<p>As funções de ativação são usadas em dois momentos nas Redes Neurais: para processar a saída de um único neurônio, como vimos durante o tópico  de camadas ocultas, e para processar a saída da rede neural como um todo.</p>
+
+<p><img src="assets/images/nn-intro/sigmoid.png" alt="Sigmoid Formula and Graph" /></p>
+
+<p><img src="assets/images/nn-intro/tanh.png" alt="Tanh Formula and Graph" /></p>
+
+<p><img src="assets/images/nn-intro/relu.png" alt="Relu Formula and Graph" /></p>
+
+<p>Normalmente são usadas funções <em>Rectified Linear Unit</em> (ReLU) na prática. A função Sigmoid é normalmente utilizada para demostrar como esses elementos funcionam e normalmente é substituida pela Tangente Hiperbólica (TanH). Exceto no caso do problema tratar-se de uma classificação binária, nesse caso seria melhor uma função Sigmoid na saída do modelo pois está já entregaria o resultado entre 0 e 1.</p>
+
+<p>A escolha da função de ativação é motivada pelas características do problema que está sendo resolvido. A Sigmoid, por exemplo, apesar ter um gradient mais suave e normalizar a saída entre 0 e 1, tem problemas com <em>vanish gradients</em> e sua saída não está centrada em zero. Já TanH tem o seu centro em zero, o que facilita o aprendizado das camadas seguintes, mas desvantagens parecidas com a Sigmoid.</p>
+
+<p>Além dessas, ainda podemos destacar:</p>
+
+<ul>
+  <li>Leaky ReLU</li>
+  <li>Softmax</li>
+</ul>
+
+<h2 id="conclusão">Conclusão</h2>
+
+<p>Nesse artigo passamos por alguns dos principais conceitos de Redes Neurais Artificiais. Após essa revisão, espero que você já tenha uma idea mais concreta dos conceitos básicos que envolvem um dos principais tópicos de Aprendizagem Profunda. Entendendo os principais blocos construtores das RNA, as principais topologias e as funções de ativação mais comuns, podemos agora passar a tópicos mais avançados como <strong>Forward and Backward Propagation</strong> e o <strong>Gradient Descent</strong>.</p>
+
+                </div>
+            </section>
+
+            <!-- Email subscribe form at the bottom of the page -->
+            
+                <section class="subscribe-form">
+                    <h3 class="subscribe-form-title">Subscribe to Edge AI Guru</h3>
+                    <p>Get the latest posts delivered right to your inbox</p>
+                    <!-- Begin Mailchimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<div id="mc_embed_signup">
+<form action="https://live.us19.list-manage.com/subscribe/post?u=1a75f176c221a80d91de5e939&amp;id=671c7f7a46" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1a75f176c221a80d91de5e939_671c7f7a46" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+                </section>
+            
+
+            <footer class="post-full-footer">
+                <!-- Everything inside the #author tags pulls data from the author -->
+                <!-- #author-->
+                
+                    
+                        <section class="author-card">
+                            
+                                <img class="author-profile-image" src="/assets/images/matheus.png" alt="matheus" />
+                            
+                            <section class="author-card-content">
+                                <h4 class="author-card-name"><a href="/author/matheus">Matheus Jacques</a></h4>
+                                
+                                    <p>Engineer and entrepreneur with 4 years in R&D, 2 years as a Startup Founder and 2 year dealing with Business/Data Analytics. Programming since 2010.</p>
+                                
+                            </section>
+                        </section>
+                        <div class="post-full-footer-right">
+                            <a class="author-card-button" href="/author/matheus">Read More</a>
+                        </div>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                <!-- /author  -->
+            </footer>
+
+            <!-- If you use Disqus comments, just uncomment this block.
+            The only thing you need to change is "test-apkdzgmqhj" - which
+            should be replaced with your own Disqus site-id. -->
+            
+                <section class="post-full-comments">
+                    <div id="disqus_thread"></div>
+                    <script>
+                        var disqus_config = function () {
+                            this.page.url = 'http://localhost:4000/';
+                            this.page.identifier = 'Edge AI Guru';
+                        };
+                        (function() {
+                            var d = document, s = d.createElement('script');
+                            s.src = 'https://edgeaiguru.disqus.com/embed.js';
+                            s.setAttribute('data-timestamp', +new Date());
+                            (d.head || d.body).appendChild(s);
+                        })();
+                    </script>
+                </section>
+            
+
+        </article>
+
+    </div>
+</main>
+
+<!-- Links to Previous/Next posts -->
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+            
+                
+                
+                
+                
+                    <article class="read-next-card"
+                        
+                            style="background-image: url(/assets/images/blog-cover.jpg)"
+                        
+                    >
+                        <header class="read-next-card-header">
+                            <small class="read-next-card-header-sitetitle">&mdash; Edge AI Guru &mdash;</small>
+                            
+                                <h3 class="read-next-card-header-title"><a href="/tag/back-to-basics/">Back-to-basics</a></h3>
+                            
+                        </header>
+                        <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
+</div>
+                        <div class="read-next-card-content">
+                            <ul>
+                                
+                                
+                                  
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/Batch-vs-Mini-batch-vs-Stochastic-Gradient-Descent">Batch vs Mini-batch vs Stochastic Gradient Descent with Code Examples</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                            </ul>
+                        </div>
+                        <footer class="read-next-card-footer">
+                            <a href="/tag/back-to-basics/">
+                                
+                                    See all 1 posts  →
+                                
+                            </a>
+                        </footer>
+                    </article>
+                
+            
+
+            <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
+            
+
+            <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
+            
+                
+
+    <article class="post-card post-template">
+        
+            <a class="post-card-image-link" href="/Batch-vs-Mini-batch-vs-Stochastic-Gradient-Descent">
+                <div class="post-card-image" style="background-image: url(/assets/images/gradient-descent-variants/cover-resized.jpg)"></div>
+            </a>
+        
+        <div class="post-card-content">
+            <a class="post-card-content-link" href="/Batch-vs-Mini-batch-vs-Stochastic-Gradient-Descent">
+                <header class="post-card-header">
+                    
+                        
+                            
+                               <span class="post-card-tags">Back-to-basics</span>
+                            
+                        
+                            
+                                <span class="post-card-tags">Gradient-descent</span>
+                            
+                        
+                    
+
+                    <h2 class="post-card-title">Batch vs Mini-batch vs Stochastic Gradient Descent with Code Examples</h2>
+                </header>
+                <section class="post-card-excerpt">
+                    
+                        <p></p>
+                    
+                </section>
+            </a>
+            <footer class="post-card-meta">
+                
+                    
+                        
+                        <img class="author-profile-image" src="/assets/images/matheus.png" alt="Matheus Jacques" />
+                        
+                        <span class="post-card-author">
+                            <a href="/author/matheus/">Matheus Jacques</a>
+                        </span>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                <span class="reading-time">
+                    
+                    
+                      1 min read
+                    
+                </span>
+            </footer>
+        </div>
+    </article>
+
+            
+
+        </div>
+    </div>
+</aside>
+
+<!-- Floating header which appears on-scroll, included from includes/floating-header.hbs -->
+<div class="floating-header">
+    <div class="floating-header-logo">
+        <a href="http://localhost:4000/">
+            
+                <img src="/assets/images/favicon.png" alt="Edge AI Guru icon" />
+            
+            <span>Edge AI Guru</span>
+        </a>
+    </div>
+    <span class="floating-header-divider">&mdash;</span>
+    <div class="floating-header-title">Introduction to Neural Networks</div>
+    <div class="floating-header-share">
+        <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
+</svg>
+</div>
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Introduction+to+Neural+Networks&amp;url=https://edgeaiguru.comIntroduction-to-Neural-Networks"
+            onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
+
+        </a>
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://edgeaiguru.comIntroduction-to-Neural-Networks"
+            onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
+
+        </a>
+        <a class="floating-header-share-in" href="https://www.linkedin.com/shareArticle?mini=true&url=https://edgeaiguru.comIntroduction-to-Neural-Networks&title=Introduction+to+Neural+Networks"
+            onclick="window.open(this.href, 'share-linkedin','width=580,height=296');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
+
+        </a>
+    </div>
+    <progress class="progress" value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
+</div>
+
+<!-- /post -->
+
+<!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs -->
+
+
+        <!-- Previous/next page links - displayed on every page -->
+        
+
+        <!-- The footer at the very bottom of the screen -->
+        <footer class="site-footer outer">
+            <div class="site-footer-content inner">
+                <section class="copyright"><a href="http://localhost:4000/">Edge AI Guru</a> &copy; 2020</section>
+                <section class="poweredby">Proudly published with <a href="https://jekyllrb.com/">Jekyll</a> &
+                    <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a> using
+                    <a href="https://github.com/jekyller/jasper2" target="_blank" rel="noopener">Jasper2</a></section>
+                <nav class="site-footer-nav">
+                    <a href="/">Latest Posts</a>
+                    
+                    
+                    <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
+                </nav>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- The big email subscribe modal content -->
+    
+        <div id="subscribe" class="subscribe-overlay">
+            <a class="subscribe-overlay-close" href="#"></a>
+            <div class="subscribe-overlay-content">
+                
+                    <img class="subscribe-overlay-logo" src="/assets/images/blog-icon.png" alt="Edge AI Guru" />
+                
+                <h1 class="subscribe-overlay-title">Subscribe to Edge AI Guru</h1>
+                <p class="subscribe-overlay-description">Stay up to date! Get all the latest &amp; greatest posts delivered straight to your inbox</p>
+                <!-- Begin Mailchimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<div id="mc_embed_signup">
+<form action="https://live.us19.list-manage.com/subscribe/post?u=1a75f176c221a80d91de5e939&amp;id=671c7f7a46" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1a75f176c221a80d91de5e939_671c7f7a46" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+            </div>
+        </div>
+    
+
+    <!-- highlight.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.10.0/components/prism-abap.min.js"></script>
+    <script>$(document).ready(function() {
+      $('pre code').each(function(i, block) {
+        hljs.highlightBlock(block);
+      });
+    });</script>
+
+    <!-- jQuery + Fitvids, which makes all video embeds responsive -->
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="https://demo.ghost.io/assets/js/jquery.fitvids.js?v=724281a32e"></script>
+
+
+    <!-- Paginator increased to "infinit" in _config.yml -->
+    <!-- if paginator.posts  -->
+    <!-- <script>
+        var maxPages = parseInt('');
+    </script>
+    <script src="/assets/js/infinitescroll.js"></script> -->
+    <!-- /endif -->
+
+    
+
+
+    <!-- Add Google Analytics  -->
+    <!-- Google Analytics Tracking code -->
+ <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-166032640-1', 'auto');
+  ga('send', 'pageview');
+
+ </script>
+
+
+    <!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. -->
+    
+        <script>
+
+// NOTE: Scroll performance is poor in Safari
+// - this appears to be due to the events firing much more slowly in Safari.
+//   Dropping the scroll event and using only a raf loop results in smoother
+//   scrolling but continuous processing even when not scrolling
+$(document).ready(function () {
+    // Start fitVids
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+    // End fitVids
+
+    var progressBar = document.querySelector('progress');
+    var header = document.querySelector('.floating-header');
+    var title = document.querySelector('.post-full-title');
+
+    var lastScrollY = window.scrollY;
+    var lastWindowHeight = window.innerHeight;
+    var lastDocumentHeight = $(document).height();
+    var ticking = false;
+
+    function onScroll() {
+        lastScrollY = window.scrollY;
+        requestTick();
+    }
+
+    function onResize() {
+        lastWindowHeight = window.innerHeight;
+        lastDocumentHeight = $(document).height();
+        requestTick();
+    }
+
+    function requestTick() {
+        if (!ticking) {
+            requestAnimationFrame(update);
+        }
+        ticking = true;
+    }
+
+    function update() {
+        var trigger = title.getBoundingClientRect().top + window.scrollY;
+        var triggerOffset = title.offsetHeight + 35;
+        var progressMax = lastDocumentHeight - lastWindowHeight;
+
+        // show/hide floating header
+        if (lastScrollY >= trigger + triggerOffset) {
+            header.classList.add('floating-active');
+        } else {
+            header.classList.remove('floating-active');
+        }
+
+        progressBar.setAttribute('max', progressMax);
+        progressBar.setAttribute('value', lastScrollY);
+
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onResize, false);
+
+    update();
+});
+</script>
+
+    
+
+    <!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag -->
+    <!-- ghost_foot -->
+
+</body>
+</html>
