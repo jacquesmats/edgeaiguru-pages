@@ -1,0 +1,28 @@
+speeches:
+  name: speeches
+  description: Some of the greatest words ever spoken.
+  cover: assets/images/speeches.jpg
+fiction:
+  name: fiction
+  description: False
+  cover: False
+fables:
+  name: fables
+  description: A series of short stories that make you think.
+  cover: assets/images/fables.jpg
+getting-started:
+  name: getting-started
+  description: False
+  cover: False
+back-to-basics:
+  name: back-to-basics
+  description: A series of basics concepts of Machine and Deep Learning
+  cover: False
+tutorials:
+  name: tutorials
+  description: Some tutorials to get you started in Artificial Intelligence
+  cover: False
+projects:
+  name: projects
+  description: A piece of my portfolio with amazing works that a did around the world.
+  cover: False
