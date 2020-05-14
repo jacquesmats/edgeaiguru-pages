@@ -16,7 +16,7 @@ logo: assets/images/blog-icon.png
 logo_dark: assets/images/favicon.png
 favicon: assets/images/favicon.png
 production_url: # replace
-source_url: # replace
+source_url: http://edgeaiguru.com 
 CNAME: #add cname for website to be created
 
 # Social info
