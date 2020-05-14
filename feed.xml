@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-05-14T14:47:13-03:00</updated><id>http://localhost:4000/</id><title type="html">Edge AI Guru</title><subtitle>The guidance through your Artificial Intelligence journey</subtitle><entry><title type="html">Introduction to Neural Networks</title><link href="http://localhost:4000/Introduction-to-Neural-Networks" rel="alternate" type="text/html" title="Introduction to Neural Networks" /><published>2020-05-03T07:18:00-03:00</published><updated>2020-05-03T07:18:00-03:00</updated><id>http://localhost:4000/Introduction%20to%20Neural%20Networks</id><content type="html" xml:base="http://localhost:4000/Introduction-to-Neural-Networks">&lt;p&gt;Learn the main concepts behind Neural Networks, one of Deep Learning’s pillars.&lt;/p&gt;
+
+&lt;p&gt;English version will be released soon.&lt;/p&gt;
+
+&lt;h2 id=&quot;introdução&quot;&gt;Introdução&lt;/h2&gt;
+
+&lt;p&gt;A Inteligência Artificial vem revolucionando a indústria nos últimos anos e resolvendo problemas, que antes eram onerosos em tempo e dinheiro, de maneira muito mais eficaz. Problemas de visão computacional, processamento de linguagem natural e diversas outras aplicações só são possíveis graças aos avanços em Aprendizagem Profunda.&lt;/p&gt;
+
+&lt;p&gt;As Redes Neurais Artificiais (RNA) são um dos principais pilares dessa tecnologia. Inspiradas no cérebro humano, as RNA levam esse nome pois tem conexões e motivações biológicas. Assim como no cérebro humano, onde unidade mais básica de processamento é o neurônio, as RNA possuem um elemento que processa impulsos, ou entradas, e que também é chamado de neurônio ou nó.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/artificial-vs-biological-neuron.png&quot; alt=&quot;Artificial vs Biological Neuron&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Neurônio Biológico vs Neurônio Artificial. Fonte: &lt;a href=&quot;https://www.datacamp.com/community/tutorials/deep-learning-python&quot;&gt;Keras Tutorial: Deep Learning in Python&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Ambas estruturas compartilham o mesmo funcionamento para a transferência de informações: recebem uma entrada (impulso) que é carregada através do nó (corpo da célula) e ativam um certa saída (terminais axônicos). De mesma forma como nos neurônios biológicos, esse impulso nervoso que ativa o neurônios é reproduzida nas RNA através de funções de ativação.&lt;/p&gt;
+
+&lt;p&gt;Logo, esse elemento básico das redes neurais podem ser representado pela seguinte figura, retirada do curso &lt;a href=&quot;https://www.coursera.org/learn/neural-networks-deep-learning&quot;&gt;Neural Networks and Deep Learning&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/generic-neuron.png&quot; alt=&quot;Generic Neuron&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Onde, através do exemplo da necessidade de prever o preço de casas baseado no seu tamanho, podemos traçar um função que consiga representar esse problema. Nesse exemplo, uma função ReLU encaixa perfeitamente nos dados. Então, a mínima representação de um neurônio seria colocarmos na entrada a área de uma casa e, baseado na função matemática colocada “dentro” do neurônio, podemos estimar um preço para essa residência.&lt;/p&gt;
+
+&lt;p&gt;Dessa forma, treinamos cada neurônio para ser ativado quando um certo padrão aparece. Assim, o agrupamento de diversos neurônios em série e em paralelo, permite as Redes Neurais a aprender a reconhecer padrões em imagens, textos, áudios e nas mais diversas formas de dados.&lt;/p&gt;
+
+&lt;p&gt;Nesse artigo, será aprensentado os principais componentes das Redes Neurais Artificiais, algumas das principais arquiteturas, as funções de ativações mais comuns.&lt;/p&gt;
+
+&lt;h2 id=&quot;redes-neurais-artificias&quot;&gt;Redes Neurais Artificias&lt;/h2&gt;
+
+&lt;p&gt;Apesar das Redes Neurais terem algumas semelhanças com os neurônios do cérebro humano, essas são infinitamente mais simples do que seu correspondente biológico. Essas arquiteturas são compostas por blocos matemáticos que podem ser explicados utilizando álgebra e cálculo, muito diferentemente das diversas partes do cérebro que ainda não conseguimos entender.&lt;/p&gt;
+
+&lt;p&gt;Os principais componentes das RNA são: a camada de entrada, as camadas ocultas e as camadas de saída. Essas camadas são ligadas através de conexões que têm pesos, esses definem o quão importante aquela conexão é para a rede. Além disso, como vimos anteriormente, na saída de cada neurônio existe um função de ativação que definirá se o neurônio irá ativar ou não.&lt;/p&gt;
+
+&lt;h2 id=&quot;blocos-de-uma-rede-neural-artificial&quot;&gt;Blocos de uma Rede Neural Artificial&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/generic-3-layers-neural-network.png&quot; alt=&quot;Generic 3 Layer Neural Network&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Arquitetura de uma Rede Neural Genérica de 3 Camadas. Fonte: &lt;a href=&quot;https://cs231n.github.io/neural-networks-1/#nn&quot;&gt;Stanford CS231n&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;camada-de-entrada&quot;&gt;&lt;em&gt;Camada de Entrada&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;Um bloco de neurônios pode ser chamado de camada. Mas perceba que apesar de os neurônios se interligarem entre camadas, eles não tem conexões dentro da mesma camada. Como mostra a figura acima, a primeira camada de uma Rede Neural é a camada de entrada. Esta tem apenas a função de passar as entradas do sistema para a próxima camada e não realiza nenhuma função matemática.&lt;/p&gt;
+
+&lt;h3 id=&quot;camadas-ocultas&quot;&gt;&lt;em&gt;Camadas Ocultas&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;Essa camada é responsável por uma das principais funções das redes neurais: processar os dados e enviá-los para a camada seguinte. O valor de cada neurônio é encontrado multiplicando o pesos W pela entrada X e somando um viés b. Esse valor então passa por uma função de ativação e é enviada a próxima camada, como mostra a Fig. 2.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/hidden-layer-mathematics.png&quot; alt=&quot;Hidden Layer Mathematics&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Operações Matemáticas dentro do Neurônio. Fonte: Fonte: &lt;a href=&quot;https://cs231n.github.io/neural-networks-1/#nn&quot;&gt;Stanford CS231n&lt;/a&gt; Modificada.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Assim, se isolarmos o primeiro neurônio da primeira camada oculta, o valor de saída do neurônio será igual a z1. Onde &lt;em&gt;s1&lt;/em&gt; é a entrada do neurônio, onde multiplicamos os pesos pelas entradas e somamos um viés b. Após essa operação, é aplicada então uma função de transferência &lt;em&gt;g&lt;/em&gt; sobre o &lt;em&gt;s1.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;É importante notar que &lt;em&gt;X&lt;/em&gt; e &lt;em&gt;W&lt;/em&gt; na primeira equação são matrizes nesse caso, e representam todas as entradas e todos os pesos, respectivamente.&lt;/p&gt;
+
+&lt;p&gt;Chamamos essa camada de “Camada Oculta” pois durante o treinamento de redes neurais temos as entradas que são conhecidas e as saídas que são esperadas. Mas não vemos quais os valores dentro dos neurônios dessa camada. Esse bloco pode conter diversas camadas ocultas, e quanto mais camadas mais “profunda” é a rede neural, e mais padrões ela consegue aprender.&lt;/p&gt;
+
+&lt;h3 id=&quot;camadas-de-saída&quot;&gt;&lt;em&gt;Camadas de Saída&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;A camada de saída é a responsável por mostrar os resultados obtidos através dos cálculos feitos nas camadas ocultas. Normalmente é utilizada uma função de ativação, assim como a dos neurônios das camadas anteriores, para simplificar o resultado.&lt;/p&gt;
+
+&lt;h3 id=&quot;pesos-e-viés&quot;&gt;&lt;em&gt;Pesos e Viés&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;Os pesos são responsáveis por definir o quão importante aquela conexão é para a rede neural. Como existem diversas conexões dentro das RNA, é dessa forma que essa arquitetura entende quais padrões ela deve aprender e quais ela deve ignorar. Além disso, comumente é utilizado um valor chamado de viés junto aos pesos e as entradas. Esse valor ajuda a fazer um ajuste fino na rede neural. Dessa forma, se tivermos um neurônio i em uma camada e um neurônio j na camada seguinte, teremos um ligação com o peso Wij e um viés bij.&lt;/p&gt;
+
+&lt;h3 id=&quot;funções-de-ativação&quot;&gt;&lt;em&gt;Funções de Ativação&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;Também chamada de função de transferência, é o último processamento matemático que acontece antes da informação sair do neurônio. Esta equação matemática define se o neurônio será ativado ou não, podendo ser pode ser uma função degrau, uma função linear ou uma função não linear.&lt;/p&gt;
+
+&lt;p&gt;A função de ativação mais simples seria a utilização de um degrau unitário. Onde o neurônio iria ativar somente caso a entrada fosse superior a um &lt;em&gt;threshold,&lt;/em&gt; e o sinal de entrada seria totalmente reproduzido na saída do nó.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/step-function.png&quot; alt=&quot;Step Function&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Esta pode retornar valores de 0 e 1, utilizado em problemas de classificação, ou entre 0 e 1, utilizado em problemas que estamos mais interessados em saber a probabilidade de certa entrada fazer parte de certa classe.&lt;/p&gt;
+
+&lt;h2 id=&quot;principais-tipos-de-redes-neurais-artificiais&quot;&gt;&lt;em&gt;Principais Tipos de Redes Neurais Artificiais&lt;/em&gt;&lt;/h2&gt;
+
+&lt;p&gt;Existem dois tipos principais de Redes Neurais: Redes Neurais Feedforward e Redes Neurais Recorrentes.&lt;/p&gt;
+
+&lt;h3 id=&quot;redes-neurais-feedforward-rnf&quot;&gt;&lt;em&gt;Redes Neurais Feedforward (RNF)&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;Essa arquitetura é a mais comumente encontrada na literatura. Nela, a informação move-se em apenas uma direção: da entrada, passando pela camada oculta até o nós de saída, e não existem ciclos.&lt;/p&gt;
+
+&lt;p&gt;A unidade mais simples dessa topologia é o Perceptron, a rede neural mais simples que é composta apenas por um nó.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/perceptron.png&quot; alt=&quot;Perceptron&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;O Perceptron&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Alguns problemas simples podem ser resolvidos com o Perceptron, pois ele só funciona com funções linearmente separáveis.&lt;/p&gt;
+
+&lt;p&gt;Com a necessidade de resolver problemas mais complexos e a partir dessa unidade básica, surge o &lt;strong&gt;Perceptron Multicamadas (MLP)&lt;/strong&gt;. Composto por diversas camadas desses nós, sendo muito mais úteis e podendo aprender funções não lineares.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/multi-layer-perceptron.png&quot; alt=&quot;Multilayer Perceptron&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Uma arquitetura de um Perceptron Multicamadas. Fonte:&lt;a href=&quot;https://www.researchgate.net/figure/Architecture-of-a-multilayer-perceptron-neural-network_fig5_316351306&quot;&gt;Advanced Methods for the Processing and Analysis of Multidimensional Signals: Application to Wind Speed&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;E por fim, temos as &lt;strong&gt;Redes Neurais Convolucionais (CNN)&lt;/strong&gt;, que são o exemplo mais comum das Redes Neurais Feedforward. Inspiradas no Córtex Visual, essa topologia divide os dados em pequenos pedaços e tentar aprender padrões essenciais. Essa operação é chamada de Convolução. Mais eficientes que os MLP, essa topologia é encontrada vastamente em aplicações de visão computacional, vídeo e linguagem natural. Essa topologia possui seus blocos característicos próprios, como as camadas de convolução e de &lt;em&gt;pooling.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/convolution-neural-network.png&quot; alt=&quot;Convolutional Neural Network&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Exemplo de Rede Neural Convolucional. Fonte: &lt;a href=&quot;https://missinglink.ai/guides/convolutional-neural-networks/convolutional-neural-network-tutorial-basic-advanced/&quot;&gt;Convolutional Neural Network Tutorial&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;redes-neurais-recorrentes-rnn&quot;&gt;&lt;em&gt;Redes Neurais Recorrentes (RNN)&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;Diferente das Redes Neurais Feedforward, nas RNN a informação flui não somente para frente, mas para trás também, formando um ciclo. Para isso, assim como as CNN, elas usam diversos blocos próprios, como um bloco de memória por exemplo. Isso permite essa topologia capturar padrões dinâmicos temporais e serem vastamente utilizados em problemas de reconhecimento de voz e problemas que exigem uma ligação sequencial.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/recorrent-neural-network.png&quot; alt=&quot;Recurrent Neural Network&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Exemplo de Rede Neural Recorrente Fonte: &lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Recurrent_neural_network_unfold.svg&quot;&gt;wikimedia&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;tipos-de-funções-de-ativação&quot;&gt;Tipos de Funções de Ativação&lt;/h2&gt;
+
+&lt;p&gt;Além da função degrau unitário, que acredito não ser usada na prática, existem diversas outras funções de ativação. Além de determinarem a saída de um modelo, elas também ajudam na precisão dos resultados e na eficiência com que o modelo será treinado. Na prática, os modelos modernos usam funções de ativação não-linear, que são capazes de capturar padrões em dados mais complexos.&lt;/p&gt;
+
+&lt;p&gt;As funções de ativação são usadas em dois momentos nas Redes Neurais: para processar a saída de um único neurônio, como vimos durante o tópico  de camadas ocultas, e para processar a saída da rede neural como um todo.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/sigmoid.png&quot; alt=&quot;Sigmoid Formula and Graph&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/tanh.png&quot; alt=&quot;Tanh Formula and Graph&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/relu.png&quot; alt=&quot;Relu Formula and Graph&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Normalmente são usadas funções &lt;em&gt;Rectified Linear Unit&lt;/em&gt; (ReLU) na prática. A função Sigmoid é normalmente utilizada para demostrar como esses elementos funcionam e normalmente é substituida pela Tangente Hiperbólica (TanH). Exceto no caso do problema tratar-se de uma classificação binária, nesse caso seria melhor uma função Sigmoid na saída do modelo pois está já entregaria o resultado entre 0 e 1.&lt;/p&gt;
+
+&lt;p&gt;A escolha da função de ativação é motivada pelas características do problema que está sendo resolvido. A Sigmoid, por exemplo, apesar ter um gradient mais suave e normalizar a saída entre 0 e 1, tem problemas com &lt;em&gt;vanish gradients&lt;/em&gt; e sua saída não está centrada em zero. Já TanH tem o seu centro em zero, o que facilita o aprendizado das camadas seguintes, mas desvantagens parecidas com a Sigmoid.&lt;/p&gt;
+
+&lt;p&gt;Além dessas, ainda podemos destacar:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Leaky ReLU&lt;/li&gt;
+  &lt;li&gt;Softmax&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;conclusão&quot;&gt;Conclusão&lt;/h2&gt;
+
+&lt;p&gt;Nesse artigo passamos por alguns dos principais conceitos de Redes Neurais Artificiais. Após essa revisão, espero que você já tenha uma idea mais concreta dos conceitos básicos que envolvem um dos principais tópicos de Aprendizagem Profunda. Entendendo os principais blocos construtores das RNA, as principais topologias e as funções de ativação mais comuns, podemos agora passar a tópicos mais avançados como &lt;strong&gt;Forward and Backward Propagation&lt;/strong&gt; e o &lt;strong&gt;Gradient Descent&lt;/strong&gt;.&lt;/p&gt;</content><author><name>Matheus Jacques</name></author><category term="back-to-basics" /><category term="neural-networks" /><summary type="html">Learn the main concepts behind Neural Networks, one of Deep Learning’s pillars.</summary></entry><entry><title type="html">Batch vs Mini-batch vs Stochastic Gradient Descent with Code Examples</title><link href="http://localhost:4000/Batch-vs-Mini-batch-vs-Stochastic-Gradient-Descent" rel="alternate" type="text/html" title="Batch vs Mini-batch vs Stochastic Gradient Descent with Code Examples" /><published>2020-04-26T07:18:00-03:00</published><updated>2020-04-26T07:18:00-03:00</updated><id>http://localhost:4000/Batch%20vs%20Mini%20batch%20vs%20Stochastic%20Gradient%20Descent</id><content type="html" xml:base="http://localhost:4000/Batch-vs-Mini-batch-vs-Stochastic-Gradient-Descent">&lt;p&gt;What is the difference between these three Gradient Descent variants?&lt;/p&gt;
+
+&lt;p&gt;One of the main questions that arises when studying Machine Learning and Deep Learning is the several types of Grandient Descent. Should I use Batch Gradient Descent? Mini-batch Gradient Descent or Stochastic Gradient Descent? In this post we are going to understand the difference between those concepts and take a look in code implementations from Gradient Descent, for the purpose of clarifying these methods.&lt;/p&gt;
+
+&lt;p&gt;At this point, we know that our matrix of weights &lt;strong&gt;W&lt;/strong&gt; and our vector of bias &lt;strong&gt;b&lt;/strong&gt; are the core values of our Neural Networks (NN) (Check the Deep Learning Basics post). We can make an analogy with these concepts with the memory in which a NN stores patterns, and it is through tuning these parameters that we teach a NN. The acting of tuning this is done through the optimization algorithms, the amazing feature that allows NN to learn. After some time training the network, these patterns are learned and we have a set of weights and biases that hopefully correct classifies the inputs.&lt;/p&gt;
+
+&lt;h2 id=&quot;gradient-descent&quot;&gt;&lt;strong&gt;Gradient Descent&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;One of the most common algorithms that help the NN to reach the correct values of weights and bias. The Gradient Descent (GD) is a method/algorithm to minimize the cost function J(W,b) in each step. It iteratively updates the weights and bias trying to reach the global minimum in a cost function.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/gradient-descent-variants/gradient-descent.png&quot; alt=&quot;Gradient descent to minimize cost function&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Minimizing the Cost Function, a Gradient Descent Illustration. Source: &lt;a href=&quot;https://www.coursera.org/learn/machine-learning&quot;&gt;Stanford’s Andrew Ng’s MOOC Machine Learning Course&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Review this quickly, before we can compute the GD, first the inputs are taken and passed through all the nodes of a neural network, calculating the weighted sum of inputs, weights, and bias. This first pass is one of the main steps when calculating Gradient Descent and it is called &lt;strong&gt;Forward Propagation&lt;/strong&gt;. Once we have an output, we compare this output with the expected output and calculate how far it is from each other, the error. With this error, we can now propagate it backward, updating each and every weight and bias and trying to minimize this error. And this part is called, as you may anticipate, &lt;strong&gt;Backward Propagation&lt;/strong&gt;. The Backward Propagation step is calculated using derivatives and return the “gradients”, values that tell us in which direction we should follow to minimize the cost function.&lt;/p&gt;
+
+&lt;p&gt;We are now ready to update the weight matrix W and the bias vector b. The gradient descent rule is as follows:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/gradient-descent-variants/f1.png&quot; alt=&quot;math1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In other words, the new weight/bias value will be the last one minus the gradient, moving it close to the global minimum value of the cost function. We also multiply this gradient to a learning rate alpha, which controls how big the step would be. For a more deep approach to Forward and Backward Propagation, Compute Losses,  Gradient Descent, check this post.&lt;/p&gt;
+
+&lt;p&gt;This classic Gradient Descent is also called Batch Gradient Descent. In this method, every epoch runs through all the training dataset, to only then calculate the loss and update the W and b values. Although it provides stable convergence and a stable error, this method uses the entire training set; hence it is very slow for big datasets.&lt;/p&gt;
+
+&lt;h2 id=&quot;mini-batch-gradient-descent&quot;&gt;&lt;strong&gt;Mini-batch Gradient Descent&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;Imagine taking your dataset and dividing it into several chunks, or batches. So instead of waiting until the algorithm runs through the entire dataset to only after update the weights and bias, it updates at the end of each, so-called, mini-batch. This allows us to move quickly to the global minimum in the cost function and update the weights and biases multiple times per epoch now. The most common mini-batch sizes are 16, 32, 64, 128, 256, and 512. Most of the projects use Mini-batch GD because it is faster in larger datasets.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Mini-batch Gradient Descent&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data_input&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;labels&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;initialize_parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;layers_dims&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num_iterations&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+	
+	&lt;span class=&quot;n&quot;&gt;minibatches&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;random_mini_batches&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mini_batch_size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+	&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;minibatch&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;minibatches&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+
+	    &lt;span class=&quot;c&quot;&gt;# Select a minibatch&lt;/span&gt;
+	    &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;minibatch_X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;minibatch_Y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;minibatch&lt;/span&gt;
+	    &lt;span class=&quot;c&quot;&gt;# Forward propagation&lt;/span&gt;
+	    &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;caches&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;forward_propagation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	    &lt;span class=&quot;c&quot;&gt;# Compute cost.&lt;/span&gt;
+	    &lt;span class=&quot;n&quot;&gt;cost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;compute_cost&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	    &lt;span class=&quot;c&quot;&gt;# Backward propagation.&lt;/span&gt;
+	    &lt;span class=&quot;n&quot;&gt;grads&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;backward_propagation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;caches&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	    &lt;span class=&quot;c&quot;&gt;# Update parameters.&lt;/span&gt;
+	    &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;update_parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grads&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;To prepare the mini-batches, one most apply some preprocessing steps: randomizing the dataset in order to random split the dataset and then partitioning it in the right number of chunks. But what happens if we chose to set the number of batches to 1 or equal to the number of training examples?&lt;/p&gt;
+
+&lt;h2 id=&quot;batch-gradient-descent&quot;&gt;&lt;strong&gt;Batch Gradient Descent&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;As stated before, in this gradient descent, each batch is equal to the entire dataset. That is:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/gradient-descent-variants/f2.png&quot; alt=&quot;math2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Where {1} denotes the first batch from the mini-batch. The downside is that it takes too long per iteration. This method can be used to training datasets with less than 2000 training examples.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;(Batch) Gradient Descent&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data_input&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;labels&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;initialize_parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;layers_dims&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num_iterations&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# Forward propagation&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;caches&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;forward_propagation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# Compute cost.&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;cost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;compute_cost&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# Backward propagation.&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;grads&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;backward_propagation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;caches&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# Update parameters.&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;update_parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grads&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;stochastic-gradient-descent&quot;&gt;&lt;strong&gt;Stochastic Gradient Descent&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;On other hand, in this method, each batch is equal to one example from the training set. In this example, the first mini-batch is equal to the first training example:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/gradient-descent-variants/f3.png&quot; alt=&quot;math3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Where (1) denotes the first training example. Here the downside is that it loses the advantage gained from vectorization, has more oscilation but converges faster.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Stochastic Gradient Descent&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data_input&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;labels&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;initialize_parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;layers_dims&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num_iterations&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;# Forward propagation&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;caches&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;forward_propagation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;# Compute cost&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;cost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;compute_cost&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;# Backward propagation&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;grads&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;backward_propagation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;caches&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;# Update parameters.&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;update_parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grads&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
+
+&lt;p&gt;It is essential to understand the difference between these optimization algorithms, as they compose a key function for Neural Networks. In summary, although Batch GD has higher accuracy than Stochastic GD, the latter is faster. The middle ground of the two and the most adopted, Mini-batch GD, combine both to deliver good accuracy and good performance.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/gradient-descent-variants/batch-stochastic-mini-gd.png&quot; alt=&quot;Gradient descent variants&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Batch vs Stochastic vs Mini-batch Gradient Descent. Source: &lt;a href=&quot;https://www.coursera.org/learn/deep-neural-network/&quot;&gt;Stanford’s Andrew Ng’s MOOC Deep Learning Course&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;It is possible to use only the Mini-batch Gradient Descent code to implement all versions of Gradient Descent, you just need to set the mini_batch_size equals one to Stochastic GD or to the number of training examples to Batch GD. Thus, the main difference between Batch, Mini-batch and Stochastic Gradient Descent is the number of examples used for each epoch and the time and effort necessary to reach the global minimum value of the Cost Function.&lt;/p&gt;</content><author><name>Matheus Jacques</name></author><category term="back-to-basics" /><category term="gradient-descent" /><summary type="html">What is the difference between these three Gradient Descent variants?</summary></entry><entry><title type="html">How to get started on Spacenet Challenge 6 using CosmiQ Baseline</title><link href="http://localhost:4000/How-to-get-started-on-Spacenet-Challenge-6" rel="alternate" type="text/html" title="How to get started on Spacenet Challenge 6 using CosmiQ Baseline" /><published>2020-04-20T07:18:00-03:00</published><updated>2020-04-20T07:18:00-03:00</updated><id>http://localhost:4000/How%20to%20get%20started%20on%20Spacenet%20Challenge%206</id><content type="html" xml:base="http://localhost:4000/How-to-get-started-on-Spacenet-Challenge-6">&lt;p&gt;Let’s implement the SpaceNet Baseline to join the Spacenet Challenge 6 and extract buildings footprints from satellite imagery.&lt;/p&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://spacenet.ai/sn6-challenge/&quot;&gt;Spacenet Challagence 6&lt;/a&gt; has been launched almost a month ago and has been an amazing journey applying and understanding how to use Deep Learning in satellite images. I’ve been working with Machine/Deep Learning algorithms for remote sensing for a couple of months now and I’m amazed how deep and rich are the challenges one can find in this field.&lt;/p&gt;
+
+&lt;p&gt;In this task, Spacenet challenges us to extract building footprints from satellite imagery using Synthetic Aperture Radar (SAR) and electro-optical (EO) imagery datasets. The area of interest (AOI) is Rotterdam, Netherlands, over 120 sq km and 48k building footprints labels. The high-resolution images are provided by Maxar’s WorldView 2 satellite. Although the participants could use both datasets (SAR and EO) for training, the test and scoring must be done using only the SAR dataset. This is intended to simulate real-world applications where one can not find matching data from both in the same location.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/663/0*vKaGlrZJP8YUVNyT.png&quot; alt=&quot;Test Image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Example of EO and SAR image present in the dataset, with its inferred footprints and actual ground truth. Source: &lt;a href=&quot;https://medium.com/the-downlinq/the-spacenet-6-baseline-3b8ae8068351&quot;&gt;The SpaceNet 6 Baseline&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In this tutorial, we are going to see how to implement the SpaceNet Baseline, as a first step to join the Spacenet Challenge 6. Implementing a baseline to enter a competition is not mandatory, but can help you in many ways. It can help you make sense of the dataset, have a benchmark to compare to, be a starting point or simply have a better feeling what your model’s output is supposed to look like.&lt;/p&gt;
+
+&lt;p&gt;You can learn more about the Baseline &lt;a href=&quot;https://medium.com/the-downlinq/the-spacenet-6-baseline-3b8ae8068351&quot;&gt;here&lt;/a&gt;. In this baseline, CosmiQ implement a U-Net with a VGG-11 encoder. It is build using &lt;a href=&quot;https://github.com/CosmiQ/solaris&quot;&gt;Solaris&lt;/a&gt;, which is a CosmiQ Works Geospatial Machine Learning analysis toolkit based in Python, and can achieve a score of 0.21±.02 using the Jaccard Index, also called the Intersection-over-Union (IoU). You can check the full code here: &lt;a href=&quot;https://github.com/CosmiQ/CosmiQ_SN6_Baseline&quot;&gt;https://github.com/CosmiQ/CosmiQ_SN6_Baseline&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;walkthrough&quot;&gt;&lt;strong&gt;Walkthrough&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;h3 id=&quot;prerequisites&quot;&gt;&lt;strong&gt;Prerequisites&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;Although I think this tutorial can be used for any platform, at least to have a general overview, I’m currently working a Ubuntu Linux 18.04. So some of the commands and steps below are taking this into account.&lt;/p&gt;
+
+&lt;p&gt;The CosmiQ Works provides the baseline using Docker, and not in a notebook to run on Jupyter or Colab, although you could try to “translate” it, I guess. Using docker is the best way to share the baseline to a vast number of people using different systems and keeping up all the libraries and dependencies together. So the first thing is to make sure you have the latest version of Docker installed. Although it would work with other versions, the latest version (Docker 19.03) natively supports NVIDIA GPUs as devices. Furthermore, we can use NVIDIA Container Toolkit to help us even more, since with this we don’t need to install the CUDA toolkit at the host. Allowing us to have multiple projects with multiple CUDA versions in your machine. You just need to install the NVIDIA driver at your host machine and the specific CUDA Toolkit inside your container.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/522/0*n3TB9NY4_3Xn7IOU.png&quot; alt=&quot;Test Image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;NVIDIA Container Toolkit. Source: &lt;a href=&quot;https://github.com/NVIDIA/nvidia-docker&quot;&gt;nvidia-docker repository&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;So go ahead and make sure you have installed in your system:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/NVIDIA/nvidia-docker&quot;&gt;NVIDIA Container Toolkit&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;NVIDIA driver for your system&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Docker 19.03&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Git&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;the-datasets&quot;&gt;&lt;strong&gt;The Datasets&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;The training data contains processed tiles of 450x450 m with its corresponding buildings footprints labels. The whole folder has about 39 GB. On the other hand, the test set has 17GB and each tile covers the same area. Both can be downloaded inside the container or in the host system. Either way, you are going to need an AWS account.&lt;/p&gt;
+
+&lt;p&gt;Apparently, everyone with a normal Amazon account is already able to access AWS and get the credentials to download the images. If you don’t, you are going to need to create one and add a credit card. Once you have in hands your **&lt;a href=&quot;https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html&quot;&gt;Access key ID&lt;strong&gt; and &lt;/strong&gt;Secret access key**&lt;/a&gt;, you need to install the AWS CLI. This can be easily done in Ubuntu using pip or conda. I prefer using conda due to its intuitive virtual environments and features.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Using pip:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;~$ sudo pip install awscli&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Using conda:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;~$ conda install -c conda-forge awscli&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Now you need to configure the awscli using the credentials I mentioned before. So type this and fill with your keys:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;~$ aws configure&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Awesome, now let’s download the images.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Training Data (~39GB)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;~$ aws s3 cp s3://spacenet-dataset/spacenet/SN6_buildings/tarballs/SN6_buildings_AOI_11_Rotterdam_train.tar.gz .&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Test Data (~17GB)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;~$ aws s3 cp s3://spacenet-dataset/spacenet/SN6_buildings/tarballs/SN6_buildings_AOI_11_Rotterdam_test_public.tar.gz .&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;If you followed these steps inside the container, you are good to go. Otherwise, if you downloaded the files in your host system (which I think is better), you can transfer this data to your running container using:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;~$ docker cp file_to_transfer.tar.gz ContainerID:/root/&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This will copy the dataset you choose to the same location where all the files of this project are.&lt;/p&gt;
+
+&lt;p&gt;Furthermore, if you want to know more, have some questions on how to obtain the data or are using Windows, you can check &lt;a href=&quot;https://docs.google.com/document/d/1mkBKtSpeYlH3PxGTcLvzaXEarElUQCb1IThFclIXG0k/edit&quot;&gt;this guide&lt;/a&gt; to download these datasets using AWS.&lt;/p&gt;
+
+&lt;h2 id=&quot;running-the-baseline-inside-the-container&quot;&gt;&lt;strong&gt;Running the baseline inside the container&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;Now it is time to spin up this docker container and start using the baseline. Let’s go to the directory where we want to work on this project and clone the &lt;a href=&quot;https://github.com/CosmiQ/CosmiQ_SN6_Baseline&quot;&gt;baseline repository&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;~$ git clone [https://github.com/CosmiQ/CosmiQ_SN6_Baseline.git](https://github.com/CosmiQ/CosmiQ_SN6_Baseline.git)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;In this folder, you will find several files that compose this baseline. The more important are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Weights — A folder containing the best weights trained by CosmiQ.&lt;/li&gt;
+  &lt;li&gt;baseline.py — Where all the magic happens. All the functions we need are here.&lt;/li&gt;
+  &lt;li&gt;model.py — Holds the model, as it states. A U-Net and a VGG-11 written in Pytorch.&lt;/li&gt;
+  &lt;li&gt;settings.sh, train.sh and test.sh — 3 shell scripts to configure, train and test the model.&lt;/li&gt;
+  &lt;li&gt;Dockerfile — contains all the commands to assembly the Docker image.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We then create the Docker image with the following command inside this folder:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;~$ docker build --tag baseline .&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;and then run it&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;~$ sudo docker run -ti --name sb6 --gpus all baseline /bin/bash&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;We are now inside the container, read to work in an environment prepared to develop our solution or work with the baseline to improve it. To run the baseline model in the test set and check the results you can simply run the test.sh script with two arguments: location of the test examples and where to save the .csv, which would be read to submission.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;~$ ./test.sh /root/test_public/AOI_11_Rotterdam/ baseline_output.csv&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This command will search for the images in the root directory in the same structure from the .tar.gz file, and save the predictions .csv also in the root folder with the same “baseline_output”.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Note: Unfortunately, my GPU is old (an NVIDIA GeForce 740M) and since version 0.3.1, Pytorch does not work with it because of Cuda capability. I then start a container without GPU to test it, it took 15 seconds for each inference, taking 8.5 hours to finish the 2000 test examples with an Intel(R) Core(TM) i5–3337U CPU @ 1.80GHz&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;You are now free to modify the files, make changes to the model, choose another encoder or try to improve this baseline.&lt;/p&gt;
+
+&lt;p&gt;This tutorial was a walkthrough on how to join the Spacenet Challenge 6 using the baseline provided by CosmiQ. There are some minor details, like dependencies and drives, that slowed me down when I tried to implement this and I hope this tutorial helped you in some manner.&lt;/p&gt;
+
+&lt;p&gt;Happy coding and I wish you the best of luck with this challenge!&lt;/p&gt;</content><author><name>Matheus Jacques</name></author><category term="tutorials" /><category term="remote-sensing" /><summary type="html">Let’s implement the SpaceNet Baseline to join the Spacenet Challenge 6 and extract buildings footprints from satellite imagery.</summary></entry></feed>
