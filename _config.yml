@@ -6,7 +6,7 @@ language: 'en-uk'
 words_per_minute: 200
 
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
-baseurl: /
+baseurl: /blog/
 
 # Website info
 title: Edge AI Guru
@@ -16,7 +16,7 @@ logo: assets/images/blog-icon.png
 logo_dark: assets/images/favicon.png
 favicon: assets/images/favicon.png
 production_url: http://edgeaiguru.com/ # replace
-source_url: http://edgeaiguru.com/
+source_url: http://edgeaiguru.com/blog/
 CNAME: edgeaiguru.com #add cname for website to be created
 
 # Social info
