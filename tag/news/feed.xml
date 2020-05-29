@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
+  <link href="http://localhost:4000/tag/news/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="http://localhost:4000/" rel="alternate" type="text/html" />
+  <updated>2020-05-29T11:21:35-03:00</updated>
+  <id>http://localhost:4000/tag/news/feed.xml</id>
+
+  
+  
+  
+
+  
+    <title type="html">Edge AI Guru | </title>
+  
+
+  
+    <subtitle>The guidance through your Artificial Intelligence journey</subtitle>
+  
+
+  
+
+  
+    
+      
+    
+  
+
+  
+  
+
+  
+    <entry>
+      <title type="html">AI May Highlights</title>
+      <link href="http://localhost:4000/May-Highlights" rel="alternate" type="text/html" title="AI May Highlights" />
+      <published>2020-05-28T07:15:00-03:00</published>
+      <updated>2020-05-28T07:15:00-03:00</updated>
+      <id>http://localhost:4000/May%20Highlights</id>
+      <content type="html" xml:base="http://localhost:4000/May-Highlights">&lt;p&gt;Top 5 AI News and Trends I came across in May 2020.&lt;/p&gt;
+
+&lt;p&gt;Versão em português &lt;a href=&quot;http://edgeaiguru.com/Destaques-de-Maio&quot;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/may-news/google.gif&quot; alt=&quot;Google BiT General Visual Representation Learning&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;BiT model being used after pre-training and applied to other tasks with few labeled examples&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;google-open-sources-bit-the-bert-for-computer-vision&quot;&gt;Google open-sources BiT, the BERT for Computer Vision&lt;/h2&gt;
+
+&lt;p&gt;On May 21, Google’s AI Team open-sourced Big Transfer (BiT): A General Visual Representation Learning. This is an effort to help Computer Vision applications to advance through large scale pre-trained models. Using BiT is possible to achieve state-of-the-art performance in many applications just using few labeled examples. To address tunning this model they also introduced “BiT-HyperRule”, a heuristic approach to selecting hyperparameters such as learning-rate and weight-decay. After transfer learning, using  CIFAR-10 dataset, the model achieved 64% and 95% median accuracy in 1-shot and 5-shot, respectively. Google also mentioned that “BiT-L matches or surpasses state-of-the-art results […] in several standard computer vision benchmarks such as Oxford &lt;a href=&quot;https://www.robots.ox.ac.uk/~vgg/data/pets/&quot;&gt;Pets&lt;/a&gt; and &lt;a href=&quot;https://www.robots.ox.ac.uk/~vgg/data/flowers/&quot;&gt;Flowers&lt;/a&gt;, &lt;a href=&quot;https://www.cs.toronto.edu/~kriz/cifar.html&quot;&gt;CIFAR&lt;/a&gt;, etc.”  You can check the &lt;a href=&quot;https://arxiv.org/abs/1912.11370&quot;&gt;paper&lt;/a&gt; and &lt;a href=&quot;https://github.com/google-research/big_transfer&quot;&gt;code&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/may-news/tf_logo_social.png&quot; alt=&quot;Tensorflow Logo&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;tensorflow-version-220-is-here&quot;&gt;Tensorflow Version 2.2.0 is here&lt;/h2&gt;
+
+&lt;p&gt;After almost four months after TF 2.1.0, this month Google also released Tensorflow 2.2.0. Major updates include a new Profiler  for CPU/GPU/TPU to help identify performance bottlenecks, performance improvements in computation between devices through &lt;code class=&quot;highlighter-rouge&quot;&gt;tf.distrbuite&lt;/code&gt;, a new scalar type for strings (from &lt;code class=&quot;highlighter-rouge&quot;&gt;std::string&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;tensorflow::tstring&lt;/code&gt;) and the substitution from SWIG to pybind11 while exporting C++ functions.  We also had a few Keras improvements such as the use of custom training logics with &lt;code class=&quot;highlighter-rouge&quot;&gt;Model.fit&lt;/code&gt; overwriting &lt;code class=&quot;highlighter-rouge&quot;&gt;Model.train_step&lt;/code&gt; and the SavedModel format that now supports all Keras built-in layers (including metrics, preprocessing layers, and stateful RNN layers). Furthermore, another highlight is that they dropped Python 2 support, which is not maintained since January 2020. Last, in this release, TensorFlow requires gast version 0.3.3. Check the full text &lt;a href=&quot;https://github.com/tensorflow/tensorflow/releases/tag/v2.2.0&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/may-news/nvidia-a100.jpg&quot; alt=&quot;Tensorflow Logo&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;nvidia-launches-a100-ai-gpu-the-ultimate-instrument-for-advancing-ai&quot;&gt;NVIDIA launches A100 AI GPU: the ultimate instrument for advancing AI&lt;/h2&gt;
+
+&lt;p&gt;Announced on May 14 during the Nvidia GTC 2020 event, the &lt;a href=&quot;https://www.nvidia.com/en-us/data-center/a100/&quot;&gt;A100 AI Chip&lt;/a&gt; has 54 billion transistors and 5 petaflops of performance and is the most powerful end-to-end AI and HPC platform for data centers, following the trend of HPC after &lt;a href=&quot;https://nvidianews.nvidia.com/news/nvidia-to-acquire-mellanox-for-6-9-billion&quot;&gt;acquiring Mellanox in March&lt;/a&gt;. Based on the Ampere architecture, the 7-nanometer chip can be used for scientific computing, cloud graphics, and data analytics. Here are some numbers, 20 times more powerful than the previous Tesla V100 GPU the A100 achieves 19.5 computational power with its 6,912 CUDA cores, 40 GB of memory, 1.6 TB of bandwidth, and the third generation Tensor Cores. One application is the &lt;a href=&quot;https://www.nvidia.com/en-us/data-center/dgx-a100/&quot;&gt;DGX&lt;/a&gt; system, which is based in 8 NVIDIA A100 and is aiming the Artificial Intelligence sector, costing US$ 1 million. We can expect to see the new AI Chip in cloud services shortly. Alibaba Cloud, AWS, Baidu Cloud, Google Cloud, Microsoft Azure, Oracle, and Tencent Cloud had partnered up with NVIDIA already.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/may-news/fb.jpeg&quot; alt=&quot;Sudo&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;facebook-ai-announces-groknet-for-advancing-product-understanding&quot;&gt;Facebook AI announces GrokNet for advancing product understanding&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“a universal computer vision system designed for shopping. It can identify fine-grained product attributes across billions of photos — in different categories, such as fashion, auto, and home decor.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Unlikely most models which have only one category to learn, GrokNet was trained in seven datasets, with several types of supervision and 83 loss functions, been able to predict categories, attributes such as color and texture and likely search queries. The FB model is trained by a colossal database with about 100 million images, most of which, of course, is taken from the Marketplace. The company also states that the system is able to identify objects that were photographed with not very good lighting conditions and angles that do not favor a good product view. To give the model the ability to understand easy and difficult tasks, they gave tasks a combination of weight loss and images for training, that is, easier tasks don’t need much supervision and can be given a smaller weight. Compared to text-attribute systems the new FB model can predict home and garden listings with 90% accuracy, against the firsts 33%. Facebook expects that “in the future, GrokNet could be used to help customers easily find exactly what they’re looking for, receive personalized suggestions from storefronts on what products are most relevant to them, [and] which products are compatible”. Check the official announcement &lt;a href=&quot;https://ai.facebook.com/blog/powered-by-ai-advancing-product-understanding-and-building-new-shopping-experiences&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/may-news/sudo.gif&quot; alt=&quot;Sudo&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;sudo-190-launched-with-security-updates&quot;&gt;Sudo 1.9.0 launched with security updates&lt;/h2&gt;
+
+&lt;p&gt;Basic command in our daily works with our beloved Unix systems, sudo allows users to execute programs as root. In May sudo received an update to version 1.9.0 after 9 years in the 1.8 branch. This new version brings security updates such as, and centralizing logging through &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo_logsrvd&lt;/code&gt;, creating sudo with the option “–enable-openssl”, the data is transmitted through an encrypted communication channel (TLS). It is now possible to use thirty-party softwares to pull data from sudo sessions for auditing. And while TF drops Python 2 support, it arrives in Sudo 1.9, where plugins can be written in python now, which is activated during compilation with the “–enable-python” option. Check all the changes in the full release &lt;a href=&quot;https://www.sudo.ws/stable.html#1.9.0&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Would you like to  receive the most important news and trends in AI in just one email every end of the month? Subscribe below and I’ll send you the 10 most important news in Artificial Intelligence.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Matheus Jacques</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="news" />
+      
+
+      
+        <summary type="html">Top 5 AI News and Trends I came across in May 2020.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Destaques de Maio em IA</title>
+      <link href="http://localhost:4000/Destaques-de-Maio" rel="alternate" type="text/html" title="Destaques de Maio em IA" />
+      <published>2000-05-28T07:15:00-03:00</published>
+      <updated>2000-05-28T07:15:00-03:00</updated>
+      <id>http://localhost:4000/Destaques%20de%20Maio</id>
+      <content type="html" xml:base="http://localhost:4000/Destaques-de-Maio">&lt;p&gt;As 5 principais notícias e tendências da IA que cruzei em maio de 2020.&lt;/p&gt;
+
+&lt;p&gt;English version &lt;a href=&quot;http://edgeaiguru.com/May-Highlights&quot;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/may-news/google.gif&quot; alt=&quot;Aprendizado geral de representação visual do Google BiT&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Modelo BiT sendo usado após o pré-treinamento e aplicado a outras tarefas com poucos exemplos rotulados&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;google-disponibiliza-bit-o-bert-para-visão-computacional&quot;&gt;Google disponibiliza BiT, o BERT para Visão Computacional&lt;/h2&gt;
+
+&lt;p&gt;Em 21 de maio, a equipe de inteligência artificial do Google abriu o código do Big Transfer (BiT): um aprendizado geral sobre representação visual. Este é um esforço para ajudar aplicações de Visão Computacional a avançarem com modelos pré-treinados em larga escala. O uso do BiT é possível para obter desempenho de ponta em muitas aplicações, usando apenas alguns exemplos rotulados. Para fazer o ajuste fino desse modelo, eles também introduziram o “BiT-HyperRule”, uma abordagem heurística para selecionar hiper parâmetros, como taxa de aprendizado. Após a transferência de aprendizado, usando o conjunto de dados CIFAR-10, o modelo alcançou 64% e 95% de precisão média em 1 e 5 em &lt;em&gt;One Shot Learning&lt;/em&gt;, respectivamente. O Google também mencionou que “o BiT-L combina ou supera resultados […] em vários benchmarks de visão computacional, como Oxford &lt;a href=&quot;https://www.robots.ox.ac.uk / ~ vgg / data / pets /&quot;&gt;Pets&lt;/a&gt; e &lt;a href=&quot;https://www.robots.ox.ac.uk/~vgg/data/flowers/&quot;&gt;Flowers&lt;/a&gt;, &lt;a href=&quot;https: //www.cs.toronto .edu / ~ kriz / cifar.html&quot;&gt;CIFAR&lt;/a&gt; etc. “. Você pode verificar o &lt;a href=&quot;https://arxiv.org/abs/1912.11370&quot;&gt;artigo&lt;/a&gt; e o &lt;a href=&quot;https://github.com/google-research/big_transfer&quot;&gt;código&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/may-news/tf_logo_social.png&quot; alt=&quot;Tensorflow Logo&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;a-versão-220-do-tensorflow-chegou&quot;&gt;A versão 2.2.0 do Tensorflow chegou&lt;/h2&gt;
+
+&lt;p&gt;Depois de quase quatro meses após o TF 2.1.0, este mês o Google também lançou o Tensorflow 2.2.0. As principais atualizações incluem um novo Profiler para CPU / GPU / TPU para ajudar a identificar gargalos de desempenho, melhorias de desempenho na computação entre dispositivos por meio de &lt;code class=&quot;highlighter-rouge&quot;&gt;tf.distrbuite&lt;/code&gt;, um novo tipo escalar para strings (de&lt;code class=&quot;highlighter-rouge&quot;&gt; std :: string&lt;/code&gt; para &lt;code class=&quot;highlighter-rouge&quot;&gt;tensorflow :: tstring&lt;/code&gt;) e a substituição do SWIG pelo pybind11 ao exportar funções C++. Também tivemos algumas melhorias no Keras, como o uso de lógicas de treinamento personalizadas com a substituição de &lt;code class=&quot;highlighter-rouge&quot;&gt;Model.fit&lt;/code&gt; pelo ` Model.train_step` e o formato SavedModel que agora suporta todas as camadas internas do Keras (incluindo métricas, camadas de pré-processamento e RNN com monitoração de estado). Além disso, outro destaque é que eles abandonaram o suporte ao Python 2, que não é mantido desde janeiro de 2020. Por último, nesta versão, o TensorFlow requer a versão gast 0.3.3. Verifique o texto completo &lt;a href=&quot;https://github.com/tensorflow/tensorflow/releases/tag/v2.2.0&quot;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/may-news/nvidia-a100.jpg&quot; alt=&quot;NVIDIA A100&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;nvidia-lança-a100-ai-gpu-o-melhor-instrumento-para-o-avanço-da-ia&quot;&gt;NVIDIA lança A100 AI GPU: o melhor instrumento para o avanço da IA&lt;/h2&gt;
+
+&lt;p&gt;Anunciado em 14 de maio durante o evento Nvidia GTC 2020, o &lt;a href=&quot;https://www.nvidia.com/en-us/data-center/a100/&quot;&gt;A100 AI Chip&lt;/a&gt; possui 54 bilhões de transistores e 5 petaflops de desempenho sendo a mais poderosa plataforma de IA e HPC para data centers, seguindo a tendência de HPC após &lt;a href=&quot;https://nvidianews.nvidia.com/news/nvidia-to-acquire-mellanox-for- 6 a 9 bilhões&quot;&gt;adquirir a Mellanox em março&lt;/a&gt;. Com base na arquitetura Ampere, o chip de 7 nanômetros pode ser usado para computação científica, gráficos em nuvem e análise de dados. Aqui estão alguns números, 20 vezes mais potente que a GPU Tesla V100 anterior, o A100 alcança 19.5 de potência computacional com seus 6.912 núcleos CUDA, 40 GB de memória, 1,6 TB de largura de banda e a terceira geração de Tensors Core. Uma aplicação desse chip é o sistema &lt;a href=&quot;https://www.nvidia.com/en-us/data-center/dgx-a100/&quot;&gt;DGX&lt;/a&gt;, baseado em 8 NVIDIA A100 e direcionado ao setor de Inteligência Artificial, custa US$ 1 milhão. Podemos esperar ver o novo chip AI em serviços de nuvem em um futuro próximo. A Alibaba Cloud, AWS, Baidu Cloud, Google Cloud, Microsoft Azure, Oracle e Tencent Cloud já firmaram parceria com a NVIDIA.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/may-news/fb.jpeg&quot; alt=&quot;Sudo&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;facebook-ai-divulga-groknet-para-entendimento-avançado-do-produtos&quot;&gt;Facebook AI divulga GrokNet para entendimento avançado do produtos&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“um sistema universal de visão computacional projetado para compras. Ele pode identificar atributos de produtos dentre bilhões de fotos - em diferentes categorias, como moda, automóveis e decoração de casa”.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Diferente da maioria dos modelos que tem apenas uma categoria para aprender, o GrokNet foi treinado em sete conjuntos de dados, com vários tipos de supervisão e 83 funções de transferência, conseguiu prever categorias, atributos como cor e textura e prováveis consultas de pesquisa. O modelo do FB é treinado por um banco de dados colossal com cerca de 100 milhões de imagens retiradas da plataforma. A empresa também afirma que o sistema é capaz de identificar objetos que foram fotografados com condições de iluminação não muito boas e ângulos que não favorecem uma boa visualização do produto. Para dar ao modelo a capacidade de entender tarefas fáceis e difíceis, eles deram às tarefas uma combinação de peso e imagens para treinamento, ou seja, tarefas mais fáceis não precisam de muita supervisão e podem receber um peso menor. Comparado aos sistemas de atribuição de texto, o novo modelo pode prever anúncios de casas e jardins com precisão de 90%, contra 33% do antigo. O Facebook espera que “no futuro, o GrokNet possa ser usado para ajudar os clientes a encontrar facilmente exatamente o que estão procurando, receber sugestões personalizadas das vitrines sobre quais produtos são mais relevantes para eles e quais são compatíveis”. Verifique o anúncio oficial &lt;a href=&quot;https://ai.facebook.com/blog/powered-by-ai-advancing-product-understanding-and-building-new-shopping-experiences&quot;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/may-news/sudo.gif&quot; alt=&quot;Sudo&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;lançado-o-sudo-190-com-atualizações-de-segurança&quot;&gt;Lançado o Sudo 1.9.0 com atualizações de segurança&lt;/h2&gt;
+
+&lt;p&gt;Comando básico em nossos trabalhos diários com nossos amados sistemas Unix, o sudo permite que os usuários executem programas como root. Em maio, o sudo recebeu uma atualização da versão 1.9.0 após 9 anos no &lt;em&gt;branch&lt;/em&gt; 1.8. Esta nova versão traz atualizações de segurança como, e centraliza o registro através do &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo_logsrvd&lt;/code&gt;, criando o sudo com a opção“ –enable-openssl ”, os dados são transmitidos através de um canal de comunicação criptografado (TLS). Agora também é possível usar softwares de terceiros para extrair dados de sessões sudo para auditoria. E embora o TF abandone o suporte ao Python 2, ele chega ao Sudo 1.9, onde os plugins podem ser escritos em python agora, que é ativado durante a compilação com a opção “–enable-python”. Verifique todas as alterações na versão completa &lt;a href=&quot;https://www.sudo.ws/stable.html#1.9.0&quot;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Quer receber as notícias e tendências mais importantes da IA em apenas um e-mail a cada final de mês? Inscreva-se abaixo e vou te enviar as 10 notícias mais importantes em Inteligência Artificial.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Matheus Jacques</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="portuguese" />
+      
+        <category term="news" />
+      
+
+      
+        <summary type="html">As 5 principais notícias e tendências da IA que cruzei em maio de 2020.</summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>

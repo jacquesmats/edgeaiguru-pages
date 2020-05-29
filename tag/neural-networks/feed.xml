@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/tag/neural-networks/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2020-05-14T15:49:45-03:00</updated>
+  <updated>2020-05-29T11:21:35-03:00</updated>
   <id>http://localhost:4000/tag/neural-networks/feed.xml</id>
 
   
@@ -25,20 +25,6 @@
     
       
     
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
   
 
   
@@ -53,7 +39,178 @@
       <id>http://localhost:4000/Introduction%20to%20Neural%20Networks</id>
       <content type="html" xml:base="http://localhost:4000/Introduction-to-Neural-Networks">&lt;p&gt;Learn the main concepts behind Neural Networks, one of Deep Learning’s pillars.&lt;/p&gt;
 
-&lt;p&gt;English version will be released soon.&lt;/p&gt;
+&lt;p&gt;Versão em português &lt;a href=&quot;http://edgeaiguru.com/Introdução-a-Redes-Neurais&quot;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;Artificial Intelligence has been revolutionizing the industry in recent years and solving problems, which previously were costly in time and money, much more effectively. Computer vision problems, natural language processing, and several other applications are only possible thanks to advances in Deep Learning.&lt;/p&gt;
+
+&lt;p&gt;Artificial Neural Networks (ANN) are one of the main pillars of this technology. Inspired by the human brain, ANN carries this name because of its biological connections and motivations. Just as in the human brain, where the most basic processing unit is the neuron, ANNs have an element that processes impulses, or inputs, which is also called a neuron or node.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/artificial-vs-biological-neuron.png&quot; alt=&quot;Artificial vs Biological Neuron&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Biological Neuron vs Artificial Neuron. Source: [Keras Tutorial: Deep Learning in Python] (https://www.datacamp.com/community/tutorials/deep-learning-python)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Both structures share the same function for transferring information: they receive an input (impulse) that is carried through the node (cell body) and activate a certain output (axon terminals). Just as in biological neurons, this impulse that fires neurons is reproduced in ANNs through activation functions.&lt;/p&gt;
+
+&lt;p&gt;Therefore, this basic element of neural networks can be represented by the following figure, taken from the course &lt;a href=&quot;https://www.coursera.org/learn/neural-networks-deep-learning&quot;&gt;Neural Networks and Deep Learning&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/generic-neuron.png&quot; alt=&quot;Generic Neuron&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Where, through the example of the necessity to predict the price of houses based on their size, we can determine a function that can represent this problem. In this example, a ReLU function fits the data perfectly. So, the minimum representation of a neuron would be input the house’s area and, based on the mathematical function stored “inside” the neuron, we can estimate a price for that residence.&lt;/p&gt;
+
+&lt;p&gt;In this way, we train each neuron to be activated when a certain pattern appears. Thus, grouping several neurons in series and parallel, allows Neural Networks to learn to recognize patterns in images, texts, audios, and in the most distinct forms of data.&lt;/p&gt;
+
+&lt;p&gt;In this article, the main components of Artificial Neural Networks, some of the main architectures and the most common activation functions will be presented.&lt;/p&gt;
+
+&lt;h2 id=&quot;artificial-neural-networks-ann&quot;&gt;Artificial Neural Networks (ANN)&lt;/h2&gt;
+
+&lt;p&gt;Although neural networks have some similarities to neurons in the human brain, they are infinitely simpler than their biological counterpart. These architectures are composed of mathematical blocks that can be explained using algebra and calculus, very different from the different parts of the brain that are not yet understood.&lt;/p&gt;
+
+&lt;p&gt;The main components of ANNs are input layers, hidden layers, and output layers. These layers are activated through weighted connections, which defines how important the connection is to the network. In addition, as we saw earlier, at the output of each neuron there is an activation function that defines whether the neuron will be fired or not.&lt;/p&gt;
+
+&lt;h2 id=&quot;neural-networks-building-blocks&quot;&gt;Neural Networks Building Blocks&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/generic-2-layers-neural-network.png&quot; alt=&quot;Generic 3 Layer Neural Network&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Generic 3 Layers Neural Network Architecture. Source: [Stanford CS231n] (https://cs231n.github.io/neural-networks-1/#nn)&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;input-layer&quot;&gt;&lt;em&gt;Input Layer&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;A block of neurons can be called a layer. But note that although neurons are interconnected between layers, they do not have connections within the same layer. As shown in the figure above, the first layer of a Neural Network is the input layer. This has only the function of passing the system inputs to the next layer and does not perform any mathematical function.&lt;/p&gt;
+
+&lt;h3 id=&quot;hidden-layers&quot;&gt;&lt;em&gt;Hidden Layers&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;This layer is responsible for one of the main functions of neural networks: to process the data and send it to the next layer. The value of each neuron is found by multiplying the weights W by the input X and adding a bias b. This value then goes through an activation function and is sent to the next layer, as shown in Fig. 2.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/hidden-layer-mathematics-en.png&quot; alt=&quot;Hidden Layer Mathematics&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Mathematical operations within the neuron. Source: Source: [Stanford CS231n] (https://cs231n.github.io/neural-networks-1/#nn) Modified.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Thus, if we isolate the first neuron from the first hidden layer, the output value of the neuron will be equal to z1. Where &lt;em&gt;s1&lt;/em&gt; is the neuron’s input, where we multiply the weights by the inputs and add a bias b. After this operation, a transfer function &lt;em&gt;g&lt;/em&gt; is applied over &lt;em&gt;s1&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;It is important to note that &lt;em&gt;X&lt;/em&gt; and &lt;em&gt;W&lt;/em&gt; in the first equation are matrices in this case and represent all inputs and all weights, respectively.&lt;/p&gt;
+
+&lt;p&gt;We call this layer “Hidden Layer” because during the training of neural networks we have the inputs that are known and the outputs that are expected. But we don’t see what values are inside the neurons in that layer. This block can contain several hidden layers, and the more layers the “deeper” the neural network is, and the more patterns it can learn.&lt;/p&gt;
+
+&lt;h3 id=&quot;output-layers&quot;&gt;&lt;em&gt;Output Layers&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;The output layer is responsible for showing the results obtained through the calculations made in the hidden layers. Usually, an activation function is used, as well as that of the neurons in the previous layers, to simplify the result.&lt;/p&gt;
+
+&lt;h3 id=&quot;weights-and-bias&quot;&gt;&lt;em&gt;Weights and Bias&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;Weights are responsible for defining how important that connection is to the neural network. As there are several connections within the ANN, this is how this architecture understands which patterns it should learn and which ones it should ignore. In addition, a value called bias is commonly used with weights and inputs. This value helps to fine-tune the neural network. Thus, if we have a neuron i in one layer and a neuron j in the next layer, we have a connection with the weight Wij and a bij bias.&lt;/p&gt;
+
+&lt;h3 id=&quot;activation-functions&quot;&gt;&lt;em&gt;Activation Functions&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;Also called the transfer function, it is the last mathematical processing step that takes place before the information leaves the neuron. This mathematical equation defines whether the neuron will be activated or not, which may be a step function, a linear function, or a non-linear function.&lt;/p&gt;
+
+&lt;p&gt;The simplest activation function would be a step function. Where the neuron would activate only if the input was above a threshold, and the input signal would be fully reproduced at the node’s output.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/step-function.png&quot; alt=&quot;Step Function&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This can return values of 0 and 1, used in classification problems, or between 0 and 1, used in problems that we are more interested in knowing the probability of a certain entry being part of a certain class.&lt;/p&gt;
+
+&lt;h2 id=&quot;main-types-of-artificial-neural-networks&quot;&gt;&lt;em&gt;Main Types of Artificial Neural Networks&lt;/em&gt;&lt;/h2&gt;
+
+&lt;p&gt;There are two main types of Neural Networks: Feedforward Neural Networks and Recurrent Neural Networks.&lt;/p&gt;
+
+&lt;h3 id=&quot;feedforward-neural-networks-fnn&quot;&gt;&lt;em&gt;Feedforward Neural Networks (FNN)&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;This architecture is the most commonly found in the literature. In it, information moves only in one direction: from the inputs, through the hidden layer to the output node, and there are no cycles.&lt;/p&gt;
+
+&lt;p&gt;The simplest unit of this topology is called Perceptron, the most simplistic neural network that is composed of just one node.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/perceptron.png&quot; alt=&quot;Perceptron&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;The Perceptron&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Some simple problems can be solved with Perceptron, as it only works with linearly separable functions.&lt;/p&gt;
+
+&lt;p&gt;With the need to solve more complex problems and from this basic unit, the &lt;strong&gt;Multilayer Perceptron (MLP)&lt;/strong&gt; was conceived. Composed of several layers of these nodes, being much more useful and being able to learn non-linear functions.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/multi-layer-perceptron.png&quot; alt=&quot;Multilayer Perceptron&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Multilayer Perceptron Architecture. Source: [Advanced Methods for the Processing and Analysis of Multidimensional Signals: Application to Wind Speed] (https://www.researchgate.net/figure/Architecture-of-a-multilayer-perceptron-neural-network_fig5_316351306)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;And finally, we have the &lt;strong&gt;Convolutional Neural Networks (CNN)&lt;/strong&gt;, which are the most common example of Feedforward Neural Networks. Inspired by the Visual Cortex, this topology divides data into small pieces and tries to learn essential patterns. This operation is called Convolution. More efficient than MLP, this topology is found widely in computer vision, video, and natural language applications. This topology has its own characteristic blocks, such as the convolution and pooling layers.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/convolution-neural-network.png&quot; alt=&quot;Convolutional Neural Network&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Convolutional Neural Network Example. Source: &lt;a href=&quot;https://missinglink.ai/guides/convolutional-neural-networks/convolutional-neural-network-tutorial-basic-advanced/&quot;&gt;Convolutional Neural Network Tutorial&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;recurring-neural-networks-rnn&quot;&gt;&lt;em&gt;Recurring Neural Networks (RNN)&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;Unlike Feedforward Neural Networks, in RNN information flows not only forward, but also backward, forming a cycle. For this, like CNN, they use several characteristical blocks, such as a memory block for example. This allows this topology to capture dynamic temporal patterns and be widely used in speech recognition problems and problems that require sequential linking.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/recorrent-neural-network.png&quot; alt=&quot;Recurrent Neural Network&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Example of Recurrent Neural Network. Source: &lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Recurrent_neural_network_unfold.svg&quot;&gt;wikimedia&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;types-of-activation-functions&quot;&gt;Types of Activation Functions&lt;/h2&gt;
+
+&lt;p&gt;In addition to the step function, which I believe is not used in practice, there are several other activation functions. In addition to determining the model’s output, they also help with the accuracy of the results and the efficiency training. In practice, modern models use nonlinear activation functions, which are able to capture patterns in more complex data.&lt;/p&gt;
+
+&lt;p&gt;The activation functions are used in two moments in the Neural Networks: to process the output of a single neuron, as we saw during the topic of hidden layers, and to process the output of the neural network as a whole.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/sigmoid.png&quot; alt=&quot;Sigmoid Formula and Graph&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/tanh.png&quot; alt=&quot;Tanh Formula and Graph&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/relu.png&quot; alt=&quot;Relu Formula and Graph&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Normally Rectified Linear Unit (ReLU) functions are used in practice. The Sigmoid function is normally used to demonstrate how these elements work and is usually replaced by the Hyperbolic Tangent (TanH). Except in the case of the problem being a binary classification, in that case a Sigmoid function would be better in the model’s output as it would already deliver the result between 0 and 1.&lt;/p&gt;
+
+&lt;p&gt;The choice of the activation function is motivated by the characteristics of the problem being solved. Sigmoid, for example, despite having a smoother gradient and normalizing the output between 0 and 1, has problems with vanish gradients and its output is not centered at zero. TanH has its center at zero, which facilitates the learning of the following layers, but disadvantages similar to Sigmoid.&lt;/p&gt;
+
+&lt;p&gt;In addition to these, we can also highlight:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Leaky ReLU&lt;/li&gt;
+  &lt;li&gt;Softmax&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;In this article we went through some of the main concepts of Artificial Neural Networks. After this review, I hope that you already have a more concrete idea of the basic concepts that involve one of the main topics of Deep Learning. Understanding the main building blocks of ANN, the main topologies and the most common activation functions, we can now move on to more advanced topics such as &lt;strong&gt;Forward and Backward Propagation&lt;/strong&gt; and &lt;strong&gt;Gradient Descent&lt;/strong&gt;.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Matheus Jacques</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="back-to-basics" />
+      
+        <category term="neural-networks" />
+      
+
+      
+        <summary type="html">Learn the main concepts behind Neural Networks, one of Deep Learning’s pillars.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Introdução a Redes Neurais</title>
+      <link href="http://localhost:4000/Introdu%C3%A7%C3%A3o-a-Redes-Neurais" rel="alternate" type="text/html" title="Introdução a Redes Neurais" />
+      <published>2000-05-03T07:18:00-03:00</published>
+      <updated>2000-05-03T07:18:00-03:00</updated>
+      <id>http://localhost:4000/Introdu%C3%A7%C3%A3o%20a%20Redes%20Neurais</id>
+      <content type="html" xml:base="http://localhost:4000/Introdu%C3%A7%C3%A3o-a-Redes-Neurais">&lt;p&gt;Aprenda os principais conceitos por trás das Redes Neurais, um dos pilares do Deep Learning.&lt;/p&gt;
+
+&lt;p&gt;English version &lt;a href=&quot;http://edgeaiguru.com/Introduction-to-Neural-Networks&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;introdução&quot;&gt;Introdução&lt;/h2&gt;
 
@@ -203,13 +360,13 @@
       
 
       
-        <category term="back-to-basics" />
+        <category term="portuguese" />
       
         <category term="neural-networks" />
       
 
       
-        <summary type="html">Learn the main concepts behind Neural Networks, one of Deep Learning’s pillars.</summary>
+        <summary type="html">Aprenda os principais conceitos por trás das Redes Neurais, um dos pilares do Deep Learning.</summary>
       
 
       
