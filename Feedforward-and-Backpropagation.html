@@ -11,7 +11,7 @@
 
 
 
-    <title>AI May Highlights</title>
+    <title>Gradient Descent, Feedforward and Backpropagation</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles'n'Scripts -->
@@ -36,30 +36,30 @@
     <!-- This tag outputs SEO meta+structured data and other important settings -->
     <meta name="description" content="The guidance through your Artificial Intelligence journey" />
     <link rel="shortcut icon" href="http://localhost:4000/assets/images/favicon.png" type="image/png" />
-    <link rel="canonical" href="http://localhost:4000/May-Highlights" />
+    <link rel="canonical" href="http://localhost:4000/Feedforward-and-Backpropagation" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
      <!--title below is coming from _includes/dynamic_title-->
     <meta property="og:site_name" content="Edge AI Guru" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="AI May Highlights" />
-    <meta property="og:description" content="Top 5 AI News and Trends I came across in May 2020. Versão em português aqui. BiT model being used after pre-training and applied to other tasks with few labeled examples Google open-sources BiT, the BERT for Computer Vision On May 21, Google’s AI Team open-sourced Big Transfer (BiT): A" />
-    <meta property="og:url" content="http://localhost:4000/May-Highlights" />
-    <meta property="og:image" content="http://localhost:4000/assets/images/may-news/cover.png" />
+    <meta property="og:title" content="Gradient Descent, Feedforward and Backpropagation" />
+    <meta property="og:description" content="Let’s see three fundamentals concepts of Deep Learning: the Gradient Descent, Feedforward and Backpropagation steps. Versão em português disponível em 26 de Junho aqui. Gradient Descent Gradient Descent(GD) in one of the most common algorithms that help the Neural Networks to reach the correct values of weights and bias. To" />
+    <meta property="og:url" content="http://localhost:4000/Feedforward-and-Backpropagation" />
+    <meta property="og:image" content="http://localhost:4000/assets/images/feed-back-prop/cover.png" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
     <meta property="article:author" content="https://www.facebook.com/" />
-    <meta property="article:published_time" content="2020-05-28T07:15:00-03:00" />
-    <meta property="article:modified_time" content="2020-05-28T07:15:00-03:00" />
-    <meta property="article:tag" content="News" />
+    <meta property="article:published_time" content="2020-06-15T07:15:00-03:00" />
+    <meta property="article:modified_time" content="2020-06-15T07:15:00-03:00" />
+    <meta property="article:tag" content="Back-to-basics" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="AI May Highlights" />
-    <meta name="twitter:description" content="Top 5 AI News and Trends I came across in May 2020. Versão em português aqui. BiT model being used after pre-training and applied to other tasks with few labeled examples Google open-sources BiT, the BERT for Computer Vision On May 21, Google’s AI Team open-sourced Big Transfer (BiT): A" />
+    <meta name="twitter:title" content="Gradient Descent, Feedforward and Backpropagation" />
+    <meta name="twitter:description" content="Let’s see three fundamentals concepts of Deep Learning: the Gradient Descent, Feedforward and Backpropagation steps. Versão em português disponível em 26 de Junho aqui. Gradient Descent Gradient Descent(GD) in one of the most common algorithms that help the Neural Networks to reach the correct values of weights and bias. To" />
     <meta name="twitter:url" content="http://localhost:4000/" />
-    <meta name="twitter:image" content="http://localhost:4000/assets/images/may-news/cover.png" />
+    <meta name="twitter:image" content="http://localhost:4000/assets/images/feed-back-prop/cover.png" />
     <meta name="twitter:label1" content="Written by" />
     <meta name="twitter:data1" content="Edge AI Guru" />
     <meta name="twitter:label2" content="Filed under" />
-    <meta name="twitter:data2" content="News" />
+    <meta name="twitter:data2" content="Back-to-basics" />
     <meta name="twitter:site" content="@" />
     <meta name="twitter:creator" content="@" />
     <meta property="og:image:width" content="1400" />
@@ -74,18 +74,18 @@
         "name": "Edge AI Guru",
         "logo": "http://localhost:4000/assets/images/blog-icon.png"
     },
-    "url": "http://localhost:4000/May-Highlights",
+    "url": "http://localhost:4000/Feedforward-and-Backpropagation",
     "image": {
         "@type": "ImageObject",
-        "url": "http://localhost:4000/assets/images/may-news/cover.png",
+        "url": "http://localhost:4000/assets/images/feed-back-prop/cover.png",
         "width": 2000,
         "height": 666
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "http://localhost:4000/May-Highlights"
+        "@id": "http://localhost:4000/Feedforward-and-Backpropagation"
     },
-    "description": "Top 5 AI News and Trends I came across in May 2020. Versão em português aqui. BiT model being used after pre-training and applied to other tasks with few labeled examples Google open-sources BiT, the BERT for Computer Vision On May 21, Google’s AI Team open-sourced Big Transfer (BiT): A"
+    "description": "Let’s see three fundamentals concepts of Deep Learning: the Gradient Descent, Feedforward and Backpropagation steps. Versão em português disponível em 26 de Junho aqui. Gradient Descent Gradient Descent(GD) in one of the most common algorithms that help the Neural Networks to reach the correct values of weights and bias. To"
 }
     </script>
 
@@ -98,7 +98,7 @@
     </script> -->
 
     <meta name="generator" content="Jekyll 3.6.2" />
-    <link rel="alternate" type="application/rss+xml" title="AI May Highlights" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Gradient Descent, Feedforward and Backpropagation" href="/feed.xml" />
 
 
 </head>
@@ -151,69 +151,149 @@ into the {body} of the default.hbs template -->
 <main id="site-main" class="site-main outer" role="main">
     <div class="inner">
 
-        <article class="post-full  tag-news post tag-news ">
+        <article class="post-full  tag-back-to-basics post tag-back-to-basics ">
 
             <header class="post-full-header">
                 <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime="28 May 2020">28 May 2020</time>
+                    <time class="post-full-meta-date" datetime="15 June 2020">15 June 2020</time>
                     
                         <span class="date-divider">/</span>
                         
                             
-                               <a href='/tag/news/'>NEWS</a>
+                               <a href='/tag/back-to-basics/'>BACK-TO-BASICS</a>
                             
                         
                     
                 </section>
-                <h1 class="post-full-title">AI May Highlights</h1>
+                <h1 class="post-full-title">Gradient Descent, Feedforward and Backpropagation</h1>
             </header>
 
             
-            <figure class="post-full-image" style="background-image: url(/assets/images/may-news/cover.png)">
+            <figure class="post-full-image" style="background-image: url(/assets/images/feed-back-prop/cover.png)">
             </figure>
             
 
             <section class="post-full-content">
                 <div class="kg-card-markdown">
-                    <p>Top 5 AI News and Trends I came across in May 2020.</p>
+                    <p>Let’s see three fundamentals concepts of Deep Learning: the Gradient Descent, Feedforward and Backpropagation steps.</p>
 
-<p>Versão em português <a href="http://edgeaiguru.com/Destaques-de-Maio">aqui</a>.</p>
+<p>Versão em português disponível em 26 de Junho <a href="http://edgeaiguru.com/404">aqui</a>.</p>
 
-<p><img src="assets/images/may-news/google.gif" alt="Google BiT General Visual Representation Learning" /></p>
+<h2 id="gradient-descent">Gradient Descent</h2>
 
-<p><em>BiT model being used after pre-training and applied to other tasks with few labeled examples</em></p>
+<p>Gradient Descent(GD)  in one of the most common algorithms that help the Neural Networks to reach the correct values of weights and bias. To illustrate this method, let’s take a look at a Logistic Regression model. In this model, we have a loss of L(ŷ,y), where it defines how far the predicted output is from the correct output. If we sum all the losses during the training phase and average them, we will get the Cost Function J(w,b).  What is usually used for regression problems is the following:</p>
 
-<h2 id="google-open-sources-bit-the-bert-for-computer-vision">Google open-sources BiT, the BERT for Computer Vision</h2>
+<p><img src="assets/images/feed-back-prop/log-reg-loss-function.png" alt="image-20200607150421443" /></p>
 
-<p>On May 21, Google’s AI Team open-sourced Big Transfer (BiT): A General Visual Representation Learning. This is an effort to help Computer Vision applications to advance through large scale pre-trained models. Using BiT is possible to achieve state-of-the-art performance in many applications just using few labeled examples. To address tunning this model they also introduced “BiT-HyperRule”, a heuristic approach to selecting hyperparameters such as learning-rate and weight-decay. After transfer learning, using  CIFAR-10 dataset, the model achieved 64% and 95% median accuracy in 1-shot and 5-shot, respectively. Google also mentioned that “BiT-L matches or surpasses state-of-the-art results […] in several standard computer vision benchmarks such as Oxford <a href="https://www.robots.ox.ac.uk/~vgg/data/pets/">Pets</a> and <a href="https://www.robots.ox.ac.uk/~vgg/data/flowers/">Flowers</a>, <a href="https://www.cs.toronto.edu/~kriz/cifar.html">CIFAR</a>, etc.”  You can check the <a href="https://arxiv.org/abs/1912.11370">paper</a> and <a href="https://github.com/google-research/big_transfer">code</a>.</p>
+<p>Since we want to train our model to be as much accurate as possible, it is natural that this method tries to minimize the Cost Function J(W,b) in each step. So the cost function measures how well the parameters W and b are performing in the training set, iteratively updating the weights and bias trying to reach the global minimum in such function. And what is a global minimum? As shown in the figure below, the global minimum of a function J(theta1,theta2) is the values of theta1 and theta2 that produce the minimum value on J. Here J is equivalent to the height of the plot. Notice that there is the so-called local minimum, which sometimes tricks the model making it believe it has achieved the global minimum. One can be seen at theta1 and theta2 equals 0.8.</p>
 
-<p><img src="assets/images/may-news/tf_logo_social.png" alt="Tensorflow Logo" /></p>
+<p><img src="assets/images/gradient-descent-variants/gradient-descent.png" alt="Gradient descent to minimize cost function" /></p>
 
-<h2 id="tensorflow-version-220-is-here">Tensorflow Version 2.2.0 is here</h2>
+<p><em>Minimizing the Cost Function, a Gradient Descent Illustration. Source: <a href="https://www.coursera.org/learn/machine-learning">Stanford’s Andrew Ng’s MOOC Machine Learning Course</a></em></p>
 
-<p>After almost four months after TF 2.1.0, this month Google also released Tensorflow 2.2.0. Major updates include a new Profiler  for CPU/GPU/TPU to help identify performance bottlenecks, performance improvements in computation between devices through <code class="highlighter-rouge">tf.distrbuite</code>, a new scalar type for strings (from <code class="highlighter-rouge">std::string</code> to <code class="highlighter-rouge">tensorflow::tstring</code>) and the substitution from SWIG to pybind11 while exporting C++ functions.  We also had a few Keras improvements such as the use of custom training logics with <code class="highlighter-rouge">Model.fit</code> overwriting <code class="highlighter-rouge">Model.train_step</code> and the SavedModel format that now supports all Keras built-in layers (including metrics, preprocessing layers, and stateful RNN layers). Furthermore, another highlight is that they dropped Python 2 support, which is not maintained since January 2020. Last, in this release, TensorFlow requires gast version 0.3.3. Check the full text <a href="https://github.com/tensorflow/tensorflow/releases/tag/v2.2.0">here</a>.</p>
+<p>So, the minimum is dependent on the cost function J chosen, and to achieve it, we must first define some starting point for W and b and try to go downhill in the direction of the steepest descent in the function. To make it easy to understand, let us take a look at just one variable. If we are trying to minimize the function J(w), as shown below, and we initialize W with a very high value on the X-axis, what are the next steps?</p>
 
-<p><img src="assets/images/may-news/nvidia-a100.jpg" alt="Tensorflow Logo" /></p>
+<p><img src="assets/images/feed-back-prop/cost-function-j-w-1.png" alt="Cost Function 1" /></p>
 
-<h2 id="nvidia-launches-a100-ai-gpu-the-ultimate-instrument-for-advancing-ai">NVIDIA launches A100 AI GPU: the ultimate instrument for advancing AI</h2>
+<p>To update the weight W and the bias b, the gradient descent rule is as follows:</p>
 
-<p>Announced on May 14 during the Nvidia GTC 2020 event, the <a href="https://www.nvidia.com/en-us/data-center/a100/">A100 AI Chip</a> has 54 billion transistors and 5 petaflops of performance and is the most powerful end-to-end AI and HPC platform for data centers, following the trend of HPC after <a href="https://nvidianews.nvidia.com/news/nvidia-to-acquire-mellanox-for-6-9-billion">acquiring Mellanox in March</a>. Based on the Ampere architecture, the 7-nanometer chip can be used for scientific computing, cloud graphics, and data analytics. Here are some numbers, 20 times more powerful than the previous Tesla V100 GPU the A100 achieves 19.5 computational power with its 6,912 CUDA cores, 40 GB of memory, 1.6 TB of bandwidth, and the third generation Tensor Cores. One application is the <a href="https://www.nvidia.com/en-us/data-center/dgx-a100/">DGX</a> system, which is based in 8 NVIDIA A100 and is aiming the Artificial Intelligence sector, costing US$ 1 million. We can expect to see the new AI Chip in cloud services shortly. Alibaba Cloud, AWS, Baidu Cloud, Google Cloud, Microsoft Azure, Oracle, and Tencent Cloud had partnered up with NVIDIA already.</p>
+<p><img src="assets/images/gradient-descent-variants/f1.png" alt="math1" /></p>
 
-<p><img src="assets/images/may-news/fb.jpeg" alt="Sudo" /></p>
+<p>To move it to the minimum, we first need to know which direction we should follow. Should we increase or decrease W? This can be achieved with the derivative of the point. A derivative is a calculus tool that is equal to the slope of the function at a given point. In other words, it tells us exactly what we need to know: the direction we should follow. When the function is increasing the derivative is positive, when the function is decreasing it is negative and when it is zero it means that it reached a local or global minimum. In the following figure, the derivative in this point is positive and so the dW value will be subtracted from W, in the formula above, and we are going to move left.</p>
 
-<h2 id="facebook-ai-announces-groknet-for-advancing-product-understanding">Facebook AI announces GrokNet for advancing product understanding</h2>
+<p><img src="assets/images/feed-back-prop/cost-function-j-w-2.png" alt="Cost Function 2" /></p>
 
-<blockquote>
-  <p>“a universal computer vision system designed for shopping. It can identify fine-grained product attributes across billions of photos — in different categories, such as fashion, auto, and home decor.”</p>
-</blockquote>
+<p>On the other hand, if W was a low number on the left side of the figure, the derivative would be negative and the number dW would be added to W, moving it to the right. The alpha term is called Learning Rate and it defines how big those steps would be. Defining it too big could make the function pass through the local minimum and start to diverge.</p>
 
-<p>Unlikely most models which have only one category to learn, GrokNet was trained in seven datasets, with several types of supervision and 83 loss functions, been able to predict categories, attributes such as color and texture and likely search queries. The FB model is trained by a colossal database with about 100 million images, most of which, of course, is taken from the Marketplace. The company also states that the system is able to identify objects that were photographed with not very good lighting conditions and angles that do not favor a good product view. To give the model the ability to understand easy and difficult tasks, they gave tasks a combination of weight loss and images for training, that is, easier tasks don’t need much supervision and can be given a smaller weight. Compared to text-attribute systems the new FB model can predict home and garden listings with 90% accuracy, against the firsts 33%. Facebook expects that “in the future, GrokNet could be used to help customers easily find exactly what they’re looking for, receive personalized suggestions from storefronts on what products are most relevant to them, [and] which products are compatible”. Check the official announcement <a href="https://ai.facebook.com/blog/powered-by-ai-advancing-product-understanding-and-building-new-shopping-experiences">here</a>.</p>
+<p>This is a simple convex function analyzed in a 2D graph. Although the concepts and steps remain the same, depending on the problem these functions could get pretty complex and have multiple dimensions, and it is even harder to visualize it. As you may see later, the Gradient Descent is just one of several Optimization Algorithms such as Adagrad, Adadelta, RMSProp, Momentum, and Adam.</p>
 
-<p><img src="assets/images/may-news/sudo.gif" alt="Sudo" /></p>
+<p>So now we have an optimization algorithm to update W and b values to get our model output closer to the expected output. Through the <strong>Forward Propagation</strong>, we will pass through the model and calculate an output value (the prediction), compare this value with the expected output, and find an error. With this, we will transmit this error backward using <strong>Backward Propagation</strong> and with the gradients (derivative values) to update the values for W and b, making the whole model closer to the cost function’s global minimum.</p>
 
-<h2 id="sudo-190-launched-with-security-updates">Sudo 1.9.0 launched with security updates</h2>
+<h2 id="feedforward">Feedforward</h2>
 
-<p>Basic command in our daily works with our beloved Unix systems, sudo allows users to execute programs as root. In May sudo received an update to version 1.9.0 after 9 years in the 1.8 branch. This new version brings security updates such as, and centralizing logging through <code class="highlighter-rouge">sudo_logsrvd</code>, creating sudo with the option “–enable-openssl”, the data is transmitted through an encrypted communication channel (TLS). It is now possible to use thirty-party softwares to pull data from sudo sessions for auditing. And while TF drops Python 2 support, it arrives in Sudo 1.9, where plugins can be written in python now, which is activated during compilation with the “–enable-python” option. Check all the changes in the full release <a href="https://www.sudo.ws/stable.html#1.9.0">here</a>.</p>
+<p>It is the phase we calculate the model output, so we can understand how accurate it is. For illustration, lets take a network with just one hidden layer. In practice we may have several hidden layers and multiple output values. We will have to calculate the hidden states and then find the output values based on this states. Here the hidden layer and the outputs are matrices and we denote the layer by adding square brackets, i.e. [1] it’s the first layer. To calculate the predict output (ŷ) in the following 2 layers network, we must first find hidden values here called z.</p>
+
+<p><img src="assets/images/feed-back-prop/feedforward.png" alt="Feedforward" /></p>
+
+<p>Each hidden neuron is divide into two operations: the linear function y = x*w + b and the application of an activation function sigma. These steps are named s and z, respectively. In this example, we are going to set b, or bias, to zero to simplify the explanation. We use activation functions to make sure these values do not increase too much. It will make sure the outputs are between 0 and 1 or -1 and 1 (check this post for more about activation functions). Furthermore, these functions allow the network to represent nonlinear relationships between inputs and outputs.</p>
+
+<p>So initializing randomly the weights W and choosing TanH as an activation function sigma, we have:</p>
+
+<p><img src="assets/images/feed-back-prop/random-weights-sigma.png" alt="image-20200614105546474" /></p>
+
+<p>We will assume that in this particular training step, we are inputing x1 and x2 equals 1 and are expecting the model to output 1 as well. As state before, the first step is to calculate the result of the linear function and find s1 and s2 from the first layer [1]. Then, the results are passed through an activation function to serve as inputs for the next layer.</p>
+
+<p><img src="assets/images/feed-back-prop/s-and-z-output.png" alt="image-20200614112302494" /></p>
+
+<p>With z1 and z2 in hands, we can now calculate the input from the next layer, in this case, the output layer. Multiplying these values by the weights and passing through the tanh activation function, we finally find our predicted output:</p>
+
+<p><img src="assets/images/feed-back-prop/predicted-output.png" alt="image-20200614112507065" /></p>
+
+<p>In the output layer, sometimes we use different activation functions, or none, depending on the application. If it was a classification problem, we could use a Softmax here.</p>
+
+<p>With the predicted output, we can now calculate the error. The error can be as simple as the predicted minus the expected output (ŷ - y), or the squared error = (y_pred - y)². The Mean Squared Error (MSE) is sometimes used in regression problems, while the cross-entropy is used for classification problems. This function is called the Loss Function and once again, it depends on the problem we are trying to solve. That represents how good our model is performing, lower the value, closer we are to the expected output value.</p>
+
+<p>We will use the MSE here for sake of simplicity since MSE makes the gradient descent not work well. In logistic regression is common to use the loss function demonstrated at the beginning of this post, because it gives us a convex optimization problem.</p>
+
+<p><img src="assets/images/feed-back-prop/mse.png" alt="Mean Squared Error " /></p>
+
+<h2 id="backpropagation">Backpropagation</h2>
+
+<p><img src="assets/images/feed-back-prop/backpropagation.png" alt="Backpropagation" /></p>
+
+<p>It is the phase we take the error and adjust the weights so in the next iteration we have a small error. We must then go back adjusting the weights based on this MSE error. The backpropagation step is the SGD with the Chain Rule from Calculus. With partial derivatives, we can understand how the error is impacted by each weight separately.</p>
+
+<h3 id="the-chain-rule-and-partial-derivatives">The chain rule and partial derivatives</h3>
+
+<p><img src="assets/images/feed-back-prop/chain-rule.png" alt="Chain Rule" /></p>
+
+<p>The chain rule is actually very intuitive: if we have A, which apply a function f to a variable x and B, where another function g applies a function over f(x), the chain rule says that if we want to find the partial derivative of B with respect to x we should multiply the intermediary partial derivatives.</p>
+
+<p><img src="assets/images/feed-back-prop/partial-derivatives.png" alt="Partial Derivatices" /></p>
+
+<h3 id="updating-the-weights-with-backpropagation">Updating the weights with backpropagation</h3>
+
+<p>Our main focus in Machine Learning is to update the weights so that the model gives us better predictions. The general rule for updating the weights and bias was showed before, but for this example we are setting ‘b’ to zero, so we only have to update W:</p>
+
+<p><img src="assets/images/feed-back-prop/update-w.png" alt="Update Rule GD" /></p>
+
+<p>So, to achieve this we need to find the partial derivative of the Loss Function L(ŷ, y) with respect to W, and this update function can be applied to any weight in the figure above. In this post, we are not going to dive deep in how derivatives works and I’ll show you only what is the value of certain derivative. Although we must understand how all this process works, the most common Deep Learning Frameworks already had this implement and would be very rare the case you are going to code this.</p>
+
+<p>For the sake of illustration, let’s find the new value to w12. And for that, lets state two things: we chose the Median Square Error as loss function and the hyperbolic tangent as activation function. The derivative of z[2] with respect of s[2] is equal the derivative of the activation function tanh, so:</p>
+
+<p><img src="assets/images/feed-back-prop/loss-function-mse.png" alt="MSE Loss Function" /></p>
+
+<p><img src="assets/images/feed-back-prop/derivative-tanh.png" alt="Derivative of Hyperbolic Tangent" /></p>
+
+<p>The first step is to calculate how the loss was influenced by the activation step in z[2]. We achieve this finding the derivative of the loss function with respect to z[2]:</p>
+
+<p><img src="assets/images/feed-back-prop/dz2.png" alt="image-20200615210236714" /></p>
+
+<p>Next we calculate how the loss was impacted by s[2], through the chain rule. This is equal to the partial derivative of the previous case, multiplied by the derivative of z[2] with respect of s[2], which is the derivative of the activation function state above.</p>
+
+<p><img src="assets/images/feed-back-prop/ds2.png" alt="image-20200615210913075" /></p>
+
+<p>And finally, to find the derivative we were looking for, to update w12, we keep following the chain to find the derivative of the cost function with respect of w12. Here ds/dw is equal to the derivative of the linear function (s) with respect a w, where x is the term from W is multiplied for. In the weight w[2]12 is z[1]1, and in the w[1]11 is x1, for exemple.</p>
+
+<p><img src="assets/images/feed-back-prop/ds-dw.png" alt="image-20200615211707555" /></p>
+
+<p><img src="assets/images/feed-back-prop/dw12.png" alt="image-20200615212010762" /></p>
+
+<p>Now we have the term needed (dL(ŷ,y) / dW) to update the weight w[2]12. This value is called the gradient and tells us in which direction and how big this step should be.</p>
+
+<p><img src="assets/images/feed-back-prop/dw12-num.png" alt="image-20200615213452203" /></p>
+
+<p>And choosing a learning rate alpha of 0.1, the new value for the weight w12 would be:</p>
+
+<p><img src="assets/images/feed-back-prop/dw12-updated.png" alt="image-20200615214024309" /></p>
+
+<p>This would change the weight so that the error would be lower in the following iteration. Then we would update again this weight in a iterative process until the model as a whole has the right weights to make a prediction. I won’t be showing all the weights numerically, but here are all the derivatives needed to calculate all the weights:</p>
+
+<p><img src="assets/images/feed-back-prop/all-weights-derivatives.png" alt="All the weights derivatives" /></p>
+
+<h2 id="next-steps">Next steps</h2>
+
+<p>Awesome! Now you know a little bit more how Deep Learning models work under the hood. There are amazing resources online where you can continue to learn and create a deep understanding of these concepts. The <a href="https://www.coursera.org/learn/neural-networks-deep-learning">Andrew Ng MOOC</a> is the go-to course to understand deeply the theoretical part of Deep Learning and have assignments to consolidate your knowledge through programming exercises.</p>
 
 <hr />
 
@@ -287,9 +367,9 @@ Begin Mailchimp Signup Form -->
                     <div id="disqus_thread"></div>
                     <script>
                         var disqus_config = function () {
-                            this.page.url = 'http://localhost:4000/May-Highlights';
-                            this.page.identifier = '/May Highlights';
-                            this.page.title = 'AI May Highlights';
+                            this.page.url = 'http://localhost:4000/Feedforward-and-Backpropagation';
+                            this.page.identifier = '/Feedforward and Backpropagation';
+                            this.page.title = 'Gradient Descent, Feedforward and Backpropagation';
                         };
                         (function() {
                             var d = document, s = d.createElement('script');
@@ -323,7 +403,7 @@ Begin Mailchimp Signup Form -->
                         <header class="read-next-card-header">
                             <small class="read-next-card-header-sitetitle">&mdash; Edge AI Guru &mdash;</small>
                             
-                                <h3 class="read-next-card-header-title"><a href="/tag/news/">News</a></h3>
+                                <h3 class="read-next-card-header-title"><a href="/tag/back-to-basics/">Back-to-basics</a></h3>
                             
                         </header>
                         <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
@@ -333,13 +413,7 @@ Begin Mailchimp Signup Form -->
                                 
                                 
                                   
-                                
-                                  
                                     
-                                  
-                                
-                                  
-                                
                                   
                                 
                                   
@@ -348,9 +422,22 @@ Begin Mailchimp Signup Form -->
                                     
                                         
                                         
-                                            <li><a href="/Destaques-de-Maio">Destaques de Maio em IA</a></li>
+                                            <li><a href="/Introduction-to-Neural-Networks">Introduction to Neural Networks</a></li>
                                         
                                     
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/Batch-vs-Mini-batch-vs-Stochastic-Gradient-Descent">Batch vs Mini-batch vs Stochastic Gradient Descent with Code Examples</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                
                                   
                                 
                                   
@@ -358,9 +445,9 @@ Begin Mailchimp Signup Form -->
                             </ul>
                         </div>
                         <footer class="read-next-card-footer">
-                            <a href="/tag/news/">
+                            <a href="/tag/back-to-basics/">
                                 
-                                    See all 1 posts  →
+                                    See all 2 posts  →
                                 
                             </a>
                         </footer>
@@ -370,55 +457,6 @@ Begin Mailchimp Signup Form -->
 
             <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
             
-                
-
-    <article class="post-card post-template">
-        
-            <a class="post-card-image-link" href="/Feedforward-and-Backpropagation">
-                <div class="post-card-image" style="background-image: url(/assets/images/feed-back-prop/cover.png)"></div>
-            </a>
-        
-        <div class="post-card-content">
-            <a class="post-card-content-link" href="/Feedforward-and-Backpropagation">
-                <header class="post-card-header">
-                    
-                        
-                            
-                                <span class="post-card-tags">Back-to-basics</span>
-                            
-                        
-                    
-
-                    <h2 class="post-card-title">Gradient Descent, Feedforward and Backpropagation</h2>
-                </header>
-                <section class="post-card-excerpt">
-                    
-                        <p></p>
-                    
-                </section>
-            </a>
-            <footer class="post-card-meta">
-                
-                    
-                        
-                        <img class="author-profile-image" src="/assets/images/matheus.png" alt="Matheus Jacques" />
-                        
-                        <span class="post-card-author">
-                            <a href="/author/matheus/">Matheus Jacques</a>
-                        </span>
-                    
-                
-                <span class="reading-time">
-                    
-                    
-                      1 min read
-                    
-                </span>
-            </footer>
-        </div>
-    </article>
-
-            
 
             <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
             
@@ -426,26 +464,22 @@ Begin Mailchimp Signup Form -->
 
     <article class="post-card post-template">
         
-            <a class="post-card-image-link" href="/Introduction-to-Neural-Networks">
-                <div class="post-card-image" style="background-image: url(/assets/images/nn-intro/cover.jpg)"></div>
+            <a class="post-card-image-link" href="/May-Highlights">
+                <div class="post-card-image" style="background-image: url(/assets/images/may-news/cover.png)"></div>
             </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/Introduction-to-Neural-Networks">
+            <a class="post-card-content-link" href="/May-Highlights">
                 <header class="post-card-header">
                     
                         
                             
-                               <span class="post-card-tags">Back-to-basics</span>
-                            
-                        
-                            
-                                <span class="post-card-tags">Neural-networks</span>
+                                <span class="post-card-tags">News</span>
                             
                         
                     
 
-                    <h2 class="post-card-title">Introduction to Neural Networks</h2>
+                    <h2 class="post-card-title">AI May Highlights</h2>
                 </header>
                 <section class="post-card-excerpt">
                     
@@ -491,18 +525,18 @@ Begin Mailchimp Signup Form -->
         </a>
     </div>
     <span class="floating-header-divider">&mdash;</span>
-    <div class="floating-header-title">AI May Highlights</div>
+    <div class="floating-header-title">Gradient Descent, Feedforward and Backpropagation</div>
     <div class="floating-header-share">
         <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
 </svg>
 </div>
-        <a class="floating-header-share-tw" href="https://twitter.com/share?text=AI+May+Highlights&amp;url=May-Highlights"
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Gradient+Descent%2C+Feedforward+and+Backpropagation&amp;url=Feedforward-and-Backpropagation"
             onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
 
         </a>
-        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=May-Highlights"
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=Feedforward-and-Backpropagation"
             onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
 

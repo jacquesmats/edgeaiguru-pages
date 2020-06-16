@@ -1,4 +1,126 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-05-29T22:54:30-03:00</updated><id>http://localhost:4000/</id><title type="html">Edge AI Guru</title><subtitle>The guidance through your Artificial Intelligence journey</subtitle><entry><title type="html">AI May Highlights</title><link href="http://localhost:4000/May-Highlights" rel="alternate" type="text/html" title="AI May Highlights" /><published>2020-05-28T07:15:00-03:00</published><updated>2020-05-28T07:15:00-03:00</updated><id>http://localhost:4000/May%20Highlights</id><content type="html" xml:base="http://localhost:4000/May-Highlights">&lt;p&gt;Top 5 AI News and Trends I came across in May 2020.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-16T10:58:06-03:00</updated><id>http://localhost:4000/</id><title type="html">Edge AI Guru</title><subtitle>The guidance through your Artificial Intelligence journey</subtitle><entry><title type="html">Gradient Descent, Feedforward and Backpropagation</title><link href="http://localhost:4000/Feedforward-and-Backpropagation" rel="alternate" type="text/html" title="Gradient Descent, Feedforward and Backpropagation" /><published>2020-06-15T07:15:00-03:00</published><updated>2020-06-15T07:15:00-03:00</updated><id>http://localhost:4000/Feedforward%20and%20Backpropagation</id><content type="html" xml:base="http://localhost:4000/Feedforward-and-Backpropagation">&lt;p&gt;Let’s see three fundamentals concepts of Deep Learning: the Gradient Descent, Feedforward and Backpropagation steps.&lt;/p&gt;
+
+&lt;p&gt;Versão em português disponível em 26 de Junho &lt;a href=&quot;http://edgeaiguru.com/404&quot;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;gradient-descent&quot;&gt;Gradient Descent&lt;/h2&gt;
+
+&lt;p&gt;Gradient Descent(GD)  in one of the most common algorithms that help the Neural Networks to reach the correct values of weights and bias. To illustrate this method, let’s take a look at a Logistic Regression model. In this model, we have a loss of L(ŷ,y), where it defines how far the predicted output is from the correct output. If we sum all the losses during the training phase and average them, we will get the Cost Function J(w,b).  What is usually used for regression problems is the following:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/feed-back-prop/log-reg-loss-function.png&quot; alt=&quot;image-20200607150421443&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Since we want to train our model to be as much accurate as possible, it is natural that this method tries to minimize the Cost Function J(W,b) in each step. So the cost function measures how well the parameters W and b are performing in the training set, iteratively updating the weights and bias trying to reach the global minimum in such function. And what is a global minimum? As shown in the figure below, the global minimum of a function J(theta1,theta2) is the values of theta1 and theta2 that produce the minimum value on J. Here J is equivalent to the height of the plot. Notice that there is the so-called local minimum, which sometimes tricks the model making it believe it has achieved the global minimum. One can be seen at theta1 and theta2 equals 0.8.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/gradient-descent-variants/gradient-descent.png&quot; alt=&quot;Gradient descent to minimize cost function&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Minimizing the Cost Function, a Gradient Descent Illustration. Source: &lt;a href=&quot;https://www.coursera.org/learn/machine-learning&quot;&gt;Stanford’s Andrew Ng’s MOOC Machine Learning Course&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;So, the minimum is dependent on the cost function J chosen, and to achieve it, we must first define some starting point for W and b and try to go downhill in the direction of the steepest descent in the function. To make it easy to understand, let us take a look at just one variable. If we are trying to minimize the function J(w), as shown below, and we initialize W with a very high value on the X-axis, what are the next steps?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/feed-back-prop/cost-function-j-w-1.png&quot; alt=&quot;Cost Function 1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To update the weight W and the bias b, the gradient descent rule is as follows:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/gradient-descent-variants/f1.png&quot; alt=&quot;math1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To move it to the minimum, we first need to know which direction we should follow. Should we increase or decrease W? This can be achieved with the derivative of the point. A derivative is a calculus tool that is equal to the slope of the function at a given point. In other words, it tells us exactly what we need to know: the direction we should follow. When the function is increasing the derivative is positive, when the function is decreasing it is negative and when it is zero it means that it reached a local or global minimum. In the following figure, the derivative in this point is positive and so the dW value will be subtracted from W, in the formula above, and we are going to move left.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/feed-back-prop/cost-function-j-w-2.png&quot; alt=&quot;Cost Function 2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;On the other hand, if W was a low number on the left side of the figure, the derivative would be negative and the number dW would be added to W, moving it to the right. The alpha term is called Learning Rate and it defines how big those steps would be. Defining it too big could make the function pass through the local minimum and start to diverge.&lt;/p&gt;
+
+&lt;p&gt;This is a simple convex function analyzed in a 2D graph. Although the concepts and steps remain the same, depending on the problem these functions could get pretty complex and have multiple dimensions, and it is even harder to visualize it. As you may see later, the Gradient Descent is just one of several Optimization Algorithms such as Adagrad, Adadelta, RMSProp, Momentum, and Adam.&lt;/p&gt;
+
+&lt;p&gt;So now we have an optimization algorithm to update W and b values to get our model output closer to the expected output. Through the &lt;strong&gt;Forward Propagation&lt;/strong&gt;, we will pass through the model and calculate an output value (the prediction), compare this value with the expected output, and find an error. With this, we will transmit this error backward using &lt;strong&gt;Backward Propagation&lt;/strong&gt; and with the gradients (derivative values) to update the values for W and b, making the whole model closer to the cost function’s global minimum.&lt;/p&gt;
+
+&lt;h2 id=&quot;feedforward&quot;&gt;Feedforward&lt;/h2&gt;
+
+&lt;p&gt;It is the phase we calculate the model output, so we can understand how accurate it is. For illustration, lets take a network with just one hidden layer. In practice we may have several hidden layers and multiple output values. We will have to calculate the hidden states and then find the output values based on this states. Here the hidden layer and the outputs are matrices and we denote the layer by adding square brackets, i.e. [1] it’s the first layer. To calculate the predict output (ŷ) in the following 2 layers network, we must first find hidden values here called z.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/feed-back-prop/feedforward.png&quot; alt=&quot;Feedforward&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Each hidden neuron is divide into two operations: the linear function y = x*w + b and the application of an activation function sigma. These steps are named s and z, respectively. In this example, we are going to set b, or bias, to zero to simplify the explanation. We use activation functions to make sure these values do not increase too much. It will make sure the outputs are between 0 and 1 or -1 and 1 (check this post for more about activation functions). Furthermore, these functions allow the network to represent nonlinear relationships between inputs and outputs.&lt;/p&gt;
+
+&lt;p&gt;So initializing randomly the weights W and choosing TanH as an activation function sigma, we have:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/feed-back-prop/random-weights-sigma.png&quot; alt=&quot;image-20200614105546474&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We will assume that in this particular training step, we are inputing x1 and x2 equals 1 and are expecting the model to output 1 as well. As state before, the first step is to calculate the result of the linear function and find s1 and s2 from the first layer [1]. Then, the results are passed through an activation function to serve as inputs for the next layer.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/feed-back-prop/s-and-z-output.png&quot; alt=&quot;image-20200614112302494&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;With z1 and z2 in hands, we can now calculate the input from the next layer, in this case, the output layer. Multiplying these values by the weights and passing through the tanh activation function, we finally find our predicted output:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/feed-back-prop/predicted-output.png&quot; alt=&quot;image-20200614112507065&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In the output layer, sometimes we use different activation functions, or none, depending on the application. If it was a classification problem, we could use a Softmax here.&lt;/p&gt;
+
+&lt;p&gt;With the predicted output, we can now calculate the error. The error can be as simple as the predicted minus the expected output (ŷ - y), or the squared error = (y_pred - y)². The Mean Squared Error (MSE) is sometimes used in regression problems, while the cross-entropy is used for classification problems. This function is called the Loss Function and once again, it depends on the problem we are trying to solve. That represents how good our model is performing, lower the value, closer we are to the expected output value.&lt;/p&gt;
+
+&lt;p&gt;We will use the MSE here for sake of simplicity since MSE makes the gradient descent not work well. In logistic regression is common to use the loss function demonstrated at the beginning of this post, because it gives us a convex optimization problem.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/feed-back-prop/mse.png&quot; alt=&quot;Mean Squared Error &quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;backpropagation&quot;&gt;Backpropagation&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/feed-back-prop/backpropagation.png&quot; alt=&quot;Backpropagation&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It is the phase we take the error and adjust the weights so in the next iteration we have a small error. We must then go back adjusting the weights based on this MSE error. The backpropagation step is the SGD with the Chain Rule from Calculus. With partial derivatives, we can understand how the error is impacted by each weight separately.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-chain-rule-and-partial-derivatives&quot;&gt;The chain rule and partial derivatives&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/feed-back-prop/chain-rule.png&quot; alt=&quot;Chain Rule&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The chain rule is actually very intuitive: if we have A, which apply a function f to a variable x and B, where another function g applies a function over f(x), the chain rule says that if we want to find the partial derivative of B with respect to x we should multiply the intermediary partial derivatives.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/feed-back-prop/partial-derivatives.png&quot; alt=&quot;Partial Derivatices&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;updating-the-weights-with-backpropagation&quot;&gt;Updating the weights with backpropagation&lt;/h3&gt;
+
+&lt;p&gt;Our main focus in Machine Learning is to update the weights so that the model gives us better predictions. The general rule for updating the weights and bias was showed before, but for this example we are setting ‘b’ to zero, so we only have to update W:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/feed-back-prop/update-w.png&quot; alt=&quot;Update Rule GD&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;So, to achieve this we need to find the partial derivative of the Loss Function L(ŷ, y) with respect to W, and this update function can be applied to any weight in the figure above. In this post, we are not going to dive deep in how derivatives works and I’ll show you only what is the value of certain derivative. Although we must understand how all this process works, the most common Deep Learning Frameworks already had this implement and would be very rare the case you are going to code this.&lt;/p&gt;
+
+&lt;p&gt;For the sake of illustration, let’s find the new value to w12. And for that, lets state two things: we chose the Median Square Error as loss function and the hyperbolic tangent as activation function. The derivative of z[2] with respect of s[2] is equal the derivative of the activation function tanh, so:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/feed-back-prop/loss-function-mse.png&quot; alt=&quot;MSE Loss Function&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/feed-back-prop/derivative-tanh.png&quot; alt=&quot;Derivative of Hyperbolic Tangent&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The first step is to calculate how the loss was influenced by the activation step in z[2]. We achieve this finding the derivative of the loss function with respect to z[2]:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/feed-back-prop/dz2.png&quot; alt=&quot;image-20200615210236714&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Next we calculate how the loss was impacted by s[2], through the chain rule. This is equal to the partial derivative of the previous case, multiplied by the derivative of z[2] with respect of s[2], which is the derivative of the activation function state above.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/feed-back-prop/ds2.png&quot; alt=&quot;image-20200615210913075&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And finally, to find the derivative we were looking for, to update w12, we keep following the chain to find the derivative of the cost function with respect of w12. Here ds/dw is equal to the derivative of the linear function (s) with respect a w, where x is the term from W is multiplied for. In the weight w[2]12 is z[1]1, and in the w[1]11 is x1, for exemple.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/feed-back-prop/ds-dw.png&quot; alt=&quot;image-20200615211707555&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/feed-back-prop/dw12.png&quot; alt=&quot;image-20200615212010762&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now we have the term needed (dL(ŷ,y) / dW) to update the weight w[2]12. This value is called the gradient and tells us in which direction and how big this step should be.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/feed-back-prop/dw12-num.png&quot; alt=&quot;image-20200615213452203&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And choosing a learning rate alpha of 0.1, the new value for the weight w12 would be:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/feed-back-prop/dw12-updated.png&quot; alt=&quot;image-20200615214024309&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This would change the weight so that the error would be lower in the following iteration. Then we would update again this weight in a iterative process until the model as a whole has the right weights to make a prediction. I won’t be showing all the weights numerically, but here are all the derivatives needed to calculate all the weights:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/feed-back-prop/all-weights-derivatives.png&quot; alt=&quot;All the weights derivatives&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;next-steps&quot;&gt;Next steps&lt;/h2&gt;
+
+&lt;p&gt;Awesome! Now you know a little bit more how Deep Learning models work under the hood. There are amazing resources online where you can continue to learn and create a deep understanding of these concepts. The &lt;a href=&quot;https://www.coursera.org/learn/neural-networks-deep-learning&quot;&gt;Andrew Ng MOOC&lt;/a&gt; is the go-to course to understand deeply the theoretical part of Deep Learning and have assignments to consolidate your knowledge through programming exercises.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Would you like to  receive the most important news and trends in AI in just one email every end of the month? Subscribe below and I’ll send you the 10 most important news in Artificial Intelligence.&lt;/p&gt;</content><author><name>Matheus Jacques</name></author><category term="back-to-basics" /><summary type="html">Let’s see three fundamentals concepts of Deep Learning: the Gradient Descent, Feedforward and Backpropagation steps.</summary></entry><entry><title type="html">AI May Highlights</title><link href="http://localhost:4000/May-Highlights" rel="alternate" type="text/html" title="AI May Highlights" /><published>2020-05-28T07:15:00-03:00</published><updated>2020-05-28T07:15:00-03:00</updated><id>http://localhost:4000/May%20Highlights</id><content type="html" xml:base="http://localhost:4000/May-Highlights">&lt;p&gt;Top 5 AI News and Trends I came across in May 2020.&lt;/p&gt;
 
 &lt;p&gt;Versão em português &lt;a href=&quot;http://edgeaiguru.com/Destaques-de-Maio&quot;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
 
