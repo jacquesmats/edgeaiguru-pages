@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/author/matheus/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2020-06-16T10:58:06-03:00</updated>
+  <updated>2020-06-16T14:42:55-03:00</updated>
   <id>http://localhost:4000/author/matheus/feed.xml</id>
 
   
@@ -40,6 +40,8 @@
       <content type="html" xml:base="http://localhost:4000/Feedforward-and-Backpropagation">&lt;p&gt;Let’s see three fundamentals concepts of Deep Learning: the Gradient Descent, Feedforward and Backpropagation steps.&lt;/p&gt;
 
 &lt;p&gt;Versão em português disponível em 26 de Junho &lt;a href=&quot;http://edgeaiguru.com/404&quot;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/feed-back-prop/pre-cover.png&quot; alt=&quot;image-20200607150421443&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;gradient-descent&quot;&gt;Gradient Descent&lt;/h2&gt;
 
