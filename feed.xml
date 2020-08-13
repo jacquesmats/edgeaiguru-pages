@@ -1,4 +1,83 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-16T14:42:55-03:00</updated><id>http://localhost:4000/</id><title type="html">Edge AI Guru</title><subtitle>The guidance through your Artificial Intelligence journey</subtitle><entry><title type="html">Gradient Descent, Feedforward and Backpropagation</title><link href="http://localhost:4000/Feedforward-and-Backpropagation" rel="alternate" type="text/html" title="Gradient Descent, Feedforward and Backpropagation" /><published>2020-06-15T07:15:00-03:00</published><updated>2020-06-15T07:15:00-03:00</updated><id>http://localhost:4000/Feedforward%20and%20Backpropagation</id><content type="html" xml:base="http://localhost:4000/Feedforward-and-Backpropagation">&lt;p&gt;Let’s see three fundamentals concepts of Deep Learning: the Gradient Descent, Feedforward and Backpropagation steps.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-13T15:48:14-03:00</updated><id>http://localhost:4000/</id><title type="html">Edge AI Guru</title><subtitle>The guidance through your Artificial Intelligence journey</subtitle><entry><title type="html">Tracking 3D objects with Lidar and Camera</title><link href="http://localhost:4000/3D-Object-Tracking" rel="alternate" type="text/html" title="Tracking 3D objects with Lidar and Camera" /><published>2020-07-23T07:15:00-03:00</published><updated>2020-07-23T07:15:00-03:00</updated><id>http://localhost:4000/3D%20Object%20Tracking</id><content type="html" xml:base="http://localhost:4000/3D-Object-Tracking">&lt;p&gt;Integrating Lidar Point Clouds with Camera Images to compute Time To Collision (TTC)&lt;/p&gt;
+
+&lt;p&gt;
+    This was for sure one of the most amazing projects I did. To fusion two sensors was a completly new challenge for me and seeing the results is awesome. Part of the &lt;a href=&quot;https://www.udacity.com/course/sensor-fusion-engineer-nanodegree--nd313&quot;&gt;Udacity Sensor Fusion Nanodegree&lt;/a&gt;, after some introduction on how camera technology works and how optics are applied in modern systems, I cover some image processing and computer vision applications,  to better understand how to fusion Lidar and Camera data. From this point on, I tried to apply this knowledge to a collision avoidance project for  vehicles. 
+&lt;/p&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/T2UWLYwpuv4?controls=1&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h2&gt;TL;DR&lt;/h2&gt;
+&lt;br&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/3d-obj-tracking/structure.png&quot; alt=&quot;Structure&quot;&gt;&lt;/p&gt;
+
+&lt;i&gt;Project Structure. Source: &lt;a href=&quot;https://www.udacity.com/course/sensor-fusion-engineer-nanodegree--nd313&quot;&gt;Udacity Sensor Fusion Nanodegree&lt;/a&gt;&lt;/i&gt;
+&lt;br&gt;
+
+
+
+&lt;p&gt;
+    From cameras we detect images keypoints, such tail lights, extract these keypoints descriptors and match them between successive images and obsereve its distances, computing Camera TCC. From Lidar we take a 3D Point Cloud, crop the points(discart road and bad measurements) and cluster these into objects, identified using Neural Networks and provided with bounding boxes. We than fusion both information, connecting them into space and tracking 3D object bouding boxes to compute the Lidar TCC on the object in front of the car. Conducting various tests with the framework, we tried to identify the most suitable detector/descriptor combination for TTC estimation and also to search for problems that can lead to faulty measurements by the camera or Lidar sensor.
+&lt;/p&gt;
+
+&lt;h2&gt;The Technology&lt;/h2&gt;
+&lt;br&gt;
+&lt;p&gt;	
+    To make it happen, everything was coded in C++ using the &lt;a href=&quot;http://www.cvlibs.net/datasets/kitti&quot;&gt;KITTI dataset&lt;/a&gt;. Besides, the whole code can be found in my &lt;a href=&quot;http://www.cvlibs.net/datasets/kitti&quot;&gt;github&lt;/a&gt;.
+&lt;/p&gt;
+&lt;blockquote cite=&quot;http://www.cvlibs.net/datasets/kitti/setup.php&quot;&gt;
+    &lt;p&gt;Our recording platform is a Volkswagen Passat B6, which has been modified with actuators for the pedals (acceleration and brake) and the steering wheel. The data is recorded using an eight core i7 computer equipped with a RAID system, running Ubuntu Linux and a real-time database. We use the following sensors:&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li&gt;1 Inertial Navigation System (GPS/IMU): OXTS RT 3003&lt;/li&gt;
+        &lt;li&gt;1 Laserscanner: Velodyne HDL-64E&lt;/li&gt;
+        &lt;li&gt;2 Grayscale cameras, 1.4 Megapixels: Point Grey Flea 2 (FL2-14S3M-C)&lt;/li&gt;
+        &lt;li&gt;2 Color cameras, 1.4 Megapixels: Point Grey Flea 2 (FL2-14S3C-C)&lt;/li&gt;
+        &lt;li&gt;4 Varifocal lenses, 4-8 mm: Edmund Optics NT59-917&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;br&gt;
+&lt;p&gt;&lt;img src=&quot;assets/images/3d-obj-tracking/passat_sensors.png&quot; alt=&quot;Passat&quot;&gt;&lt;/p&gt;
+&lt;i&gt;KITTI Passat Sensor Setup. Source: &lt;a href=&quot;http://www.cvlibs.net/datasets/kitti/setup.php&quot;&gt;The KITTI Vision Benchmark Suite&lt;/a&gt;&lt;/i&gt;
+&lt;br&gt;
+
+
+
+
+
+&lt;h2&gt;The Project&lt;/h2&gt;
+&lt;br&gt;
+&lt;p&gt;
+    Cameras are one mature technology and the main sensor in autonomous vehicles. In a world made by humans, everything is adapted to our senses and driving would not be different. Therefore, it's main advantage is to &quot;simulate&quot; the human vision being able to interpreate 2D information as road signs and lanes. At the same time, it has challenges as we humans: bad performance in darkness or bad wether conditions. Thus, alone in some applications the camera will fail, hence the need to add a second sensor such as Radar or Lidar. To fill the gap, Lidar has high resolution and can reconstruct 3D objects while Radar has a greater range and can detect velocity more accurate.
+&lt;/p&gt;
+&lt;p&gt;
+    In this project the main objetive was to estimate the Time to Collision(TCC) using a camera-based object classification to cluster Lidar points and from 3D bounding boxes compute TCC. Human reflection time is around 1 second, so the system has to warn us way before and starting breaking 2 to 3 seconds before collision. But how do we tell a machine a collision is near? How do we compute such time? The first concern is to chose a Motion Model: Constant Velocity(CVM) or Constant Acceleration(CAM). While CAM models best real world situations, CVM assumes that the velocity does not change and it was chosen for simplicty, leaving space for us to focus more on the computer vision aspects.  
+&lt;/p&gt;
+&lt;p&gt;
+    From that, the problem can be divided into two main parts: estimate TTC from Lidar points and estimate it using camera successive images. The former is pretty straightforward, addressing only the preceding car and calculating the time from the X component in the Point Cloud.  Based in the CVM, we can compute the velocity based in two Lidar measurments over time, taking the closest Lidar point in the path of the car and observing how it changes in a time window. To avoid errouneos measurments that would lead to false TCC, we perform a &lt;a href=&quot;https://www.khanacademy.org/math/statistics-probability/summarizing-quantitative-data/box-whisker-plots/a/identifying-outliers-iqr-rule&quot;&gt;IQR range values&lt;/a&gt; to remove outliers. Due some measurement accuracy based on the amount of light reflected from an object, when using Lidar for TCC is advised to remove measurement of the road surface and low reflectivity points, making it easy to measure the distance of the preceding vehicle. Furthermore, instead of estimating the velocity after computing the veihcles velocity and two distance measurements, that could be noisy, we could use a Radar sensor that measures directly the relative speed. 
+&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;img src=&quot;assets/images/3d-obj-tracking/keypoints.jpg&quot; alt=&quot;Keypoints&quot;&gt;&lt;/p&gt;
+
+&lt;i&gt;Keypoints detection and tracking using descriptors. Source: &lt;a href=&quot;https://www.udacity.com/course/sensor-fusion-engineer-nanodegree--nd313&quot;&gt;Udacity Sensor Fusion Nanodegree&lt;/a&gt;&lt;/i&gt;
+&lt;br&gt;
+&lt;p&gt;    
+    In other hand, it is hard to measure metric distances using only one camera, some companies achieve measuring distance using a stereo camera setup, like &lt;a href=&quot;http://www.6d-vision.com/&quot;&gt;Mercedes-Benz which pioneered in this technology&lt;/a&gt;. With two pictures of the same place, taken from two different points of view, is possible to locate points of interest in both images and calculate its distance using geometry and perspective projection. Using a mono camera we can estimate TCC only by observing relative height change (or scale change) in the preceding car, for example, without distance measurement. Here enters Deep Learning, allowing us to identify cars in images. As showed in the figure above, it is also used CV techniques to find keypoints and track them using descriptors from one frame to the next, estimating the scale change in the object. Tracking how these descriptors change over time, we can estimate TTC.
+&lt;/p&gt;
+&lt;p&gt;
+    First, we focus on loading images, setting up data structures and putting everything into a ring buffer to optimize memory load. Then, integrated several keypoint detectors such as HARRIS, FAST, BRISK and SIFT and compare them with regard to number of keypoints and speed. For the descriptor extraction and matching, we used brute force and also the FLANN approach and tested the various algorithms in different combinations and compare them with regard to some performance measures. 
+    Counting the number of keypoints on the preceding vehicle for 10 images and taking note of the distribution of their neighborhood size, doing this for several detectors implemented, we noted that FAST, BRISK and AKASE were the detectors that identified the larger number of keypoints.
+&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;assets/images/3d-obj-tracking/comparision_table.png&quot; alt=&quot;Table&quot;&gt;&lt;/p&gt;
+&lt;i&gt;Comparision table between several detectors to identify keypoints&lt;/i&gt;
+&lt;br&gt;
+&lt;p&gt;
+    During the matching step, the Brute Force approach is used with the descriptor distance ratio set to 0.8 and the time it takes for keypoint detection and descriptor extraction was logged. A helper function was created to iterate through all the possible  detectors and descriptors, saving its matches and times. From this was identified that the best Detector for this application is FAST, and the best Descriptors are BRIEF and ORB.
+&lt;/p&gt;
+&lt;p&gt;
+    Then we detected and classify images using the YOLO framework, which gives us a set of bounding boxes and augmenting them associating each bounding box to its respective Lidar points. Finnaly we track this bounding boxes over time to estimate Time To Collision with Lidar and Camera measurements. Twenty pairs of Detector/Descriptors were analyzed and AZAKE/FREAK was chosen based on the averagee error when compared to Lidar's TCC.
+&lt;/p&gt;</content><author><name>Matheus Jacques</name></author><category term="projects" /><summary type="html">Integrating Lidar Point Clouds with Camera Images to compute Time To Collision (TTC)</summary></entry><entry><title type="html">Gradient Descent, Feedforward and Backpropagation</title><link href="http://localhost:4000/Feedforward-and-Backpropagation" rel="alternate" type="text/html" title="Gradient Descent, Feedforward and Backpropagation" /><published>2020-06-15T07:15:00-03:00</published><updated>2020-06-15T07:15:00-03:00</updated><id>http://localhost:4000/Feedforward%20and%20Backpropagation</id><content type="html" xml:base="http://localhost:4000/Feedforward-and-Backpropagation">&lt;p&gt;Let’s see three fundamentals concepts of Deep Learning: the Gradient Descent, Feedforward and Backpropagation steps.&lt;/p&gt;
 
 &lt;p&gt;Versão em português disponível em 26 de Junho &lt;a href=&quot;http://edgeaiguru.com/404&quot;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
 
