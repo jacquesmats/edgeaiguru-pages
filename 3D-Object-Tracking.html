@@ -43,7 +43,7 @@
     <meta property="og:site_name" content="Edge AI Guru" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Tracking 3D objects with Lidar and Camera" />
-    <meta property="og:description" content="Integrating Lidar Point Clouds with Camera Images to compute Time To Collision (TTC) This was for sure one of the most amazing projects I did. To fusion two sensors was a completly new challenge for me and seeing the results is awesome. Part of the Udacity Sensor Fusion Nanodegree, after" />
+    <meta property="og:description" content="Integrating Lidar Point Clouds with Camera Images to compute Time To Collision (TTC) Autonomous veihcles technology has been in my radar (no pun intended) for a while now. I was excited to apply AI to some very complex problems and this project was for sure one of the most amazing" />
     <meta property="og:url" content="http://localhost:4000/3D-Object-Tracking" />
     <meta property="og:image" content="http://localhost:4000/assets/images/3d-obj-tracking/cover.png" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
@@ -53,7 +53,7 @@
     <meta property="article:tag" content="Projects" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Tracking 3D objects with Lidar and Camera" />
-    <meta name="twitter:description" content="Integrating Lidar Point Clouds with Camera Images to compute Time To Collision (TTC) This was for sure one of the most amazing projects I did. To fusion two sensors was a completly new challenge for me and seeing the results is awesome. Part of the Udacity Sensor Fusion Nanodegree, after" />
+    <meta name="twitter:description" content="Integrating Lidar Point Clouds with Camera Images to compute Time To Collision (TTC) Autonomous veihcles technology has been in my radar (no pun intended) for a while now. I was excited to apply AI to some very complex problems and this project was for sure one of the most amazing" />
     <meta name="twitter:url" content="http://localhost:4000/" />
     <meta name="twitter:image" content="http://localhost:4000/assets/images/3d-obj-tracking/cover.png" />
     <meta name="twitter:label1" content="Written by" />
@@ -85,7 +85,7 @@
         "@type": "WebPage",
         "@id": "http://localhost:4000/3D-Object-Tracking"
     },
-    "description": "Integrating Lidar Point Clouds with Camera Images to compute Time To Collision (TTC) This was for sure one of the most amazing projects I did. To fusion two sensors was a completly new challenge for me and seeing the results is awesome. Part of the Udacity Sensor Fusion Nanodegree, after"
+    "description": "Integrating Lidar Point Clouds with Camera Images to compute Time To Collision (TTC) Autonomous veihcles technology has been in my radar (no pun intended) for a while now. I was excited to apply AI to some very complex problems and this project was for sure one of the most amazing"
 }
     </script>
 
@@ -179,7 +179,10 @@ into the {body} of the default.hbs template -->
                     <p>Integrating Lidar Point Clouds with Camera Images to compute Time To Collision (TTC)</p>
 
 <p>
-    This was for sure one of the most amazing projects I did. To fusion two sensors was a completly new challenge for me and seeing the results is awesome. Part of the <a href="https://www.udacity.com/course/sensor-fusion-engineer-nanodegree--nd313">Udacity Sensor Fusion Nanodegree</a>, after some introduction on how camera technology works and how optics are applied in modern systems, I cover some image processing and computer vision applications,  to better understand how to fusion Lidar and Camera data. From this point on, I tried to apply this knowledge to a collision avoidance project for  vehicles. 
+    Autonomous veihcles technology has been in my radar (no pun intended) for a while now. I was excited to apply AI to some very complex problems and this project was for sure one of the most amazing I ever did. More than Machine and Deep Learning techniques, solving autonomous driving requires several technlogies and methods. All this is only possible through fusing sensors to make sense of the enviroment.
+</p>
+<p>
+    To fusion two sensors was a completly new challenge for me and seeing the results is awesome. After some introduction on how camera technology works and how optics are applied in modern systems, some image processing and computer vision applications was covered,  to better understand how to fusion Lidar and Camera data. From this point on, I tried to apply this knowledge to a collision avoidance project for  vehicles. 
 </p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/T2UWLYwpuv4?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -199,8 +202,9 @@ into the {body} of the default.hbs template -->
 
 <h2>The Technology</h2>
 <br>
+
 <p>	
-    To make it happen, everything was coded in C++ using the <a href="http://www.cvlibs.net/datasets/kitti">KITTI dataset</a>. Besides, the whole code can be found in my <a href="http://www.cvlibs.net/datasets/kitti">github</a>.
+    To make it happen, everything was coded in C++ using the <a href="http://www.cvlibs.net/datasets/kitti">KITTI dataset</a>. Besides, the whole code can be found in my <a href="https://github.com/jacquesmats/3D_Object_Tracking">github</a>. This project is part of the <a href="https://www.udacity.com/course/sensor-fusion-engineer-nanodegree--nd313">Udacity Sensor Fusion Nanodegree</a>.
 </p>
 <blockquote cite="http://www.cvlibs.net/datasets/kitti/setup.php">
     <p>Our recording platform is a Volkswagen Passat B6, which has been modified with actuators for the pedals (acceleration and brake) and the steering wheel. The data is recorded using an eight core i7 computer equipped with a RAID system, running Ubuntu Linux and a real-time database. We use the following sensors:</p>
@@ -212,6 +216,7 @@ into the {body} of the default.hbs template -->
         <li>4 Varifocal lenses, 4-8 mm: Edmund Optics NT59-917</li>
     </ul>
 </blockquote>
+
 
 <br>
 <p><img src="assets/images/3d-obj-tracking/passat_sensors.png" alt="Passat"></p>
@@ -254,8 +259,13 @@ into the {body} of the default.hbs template -->
     During the matching step, the Brute Force approach is used with the descriptor distance ratio set to 0.8 and the time it takes for keypoint detection and descriptor extraction was logged. A helper function was created to iterate through all the possible  detectors and descriptors, saving its matches and times. From this was identified that the best Detector for this application is FAST, and the best Descriptors are BRIEF and ORB.
 </p>
 <p>
-    Then we detected and classify images using the YOLO framework, which gives us a set of bounding boxes and augmenting them associating each bounding box to its respective Lidar points. Finnaly we track this bounding boxes over time to estimate Time To Collision with Lidar and Camera measurements. Twenty pairs of Detector/Descriptors were analyzed and AZAKE/FREAK was chosen based on the averagee error when compared to Lidar's TCC.
+    Then we detected and classify images using the YOLO framework, which gives us a set of bounding boxes and augmenting them associating each bounding box to its respective Lidar points. Finnaly we track this bounding boxes over time to estimate Time To Collision with Lidar and Camera measurements. When taking into account both TCC, twenty pairs of Detector/Descriptors were analyzed and AZAKE/FREAK was chosen based on the average error when compared to Lidar's TCC.
 </p>
+<p>
+    To check the complete code with comments, tasks and the results, please check the <a href="https://github.com/jacquesmats/3D_Object_Tracking">Github repository</a>.
+</p>
+
+
                 </div>
             </section>
 
@@ -365,12 +375,12 @@ Begin Mailchimp Signup Form -->
 
     <article class="post-card post-template">
         
-            <a class="post-card-image-link" href="/Feedforward-and-Backpropagation">
-                <div class="post-card-image" style="background-image: url(/assets/images/feed-back-prop/cover.png)"></div>
+            <a class="post-card-image-link" href="/Convolution-Neural-Networks">
+                <div class="post-card-image" style="background-image: url(/assets/images/cnn/cover.jpg)"></div>
             </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/Feedforward-and-Backpropagation">
+            <a class="post-card-content-link" href="/Convolution-Neural-Networks">
                 <header class="post-card-header">
                     
                         
@@ -380,7 +390,7 @@ Begin Mailchimp Signup Form -->
                         
                     
 
-                    <h2 class="post-card-title">Gradient Descent, Feedforward and Backpropagation</h2>
+                    <h2 class="post-card-title">Redes Neurais Convolucionais</h2>
                 </header>
                 <section class="post-card-excerpt">
                     
@@ -391,14 +401,14 @@ Begin Mailchimp Signup Form -->
             <footer class="post-card-meta">
                 
                     
+                
+                    
                         
-                        <img class="author-profile-image" src="/assets/images/matheus.png" alt="Matheus Jacques" />
+                        <img class="author-profile-image" src="/assets/images/joao.png" alt="João Brum" />
                         
                         <span class="post-card-author">
-                            <a href="/author/matheus/">Matheus Jacques</a>
+                            <a href="/author/joao/">João Brum</a>
                         </span>
-                    
-                
                     
                 
                 <span class="reading-time">

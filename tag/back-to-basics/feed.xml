@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/tag/back-to-basics/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2020-08-13T15:48:14-03:00</updated>
+  <updated>2020-08-13T23:28:02-03:00</updated>
   <id>http://localhost:4000/tag/back-to-basics/feed.xml</id>
 
   
@@ -32,6 +32,140 @@
   
   
 
+  
+    <entry>
+      <title type="html">Redes Neurais Convolucionais</title>
+      <link href="http://localhost:4000/Convolution-Neural-Networks" rel="alternate" type="text/html" title="Redes Neurais Convolucionais" />
+      <published>2020-07-13T07:15:00-03:00</published>
+      <updated>2020-07-13T07:15:00-03:00</updated>
+      <id>http://localhost:4000/Convolution%20Neural%20Networks</id>
+      <content type="html" xml:base="http://localhost:4000/Convolution-Neural-Networks">&lt;p&gt; Nesse post, vamos abordar um dos principais tópicos dentro da área de redes neurais, um dos pilares de Deep Learning e muito utilizado para resolver problemas de visão computacional: as Redes Neurais Convolucionais.&lt;/p&gt;
+
+&lt;p&gt; 
+    A inteligência artificial tem se tornado um tópico em ascenção recentemente, principalmente devido aos avanços na área de Deep Learning, uma subárea de Machine Learning. Apesar de não notarmos, as Redes Neurais Convolucionais estão presentes em nosso dia a dia. Já parou para pensar como podemos pesquisar por imagens usando texto? ou como encontramos fotos na galeria do celular pesquisando pelo conteúdo que tem na  foto? ou ainda como desbloqueamos nossos smartphones utilizando reconhecimento facial? Tudo isso só é possível pois atualmente os algoritmos podem identificar o que há nas imagens, o que até alguns anos atrás era uma tarefa nada fácil e ainda hoje não é trivial.
+&lt;/p&gt;
+&lt;h2&gt;Redes Neurais Profundas:&lt;/h2&gt;
+
+&lt;br&gt;
+
+&lt;p&gt; 
+    A principal revolução que o Aprendizado Profundo trouxe para a Inteligência Artificial foi a possibilidade de dar as máquinas habilidades mais humanas como visão, fala e audição. Tudo isso só é possível graças a capacidade excepcional desses modelos de reconhecerem padrões nos dados. Diferente de modelos de Machine Learning como Regressão Logística e Linear, as Redes Neurais utilizam funções lineares e não-lineares para aprender, o que as permite aprenderem padrões mais complexos. Ao construir um modelo de redes neurais profundas para identificação de imagens, necessita-se de uma extração das características presente nela, também conhecidos como &lt;i&gt;features&lt;/i&gt;, que um computador pode usar para aprender.  &lt;a href=&quot;https://edgeaiguru.com/Introdução-a-Redes-Neurais&quot;&gt;Como vimos anteriormente&lt;/a&gt;, a partir das características e do grande número de dados que é fornecido ao modelo, os neurônios são treinados de forma que os pesos são ajustados para obter como saída o valor esperado. As principais aplicações são: reconhecimento e classificação de imagens, processamento de linguagem natural, detecção de doenças, gerenciamento de relacionamento com clientes, entre muitos outros campos.
+&lt;/p&gt;
+
+&lt;p&gt; 
+    Apesar disso, uma rede profunda necessita de muitos dados, e quando o problema entra na área de visão computacional, as &lt;i&gt;features&lt;/i&gt; tornam-se pixeis de uma imagem e dependendo do tamanho dessa imagem, o acúmulo de dados para processamento é muito grande. Em uma arquitetura &lt;i&gt;Fully Connected&lt;/i&gt;, como mostrada na Figura 1, o número de pesos para processar uma pequena imagem RGB de 225x225 pixels, apenas na primeira camada, seria 225x225x3 = 151875. A partir disso, estudou-se uma forma de diminuir a quantidade de pixeis de uma imagem, condensando-as e utilizando filtros, o que permite reduzir a mesma imagem de 225x225x3 para 60x60x6, por exemplo. Essa redução de mais de 85% no número de parametros é alcançada através de uma operção chamada de convolução. Além de reduzir o processamento necessário, ela também extrai componentes importantes para o reconhecimento de padrões, como olhos, traços do rosto, rodas em um carro, etc.
+&lt;/p&gt;
+
+
+&lt;h2&gt; Redes Neurais Convolucionais: &lt;/h2&gt;
+
+&lt;br&gt;
+
+&lt;p&gt; A rede neural convolucional, ou também conhecida como CNN (Convolutional Neural Network) tornou-se a queridinha da visão computacional devido à extração de padrões que geralmente não são possíveis de serem identificados à olho nú, e também pelo fato de diminuir o tamanho da figura em questão. Atualmente, essa topologia é muito utilizada para classificação de imagens, a qual gera a probabilidade de uma classe como saída. Por exemplo, a probabilidade de ser um gato na figura abaixo. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/cnn/Untitled.png&quot; alt=&quot;Cat&quot;&gt;&lt;/p&gt;
+&lt;i&gt;                                          Figura 2 - Exemplo de entrada de uma CNN. &lt;/i&gt;
+&lt;br&gt;
+
+Uma breve explicação de como funcionam as imagens, é que a representação que vemos, quando digitalizada torna-se uma matriz de píxeis que possuem dimensão (Altura x Largura x Canal), em que os 2 primeiros representam o tamanho da imagem, e o canal é dado pelas cores, em que uma imagem colorida apresenta 3 canais (R, G, B). Além disso, a estrutura de uma CNN pode ser visualizada na Figura 3, a qual possui a imagem como entrada, as camadas de convolução e pooling, e na parte final há camadas de neurônios conectados, obtendo uma probabilidade na saída.
+
+&lt;p&gt;&lt;img src=&quot;assets/images/cnn/cnn.png&quot; alt=&quot;CNN&quot;&gt;&lt;/p&gt;
+
+&lt;i&gt;                                          Figura 3 - Estrutura de uma CNN. &lt;/i&gt;
+&lt;br&gt;
+
+&lt;h2&gt;Camada Convolucional:&lt;/h2&gt;
+&lt;br&gt;
+&lt;p&gt;
+    A camada convolucional pode ser utilizada em sequência, responsável por filtrar componentes importantes de uma imagem, por exemplo, com um filtro passa-baixas, passa-alta, reconhecer bordas, padrões, etc. Quando aplicado a convolução através de um filtro, a imagem deixa de ter 3 canais, e passa a ter diversos canais, que são separados através desses filtros mencionados. A figura a baixo mostra exemplo de filtros aplicados nas primeiras camadas de uma CNN. Ao passo que os primeiros filtros detectam padrões simples, como bordas ou cores simples, as últimas podem idetificar padrões mais complexos como rostos, animais,carros ou partes de objetos.
+&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;assets/images/cnn/Untitled1.png&quot; alt=&quot;Inside Conv&quot;&gt;&lt;/p&gt;
+
+&lt;br&gt;
+
+&lt;p&gt;Quando os filtros passam pela imagem, é criado um mapa de &lt;i&gt;features&lt;/i&gt;, de tamanho Altura x Largura x N filtros, porém, o conjunto dessa imagem ainda é muito grande e requer muito processamento computacional. Então, utiliza-se camadas de pooling para diminuição de dimensionalidade.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/cnn/conv.png&quot; alt=&quot;Convolution&quot;&gt;&lt;/p&gt;
+
+&lt;i&gt; Figura 4 –  GIF da representação de uma convolução. &lt;/i&gt;
+&lt;br&gt;
+
+&lt;h2&gt;
+    Camada de Pooling
+&lt;/h2&gt;
+&lt;br&gt;
+
+&lt;p&gt;A camada de &lt;b&gt;pooling&lt;/b&gt; é responsável por condensar a imagem, ou seja, ela reduz a dimensão da figura, re-amostrando a mesma e diminuindo o número de parâmetros para redução do poder computacional. Há 3 diferentes tipos de &lt;b&gt;pooling&lt;/b&gt;: &lt;/p&gt;
+
+&lt;ul&gt;
+    &lt;li&gt; &lt;i&gt;Max Pooling&lt;/i&gt;: Uma matriz de tamanho geralmente 5x5 passa sequencialmente a cada certo número de pixeis na figura, e a camada utiliza apenas o maior dentre todos da área, assim, o pixel que mais se sobressai é utilizado, e o resto é descartado.&lt;/li&gt;
+    &lt;li&gt; &lt;i&gt;Average Pooling&lt;/i&gt;: Uma matriz de tamanho geralmente 5x5 passa sequencialmente a cada certo número de pixeis na figura, realizando uma média dentro desse espaço, a qual é utilizada pelo modelo.&lt;/li&gt;
+    &lt;li&gt; &lt;i&gt;Sum Pooling&lt;/i&gt;: Uma matriz de tamanho geralmente 5x5 passa sequencialmente a cada certo número de pixeis na figura, realizando a soma dos pixeis, a qual utiliza-se do valor somado para redução da dimensionalidade.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/cnn/maxpooling.png&quot; alt=&quot;Maxpooling&quot;&gt;&lt;/p&gt;
+
+&lt;i&gt;  Figura 5 – Representação de um pooling. &lt;/i&gt;
+&lt;br&gt;
+
+&lt;h2&gt;
+    Camada Conectada:
+&lt;/h2&gt;
+&lt;br&gt;
+
+&lt;p&gt;A parte final rede é composto por uma rede convencional de neurônios conectados. A primeira e segunda parte é utilizada para extração de features que demonstram um padrão, e são utilizados como entrada na camada conectada, de forma que os pesos são ajustados no treinamento para classificar uma imagem, através de uma probabilidade.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/cnn/fc.png&quot; alt=&quot;FullyConnected&quot;&gt;&lt;/p&gt;
+
+&lt;i&gt;  Figura 6 – Camada convencional, conectadando neurônios através de pesos.&lt;/i&gt;
+&lt;br&gt;
+
+&lt;p&gt;Por fim, as CNN podem ser usadas para diversas outras aplicações, não necessariamente na área de Visão Computacional, e uma nova topologia surge para quebra os limites e seta um novo record nesse campo.  Algumas inclusive superam humanos na tarefa de classificação de imagens, como a ResNet em 2015. Veja algumas das redes mais famosas:&lt;/p&gt;
+
+&lt;ol&gt;
+    &lt;li&gt; Le-Net (Yann Le Cun, 1998)&lt;/li&gt;
+    &lt;li&gt; Alex Net (2012)&lt;/li&gt;
+    &lt;li&gt; VGGNet (2014)&lt;/li&gt;
+    &lt;li&gt; Inception Module Google Net (2014)&lt;/li&gt;
+    &lt;li&gt; ResNet (2015)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;
+    Estado da Arte: YOLO
+&lt;/h2&gt;
+&lt;br&gt;
+&lt;p&gt;A detecção de objetos é uma área bastante atrativa para pesquisas na comunidade científica quanto no meio industrial, a qual ambos buscam soluções rápidas e eficientes. Esse campo, requer bastante poder computacional, e algoritmos mais antigos, como a R-CNN e suas variações, fazem a dupla tarefa em múltiplos passos que ocasionam em uma execução lenta e de difícil optimização, visto que cada componente é treinada separadamente. A partir disso, em 2015, Joseph Redmon desenvolveu uma rede neural chamada YOLO (*You Only Look Once*) , capaz de detectar e classificar objetos 1000x mais rápido que os modelos citados. Como o próprio nome já diz, essa rede é capaz de olhar apenas uma vez para a imagem, dividindo-a em diversos retângulos e inferindo onde cada objeto está através de uma probabilidade. Na sequência, deixamos um vídeo demonstrativo do algoritmo!&lt;/p&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Qwui-fXCUYA?controls=1&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+
+
+* Capa retirada de &lt;a href=&quot;https://www.symmetrymagazine.org/image/inline-neural-networks-meet-space&quot;&gt;Symmetry Magazine&lt;/a&gt;&lt;/i&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>João Brum</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="back-to-basics" />
+      
+
+      
+        <summary type="html">Nesse post, vamos abordar um dos principais tópicos dentro da área de redes neurais, um dos pilares de Deep Learning e muito utilizado para resolver problemas de visão computacional: as Redes Neurais Convolucionais.</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">Gradient Descent, Feedforward and Backpropagation</title>
