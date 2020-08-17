@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/author/matheus/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2020-08-17T00:07:50-03:00</updated>
+  <updated>2020-08-17T00:11:17-03:00</updated>
   <id>http://localhost:4000/author/matheus/feed.xml</id>
 
   
@@ -330,7 +330,7 @@
 
 &lt;h2 id=&quot;tldr&quot;&gt;TL;DR&lt;/h2&gt;
 
-&lt;p&gt;In this project, we defined and trained a CNN to identify and extract facial keypoints, founded in the &lt;a href=&quot;https://www.cs.tau.ac.il/~wolf/ytfaces/&quot;&gt;YouTube Faces Dataset&lt;/a&gt;. Coded using Python and Pytorch, first we get familiar with the dataset and do all the processing and transformation using &lt;code class=&quot;highlighter-rouge&quot;&gt;torch.utils.data.Dataset&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;torch.utils.data.Dataloader&lt;/code&gt;. Using a Custom LeNet-5 Architecture, we trained a model to identify such keypoints in the faces located by a OpenCV’s pre-trained Haar Cascade classifier.&lt;/p&gt;
+&lt;p&gt;In this project, we defined and trained a CNN to identify and extract facial keypoints, founded in the &lt;a href=&quot;https://www.cs.tau.ac.il/~wolf/ytfaces/&quot;&gt;YouTube Faces Dataset&lt;/a&gt;. Coded using Python and Pytorch, first we get familiar with the dataset and do all the processing and transformation using &lt;code class=&quot;highlighter-rouge&quot;&gt;torch.utils.data.Dataset&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;torch.utils.data.Dataloader&lt;/code&gt;. Using a Custom LeNet-5 Architecture, we trained a model to identify such keypoints in the faces located by a OpenCV’s pre-trained Haar Cascade classifier. &lt;a href=&quot;https://github.com/jacquesmats/facial_keypoint_detection&quot;&gt;Code and tutorial here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;the-dataset&quot;&gt;The Dataset&lt;/h2&gt;
 
@@ -518,7 +518,7 @@ transformed_sample = tx(sample)
 
 &lt;hr /&gt;
 
-&lt;p&gt;Would you like to  receive the most important news and trends in AI in just one email every end of the month? Subscribe below and I’ll send you the 10 most important news in Artificial Intelligence.&lt;/p&gt;</content>
+&lt;p&gt;Would you like to  receive the most important news and trends in AI in just one email every end of the month? Subscribe below and I’ll send you the 10 most important news in Artificial Intelligence&lt;/p&gt;</content>
 
       
       
