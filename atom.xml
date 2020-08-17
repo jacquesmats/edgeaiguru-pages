@@ -38,6 +38,21 @@
     
       
       <item>
+        <title>Facial Keypoint Detection</title>
+        
+          <description>&lt;p&gt;This project will be all about defining and training a convolutional neural network to perform facial keypoint detection, and using computer vision techniques to transform images of faces.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Mon, 15 Jun 2020 07:15:00 -0300</pubDate>
+        <link>
+        http://localhost:4000/Facial-Keypoint-Detection</link>
+        <guid isPermaLink="true">http://localhost:4000/Facial-Keypoint-Detection</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Gradient Descent, Feedforward and Backpropagation</title>
         
           <description>&lt;p&gt;Let’s see three fundamentals concepts of Deep Learning: the Gradient Descent, Feedforward and Backpropagation steps.&lt;/p&gt;
