@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/tag/back-to-basics/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2020-08-17T00:11:17-03:00</updated>
+  <updated>2020-08-18T00:22:08-03:00</updated>
   <id>http://localhost:4000/tag/back-to-basics/feed.xml</id>
 
   
@@ -35,11 +35,11 @@
   
     <entry>
       <title type="html">Redes Neurais Convolucionais</title>
-      <link href="http://localhost:4000/Convolution-Neural-Networks" rel="alternate" type="text/html" title="Redes Neurais Convolucionais" />
+      <link href="http://localhost:4000/Redes-Neurais-Convolucionais" rel="alternate" type="text/html" title="Redes Neurais Convolucionais" />
       <published>2020-07-13T07:15:00-03:00</published>
       <updated>2020-07-13T07:15:00-03:00</updated>
-      <id>http://localhost:4000/Convolution%20Neural%20Networks</id>
-      <content type="html" xml:base="http://localhost:4000/Convolution-Neural-Networks">&lt;p&gt; Nesse post, vamos abordar um dos principais tópicos dentro da área de redes neurais, um dos pilares de Deep Learning e muito utilizado para resolver problemas de visão computacional: as Redes Neurais Convolucionais.&lt;/p&gt;
+      <id>http://localhost:4000/Redes%20Neurais%20Convolucionais</id>
+      <content type="html" xml:base="http://localhost:4000/Redes-Neurais-Convolucionais">&lt;p&gt; Nesse post, vamos abordar um dos principais tópicos dentro da área de redes neurais, um dos pilares de Deep Learning e muito utilizado para resolver problemas de visão computacional: as Redes Neurais Convolucionais.&lt;/p&gt;
 
 &lt;p&gt; 
     A inteligência artificial tem se tornado um tópico em ascenção recentemente, principalmente devido aos avanços na área de Deep Learning, uma subárea de Machine Learning. Apesar de não notarmos, as Redes Neurais Convolucionais estão presentes em nosso dia a dia. Já parou para pensar como podemos pesquisar por imagens usando texto? ou como encontramos fotos na galeria do celular pesquisando pelo conteúdo que tem na  foto? ou ainda como desbloqueamos nossos smartphones utilizando reconhecimento facial? Tudo isso só é possível pois atualmente os algoritmos podem identificar o que há nas imagens, o que até alguns anos atrás era uma tarefa nada fácil e ainda hoje não é trivial.
