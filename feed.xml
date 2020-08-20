@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-19T23:25:35-03:00</updated><id>http://localhost:4000/</id><title type="html">Edge AI Guru</title><subtitle>The guidance through your Artificial Intelligence journey</subtitle><entry><title type="html">Tracking 3D objects with Lidar and Camera</title><link href="http://localhost:4000/3D-Object-Tracking" rel="alternate" type="text/html" title="Tracking 3D objects with Lidar and Camera" /><published>2020-07-23T07:15:00-03:00</published><updated>2020-07-23T07:15:00-03:00</updated><id>http://localhost:4000/3D%20Object%20Tracking</id><content type="html" xml:base="http://localhost:4000/3D-Object-Tracking">&lt;p&gt;Integrating Lidar Point Clouds with Camera Images to compute Time To Collision (TTC)&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-20T14:37:41-03:00</updated><id>http://localhost:4000/</id><title type="html">Edge AI Guru</title><subtitle>The guidance through your Artificial Intelligence journey</subtitle><entry><title type="html">Tracking 3D objects with Lidar and Camera</title><link href="http://localhost:4000/3D-Object-Tracking" rel="alternate" type="text/html" title="Tracking 3D objects with Lidar and Camera" /><published>2020-07-23T07:15:00-03:00</published><updated>2020-07-23T07:15:00-03:00</updated><id>http://localhost:4000/3D%20Object%20Tracking</id><content type="html" xml:base="http://localhost:4000/3D-Object-Tracking">&lt;p&gt;Integrating Lidar Point Clouds with Camera Images to compute Time To Collision (TTC)&lt;/p&gt;
 
 &lt;p&gt;
     Autonomous vehicles technology has been on my radar (no pun intended) for a while now. I was excited to apply AI to some very complex problems and this project was for sure one of the most amazing I ever did. More than Machine and Deep Learning techniques, solving autonomous driving requires several technologies and methods. All this is only possible through fusing sensors to make sense of the environment.
@@ -333,7 +333,237 @@ Uma breve explicação de como funcionam as imagens, é que a representação qu
 
 &lt;hr /&gt;
 
-&lt;p&gt;Would you like to  receive the most important news and trends in AI in just one email every end of the month? Subscribe below and I’ll send you the 10 most important news in Artificial Intelligence&lt;/p&gt;</content><author><name>Matheus Jacques</name></author><category term="projects" /><summary type="html">In this project, we used a dataset of image-caption pairs to train a CNN-RNN model to automatically generate captions from images.</summary></entry><entry><title type="html">Facial Keypoint Detection</title><link href="http://localhost:4000/Facial-Keypoint-Detection" rel="alternate" type="text/html" title="Facial Keypoint Detection" /><published>2020-06-15T07:15:00-03:00</published><updated>2020-06-15T07:15:00-03:00</updated><id>http://localhost:4000/Facial%20Keypoint%20Detection</id><content type="html" xml:base="http://localhost:4000/Facial-Keypoint-Detection">&lt;p&gt;This project will be all about defining and training a convolutional neural network to perform facial keypoint detection, and using computer vision techniques to transform images of faces.&lt;/p&gt;
+&lt;p&gt;Would you like to  receive the most important news and trends in AI in just one email every end of the month? Subscribe below and I’ll send you the 10 most important news in Artificial Intelligence&lt;/p&gt;</content><author><name>Matheus Jacques</name></author><category term="projects" /><summary type="html">In this project, we used a dataset of image-caption pairs to train a CNN-RNN model to automatically generate captions from images.</summary></entry><entry><title type="html">Landmark Detection &amp;amp; Robot Tracking (SLAM)</title><link href="http://localhost:4000/Slam" rel="alternate" type="text/html" title="Landmark Detection &amp; Robot Tracking (SLAM)" /><published>2020-06-25T07:15:00-03:00</published><updated>2020-06-25T07:15:00-03:00</updated><id>http://localhost:4000/Slam</id><content type="html" xml:base="http://localhost:4000/Slam">&lt;p&gt;In this project, we’ll be localizing a robot in a 2D grid world. The basis for simultaneous localization and mapping (SLAM) is to gather information from a robot’s sensors and motions over time, and then use information about measurements and motion to re-construct a map of the world.&lt;/p&gt;
+
+&lt;h2 id=&quot;simultaneous-localization-and-mapping&quot;&gt;Simultaneous Localization and Mapping&lt;/h2&gt;
+
+&lt;p&gt;SLAM gives us a way to both localize a robot and build up a map of its environment as a robot moves and senses in real-time. This is an active area of research in the fields of robotics and autonomous systems. Since this localization and map-building relies on the visual sensing of landmarks, this is also a computer vision problem.&lt;/p&gt;
+
+&lt;p&gt;To perform SLAM, we’ll collect a series of robot sensor measurements and motions, in that order, over a defined period of time. Then we’ll use only this data to re-construct the map of the world with the robot and landmark locations. Robot motion and sensors have some uncertainty associated with them. For example, imagine a car driving up hill and down hill; the speedometer reading will likely overestimate the speed of the car going up hill and underestimate the speed of the car going down hill because it cannot perfectly account for gravity. Similarly, we cannot perfectly predict the &lt;em&gt;motion&lt;/em&gt; of a robot. A robot is likely to slightly overshoot or undershoot a target location.&lt;/p&gt;
+
+&lt;p&gt;First, we create a robot and move it around a 2D grid world and then, define a &lt;code class=&quot;highlighter-rouge&quot;&gt;sense&lt;/code&gt; function for this robot that allows it to sense landmarks in a given world. It’s important that you understand how this robot moves, senses, and how it keeps track of different landmarks that it sees in a 2D grid world, so that you can work with it’s movement and sensor data.&lt;/p&gt;
+
+&lt;p&gt;This project is part of the &lt;a href=&quot;https://www.udacity.com/course/computer-vision-nanodegree--nd891&quot;&gt;Udacity Computer Vision Nanodegree&lt;/a&gt; and all code can be found in &lt;a href=&quot;https://github.com/jacquesmats/slam_implementation&quot;&gt;my Github&lt;/a&gt;.  The &lt;code class=&quot;highlighter-rouge&quot;&gt;__init__&lt;/code&gt;  in robot class takes in a number of parameters including a world size and some values that indicate the sensing and movement capabilities of the robot. Furthermore, using the visualization function, &lt;code class=&quot;highlighter-rouge&quot;&gt;display_world&lt;/code&gt;, that will display a grid world in a plot and draw a red &lt;code class=&quot;highlighter-rouge&quot;&gt;o&lt;/code&gt; at the location of our robot, &lt;code class=&quot;highlighter-rouge&quot;&gt;r&lt;/code&gt;. The details of how this function works can be found in the &lt;code class=&quot;highlighter-rouge&quot;&gt;helpers.py&lt;/code&gt; file in the home directory. In the following image, we define a small 10x10 square world, a measurement range that is half that of the world and small values for motion and measurement noise. These values will typically be about 10 times larger, but we want to demonstrate this behavior on a small scale.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/slam/gridworld.png&quot; alt=&quot;image-20200607150421443&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Next, let’s create landmarks, which are measurable features in the map. You can think of landmarks as things like notable buildings, or something smaller such as a tree, rock, or other feature. The robot class has a function &lt;code class=&quot;highlighter-rouge&quot;&gt;make_landmarks&lt;/code&gt; which randomly generates locations for the number of specified landmarks. We have to pass these locations as a third argument to the &lt;code class=&quot;highlighter-rouge&quot;&gt;display_world&lt;/code&gt; function and the list of landmark locations is accessed similar to how we find the robot position &lt;code class=&quot;highlighter-rouge&quot;&gt;r.landmarks&lt;/code&gt;.  Each landmark is displayed as a purple &lt;code class=&quot;highlighter-rouge&quot;&gt;x&lt;/code&gt; in the grid world, and we also print out the exact &lt;code class=&quot;highlighter-rouge&quot;&gt;[x, y]&lt;/code&gt; locations of these landmarks at the end of this cell.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/slam/landmark.png&quot; alt=&quot;image-20200607150421443&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Once we have some landmarks to sense, we need to be able to tell our robot to &lt;em&gt;try&lt;/em&gt; to sense how far they are away from it. It will be up t you to code the &lt;code class=&quot;highlighter-rouge&quot;&gt;sense&lt;/code&gt; function in our robot class. The &lt;code class=&quot;highlighter-rouge&quot;&gt;sense&lt;/code&gt; function uses only internal class parameters and returns a list of the the measured/sensed x and y distances to the landmarks it senses within the specified &lt;code class=&quot;highlighter-rouge&quot;&gt;measurement_range&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;sense&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;s&quot;&gt;''' This function does not take in any parameters, instead it references internal variables
+            (such as self.landamrks) to measure the distance between the robot and any landmarks
+            that the robot can see (that are within its measurement range).
+            This function returns a list of landmark indices, and the measured distances (dx, dy)
+            between the robot's position and said landmarks.
+            This function should account for measurement_noise and measurement_range.
+            One item in the returned list should be in the form: [landmark_index, dx, dy].
+            '''&lt;/span&gt;
+           
+        &lt;span class=&quot;n&quot;&gt;measurements&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+        
+        &lt;span class=&quot;c&quot;&gt;## Iterate through all of the landmarks in a world&lt;/span&gt;
+        
+        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;l&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;enumerate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;landmarks&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;                 
+            &lt;span class=&quot;c&quot;&gt;## For each landmark&lt;/span&gt;
+            &lt;span class=&quot;c&quot;&gt;## 1. compute dx and dy, the distances between the robot and the landmark&lt;/span&gt;
+            &lt;span class=&quot;c&quot;&gt;## 2. account for measurement noise by *adding* a noise component to dx and dy&lt;/span&gt;
+            &lt;span class=&quot;c&quot;&gt;## 3. If either of the distances, dx or dy, fall outside of the internal var, measurement_range&lt;/span&gt;
+            &lt;span class=&quot;c&quot;&gt;##    then we cannot record them; if they do fall in the range, then add them to the measurements list&lt;/span&gt;
+            &lt;span class=&quot;c&quot;&gt;##    as list.append([index, dx, dy]), this format is important for data creation done later&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;land_x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;land_y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;l&lt;/span&gt;  
+            
+            &lt;span class=&quot;n&quot;&gt;dx&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;land_x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;uniform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;measurement_noise&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;dy&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;land_y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;uniform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;measurement_noise&lt;/span&gt;
+            
+            &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;dx: {}&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; dy: {}&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; range: {}&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;measurement_range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+            
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dx&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;measurement_range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;measurements&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;measurements&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;omega-and-xi&quot;&gt;Omega and Xi&lt;/h2&gt;
+
+&lt;p&gt;To implement Graph SLAM, a matrix and a vector (omega and xi, respectively) are introduced. The matrix is square and labeled with all the robot poses (xi) and all the landmarks (Li). Every time you make an observation, for example, as you move between two poses by some distance &lt;code class=&quot;highlighter-rouge&quot;&gt;dx&lt;/code&gt; and can relate those two positions, you can represent this as a numerical relationship in these matrices.&lt;/p&gt;
+
+&lt;p&gt;It’s easiest to see how these work in an example. Below you can see a matrix representation of omega and a vector representation of xi.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/slam/omega_xi.png&quot; alt=&quot;image-20200607150421443&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Next, let’s look at a simple example that relates 3 poses to one another.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;When you start out in the world most of these values are zeros or contain only values from the initial robot position&lt;/li&gt;
+  &lt;li&gt;In this example, you have been given constraints, which relate these poses to one another&lt;/li&gt;
+  &lt;li&gt;Constraints translate into matrix values&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/slam/omega_xi_constraints.png&quot; alt=&quot;image-20200607150421443&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you have ever solved linear systems of equations before, this may look familiar.&lt;/p&gt;
+
+&lt;h3 id=&quot;solving-for-x&quot;&gt;Solving for x&lt;/h3&gt;
+
+&lt;p&gt;To “solve” for all these x values, we can use linear algebra; all the values of x are in the vector &lt;code class=&quot;highlighter-rouge&quot;&gt;mu&lt;/code&gt; which can be calculated as a product of the inverse of omega times xi.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/slam/solution.png&quot; alt=&quot;image-20200607150421443&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;motion-constraints-and-landmarks&quot;&gt;Motion Constraints and Landmarks&lt;/h2&gt;
+
+&lt;p&gt;Now, let’s look at how motion (and similarly, sensor measurements) can be used to create constraints and fill up the constraint matrices, omega and xi. Let’s start with empty/zero matrices.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/slam/initial_constraints.png&quot; alt=&quot;image-20200607150421443&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This example also includes relationships between poses and landmarks. Say we move from x0 to x1 with a displacement &lt;code class=&quot;highlighter-rouge&quot;&gt;dx&lt;/code&gt; of 5. Then we have created a motion constraint that relates x0 to x1, and we can start to fill up these matrices.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/slam/motion_constraint.png&quot; alt=&quot;image-20200607150421443&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In fact, the one constraint equation can be written in two ways. So, the motion constraint that relates x0 and x1 by the motion of 5 has affected the matrix, adding values for &lt;em&gt;all&lt;/em&gt; elements that correspond to x0 and x1.&lt;/p&gt;
+
+&lt;h2 id=&quot;generating-an-environment&quot;&gt;Generating an environment&lt;/h2&gt;
+
+&lt;p&gt;In a real SLAM problem, one may be given a map that contains information about landmark locations, and in this project, we will make our own data using the &lt;code class=&quot;highlighter-rouge&quot;&gt;make_data&lt;/code&gt; function, which generates a world grid with landmarks in it and then generates data by placing a robot in that world and moving and sensing over some number of time steps.  The data is collected as an instantiated robot moves and senses in a world. The SLAM function will take in this data as input. So, first we create this data and explore how it represents the movement and sensor measurements that our robot takes.&lt;/p&gt;
+
+&lt;h3 id=&quot;create-the-world&quot;&gt;Create the world&lt;/h3&gt;
+
+&lt;p&gt;We used the &lt;code class=&quot;highlighter-rouge&quot;&gt;make_data&lt;/code&gt; function to generate a world of a specified size with randomly generated landmark locations. &lt;code class=&quot;highlighter-rouge&quot;&gt;data&lt;/code&gt; holds the sensors measurements and motion of your robot over time. It stores the measurements as &lt;code class=&quot;highlighter-rouge&quot;&gt;data[i][0]&lt;/code&gt; and the motion as &lt;code class=&quot;highlighter-rouge&quot;&gt;data[i][1]&lt;/code&gt;. One of the most challenging tasks were to create and modify the constraint matrix and vector: omega and xi. In the images above, you saw an example of how omega and xi could hold all the values the define the relationships between robot poses &lt;code class=&quot;highlighter-rouge&quot;&gt;xi&lt;/code&gt; and landmark positions &lt;code class=&quot;highlighter-rouge&quot;&gt;Li&lt;/code&gt; in a 1D world.&lt;/p&gt;
+
+&lt;p&gt;In &lt;em&gt;this&lt;/em&gt; project, we implemented constraints for a 2D world. We are referring to robot poses as &lt;code class=&quot;highlighter-rouge&quot;&gt;Px, Py&lt;/code&gt; and landmark positions as &lt;code class=&quot;highlighter-rouge&quot;&gt;Lx, Ly&lt;/code&gt;, and one way to approach this challenge is to add &lt;em&gt;both&lt;/em&gt; x and y locations in the constraint matrices.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/slam/constraints2D.png&quot; alt=&quot;image-20200607150421443&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;slam-inputs&quot;&gt;SLAM inputs&lt;/h3&gt;
+
+&lt;p&gt;In addition to &lt;code class=&quot;highlighter-rouge&quot;&gt;data&lt;/code&gt;, the slam function will also take in:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;N -   The number of time steps that a robot will be moving and sensing&lt;/li&gt;
+  &lt;li&gt;num_landmarks - The number of landmarks in the world&lt;/li&gt;
+  &lt;li&gt;world_size - The size (w/h) of the world&lt;/li&gt;
+  &lt;li&gt;motion_noise - The noise associated with motion; the update confidence for motion should be &lt;code class=&quot;highlighter-rouge&quot;&gt;1.0/motion_noise&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;measurement_noise - The noise associated with measurement/sensing; the update weight for measurement should be &lt;code class=&quot;highlighter-rouge&quot;&gt;1.0/measurement_noise&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Recall that &lt;code class=&quot;highlighter-rouge&quot;&gt;omega&lt;/code&gt; holds the relative “strengths” or weights for each position variable, and you can update these weights by accessing the correct index in omega &lt;code class=&quot;highlighter-rouge&quot;&gt;omega[row][col]&lt;/code&gt; and &lt;em&gt;adding/subtracting&lt;/em&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;1.0/noise&lt;/code&gt; where &lt;code class=&quot;highlighter-rouge&quot;&gt;noise&lt;/code&gt; is measurement or motion noise. &lt;code class=&quot;highlighter-rouge&quot;&gt;Xi&lt;/code&gt; holds actual position values, and so to update &lt;code class=&quot;highlighter-rouge&quot;&gt;xi&lt;/code&gt; you’ll do a similar addition process only using the actual value of a motion or measurement. So for a vector index &lt;code class=&quot;highlighter-rouge&quot;&gt;xi[row][0]&lt;/code&gt; you will end up adding/subtracting one measurement or motion divided by their respective &lt;code class=&quot;highlighter-rouge&quot;&gt;noise&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;implement-graph-slam&quot;&gt;Implement Graph SLAM&lt;/h3&gt;
+
+&lt;p&gt;With a 2D omega and xi structure as shown above, we have to be mindful about how you update the values in these constraint matrices to account for motion and measurement constraints in the x and y directions. Recall that the solution to these matrices (which holds all values for robot poses &lt;code class=&quot;highlighter-rouge&quot;&gt;P&lt;/code&gt; and landmark locations &lt;code class=&quot;highlighter-rouge&quot;&gt;L&lt;/code&gt;) is the vector, &lt;code class=&quot;highlighter-rouge&quot;&gt;mu&lt;/code&gt;, which can be computed at the end of the construction of omega and xi as the inverse of omega times xi.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;## slam takes in 6 arguments and returns mu, &lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;## mu is the entire path traversed by a robot (all x,y poses) *and* all landmarks locations&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;slam&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num_landmarks&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;world_size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;motion_noise&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;measurement_noise&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    
+    &lt;span class=&quot;c&quot;&gt;## Use initilization to create constraint matrices, omega and xi&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;omega&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;xi&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;initialize_constraints&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num_landmarks&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;world_size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;c&quot;&gt;# Which index starts the Landmarks?&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;first_landm_at&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;confidence&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+
+    &lt;span class=&quot;c&quot;&gt;## Iterate through each time step in the data&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;## get all the motion and measurement data as it iterates&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;step&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;enumerate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;measurements&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;motion&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;
+        
+        &lt;span class=&quot;n&quot;&gt;step&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;step&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;## update the constraint matrix/vector to account for all *measurements*&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;## this should be a series of additions that take into account the measurement noise &lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;meas&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;measurements&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;    
+
+            &lt;span class=&quot;n&quot;&gt;idx_L&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;meas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;x_L&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;meas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;y_L&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;meas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+            
+            &lt;span class=&quot;c&quot;&gt;### MAIN DIAGONAL&lt;/span&gt;
+
+            &lt;span class=&quot;c&quot;&gt;# X and Y&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;omega&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;step&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;step&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;       &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt;  &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;confidence&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;measurement_noise&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;omega&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;step&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;step&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt;  &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;confidence&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;measurement_noise&lt;/span&gt;
+
+            &lt;span class=&quot;c&quot;&gt;# Lx and Ly&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;omega&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;N&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;idx_L&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;N&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;idx_L&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;       &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt;  &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;confidence&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;measurement_noise&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;omega&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;N&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;idx_L&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;N&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;idx_L&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt;  &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;confidence&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;measurement_noise&lt;/span&gt;
+
+            &lt;span class=&quot;c&quot;&gt;### OTHER DIAGONAL&lt;/span&gt;
+
+            &lt;span class=&quot;c&quot;&gt;# Lx and X&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;omega&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;step&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;idx_L&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;confidence&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;measurement_noise&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;omega&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;N&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;idx_L&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;step&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;confidence&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;measurement_noise&lt;/span&gt;
+
+            &lt;span class=&quot;c&quot;&gt;# Ly and Y&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;omega&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;step&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;N&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;idx_L&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;confidence&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;measurement_noise&lt;/span&gt;                     
+            &lt;span class=&quot;n&quot;&gt;omega&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;N&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;idx_L&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;step&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;confidence&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;measurement_noise&lt;/span&gt;
+
+
+
+            &lt;span class=&quot;c&quot;&gt;# Xi for X and Y&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;xi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;step&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;     &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x_L&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;measurement_noise&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;xi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;step&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y_L&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;measurement_noise&lt;/span&gt;
+
+            &lt;span class=&quot;c&quot;&gt;# Xi for Lx and Ly&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;xi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;N&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;idx_L&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;    &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt;  &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x_L&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;measurement_noise&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;xi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;N&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;idx_L&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt;  &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y_L&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;measurement_noise&lt;/span&gt;
+                    
+    &lt;span class=&quot;c&quot;&gt;## update the constraint matrix/vector to account for all *motion* and motion noise           &lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;dx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dy&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;motion&lt;/span&gt;
+
+        &lt;span class=&quot;c&quot;&gt;#X_current&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;omega&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;step&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;step&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;         &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;confidence&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;motion_noise&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;omega&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;step&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;step&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;confidence&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;motion_noise&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;# X_next&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;omega&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;step&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;step&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;     &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;confidence&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;motion_noise&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;omega&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;step&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;step&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;     &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;confidence&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;motion_noise&lt;/span&gt;
+
+        &lt;span class=&quot;c&quot;&gt;# Y_current&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;omega&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;step&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;step&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt;  &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;confidence&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;motion_noise&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;omega&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;step&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;step&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt;  &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;confidence&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;motion_noise&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;#Y_next&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;omega&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;step&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;step&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;confidence&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;motion_noise&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;omega&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;step&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;step&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;confidence&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;motion_noise&lt;/span&gt;
+
+
+        &lt;span class=&quot;n&quot;&gt;xi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;step&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;   &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;motion_noise&lt;/span&gt; 
+        &lt;span class=&quot;n&quot;&gt;xi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;step&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;motion_noise&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;xi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;step&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;motion_noise&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;xi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;step&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;motion_noise&lt;/span&gt;
+
+    &lt;span class=&quot;c&quot;&gt;## After iterating through all the data&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;## Compute the best estimate of poses and landmark positions&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;## using the formula, omega_inverse * Xi&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;omega_inverse&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;linalg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;inv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;omega&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;mu&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;omega_inverse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;xi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mu&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;omega&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;xi&lt;/span&gt; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;run-slam&quot;&gt;Run SLAM&lt;/h2&gt;
+
+&lt;p&gt;Once we completed the implementation of &lt;code class=&quot;highlighter-rouge&quot;&gt;slam&lt;/code&gt;, lets check what &lt;code class=&quot;highlighter-rouge&quot;&gt;mu&lt;/code&gt; it returns for different world sizes and different landmarks! We expect the robot to start with an estimated pose in the very center of your square world, whose size is defined by &lt;code class=&quot;highlighter-rouge&quot;&gt;world_size&lt;/code&gt;. We specify the number, &lt;code class=&quot;highlighter-rouge&quot;&gt;N&lt;/code&gt;, the time steps that the robot was expected to move and the &lt;code class=&quot;highlighter-rouge&quot;&gt;num_landmarks&lt;/code&gt; in the world (which your implementation of &lt;code class=&quot;highlighter-rouge&quot;&gt;slam&lt;/code&gt;) should see and estimate a position for.&lt;/p&gt;
+
+&lt;p&gt;With these values in mind, you should expect to see a result that displays two lists:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Estimated poses&lt;/strong&gt;, a list of (x, y) pairs that is exactly &lt;code class=&quot;highlighter-rouge&quot;&gt;N&lt;/code&gt; in length since this is how many motions your robot has taken. The very first pose should be the center of your world, i.e. &lt;code class=&quot;highlighter-rouge&quot;&gt;[50.000, 50.000]&lt;/code&gt; for a world that is 100.0 in square size.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Estimated landmarks&lt;/strong&gt;, a list of landmark positions (x, y) that is exactly &lt;code class=&quot;highlighter-rouge&quot;&gt;num_landmarks&lt;/code&gt; in length.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;For visualizing the constructed world, using the &lt;code class=&quot;highlighter-rouge&quot;&gt;display_world&lt;/code&gt; code from the &lt;code class=&quot;highlighter-rouge&quot;&gt;helpers.py&lt;/code&gt; file (which was also used in the first notebook), we can actually visualize what you have coded with &lt;code class=&quot;highlighter-rouge&quot;&gt;slam&lt;/code&gt;: the final position of the robot and the positon of landmarks, created from only motion and measurement data!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/slam/fullgrid.png&quot; alt=&quot;image-20200607150421443&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To confirm that the slam code works, we run it on some test data and cases. The output should be &lt;strong&gt;close-to or exactly&lt;/strong&gt; identical to the given results. If there are minor discrepancies it could be a matter of floating point accuracy or in the calculation of the inverse matrix.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/slam/final_result.png&quot; alt=&quot;image-20200607150421443&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Would you like to  receive the most important news and trends in AI in just one email every end of the month? Subscribe below and I’ll send you the 10 most important news in Artificial Intelligence&lt;/p&gt;</content><author><name>Matheus Jacques</name></author><category term="projects" /><summary type="html">In this project, we’ll be localizing a robot in a 2D grid world. The basis for simultaneous localization and mapping (SLAM) is to gather information from a robot’s sensors and motions over time, and then use information about measurements and motion to re-construct a map of the world.</summary></entry><entry><title type="html">Facial Keypoint Detection</title><link href="http://localhost:4000/Facial-Keypoint-Detection" rel="alternate" type="text/html" title="Facial Keypoint Detection" /><published>2020-06-15T07:15:00-03:00</published><updated>2020-06-15T07:15:00-03:00</updated><id>http://localhost:4000/Facial%20Keypoint%20Detection</id><content type="html" xml:base="http://localhost:4000/Facial-Keypoint-Detection">&lt;p&gt;This project will be all about defining and training a convolutional neural network to perform facial keypoint detection, and using computer vision techniques to transform images of faces.&lt;/p&gt;
 
 &lt;p&gt;Let’s take a look at some examples of images and corresponding facial keypoints.&lt;/p&gt;
 
@@ -952,123 +1182,4 @@ transformed_sample = tx(sample)
 
 &lt;p&gt;&lt;em&gt;Batch vs Stochastic vs Mini-batch Gradient Descent. Source: &lt;a href=&quot;https://www.coursera.org/learn/deep-neural-network/&quot;&gt;Stanford’s Andrew Ng’s MOOC Deep Learning Course&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;It is possible to use only the Mini-batch Gradient Descent code to implement all versions of Gradient Descent, you just need to set the mini_batch_size equals one to Stochastic GD or to the number of training examples to Batch GD. Thus, the main difference between Batch, Mini-batch and Stochastic Gradient Descent is the number of examples used for each epoch and the time and effort necessary to reach the global minimum value of the Cost Function.&lt;/p&gt;</content><author><name>Matheus Jacques</name></author><category term="back-to-basics" /><category term="gradient-descent" /><summary type="html">What is the difference between these three Gradient Descent variants?</summary></entry><entry><title type="html">How to get started on Spacenet Challenge 6 using CosmiQ Baseline</title><link href="http://localhost:4000/How-to-get-started-on-Spacenet-Challenge-6" rel="alternate" type="text/html" title="How to get started on Spacenet Challenge 6 using CosmiQ Baseline" /><published>2020-04-20T07:18:00-03:00</published><updated>2020-04-20T07:18:00-03:00</updated><id>http://localhost:4000/How%20to%20get%20started%20on%20Spacenet%20Challenge%206</id><content type="html" xml:base="http://localhost:4000/How-to-get-started-on-Spacenet-Challenge-6">&lt;p&gt;Let’s implement the SpaceNet Baseline to join the Spacenet Challenge 6 and extract buildings footprints from satellite imagery.&lt;/p&gt;
-
-&lt;h2 id=&quot;introduction&quot;&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://spacenet.ai/sn6-challenge/&quot;&gt;Spacenet Challagence 6&lt;/a&gt; has been launched almost a month ago and has been an amazing journey applying and understanding how to use Deep Learning in satellite images. I’ve been working with Machine/Deep Learning algorithms for remote sensing for a couple of months now and I’m amazed how deep and rich are the challenges one can find in this field.&lt;/p&gt;
-
-&lt;p&gt;In this task, Spacenet challenges us to extract building footprints from satellite imagery using Synthetic Aperture Radar (SAR) and electro-optical (EO) imagery datasets. The area of interest (AOI) is Rotterdam, Netherlands, over 120 sq km and 48k building footprints labels. The high-resolution images are provided by Maxar’s WorldView 2 satellite. Although the participants could use both datasets (SAR and EO) for training, the test and scoring must be done using only the SAR dataset. This is intended to simulate real-world applications where one can not find matching data from both in the same location.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/663/0*vKaGlrZJP8YUVNyT.png&quot; alt=&quot;Test Image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Example of EO and SAR image present in the dataset, with its inferred footprints and actual ground truth. Source: &lt;a href=&quot;https://medium.com/the-downlinq/the-spacenet-6-baseline-3b8ae8068351&quot;&gt;The SpaceNet 6 Baseline&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;In this tutorial, we are going to see how to implement the SpaceNet Baseline, as a first step to join the Spacenet Challenge 6. Implementing a baseline to enter a competition is not mandatory, but can help you in many ways. It can help you make sense of the dataset, have a benchmark to compare to, be a starting point or simply have a better feeling what your model’s output is supposed to look like.&lt;/p&gt;
-
-&lt;p&gt;You can learn more about the Baseline &lt;a href=&quot;https://medium.com/the-downlinq/the-spacenet-6-baseline-3b8ae8068351&quot;&gt;here&lt;/a&gt;. In this baseline, CosmiQ implement a U-Net with a VGG-11 encoder. It is build using &lt;a href=&quot;https://github.com/CosmiQ/solaris&quot;&gt;Solaris&lt;/a&gt;, which is a CosmiQ Works Geospatial Machine Learning analysis toolkit based in Python, and can achieve a score of 0.21±.02 using the Jaccard Index, also called the Intersection-over-Union (IoU). You can check the full code here: &lt;a href=&quot;https://github.com/CosmiQ/CosmiQ_SN6_Baseline&quot;&gt;https://github.com/CosmiQ/CosmiQ_SN6_Baseline&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;walkthrough&quot;&gt;&lt;strong&gt;Walkthrough&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;h3 id=&quot;prerequisites&quot;&gt;&lt;strong&gt;Prerequisites&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p&gt;Although I think this tutorial can be used for any platform, at least to have a general overview, I’m currently working a Ubuntu Linux 18.04. So some of the commands and steps below are taking this into account.&lt;/p&gt;
-
-&lt;p&gt;The CosmiQ Works provides the baseline using Docker, and not in a notebook to run on Jupyter or Colab, although you could try to “translate” it, I guess. Using docker is the best way to share the baseline to a vast number of people using different systems and keeping up all the libraries and dependencies together. So the first thing is to make sure you have the latest version of Docker installed. Although it would work with other versions, the latest version (Docker 19.03) natively supports NVIDIA GPUs as devices. Furthermore, we can use NVIDIA Container Toolkit to help us even more, since with this we don’t need to install the CUDA toolkit at the host. Allowing us to have multiple projects with multiple CUDA versions in your machine. You just need to install the NVIDIA driver at your host machine and the specific CUDA Toolkit inside your container.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/522/0*n3TB9NY4_3Xn7IOU.png&quot; alt=&quot;Test Image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;NVIDIA Container Toolkit. Source: &lt;a href=&quot;https://github.com/NVIDIA/nvidia-docker&quot;&gt;nvidia-docker repository&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;So go ahead and make sure you have installed in your system:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://github.com/NVIDIA/nvidia-docker&quot;&gt;NVIDIA Container Toolkit&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;NVIDIA driver for your system&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Docker 19.03&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Git&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;the-datasets&quot;&gt;&lt;strong&gt;The Datasets&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p&gt;The training data contains processed tiles of 450x450 m with its corresponding buildings footprints labels. The whole folder has about 39 GB. On the other hand, the test set has 17GB and each tile covers the same area. Both can be downloaded inside the container or in the host system. Either way, you are going to need an AWS account.&lt;/p&gt;
-
-&lt;p&gt;Apparently, everyone with a normal Amazon account is already able to access AWS and get the credentials to download the images. If you don’t, you are going to need to create one and add a credit card. Once you have in hands your **&lt;a href=&quot;https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html&quot;&gt;Access key ID&lt;strong&gt; and &lt;/strong&gt;Secret access key**&lt;/a&gt;, you need to install the AWS CLI. This can be easily done in Ubuntu using pip or conda. I prefer using conda due to its intuitive virtual environments and features.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Using pip:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;~$ sudo pip install awscli&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Using conda:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;~$ conda install -c conda-forge awscli&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Now you need to configure the awscli using the credentials I mentioned before. So type this and fill with your keys:&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;~$ aws configure&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Awesome, now let’s download the images.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Training Data (~39GB)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;~$ aws s3 cp s3://spacenet-dataset/spacenet/SN6_buildings/tarballs/SN6_buildings_AOI_11_Rotterdam_train.tar.gz .&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Test Data (~17GB)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;~$ aws s3 cp s3://spacenet-dataset/spacenet/SN6_buildings/tarballs/SN6_buildings_AOI_11_Rotterdam_test_public.tar.gz .&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;If you followed these steps inside the container, you are good to go. Otherwise, if you downloaded the files in your host system (which I think is better), you can transfer this data to your running container using:&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;~$ docker cp file_to_transfer.tar.gz ContainerID:/root/&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;This will copy the dataset you choose to the same location where all the files of this project are.&lt;/p&gt;
-
-&lt;p&gt;Furthermore, if you want to know more, have some questions on how to obtain the data or are using Windows, you can check &lt;a href=&quot;https://docs.google.com/document/d/1mkBKtSpeYlH3PxGTcLvzaXEarElUQCb1IThFclIXG0k/edit&quot;&gt;this guide&lt;/a&gt; to download these datasets using AWS.&lt;/p&gt;
-
-&lt;h2 id=&quot;running-the-baseline-inside-the-container&quot;&gt;&lt;strong&gt;Running the baseline inside the container&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;p&gt;Now it is time to spin up this docker container and start using the baseline. Let’s go to the directory where we want to work on this project and clone the &lt;a href=&quot;https://github.com/CosmiQ/CosmiQ_SN6_Baseline&quot;&gt;baseline repository&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;~$ git clone [https://github.com/CosmiQ/CosmiQ_SN6_Baseline.git](https://github.com/CosmiQ/CosmiQ_SN6_Baseline.git)&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;In this folder, you will find several files that compose this baseline. The more important are:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Weights — A folder containing the best weights trained by CosmiQ.&lt;/li&gt;
-  &lt;li&gt;baseline.py — Where all the magic happens. All the functions we need are here.&lt;/li&gt;
-  &lt;li&gt;model.py — Holds the model, as it states. A U-Net and a VGG-11 written in Pytorch.&lt;/li&gt;
-  &lt;li&gt;settings.sh, train.sh and test.sh — 3 shell scripts to configure, train and test the model.&lt;/li&gt;
-  &lt;li&gt;Dockerfile — contains all the commands to assembly the Docker image.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;We then create the Docker image with the following command inside this folder:&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;~$ docker build --tag baseline .&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;and then run it&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;~$ sudo docker run -ti --name sb6 --gpus all baseline /bin/bash&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;We are now inside the container, read to work in an environment prepared to develop our solution or work with the baseline to improve it. To run the baseline model in the test set and check the results you can simply run the test.sh script with two arguments: location of the test examples and where to save the .csv, which would be read to submission.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;~$ ./test.sh /root/test_public/AOI_11_Rotterdam/ baseline_output.csv&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;This command will search for the images in the root directory in the same structure from the .tar.gz file, and save the predictions .csv also in the root folder with the same “baseline_output”.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Note: Unfortunately, my GPU is old (an NVIDIA GeForce 740M) and since version 0.3.1, Pytorch does not work with it because of Cuda capability. I then start a container without GPU to test it, it took 15 seconds for each inference, taking 8.5 hours to finish the 2000 test examples with an Intel(R) Core(TM) i5–3337U CPU @ 1.80GHz&lt;/em&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusion&quot;&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;p&gt;You are now free to modify the files, make changes to the model, choose another encoder or try to improve this baseline.&lt;/p&gt;
-
-&lt;p&gt;This tutorial was a walkthrough on how to join the Spacenet Challenge 6 using the baseline provided by CosmiQ. There are some minor details, like dependencies and drives, that slowed me down when I tried to implement this and I hope this tutorial helped you in some manner.&lt;/p&gt;
-
-&lt;p&gt;Happy coding and I wish you the best of luck with this challenge!&lt;/p&gt;</content><author><name>Matheus Jacques</name></author><category term="tutorials" /><category term="remote-sensing" /><summary type="html">Let’s implement the SpaceNet Baseline to join the Spacenet Challenge 6 and extract buildings footprints from satellite imagery.</summary></entry></feed>
+&lt;p&gt;It is possible to use only the Mini-batch Gradient Descent code to implement all versions of Gradient Descent, you just need to set the mini_batch_size equals one to Stochastic GD or to the number of training examples to Batch GD. Thus, the main difference between Batch, Mini-batch and Stochastic Gradient Descent is the number of examples used for each epoch and the time and effort necessary to reach the global minimum value of the Cost Function.&lt;/p&gt;</content><author><name>Matheus Jacques</name></author><category term="back-to-basics" /><category term="gradient-descent" /><summary type="html">What is the difference between these three Gradient Descent variants?</summary></entry></feed>

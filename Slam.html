@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Document Settings -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Base Meta -->
+    <!-- dynamically fixing the title for tag/author pages -->
+
+
+
+    <title>Landmark Detection & Robot Tracking (SLAM)</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Styles'n'Scripts -->
+    <link rel="stylesheet" type="text/css" href="/assets/built/screen.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/built/screen.edited.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/built/syntax.css" />
+    <!-- highlight.js -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <style>.hljs { background: none; }</style>
+
+    <!--[if IE]>
+        <style>
+            p, ol, ul{
+                width: 100%;
+            }
+            blockquote{
+                width: 100%;
+            }
+        </style>
+    <![endif]-->
+    
+    <!-- This tag outputs SEO meta+structured data and other important settings -->
+    <meta name="description" content="The guidance through your Artificial Intelligence journey" />
+    <link rel="shortcut icon" href="http://localhost:4000/assets/images/favicon.png" type="image/png" />
+    <link rel="canonical" href="http://localhost:4000/Slam" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+
+     <!--title below is coming from _includes/dynamic_title-->
+    <meta property="og:site_name" content="Edge AI Guru" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Landmark Detection & Robot Tracking (SLAM)" />
+    <meta property="og:description" content="In this project, we’ll be localizing a robot in a 2D grid world. The basis for simultaneous localization and mapping (SLAM) is to gather information from a robot’s sensors and motions over time, and then use information about measurements and motion to re-construct a map of the world. Simultaneous Localization" />
+    <meta property="og:url" content="http://localhost:4000/Slam" />
+    <meta property="og:image" content="http://localhost:4000/assets/images/slam/cover.png" />
+    <meta property="article:publisher" content="https://www.facebook.com/" />
+    <meta property="article:author" content="https://www.facebook.com/" />
+    <meta property="article:published_time" content="2020-06-25T07:15:00-03:00" />
+    <meta property="article:modified_time" content="2020-06-25T07:15:00-03:00" />
+    <meta property="article:tag" content="Projects" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Landmark Detection & Robot Tracking (SLAM)" />
+    <meta name="twitter:description" content="In this project, we’ll be localizing a robot in a 2D grid world. The basis for simultaneous localization and mapping (SLAM) is to gather information from a robot’s sensors and motions over time, and then use information about measurements and motion to re-construct a map of the world. Simultaneous Localization" />
+    <meta name="twitter:url" content="http://localhost:4000/" />
+    <meta name="twitter:image" content="http://localhost:4000/assets/images/slam/cover.png" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="Edge AI Guru" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="Projects" />
+    <meta name="twitter:site" content="@" />
+    <meta name="twitter:creator" content="@" />
+    <meta property="og:image:width" content="1400" />
+    <meta property="og:image:height" content="933" />
+
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Website",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Edge AI Guru",
+        "logo": "http://localhost:4000/assets/images/blog-icon.png"
+    },
+    "url": "http://localhost:4000/Slam",
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://localhost:4000/assets/images/slam/cover.png",
+        "width": 2000,
+        "height": 666
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://localhost:4000/Slam"
+    },
+    "description": "In this project, we’ll be localizing a robot in a 2D grid world. The basis for simultaneous localization and mapping (SLAM) is to gather information from a robot’s sensors and motions over time, and then use information about measurements and motion to re-construct a map of the world. Simultaneous Localization"
+}
+    </script>
+
+    <!-- <script type="text/javascript" src="https://demo.ghost.io/public/ghost-sdk.min.js?v=724281a32e"></script>
+    <script type="text/javascript">
+    ghost.init({
+    	clientId: "ghost-frontend",
+    	clientSecret: "f84a07a72b17"
+    });
+    </script> -->
+
+    <meta name="generator" content="Jekyll 3.6.2" />
+    <link rel="alternate" type="application/rss+xml" title="Landmark Detection & Robot Tracking (SLAM)" href="/feed.xml" />
+
+
+</head>
+<body class="post-template">
+
+    <div class="site-wrapper">
+        <!-- All the main content gets inserted here, index.hbs, post.hbs, etc -->
+        <!-- default -->
+
+<!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template -->
+
+<header class="site-header outer">
+    <div class="inner">
+        <nav class="site-nav">
+    <div class="site-nav-left">
+        
+            
+                <a class="site-nav-logo" href="http://localhost:4000/"><img src="/assets/images/blog-icon.png" alt="Edge AI Guru" /></a>
+            
+        
+        
+            <ul class="nav" role="menu">
+    <li class="nav-home" role="menuitem"><a href="/">Home</a></li>
+    <li class="nav-projects" role="menuitem"><a href="/tag/projects/">Projects</a></li>
+    <li class="nav-tutorials" role="menuitem"><a href="/tag/tutorials/">Tutorials</a></li>
+    <li class="nav-back-to-basics" role="menuitem"><a href="/tag/back-to-basics/">Back to Basics</a></li>
+    <li class="nav-news" role="menuitem"><a href="/tag/news/">News</a></li>
+    <li class="nav-about" role="menuitem"><a href="/about/">About</a></li>
+</ul>
+
+        
+    </div>
+    <div class="site-nav-right">
+        <div class="social-links">
+            
+            
+        </div>
+        
+            <a class="subscribe-button" href="#subscribe">Subscribe</a>
+        
+    </div>
+</nav>
+
+    </div>
+</header>
+
+<!-- Everything inside the #post tags pulls data from the post -->
+<!-- #post -->
+
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+
+        <article class="post-full  tag-projects post tag-projects ">
+
+            <header class="post-full-header">
+                <section class="post-full-meta">
+                    <time class="post-full-meta-date" datetime="25 June 2020">25 June 2020</time>
+                    
+                        <span class="date-divider">/</span>
+                        
+                            
+                               <a href='/tag/projects/'>PROJECTS</a>
+                            
+                        
+                    
+                </section>
+                <h1 class="post-full-title">Landmark Detection & Robot Tracking (SLAM)</h1>
+            </header>
+
+            
+            <figure class="post-full-image" style="background-image: url(/assets/images/slam/cover.png)">
+            </figure>
+            
+
+            <section class="post-full-content">
+                <div class="kg-card-markdown">
+                    <p>In this project, we’ll be localizing a robot in a 2D grid world. The basis for simultaneous localization and mapping (SLAM) is to gather information from a robot’s sensors and motions over time, and then use information about measurements and motion to re-construct a map of the world.</p>
+
+<h2 id="simultaneous-localization-and-mapping">Simultaneous Localization and Mapping</h2>
+
+<p>SLAM gives us a way to both localize a robot and build up a map of its environment as a robot moves and senses in real-time. This is an active area of research in the fields of robotics and autonomous systems. Since this localization and map-building relies on the visual sensing of landmarks, this is also a computer vision problem.</p>
+
+<p>To perform SLAM, we’ll collect a series of robot sensor measurements and motions, in that order, over a defined period of time. Then we’ll use only this data to re-construct the map of the world with the robot and landmark locations. Robot motion and sensors have some uncertainty associated with them. For example, imagine a car driving up hill and down hill; the speedometer reading will likely overestimate the speed of the car going up hill and underestimate the speed of the car going down hill because it cannot perfectly account for gravity. Similarly, we cannot perfectly predict the <em>motion</em> of a robot. A robot is likely to slightly overshoot or undershoot a target location.</p>
+
+<p>First, we create a robot and move it around a 2D grid world and then, define a <code class="highlighter-rouge">sense</code> function for this robot that allows it to sense landmarks in a given world. It’s important that you understand how this robot moves, senses, and how it keeps track of different landmarks that it sees in a 2D grid world, so that you can work with it’s movement and sensor data.</p>
+
+<p>This project is part of the <a href="https://www.udacity.com/course/computer-vision-nanodegree--nd891">Udacity Computer Vision Nanodegree</a> and all code can be found in <a href="https://github.com/jacquesmats/slam_implementation">my Github</a>.  The <code class="highlighter-rouge">__init__</code>  in robot class takes in a number of parameters including a world size and some values that indicate the sensing and movement capabilities of the robot. Furthermore, using the visualization function, <code class="highlighter-rouge">display_world</code>, that will display a grid world in a plot and draw a red <code class="highlighter-rouge">o</code> at the location of our robot, <code class="highlighter-rouge">r</code>. The details of how this function works can be found in the <code class="highlighter-rouge">helpers.py</code> file in the home directory. In the following image, we define a small 10x10 square world, a measurement range that is half that of the world and small values for motion and measurement noise. These values will typically be about 10 times larger, but we want to demonstrate this behavior on a small scale.</p>
+
+<p><img src="assets/images/slam/gridworld.png" alt="image-20200607150421443" /></p>
+
+<p>Next, let’s create landmarks, which are measurable features in the map. You can think of landmarks as things like notable buildings, or something smaller such as a tree, rock, or other feature. The robot class has a function <code class="highlighter-rouge">make_landmarks</code> which randomly generates locations for the number of specified landmarks. We have to pass these locations as a third argument to the <code class="highlighter-rouge">display_world</code> function and the list of landmark locations is accessed similar to how we find the robot position <code class="highlighter-rouge">r.landmarks</code>.  Each landmark is displayed as a purple <code class="highlighter-rouge">x</code> in the grid world, and we also print out the exact <code class="highlighter-rouge">[x, y]</code> locations of these landmarks at the end of this cell.</p>
+
+<p><img src="assets/images/slam/landmark.png" alt="image-20200607150421443" /></p>
+
+<p>Once we have some landmarks to sense, we need to be able to tell our robot to <em>try</em> to sense how far they are away from it. It will be up t you to code the <code class="highlighter-rouge">sense</code> function in our robot class. The <code class="highlighter-rouge">sense</code> function uses only internal class parameters and returns a list of the the measured/sensed x and y distances to the landmarks it senses within the specified <code class="highlighter-rouge">measurement_range</code>.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="k">def</span> <span class="nf">sense</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="s">''' This function does not take in any parameters, instead it references internal variables
+            (such as self.landamrks) to measure the distance between the robot and any landmarks
+            that the robot can see (that are within its measurement range).
+            This function returns a list of landmark indices, and the measured distances (dx, dy)
+            between the robot's position and said landmarks.
+            This function should account for measurement_noise and measurement_range.
+            One item in the returned list should be in the form: [landmark_index, dx, dy].
+            '''</span>
+           
+        <span class="n">measurements</span> <span class="o">=</span> <span class="p">[]</span>
+        
+        <span class="c">## Iterate through all of the landmarks in a world</span>
+        
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">l</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">landmarks</span><span class="p">):</span>                 
+            <span class="c">## For each landmark</span>
+            <span class="c">## 1. compute dx and dy, the distances between the robot and the landmark</span>
+            <span class="c">## 2. account for measurement noise by *adding* a noise component to dx and dy</span>
+            <span class="c">## 3. If either of the distances, dx or dy, fall outside of the internal var, measurement_range</span>
+            <span class="c">##    then we cannot record them; if they do fall in the range, then add them to the measurements list</span>
+            <span class="c">##    as list.append([index, dx, dy]), this format is important for data creation done later</span>
+            <span class="n">land_x</span><span class="p">,</span> <span class="n">land_y</span> <span class="o">=</span> <span class="n">l</span>  
+            
+            <span class="n">dx</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">-</span> <span class="n">land_x</span> <span class="o">+</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">measurement_noise</span>
+            <span class="n">dy</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">y</span> <span class="o">-</span> <span class="n">land_y</span> <span class="o">+</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">measurement_noise</span>
+            
+            <span class="k">print</span><span class="p">(</span><span class="s">"dx: {}</span><span class="se">\n</span><span class="s"> dy: {}</span><span class="se">\n</span><span class="s"> range: {}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dx</span><span class="p">,</span> <span class="n">dy</span><span class="p">,</span> <span class="n">measurement_range</span><span class="p">))</span>
+            
+            <span class="k">if</span> <span class="p">(</span><span class="n">dx</span> <span class="ow">or</span> <span class="n">dy</span><span class="p">)</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">measurement_range</span><span class="p">:</span>
+                <span class="k">pass</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">measurements</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">i</span><span class="p">,</span> <span class="n">dx</span><span class="p">,</span> <span class="n">dy</span><span class="p">])</span>
+
+        <span class="k">return</span> <span class="n">measurements</span>
+</code></pre></div></div>
+
+<h2 id="omega-and-xi">Omega and Xi</h2>
+
+<p>To implement Graph SLAM, a matrix and a vector (omega and xi, respectively) are introduced. The matrix is square and labeled with all the robot poses (xi) and all the landmarks (Li). Every time you make an observation, for example, as you move between two poses by some distance <code class="highlighter-rouge">dx</code> and can relate those two positions, you can represent this as a numerical relationship in these matrices.</p>
+
+<p>It’s easiest to see how these work in an example. Below you can see a matrix representation of omega and a vector representation of xi.</p>
+
+<p><img src="assets/images/slam/omega_xi.png" alt="image-20200607150421443" /></p>
+
+<p>Next, let’s look at a simple example that relates 3 poses to one another.</p>
+<ul>
+  <li>When you start out in the world most of these values are zeros or contain only values from the initial robot position</li>
+  <li>In this example, you have been given constraints, which relate these poses to one another</li>
+  <li>Constraints translate into matrix values</li>
+</ul>
+
+<p><img src="assets/images/slam/omega_xi_constraints.png" alt="image-20200607150421443" /></p>
+
+<p>If you have ever solved linear systems of equations before, this may look familiar.</p>
+
+<h3 id="solving-for-x">Solving for x</h3>
+
+<p>To “solve” for all these x values, we can use linear algebra; all the values of x are in the vector <code class="highlighter-rouge">mu</code> which can be calculated as a product of the inverse of omega times xi.</p>
+
+<p><img src="assets/images/slam/solution.png" alt="image-20200607150421443" /></p>
+
+<h2 id="motion-constraints-and-landmarks">Motion Constraints and Landmarks</h2>
+
+<p>Now, let’s look at how motion (and similarly, sensor measurements) can be used to create constraints and fill up the constraint matrices, omega and xi. Let’s start with empty/zero matrices.</p>
+
+<p><img src="assets/images/slam/initial_constraints.png" alt="image-20200607150421443" /></p>
+
+<p>This example also includes relationships between poses and landmarks. Say we move from x0 to x1 with a displacement <code class="highlighter-rouge">dx</code> of 5. Then we have created a motion constraint that relates x0 to x1, and we can start to fill up these matrices.</p>
+
+<p><img src="assets/images/slam/motion_constraint.png" alt="image-20200607150421443" /></p>
+
+<p>In fact, the one constraint equation can be written in two ways. So, the motion constraint that relates x0 and x1 by the motion of 5 has affected the matrix, adding values for <em>all</em> elements that correspond to x0 and x1.</p>
+
+<h2 id="generating-an-environment">Generating an environment</h2>
+
+<p>In a real SLAM problem, one may be given a map that contains information about landmark locations, and in this project, we will make our own data using the <code class="highlighter-rouge">make_data</code> function, which generates a world grid with landmarks in it and then generates data by placing a robot in that world and moving and sensing over some number of time steps.  The data is collected as an instantiated robot moves and senses in a world. The SLAM function will take in this data as input. So, first we create this data and explore how it represents the movement and sensor measurements that our robot takes.</p>
+
+<h3 id="create-the-world">Create the world</h3>
+
+<p>We used the <code class="highlighter-rouge">make_data</code> function to generate a world of a specified size with randomly generated landmark locations. <code class="highlighter-rouge">data</code> holds the sensors measurements and motion of your robot over time. It stores the measurements as <code class="highlighter-rouge">data[i][0]</code> and the motion as <code class="highlighter-rouge">data[i][1]</code>. One of the most challenging tasks were to create and modify the constraint matrix and vector: omega and xi. In the images above, you saw an example of how omega and xi could hold all the values the define the relationships between robot poses <code class="highlighter-rouge">xi</code> and landmark positions <code class="highlighter-rouge">Li</code> in a 1D world.</p>
+
+<p>In <em>this</em> project, we implemented constraints for a 2D world. We are referring to robot poses as <code class="highlighter-rouge">Px, Py</code> and landmark positions as <code class="highlighter-rouge">Lx, Ly</code>, and one way to approach this challenge is to add <em>both</em> x and y locations in the constraint matrices.</p>
+
+<p><img src="assets/images/slam/constraints2D.png" alt="image-20200607150421443" /></p>
+
+<h3 id="slam-inputs">SLAM inputs</h3>
+
+<p>In addition to <code class="highlighter-rouge">data</code>, the slam function will also take in:</p>
+<ul>
+  <li>N -   The number of time steps that a robot will be moving and sensing</li>
+  <li>num_landmarks - The number of landmarks in the world</li>
+  <li>world_size - The size (w/h) of the world</li>
+  <li>motion_noise - The noise associated with motion; the update confidence for motion should be <code class="highlighter-rouge">1.0/motion_noise</code></li>
+  <li>measurement_noise - The noise associated with measurement/sensing; the update weight for measurement should be <code class="highlighter-rouge">1.0/measurement_noise</code></li>
+</ul>
+
+<p>Recall that <code class="highlighter-rouge">omega</code> holds the relative “strengths” or weights for each position variable, and you can update these weights by accessing the correct index in omega <code class="highlighter-rouge">omega[row][col]</code> and <em>adding/subtracting</em> <code class="highlighter-rouge">1.0/noise</code> where <code class="highlighter-rouge">noise</code> is measurement or motion noise. <code class="highlighter-rouge">Xi</code> holds actual position values, and so to update <code class="highlighter-rouge">xi</code> you’ll do a similar addition process only using the actual value of a motion or measurement. So for a vector index <code class="highlighter-rouge">xi[row][0]</code> you will end up adding/subtracting one measurement or motion divided by their respective <code class="highlighter-rouge">noise</code>.</p>
+
+<h3 id="implement-graph-slam">Implement Graph SLAM</h3>
+
+<p>With a 2D omega and xi structure as shown above, we have to be mindful about how you update the values in these constraint matrices to account for motion and measurement constraints in the x and y directions. Recall that the solution to these matrices (which holds all values for robot poses <code class="highlighter-rouge">P</code> and landmark locations <code class="highlighter-rouge">L</code>) is the vector, <code class="highlighter-rouge">mu</code>, which can be computed at the end of the construction of omega and xi as the inverse of omega times xi.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## slam takes in 6 arguments and returns mu, </span>
+<span class="c">## mu is the entire path traversed by a robot (all x,y poses) *and* all landmarks locations</span>
+<span class="k">def</span> <span class="nf">slam</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">N</span><span class="p">,</span> <span class="n">num_landmarks</span><span class="p">,</span> <span class="n">world_size</span><span class="p">,</span> <span class="n">motion_noise</span><span class="p">,</span> <span class="n">measurement_noise</span><span class="p">):</span>
+    
+    <span class="c">## Use initilization to create constraint matrices, omega and xi</span>
+    <span class="n">omega</span><span class="p">,</span> <span class="n">xi</span> <span class="o">=</span> <span class="n">initialize_constraints</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">num_landmarks</span><span class="p">,</span> <span class="n">world_size</span><span class="p">)</span>
+
+    <span class="c"># Which index starts the Landmarks?</span>
+    <span class="n">first_landm_at</span> <span class="o">=</span> <span class="n">N</span><span class="o">*</span><span class="mi">2</span>
+    <span class="n">confidence</span> <span class="o">=</span> <span class="mi">1</span>
+
+    <span class="c">## Iterate through each time step in the data</span>
+    <span class="c">## get all the motion and measurement data as it iterates</span>
+    <span class="k">for</span> <span class="n">step</span><span class="p">,</span> <span class="n">d</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+        <span class="n">measurements</span><span class="p">,</span> <span class="n">motion</span> <span class="o">=</span> <span class="n">d</span>
+        
+        <span class="n">step</span> <span class="o">=</span> <span class="n">step</span><span class="o">*</span><span class="mi">2</span>
+        <span class="c">## update the constraint matrix/vector to account for all *measurements*</span>
+        <span class="c">## this should be a series of additions that take into account the measurement noise </span>
+
+        <span class="k">for</span> <span class="n">meas</span> <span class="ow">in</span> <span class="n">measurements</span><span class="p">:</span>    
+
+            <span class="n">idx_L</span> <span class="o">=</span> <span class="n">meas</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="n">x_L</span> <span class="o">=</span> <span class="n">meas</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+            <span class="n">y_L</span> <span class="o">=</span> <span class="n">meas</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+            
+            <span class="c">### MAIN DIAGONAL</span>
+
+            <span class="c"># X and Y</span>
+            <span class="n">omega</span><span class="p">[</span><span class="n">step</span><span class="p">,</span> <span class="n">step</span><span class="p">]</span>       <span class="o">+=</span>  <span class="mi">1</span> <span class="o">*</span><span class="n">confidence</span><span class="o">/</span><span class="n">measurement_noise</span>
+            <span class="n">omega</span><span class="p">[</span><span class="n">step</span> <span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">step</span> <span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">+=</span>  <span class="mi">1</span> <span class="o">*</span><span class="n">confidence</span><span class="o">/</span><span class="n">measurement_noise</span>
+
+            <span class="c"># Lx and Ly</span>
+            <span class="n">omega</span><span class="p">[(</span><span class="n">N</span> <span class="o">+</span> <span class="n">idx_L</span><span class="p">)</span><span class="o">*</span><span class="mi">2</span><span class="p">,</span> <span class="p">(</span><span class="n">N</span> <span class="o">+</span> <span class="n">idx_L</span><span class="p">)</span><span class="o">*</span><span class="mi">2</span><span class="p">]</span>       <span class="o">+=</span>  <span class="mi">1</span> <span class="o">*</span><span class="n">confidence</span><span class="o">/</span><span class="n">measurement_noise</span>
+            <span class="n">omega</span><span class="p">[(</span><span class="n">N</span> <span class="o">+</span> <span class="n">idx_L</span><span class="p">)</span><span class="o">*</span><span class="mi">2</span> <span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="p">(</span><span class="n">N</span> <span class="o">+</span> <span class="n">idx_L</span><span class="p">)</span><span class="o">*</span><span class="mi">2</span> <span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">+=</span>  <span class="mi">1</span> <span class="o">*</span><span class="n">confidence</span><span class="o">/</span><span class="n">measurement_noise</span>
+
+            <span class="c">### OTHER DIAGONAL</span>
+
+            <span class="c"># Lx and X</span>
+            <span class="n">omega</span><span class="p">[</span><span class="n">step</span><span class="p">,</span> <span class="n">N</span><span class="o">*</span><span class="mi">2</span> <span class="o">+</span> <span class="n">idx_L</span><span class="o">*</span><span class="mi">2</span><span class="p">]</span> <span class="o">+=</span> <span class="o">-</span><span class="mi">1</span> <span class="o">*</span><span class="n">confidence</span><span class="o">/</span><span class="n">measurement_noise</span>
+            <span class="n">omega</span><span class="p">[(</span><span class="n">N</span> <span class="o">+</span> <span class="n">idx_L</span><span class="p">)</span><span class="o">*</span><span class="mi">2</span><span class="p">,</span> <span class="n">step</span><span class="p">]</span> <span class="o">+=</span> <span class="o">-</span><span class="mi">1</span> <span class="o">*</span><span class="n">confidence</span><span class="o">/</span><span class="n">measurement_noise</span>
+
+            <span class="c"># Ly and Y</span>
+            <span class="n">omega</span><span class="p">[</span><span class="n">step</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="p">(</span><span class="n">N</span> <span class="o">+</span> <span class="n">idx_L</span><span class="p">)</span><span class="o">*</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+=</span> <span class="o">-</span><span class="mi">1</span> <span class="o">*</span><span class="n">confidence</span><span class="o">/</span><span class="n">measurement_noise</span>                     
+            <span class="n">omega</span><span class="p">[(</span><span class="n">N</span> <span class="o">+</span> <span class="n">idx_L</span><span class="p">)</span><span class="o">*</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">step</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+=</span> <span class="o">-</span><span class="mi">1</span> <span class="o">*</span><span class="n">confidence</span><span class="o">/</span><span class="n">measurement_noise</span>
+
+
+
+            <span class="c"># Xi for X and Y</span>
+            <span class="n">xi</span><span class="p">[</span><span class="n">step</span><span class="p">]</span>     <span class="o">+=</span> <span class="o">-</span><span class="mi">1</span> <span class="o">*</span> <span class="n">x_L</span><span class="o">/</span><span class="n">measurement_noise</span>
+            <span class="n">xi</span><span class="p">[</span><span class="n">step</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+=</span> <span class="o">-</span><span class="mi">1</span> <span class="o">*</span> <span class="n">y_L</span><span class="o">/</span><span class="n">measurement_noise</span>
+
+            <span class="c"># Xi for Lx and Ly</span>
+            <span class="n">xi</span><span class="p">[(</span><span class="n">N</span> <span class="o">+</span> <span class="n">idx_L</span><span class="p">)</span><span class="o">*</span><span class="mi">2</span> <span class="p">]</span>    <span class="o">+=</span>  <span class="mi">1</span> <span class="o">*</span> <span class="n">x_L</span><span class="o">/</span><span class="n">measurement_noise</span>
+            <span class="n">xi</span><span class="p">[(</span><span class="n">N</span> <span class="o">+</span> <span class="n">idx_L</span><span class="p">)</span><span class="o">*</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+=</span>  <span class="mi">1</span> <span class="o">*</span> <span class="n">y_L</span><span class="o">/</span><span class="n">measurement_noise</span>
+                    
+    <span class="c">## update the constraint matrix/vector to account for all *motion* and motion noise           </span>
+        <span class="n">dx</span><span class="p">,</span> <span class="n">dy</span> <span class="o">=</span> <span class="n">motion</span>
+
+        <span class="c">#X_current</span>
+        <span class="n">omega</span><span class="p">[</span><span class="n">step</span><span class="p">][</span><span class="n">step</span><span class="p">]</span>         <span class="o">+=</span> <span class="mi">1</span> <span class="o">*</span> <span class="n">confidence</span><span class="o">/</span><span class="n">motion_noise</span>
+        <span class="n">omega</span><span class="p">[</span><span class="n">step</span> <span class="o">+</span> <span class="mi">2</span><span class="p">][</span><span class="n">step</span> <span class="o">+</span> <span class="mi">2</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span> <span class="o">*</span> <span class="n">confidence</span><span class="o">/</span><span class="n">motion_noise</span>
+        <span class="c"># X_next</span>
+        <span class="n">omega</span><span class="p">[</span><span class="n">step</span><span class="p">][</span><span class="n">step</span> <span class="o">+</span> <span class="mi">2</span><span class="p">]</span>     <span class="o">+=</span> <span class="o">-</span><span class="mi">1</span> <span class="o">*</span> <span class="n">confidence</span><span class="o">/</span><span class="n">motion_noise</span>
+        <span class="n">omega</span><span class="p">[</span><span class="n">step</span> <span class="o">+</span> <span class="mi">2</span><span class="p">][</span><span class="n">step</span><span class="p">]</span>     <span class="o">+=</span> <span class="o">-</span><span class="mi">1</span> <span class="o">*</span> <span class="n">confidence</span><span class="o">/</span><span class="n">motion_noise</span>
+
+        <span class="c"># Y_current</span>
+        <span class="n">omega</span><span class="p">[</span><span class="n">step</span> <span class="o">+</span> <span class="mi">1</span><span class="p">][</span><span class="n">step</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+=</span>  <span class="mi">1</span> <span class="o">*</span> <span class="n">confidence</span><span class="o">/</span><span class="n">motion_noise</span>
+        <span class="n">omega</span><span class="p">[</span><span class="n">step</span> <span class="o">+</span> <span class="mi">3</span><span class="p">][</span><span class="n">step</span> <span class="o">+</span> <span class="mi">3</span><span class="p">]</span> <span class="o">+=</span>  <span class="mi">1</span> <span class="o">*</span> <span class="n">confidence</span><span class="o">/</span><span class="n">motion_noise</span>
+        <span class="c">#Y_next</span>
+        <span class="n">omega</span><span class="p">[</span><span class="n">step</span> <span class="o">+</span> <span class="mi">1</span><span class="p">][</span><span class="n">step</span> <span class="o">+</span> <span class="mi">3</span><span class="p">]</span> <span class="o">+=</span> <span class="o">-</span><span class="mi">1</span> <span class="o">*</span> <span class="n">confidence</span><span class="o">/</span><span class="n">motion_noise</span>
+        <span class="n">omega</span><span class="p">[</span><span class="n">step</span> <span class="o">+</span> <span class="mi">3</span><span class="p">][</span><span class="n">step</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+=</span> <span class="o">-</span><span class="mi">1</span> <span class="o">*</span> <span class="n">confidence</span><span class="o">/</span><span class="n">motion_noise</span>
+
+
+        <span class="n">xi</span><span class="p">[</span><span class="n">step</span><span class="p">,</span>   <span class="mi">0</span><span class="p">]</span> <span class="o">+=</span> <span class="o">-</span><span class="mi">1</span> <span class="o">*</span> <span class="n">dx</span><span class="o">/</span><span class="n">motion_noise</span> 
+        <span class="n">xi</span><span class="p">[</span><span class="n">step</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">+=</span> <span class="o">-</span><span class="mi">1</span> <span class="o">*</span> <span class="n">dy</span><span class="o">/</span><span class="n">motion_noise</span>
+        <span class="n">xi</span><span class="p">[</span><span class="n">step</span><span class="o">+</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>  <span class="o">*</span> <span class="n">dx</span><span class="o">/</span><span class="n">motion_noise</span>
+        <span class="n">xi</span><span class="p">[</span><span class="n">step</span><span class="o">+</span><span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>  <span class="o">*</span> <span class="n">dy</span><span class="o">/</span><span class="n">motion_noise</span>
+
+    <span class="c">## After iterating through all the data</span>
+    <span class="c">## Compute the best estimate of poses and landmark positions</span>
+    <span class="c">## using the formula, omega_inverse * Xi</span>
+    <span class="n">omega_inverse</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">omega</span><span class="p">)</span>
+    <span class="n">mu</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">omega_inverse</span><span class="p">,</span> <span class="n">xi</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">mu</span><span class="p">,</span> <span class="n">omega</span><span class="p">,</span> <span class="n">xi</span> 
+</code></pre></div></div>
+
+<h2 id="run-slam">Run SLAM</h2>
+
+<p>Once we completed the implementation of <code class="highlighter-rouge">slam</code>, lets check what <code class="highlighter-rouge">mu</code> it returns for different world sizes and different landmarks! We expect the robot to start with an estimated pose in the very center of your square world, whose size is defined by <code class="highlighter-rouge">world_size</code>. We specify the number, <code class="highlighter-rouge">N</code>, the time steps that the robot was expected to move and the <code class="highlighter-rouge">num_landmarks</code> in the world (which your implementation of <code class="highlighter-rouge">slam</code>) should see and estimate a position for.</p>
+
+<p>With these values in mind, you should expect to see a result that displays two lists:</p>
+<ol>
+  <li><strong>Estimated poses</strong>, a list of (x, y) pairs that is exactly <code class="highlighter-rouge">N</code> in length since this is how many motions your robot has taken. The very first pose should be the center of your world, i.e. <code class="highlighter-rouge">[50.000, 50.000]</code> for a world that is 100.0 in square size.</li>
+  <li><strong>Estimated landmarks</strong>, a list of landmark positions (x, y) that is exactly <code class="highlighter-rouge">num_landmarks</code> in length.</li>
+</ol>
+
+<p>For visualizing the constructed world, using the <code class="highlighter-rouge">display_world</code> code from the <code class="highlighter-rouge">helpers.py</code> file (which was also used in the first notebook), we can actually visualize what you have coded with <code class="highlighter-rouge">slam</code>: the final position of the robot and the positon of landmarks, created from only motion and measurement data!</p>
+
+<p><img src="assets/images/slam/fullgrid.png" alt="image-20200607150421443" /></p>
+
+<p>To confirm that the slam code works, we run it on some test data and cases. The output should be <strong>close-to or exactly</strong> identical to the given results. If there are minor discrepancies it could be a matter of floating point accuracy or in the calculation of the inverse matrix.</p>
+
+<p><img src="assets/images/slam/final_result.png" alt="image-20200607150421443" /></p>
+
+<hr />
+
+<p>Would you like to  receive the most important news and trends in AI in just one email every end of the month? Subscribe below and I’ll send you the 10 most important news in Artificial Intelligence</p>
+
+                </div>
+            </section>
+
+            <!-- Email subscribe form at the bottom of the page -->
+            
+                <section class="subscribe-form">
+                    <h3 class="subscribe-form-title">Subscribe to Edge AI Guru</h3>
+                    <p>Get the latest posts delivered right to your inbox</p>
+                    <!--
+<form method="post" action="/subscribe/" class="">
+    <input class="confirm" type="hidden" name="confirm"  /><input class="location" type="hidden" name="location"  /><input class="referrer" type="hidden" name="referrer"  />
+
+    <div class="form-group">
+        <input class="subscribe-email" type="email" name="email"  placeholder="youremail@example.com" />
+    </div>
+    <button class="" type="submit" disabled><span>Subscribe</span></button>
+    <script type="text/javascript">(function(g,h,o,s,t){h[o]('.location')[s]=h[o]('.location')[s] || g.location.href;h[o]('.referrer')[s]=h[o]('.referrer')[s] || h.referrer;})(window,document,'querySelector','value');</script>
+</form>
+Begin Mailchimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<div id="mc_embed_signup">
+<form action="https://live.us19.list-manage.com/subscribe/post?u=1a75f176c221a80d91de5e939&amp;id=671c7f7a46" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+    <input type="email" value="" name="EMAIL" class="subscribe-email" id="mce-EMAIL" placeholder="youremail@example.com" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1a75f176c221a80d91de5e939_671c7f7a46" tabindex="-1" value=""></div>
+    <!--<button class="" type="submit" disabled id="mc-embedded-subscribe"><span>Subscribe</span></button> -->
+    <div class=""><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div> 
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+                </section>
+            
+
+            <footer class="post-full-footer">
+                <!-- Everything inside the #author tags pulls data from the author -->
+                <!-- #author-->
+                
+                    
+                        <section class="author-card">
+                            
+                                <img class="author-profile-image" src="/assets/images/matheus.png" alt="matheus" />
+                            
+                            <section class="author-card-content">
+                                <h4 class="author-card-name"><a href="/author/matheus">Matheus Jacques</a></h4>
+                                
+                                    <p>Engineer and entrepreneur with 4 years in R&D, 2 years as a Startup Founder and 2 year dealing with Business/Data Analytics. Programming since 2010.</p>
+                                
+                            </section>
+                        </section>
+                        <div class="post-full-footer-right">
+                            <a class="author-card-button" href="/author/matheus">Read More</a>
+                        </div>
+                    
+                
+                    
+                
+                <!-- /author  -->
+            </footer>
+
+            <!-- If you use Disqus comments, just uncomment this block.
+            The only thing you need to change is "test-apkdzgmqhj" - which
+            should be replaced with your own Disqus site-id. -->
+            
+                <section class="post-full-comments">
+                    <div id="disqus_thread"></div>
+                    <script>
+                        var disqus_config = function () {
+                            this.page.url = 'http://localhost:4000/Slam';
+                            this.page.identifier = '/Slam';
+                            this.page.title = 'Landmark Detection & Robot Tracking (SLAM)';
+                        };
+                        (function() {
+                            var d = document, s = d.createElement('script');
+                            s.src = 'https://edgeaiguru.disqus.com/embed.js';
+                            s.setAttribute('data-timestamp', +new Date());
+                            (d.head || d.body).appendChild(s);
+                        })();
+                    </script>
+                </section>
+            
+
+        </article>
+
+    </div>
+</main>
+
+<!-- Links to Previous/Next posts -->
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+            
+                
+                
+                
+                
+                    <article class="read-next-card"
+                        
+                            style="background-image: url(/assets/images/blog-cover.jpg)"
+                        
+                    >
+                        <header class="read-next-card-header">
+                            <small class="read-next-card-header-sitetitle">&mdash; Edge AI Guru &mdash;</small>
+                            
+                                <h3 class="read-next-card-header-title"><a href="/tag/projects/">Projects</a></h3>
+                            
+                        </header>
+                        <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
+</div>
+                        <div class="read-next-card-content">
+                            <ul>
+                                
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/3D-Object-Tracking">Tracking 3D objects with Lidar and Camera</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/Lidar-Obstacles-Detection">Lidar Obstacles Detection</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/Image-Captioning">Image Captioning</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                            </ul>
+                        </div>
+                        <footer class="read-next-card-footer">
+                            <a href="/tag/projects/">
+                                
+                                    See all 5 posts  →
+                                
+                            </a>
+                        </footer>
+                    </article>
+                
+            
+
+            <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
+            
+                
+
+    <article class="post-card post-template">
+        
+            <a class="post-card-image-link" href="/Image-Captioning">
+                <div class="post-card-image" style="background-image: url(/assets/images/img-captioning/cover.png)"></div>
+            </a>
+        
+        <div class="post-card-content">
+            <a class="post-card-content-link" href="/Image-Captioning">
+                <header class="post-card-header">
+                    
+                        
+                            
+                                <span class="post-card-tags">Projects</span>
+                            
+                        
+                    
+
+                    <h2 class="post-card-title">Image Captioning</h2>
+                </header>
+                <section class="post-card-excerpt">
+                    
+                        <p></p>
+                    
+                </section>
+            </a>
+            <footer class="post-card-meta">
+                
+                    
+                        
+                        <img class="author-profile-image" src="/assets/images/matheus.png" alt="Matheus Jacques" />
+                        
+                        <span class="post-card-author">
+                            <a href="/author/matheus/">Matheus Jacques</a>
+                        </span>
+                    
+                
+                    
+                
+                <span class="reading-time">
+                    
+                    
+                      1 min read
+                    
+                </span>
+            </footer>
+        </div>
+    </article>
+
+            
+
+            <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
+            
+                
+
+    <article class="post-card post-template">
+        
+            <a class="post-card-image-link" href="/Facial-Keypoint-Detection">
+                <div class="post-card-image" style="background-image: url(/assets/images/facial-kpts/cover.png)"></div>
+            </a>
+        
+        <div class="post-card-content">
+            <a class="post-card-content-link" href="/Facial-Keypoint-Detection">
+                <header class="post-card-header">
+                    
+                        
+                            
+                                <span class="post-card-tags">Projects</span>
+                            
+                        
+                    
+
+                    <h2 class="post-card-title">Facial Keypoint Detection</h2>
+                </header>
+                <section class="post-card-excerpt">
+                    
+                        <p></p>
+                    
+                </section>
+            </a>
+            <footer class="post-card-meta">
+                
+                    
+                        
+                        <img class="author-profile-image" src="/assets/images/matheus.png" alt="Matheus Jacques" />
+                        
+                        <span class="post-card-author">
+                            <a href="/author/matheus/">Matheus Jacques</a>
+                        </span>
+                    
+                
+                    
+                
+                <span class="reading-time">
+                    
+                    
+                      1 min read
+                    
+                </span>
+            </footer>
+        </div>
+    </article>
+
+            
+
+        </div>
+    </div>
+</aside>
+
+<!-- Floating header which appears on-scroll, included from includes/floating-header.hbs -->
+<div class="floating-header">
+    <div class="floating-header-logo">
+        <a href="http://localhost:4000/">
+            
+                <img src="/assets/images/favicon.png" alt="Edge AI Guru icon" />
+            
+            <span>Edge AI Guru</span>
+        </a>
+    </div>
+    <span class="floating-header-divider">&mdash;</span>
+    <div class="floating-header-title">Landmark Detection & Robot Tracking (SLAM)</div>
+    <div class="floating-header-share">
+        <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
+</svg>
+</div>
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Landmark+Detection+%26+Robot+Tracking+%28SLAM%29&amp;url=Slam"
+            onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
+
+        </a>
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=Slam"
+            onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
+
+        </a>
+    </div>
+    <progress class="progress" value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
+</div>
+
+
+<!-- /post -->
+
+<!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs -->
+
+
+        <!-- Previous/next page links - displayed on every page -->
+        
+
+        <!-- The footer at the very bottom of the screen -->
+        <footer class="site-footer outer">
+            <div class="site-footer-content inner">
+                <section class="copyright"><a href="http://localhost:4000/">Edge AI Guru</a> &copy; 2020</section>
+                <section class="poweredby">Proudly published with <a href="https://jekyllrb.com/">Jekyll</a> &
+                    <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a> using
+                    <a href="https://github.com/jekyller/jasper2" target="_blank" rel="noopener">Jasper2</a></section>
+                <nav class="site-footer-nav">
+                    <a href="/">Latest Posts</a>
+                    
+                    
+                    <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
+                </nav>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- The big email subscribe modal content -->
+    
+        <div id="subscribe" class="subscribe-overlay">
+            <a class="subscribe-overlay-close" href="#"></a>
+            <div class="subscribe-overlay-content">
+                
+                    <img class="subscribe-overlay-logo" src="/assets/images/blog-icon.png" alt="Edge AI Guru" />
+                
+                <h1 class="subscribe-overlay-title">Subscribe to Edge AI Guru</h1>
+                <p class="subscribe-overlay-description">Stay up to date! Get all the latest &amp; greatest posts delivered straight to your inbox</p>
+                <!--
+<form method="post" action="/subscribe/" class="">
+    <input class="confirm" type="hidden" name="confirm"  /><input class="location" type="hidden" name="location"  /><input class="referrer" type="hidden" name="referrer"  />
+
+    <div class="form-group">
+        <input class="subscribe-email" type="email" name="email"  placeholder="youremail@example.com" />
+    </div>
+    <button class="" type="submit" disabled><span>Subscribe</span></button>
+    <script type="text/javascript">(function(g,h,o,s,t){h[o]('.location')[s]=h[o]('.location')[s] || g.location.href;h[o]('.referrer')[s]=h[o]('.referrer')[s] || h.referrer;})(window,document,'querySelector','value');</script>
+</form>
+Begin Mailchimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<div id="mc_embed_signup">
+<form action="https://live.us19.list-manage.com/subscribe/post?u=1a75f176c221a80d91de5e939&amp;id=671c7f7a46" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+    <input type="email" value="" name="EMAIL" class="subscribe-email" id="mce-EMAIL" placeholder="youremail@example.com" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1a75f176c221a80d91de5e939_671c7f7a46" tabindex="-1" value=""></div>
+    <!--<button class="" type="submit" disabled id="mc-embedded-subscribe"><span>Subscribe</span></button> -->
+    <div class=""><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div> 
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+            </div>
+        </div>
+    
+
+    <!-- highlight.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.10.0/components/prism-abap.min.js"></script>
+    <script>$(document).ready(function() {
+      $('pre code').each(function(i, block) {
+        hljs.highlightBlock(block);
+      });
+    });</script>
+
+    <!-- jQuery + Fitvids, which makes all video embeds responsive -->
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="https://demo.ghost.io/assets/js/jquery.fitvids.js?v=724281a32e"></script>
+
+
+    <!-- Paginator increased to "infinit" in _config.yml -->
+    <!-- if paginator.posts  -->
+    <!-- <script>
+        var maxPages = parseInt('');
+    </script>
+    <script src="/assets/js/infinitescroll.js"></script> -->
+    <!-- /endif -->
+
+    
+
+
+    <!-- Add Google Analytics  -->
+    <!-- Google Analytics Tracking code -->
+ <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-166032640-1', 'auto');
+  ga('send', 'pageview');
+
+ </script>
+
+
+    <!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. -->
+    
+        <script>
+
+// NOTE: Scroll performance is poor in Safari
+// - this appears to be due to the events firing much more slowly in Safari.
+//   Dropping the scroll event and using only a raf loop results in smoother
+//   scrolling but continuous processing even when not scrolling
+$(document).ready(function () {
+    // Start fitVids
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+    // End fitVids
+
+    var progressBar = document.querySelector('progress');
+    var header = document.querySelector('.floating-header');
+    var title = document.querySelector('.post-full-title');
+
+    var lastScrollY = window.scrollY;
+    var lastWindowHeight = window.innerHeight;
+    var lastDocumentHeight = $(document).height();
+    var ticking = false;
+
+    function onScroll() {
+        lastScrollY = window.scrollY;
+        requestTick();
+    }
+
+    function onResize() {
+        lastWindowHeight = window.innerHeight;
+        lastDocumentHeight = $(document).height();
+        requestTick();
+    }
+
+    function requestTick() {
+        if (!ticking) {
+            requestAnimationFrame(update);
+        }
+        ticking = true;
+    }
+
+    function update() {
+        var trigger = title.getBoundingClientRect().top + window.scrollY;
+        var triggerOffset = title.offsetHeight + 35;
+        var progressMax = lastDocumentHeight - lastWindowHeight;
+
+        // show/hide floating header
+        if (lastScrollY >= trigger + triggerOffset) {
+            header.classList.add('floating-active');
+        } else {
+            header.classList.remove('floating-active');
+        }
+
+        progressBar.setAttribute('max', progressMax);
+        progressBar.setAttribute('value', lastScrollY);
+
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onResize, false);
+
+    update();
+});
+</script>
+
+    
+
+    <!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag -->
+    <!-- ghost_foot -->
+
+</body>
+</html>
