@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/tag/projects/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2020-08-18T00:22:08-03:00</updated>
+  <updated>2020-08-19T23:25:35-03:00</updated>
   <id>http://localhost:4000/tag/projects/feed.xml</id>
 
   
@@ -327,6 +327,50 @@ d = |A*x+B*y+C*z+D|/sqrt(A^2+B^2+C^2)
     </entry>
   
     <entry>
+      <title type="html">Image Captioning</title>
+      <link href="http://localhost:4000/Image-Captioning" rel="alternate" type="text/html" title="Image Captioning" />
+      <published>2020-07-07T07:15:00-03:00</published>
+      <updated>2020-07-07T07:15:00-03:00</updated>
+      <id>http://localhost:4000/Image%20Captioning</id>
+      <content type="html" xml:base="http://localhost:4000/Image-Captioning">&lt;p&gt;In this project, we used a dataset of image-caption pairs to train a CNN-RNN model to automatically generate captions from images.&lt;/p&gt;
+
+&lt;p&gt;The Dataset&lt;/p&gt;
+
+&lt;p&gt;Downloaded using  &lt;a href=&quot;https://github.com/cocodataset/cocoapi&quot;&gt;COCO API&lt;/a&gt;, the Microsoft &lt;strong&gt;C&lt;/strong&gt;ommon &lt;strong&gt;O&lt;/strong&gt;bjects in &lt;strong&gt;CO&lt;/strong&gt;ntext (MS COCO) dataset is a large-scale dataset for scene understanding. The dataset is commonly used to train and benchmark object detection, segmentation, and captioning algorithms. Furthermore you can find more about the dataset on the &lt;a href=&quot;http://cocodataset.org/#home&quot;&gt;website&lt;/a&gt; or in the &lt;a href=&quot;https://arxiv.org/pdf/1405.0312.pdf&quot;&gt;research paper&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/img-captioning/coco-examples.jpg&quot; alt=&quot;image-20200607150421443&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Would you like to  receive the most important news and trends in AI in just one email every end of the month? Subscribe below and I’ll send you the 10 most important news in Artificial Intelligence&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Matheus Jacques</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="projects" />
+      
+
+      
+        <summary type="html">In this project, we used a dataset of image-caption pairs to train a CNN-RNN model to automatically generate captions from images.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
       <title type="html">Facial Keypoint Detection</title>
       <link href="http://localhost:4000/Facial-Keypoint-Detection" rel="alternate" type="text/html" title="Facial Keypoint Detection" />
       <published>2020-06-15T07:15:00-03:00</published>
@@ -554,6 +598,198 @@ transformed_sample = tx(sample)
 
       
         <summary type="html">This project will be all about defining and training a convolutional neural network to perform facial keypoint detection, and using computer vision techniques to transform images of faces.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Predicting Buyers for Food Delivery Platforms</title>
+      <link href="http://localhost:4000/Predicting-Buyers-for-Food-Delivery-Platforms" rel="alternate" type="text/html" title="Predicting Buyers for Food Delivery Platforms" />
+      <published>2019-02-18T07:15:00-03:00</published>
+      <updated>2019-02-18T07:15:00-03:00</updated>
+      <id>http://localhost:4000/Predicting%20Buyers%20for%20Food%20Delivery%20Platforms</id>
+      <content type="html" xml:base="http://localhost:4000/Predicting-Buyers-for-Food-Delivery-Platforms">&lt;p&gt;This project has the objective to create a Machine Learning Model to predict whether a user that just registered will buy or not. Predicting such action could influence from user experience until predicting demands for restaurants.&lt;/p&gt;
+
+&lt;h2 id=&quot;tldr&quot;&gt;TL;DR&lt;/h2&gt;
+
+&lt;p&gt;This project has the objective to create a Machine Learning Model to predict whether a user that just registered will buy or not. Predicting such action could influence from user experience until predicting demands for restaurants. The metrics used to evaluate this project was mainly Area Under the Curve (AUC), complemented by Accuracy and F-Score. A benchmark with five classifiers was created and a Light Gradient Boost Model was chosen. After tuning and reducing the number of features, the model achieves 99.0% of accuracy, followed by 98.2% and 99.1% of F-score and ROC-AUC, respectively. 
+The predictor aims to be implemented in production to help the company understand better customer behavior. With that in mind, the first step was made moving the best classifier to the AWS SageMaker. There, it will be connected with the streaming data from the database and predict the customer next steps in real time.&lt;/p&gt;
+
+&lt;h2 id=&quot;project-overview&quot;&gt;Project Overview&lt;/h2&gt;
+
+&lt;p&gt;Immerse in a sector that expects to exceed $ 250 billion by 2022 [1], every improvement put you ahead of the competition. The FoodTech Industry is transforming the way we eat and it is being pulled by a generation which demands far more from services. In the US, 63% of Americans abandoned their cart due to bad customer experience [2].  Furthermore, because of the sectors wideness and variety, not only start ups are joining the race but corporate food companies as well. From the farm, passing through logistics and ending up in the customer’s table, the food sector is a rich soil to apply cutting edge technology. 
+Being part of the last mile agents, the food delivery apps are the very end of this food chain. Working in direct contact with the customers, it is the bridge between clients, drivers and restaurants. In the food delivery branch the platform is sticky: 80\% of consumers rarely or never change to a new application [4]. So retention techniques as reorder buttons, discounts and promotions are the core to get and keep an active base of digital consumers.
+Knowing your customer and predicting their next steps becomes essential in a such rapid pace environment. Predicting a customer purchase can influence directly in his user experience. It is possible to suggest his favorite cuisine, understand how logistics can scale or offer a discount code as an incentive. Thus, this project aims to create a classifier which is capable of predicting whether or not a customer will place an order soon after registration.&lt;/p&gt;
+
+&lt;h3 id=&quot;problem-statement&quot;&gt;Problem Statement&lt;/h3&gt;
+
+&lt;p&gt;Taking action upon belief can be naive in a fully connected measurable world. With an average transaction order between $ 25 to $ 50 [3], a discount coupon of $ 5 represents 10 to 20% of its value. At the same time, use discounts to convincing new customers to order is a common practice. Furthermore, to give discount code to everyone which is logging for the first time, could be a big waste of budget. From the dataset, is possible to notice that 36% of customers tend to buy in the same day of registration. Meaning that every improvement in this number increases directly the company’s revenue. In a scenario where we have 100.000 new orders a day and (using) a discount code of $ 5, if we have a solution that gives discount only to customers that will probably not place an order in the same day, it could represent savings of $ 180k/day.
+The solution for the problem stated before consist in identifying potential buyers and taking action to delivery a better user experience. And at the same time, instigate non buyers to place an order. This can be done using the biographic and demographic data present in the main dataset to understand these customers types.&lt;/p&gt;
+
+&lt;h3 id=&quot;metrics&quot;&gt;Metrics&lt;/h3&gt;
+
+&lt;p&gt;For binary classification problems the most common metric to evaluate model’s performance is the Area Under the Curve (AUC). It can tell us how good a classifier identify two classes. The AUC of a classifier is equal to the probability that the classifier will rank a randomly chosen positive example higher than a randomly chosen negative example. As scale-invariant, it can measure how well the predictions are ranked and does not consider its absolute values. Together with AUC, the use of Accuracy and F-score complement the evaluation step.&lt;/p&gt;
+
+&lt;h2 id=&quot;analysis&quot;&gt;Analysis&lt;/h2&gt;
+
+&lt;p&gt;For the inputs, we have two datasets: the main one which contains demographic (age, population, etc) and order information (date, payment type, delivery method). Together they have 464.969 lines where each one is an order. This dataset contains two years of data from part of the company’s operation. And we have a second dataset which translates peoples name to gender, called here “names.csv”. This is necessary because the raw information in the database is not complete. 
+The main dataset was obtained with consent from food delivery startup and is composed of the following dimensions:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/pred-buyers/featureset.png&quot; alt=&quot;image-20200607150421443&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Figure 1. Type of variable associated with each feature&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;While the first 10 columns tell us information about the client, the second part digs deeper into consumer habits. All the dimensions could influence the client desire to buy, hence all of them was used.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/pred-buyers/datasets_head.png&quot; alt=&quot;image-2020060715042144332&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Figure 2. Datasets used to train the model&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The names to gender dataset were download from a public website [5] and are based in the 2010 Brazilian Sense. It is provided information about the environment such as city size, number of orders in this particular city (that may reveal that people in cities with more orders are likely to buy) and country’s region. We have timewise data, which indicate the likelihood o buy in some hours and days. And the logistic data telling if the client used a coupon, which kind of cuisine this kind of customer order, which payment type they prefer. All to try to find a pattern in people who buy soon after registration. 
+The binary classifier to classify each user is put manualy using Python during the code, in a column named ‘Buyer’ where 1 stands for True.&lt;/p&gt;
+
+&lt;h3 id=&quot;exploratory-visualization&quot;&gt;Exploratory Visualization&lt;/h3&gt;
+
+&lt;p&gt;In this section, we will have a closer look in the dataset and try to identify patterns already. A great way to start is to look a the datasets age:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/pred-buyers/male_female_buyers.png&quot; alt=&quot;image-20200607151230421443&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/pred-buyers/ageplot.png&quot; alt=&quot;image-2020060127150421443&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Figure 3. Age and Gender Exploration&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Instantly we notice that there are several outliers. This may happen because of the input method in the registration form or by users deliberately choosing to put the wrong date of birth. A outliers removal technic is needed to improve the classifier accuracy.&lt;/p&gt;
+
+&lt;p&gt;Another feature that comes to mind is gender. Gender may influence in customer desire to buy. But from Figure 3 we can not see a major influence upon putting a order or not. We can conclude that we have around 20\% more women in this dataset, but the target buyers are present in both genders equally.&lt;/p&gt;
+
+&lt;p&gt;33&lt;img src=&quot;assets/images/pred-buyers/orderpophue.png&quot; alt=&quot;image-20200607150421443&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Figure 4. Order and Population from Target Users&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Taking a look in the relationship between number of orders and population, we can see that it isn’t a linear function. Most of the data is concentrated in cities with population less than 200.000 and with less than 25 thousand orders. With this in mind, we can look at our target users in this range, as in Figure 4, to try to find a pattern. Clearly this users are in small cities, where competition is not so fierce and the number of orders are small, indicating that the app is new in the town.,&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/pred-buyers/orderspoprelation.png&quot; alt=&quot;image-20200607112250421443&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Figure 5. Relationship between number of orders and population&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;In other hand, we can identify a pattern looking to the scatter plot below (Figure \ref{fig:scatagehour}) of hour by age. There is two well defined groups: people younger than 20 years and seniors from 40 to 80 years old. This two groups tend to order their first order between 10 AM and 8 PM. The gap between 20 and 40 years old, are mostly compose of people that do some research before place an order, or are impacted by some marketing campaign but do not buy instantly.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/pred-buyers/scatter_agehour.png&quot; alt=&quot;image-2020060217150421443&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Figure 6. Identifying buyers per age and hour&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;algorithms-and-techniques&quot;&gt;Algorithms and Techniques&lt;/h3&gt;
+
+&lt;p&gt;The first step is to prepare the data. We have two datasets: one containing information about customers who bought in the same day of registration and other containing customers that ordered the following day or after. These two must be merged as a main file. The main dataset does not contain buyers gender, which is main feature to predict customer behavior. So a name to gender dataset is needed as part of feature engineering, together with the creation of additional features tha would help the algoritm. Furthermore, a step to drop non relevant features as names and IDs is needed.&lt;/p&gt;
+
+&lt;p&gt;Once the main dataset is put together, is proceed with preprocessing the data. Transforming skewed continuous features, such as orders and population that has vastly large numbers, as well as normalizing and hot-encoding variables performs a critical step. Although some algorithms can handle categorical features internally, this step will be performed to avoid future trouble. At the same time, outliers and null values must be removed, hence algorithms can be very sensitive to such numbers. We have seen already the need to remove outliers while looking to the age, population and orders range of the data.&lt;/p&gt;
+
+&lt;p&gt;With all data prepared, is time to start understanding all features and which algorithm would be used. We start by defining a Naive Predictor, as stated before, which would set our lower boundary. Next we will explore three models: Random Forest, GradientBoost and LightGBM (LGBM).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/pred-buyers/decision-tree-example.png&quot; alt=&quot;image-2020060217150421443&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Figure 7. Decision Tree Example&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;This three algorithms are based in Decision Trees. Decision Trees works by creating questions and answering them. Here each node is a feature, each link is a class and each leaf is the output of such a branch, as stated below. For example, from Figure 7, we notice that people under 20 years old tend not to buy on business days. These models are part of the ensemble learning methods and predict by combining the outputs from multiple individual trees. While Random Forest Method create trees independently using random slices from data and choose from the best, the GradientBoost builds one tree at the time and improves over the last one in an iterative method, fixing errors from the previous. Although LGBM is also a tree based algorithm, it grows tree leaf-wise, maximizing classes and not deep-wise. Which can reduce the losses, choosing the leaf with max delta loss. \par
+For selecting the best model, first we need a training pipeline, which would provide an automated way for training multiple classifiers. Then, three models should be defined taking into consideration the data and the goal of the project. Since this project aims to go to production, prediction time is the key evaluation metric here. Also, recall is more important than precision, because we are more interested in find all possible customers instead of find only buyers that would buy. \par
+The next step is to improve the chosen model to obtain a better ROC Curve, F-score and Accuracy. To do this, is possible to use GridSearch from Sklearn library. With the best classifier in hands, we must then save it to use it later. It is possible too, to create a model with fewer features, in order to simplify a real-time predictor.&lt;/p&gt;
+
+&lt;h3 id=&quot;benchmark&quot;&gt;Benchmark&lt;/h3&gt;
+
+&lt;p&gt;The most simple benchmark is called the Naive Predictor. The Naive Predictor can be explained as follows: if we take the whole customer base, and instead of guessing which of them would buy in the same day of registration, we admitted that all of them are potential buyer. How often would we be right? Accordingly to the dataset, only 34.6% of the time we would be right. It is proposed also 3 more models to serve as benchmark.&lt;/p&gt;
+
+&lt;h2 id=&quot;results&quot;&gt;Results&lt;/h2&gt;
+
+&lt;p&gt;I’ll skip the methodology used and go directly to the results achieved. Data preprocessing, implementation metrics and refinements were excluded from this blog post to keep it short. This items and more can be found at the &lt;a href=&quot;https://drive.google.com/file/d/13iXMpgMFs8mrL064gvzE7wOw6InA_FfF/view?usp=sharing&quot;&gt;full article&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;model-evaluation-and-validation&quot;&gt;Model Evaluation and Validation&lt;/h3&gt;
+
+&lt;p&gt;Using the training pipeline stated before, the results for the three supervised learners are showed below. The dotted line in the image show the Naive Predictor performance for comparation.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/pred-buyers/trainingmodelds.png&quot; alt=&quot;image-2020060217150421443&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Figure 8. Performance of the three models&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Looking to the training part, we can notice that the Gradient Boost Classifier takes up 20 times more time to train in the full training set. Furthermore, it has the worst performance when compared with the others on the accuracy and the F-score metrics. In other hand, the Random Forest Classifier seems to overfit the data, with accuracy close to 100\% on training. 
+The LGBM which, in turn, has the fastest training time, also has a more balanced accuracy and f-score performance. The downside of this model is that it has the longer time to predict if a customer is a truly target user, around 0,35 seconds.  But it owns the better general performance in the test set. 
+Once chosen the model is time to improve its performance through tuning the hyperparameters.  Using the &lt;em&gt;gridParams&lt;/em&gt; and the scoring method as &lt;code class=&quot;highlighter-rouge&quot;&gt;scoring = 'AUC': 'roc_auc'&lt;/code&gt; the following configuration was the best one achieved. The comparison before and after the Grid Search is showed below.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;grid_fit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;best_estimator_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;LGBMClassifier&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;boosting_type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'gbdt'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;class_weight&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;colsample_bytree&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;importance_type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'split'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;learning_rate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;max_bin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;512&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;max_depth&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;min_child_samples&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;min_child_weight&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.001&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;min_data_in_leaf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;300&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;min_split_gain&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n_estimators&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;n_jobs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num_leaves&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;64&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;objective&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;random_state&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;reg_alpha&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reg_lambda&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;silent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;subsample&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;subsample_for_bin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;200000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;subsample_freq&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;It could improve the ROC-AUC metric in 2,09%, which is the main metric for this project. Moreover, improvements of 2,89\% and 2,14% can be seen in accuracy and f-score.&lt;/p&gt;
+
+&lt;div class=&quot;language-py highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;Unoptimized&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;------&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Accuracy&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;score&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;on&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;testing&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.9730&lt;/span&gt; 
+&lt;span class=&quot;n&quot;&gt;F&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;score&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;on&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;testing&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.9633&lt;/span&gt; 
+&lt;span class=&quot;n&quot;&gt;ROC&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;AUC&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;score&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;on&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;testing&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.9737&lt;/span&gt; 
+
+&lt;span class=&quot;n&quot;&gt;Optimized&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Model&lt;/span&gt; 
+&lt;span class=&quot;o&quot;&gt;------&lt;/span&gt; 
+&lt;span class=&quot;n&quot;&gt;Final&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;accuracy&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;score&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;on&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;testing&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.9944&lt;/span&gt; 
+&lt;span class=&quot;n&quot;&gt;Final&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;F&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;score&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;on&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;testing&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.9922&lt;/span&gt; 
+&lt;span class=&quot;n&quot;&gt;Final&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ROC&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;AUC&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;score&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;on&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;testing&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.9946&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Last but not least, the ROC-AUC curve for the LGDM Classifier is showed in Figure 9. This plot show us the True Positives Rate (TPR) on the y-axis ax and the False Positive Rate (FPR) on x-axis. Showing the trade-off between sensitivity (TPR) and specificity (1 – FPR). From this analysis we can see that the model has a prediction rate of false positives closer to 0\% and 99\% to true positives. Meaning how well the model can distinguish from the two classes, buyers and non buyers. The blue line shows what we should expect from a random classifier, meaning the classifier can’t separate between classes.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/pred-buyers/roccurve.png&quot; alt=&quot;image-2020060217150421443&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Figure 9. LGDM Classifier’s ROC-AUC Curve&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;justification&quot;&gt;Justification&lt;/h3&gt;
+
+&lt;p&gt;After careful consideration, the Light GBM was chosen. It has proven to have the best performance of all models. Despite its predicting time, it is still suitable for the application. The table below show the results of all models serving as a benchmark for this project.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/pred-buyers/roc-auc.png&quot; alt=&quot;image-2020060217150421443&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The Tuned Light GBM is definitely the best solution for the problem proposed. It can clearly distinguish possible buyers from people that are only checking the platform. This model is only the first layer in a possible chain of predictors to better understand consumers behavior and add features to food delivery platforms. 
+Further, using PCA and Feature Importance, a model containing only 5 features were trained. Using these 5 features: ‘id’,’density’,’month’,’classification’,’day_of_week’, an Accuracy of 99.02%, F-Score of 98.42% and a ROC-AUC of 99.10% were achieved.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;The process to start this project began choosing a real problem to solve. With my experiences in grocery/food delivery platforms, I thought that a good feature to have would be predicting if a consumer would buy or not. Besides improving the customer experience, it could help the platform convert more users into buyers. The first step was to choose between a model that could generalize an identify if old and new customers would buy or just to understand new users behavior.  The last was chosen due its simplicity and probably better accuracy.
+A big challenge was to gather the data from the database. More than that, choose the right period of time to extract and which information would be more important. Once this was decided, the preprocessing phase was by far the most time-consuming. It is the most delicate step and can change the entire output from the model, if done incorrectly. I forgot to remove duplicate UserID once, which give the model accuracy as low as the naive predictor. 
+From then the project was pretty straight forward. The training pipeline and the use of GridSearch, although time-consuming as well, was simple to handle. With the LGBM tuned and working, I tried to use some feature reduction to see how much of its accuracy we could keep. I expect to deploy this classifier to production and hope to see applied in some feature in the future.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://drive.google.com/file/d/13iXMpgMFs8mrL064gvzE7wOw6InA_FfF/view?usp=sharing&quot;&gt;Read the full article here.&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Would you like to  receive the most important news and trends in AI in just one email every end of the month? Subscribe below and I’ll send you the 10 most important news in Artificial Intelligence&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Matheus Jacques</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="projects" />
+      
+
+      
+        <summary type="html">This project has the objective to create a Machine Learning Model to predict whether a user that just registered will buy or not. Predicting such action could influence from user experience until predicting demands for restaurants.</summary>
       
 
       

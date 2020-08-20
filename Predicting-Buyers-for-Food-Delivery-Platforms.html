@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Document Settings -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Base Meta -->
+    <!-- dynamically fixing the title for tag/author pages -->
+
+
+
+    <title>Predicting Buyers for Food Delivery Platforms</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Styles'n'Scripts -->
+    <link rel="stylesheet" type="text/css" href="/assets/built/screen.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/built/screen.edited.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/built/syntax.css" />
+    <!-- highlight.js -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <style>.hljs { background: none; }</style>
+
+    <!--[if IE]>
+        <style>
+            p, ol, ul{
+                width: 100%;
+            }
+            blockquote{
+                width: 100%;
+            }
+        </style>
+    <![endif]-->
+    
+    <!-- This tag outputs SEO meta+structured data and other important settings -->
+    <meta name="description" content="The guidance through your Artificial Intelligence journey" />
+    <link rel="shortcut icon" href="http://localhost:4000/assets/images/favicon.png" type="image/png" />
+    <link rel="canonical" href="http://localhost:4000/Predicting-Buyers-for-Food-Delivery-Platforms" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+
+     <!--title below is coming from _includes/dynamic_title-->
+    <meta property="og:site_name" content="Edge AI Guru" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Predicting Buyers for Food Delivery Platforms" />
+    <meta property="og:description" content="This project has the objective to create a Machine Learning Model to predict whether a user that just registered will buy or not. Predicting such action could influence from user experience until predicting demands for restaurants. TL;DR This project has the objective to create a Machine Learning Model to predict" />
+    <meta property="og:url" content="http://localhost:4000/Predicting-Buyers-for-Food-Delivery-Platforms" />
+    <meta property="og:image" content="http://localhost:4000/assets/images/pred-buyers/cover.png" />
+    <meta property="article:publisher" content="https://www.facebook.com/" />
+    <meta property="article:author" content="https://www.facebook.com/" />
+    <meta property="article:published_time" content="2019-02-18T07:15:00-03:00" />
+    <meta property="article:modified_time" content="2019-02-18T07:15:00-03:00" />
+    <meta property="article:tag" content="Projects" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Predicting Buyers for Food Delivery Platforms" />
+    <meta name="twitter:description" content="This project has the objective to create a Machine Learning Model to predict whether a user that just registered will buy or not. Predicting such action could influence from user experience until predicting demands for restaurants. TL;DR This project has the objective to create a Machine Learning Model to predict" />
+    <meta name="twitter:url" content="http://localhost:4000/" />
+    <meta name="twitter:image" content="http://localhost:4000/assets/images/pred-buyers/cover.png" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="Edge AI Guru" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="Projects" />
+    <meta name="twitter:site" content="@" />
+    <meta name="twitter:creator" content="@" />
+    <meta property="og:image:width" content="1400" />
+    <meta property="og:image:height" content="933" />
+
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Website",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Edge AI Guru",
+        "logo": "http://localhost:4000/assets/images/blog-icon.png"
+    },
+    "url": "http://localhost:4000/Predicting-Buyers-for-Food-Delivery-Platforms",
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://localhost:4000/assets/images/pred-buyers/cover.png",
+        "width": 2000,
+        "height": 666
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://localhost:4000/Predicting-Buyers-for-Food-Delivery-Platforms"
+    },
+    "description": "This project has the objective to create a Machine Learning Model to predict whether a user that just registered will buy or not. Predicting such action could influence from user experience until predicting demands for restaurants. TL;DR This project has the objective to create a Machine Learning Model to predict"
+}
+    </script>
+
+    <!-- <script type="text/javascript" src="https://demo.ghost.io/public/ghost-sdk.min.js?v=724281a32e"></script>
+    <script type="text/javascript">
+    ghost.init({
+    	clientId: "ghost-frontend",
+    	clientSecret: "f84a07a72b17"
+    });
+    </script> -->
+
+    <meta name="generator" content="Jekyll 3.6.2" />
+    <link rel="alternate" type="application/rss+xml" title="Predicting Buyers for Food Delivery Platforms" href="/feed.xml" />
+
+
+</head>
+<body class="post-template">
+
+    <div class="site-wrapper">
+        <!-- All the main content gets inserted here, index.hbs, post.hbs, etc -->
+        <!-- default -->
+
+<!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template -->
+
+<header class="site-header outer">
+    <div class="inner">
+        <nav class="site-nav">
+    <div class="site-nav-left">
+        
+            
+                <a class="site-nav-logo" href="http://localhost:4000/"><img src="/assets/images/blog-icon.png" alt="Edge AI Guru" /></a>
+            
+        
+        
+            <ul class="nav" role="menu">
+    <li class="nav-home" role="menuitem"><a href="/">Home</a></li>
+    <li class="nav-projects" role="menuitem"><a href="/tag/projects/">Projects</a></li>
+    <li class="nav-tutorials" role="menuitem"><a href="/tag/tutorials/">Tutorials</a></li>
+    <li class="nav-back-to-basics" role="menuitem"><a href="/tag/back-to-basics/">Back to Basics</a></li>
+    <li class="nav-news" role="menuitem"><a href="/tag/news/">News</a></li>
+    <li class="nav-about" role="menuitem"><a href="/about/">About</a></li>
+</ul>
+
+        
+    </div>
+    <div class="site-nav-right">
+        <div class="social-links">
+            
+            
+        </div>
+        
+            <a class="subscribe-button" href="#subscribe">Subscribe</a>
+        
+    </div>
+</nav>
+
+    </div>
+</header>
+
+<!-- Everything inside the #post tags pulls data from the post -->
+<!-- #post -->
+
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+
+        <article class="post-full  tag-projects post tag-projects ">
+
+            <header class="post-full-header">
+                <section class="post-full-meta">
+                    <time class="post-full-meta-date" datetime="18 February 2019">18 February 2019</time>
+                    
+                        <span class="date-divider">/</span>
+                        
+                            
+                               <a href='/tag/projects/'>PROJECTS</a>
+                            
+                        
+                    
+                </section>
+                <h1 class="post-full-title">Predicting Buyers for Food Delivery Platforms</h1>
+            </header>
+
+            
+            <figure class="post-full-image" style="background-image: url(/assets/images/pred-buyers/cover.png)">
+            </figure>
+            
+
+            <section class="post-full-content">
+                <div class="kg-card-markdown">
+                    <p>This project has the objective to create a Machine Learning Model to predict whether a user that just registered will buy or not. Predicting such action could influence from user experience until predicting demands for restaurants.</p>
+
+<h2 id="tldr">TL;DR</h2>
+
+<p>This project has the objective to create a Machine Learning Model to predict whether a user that just registered will buy or not. Predicting such action could influence from user experience until predicting demands for restaurants. The metrics used to evaluate this project was mainly Area Under the Curve (AUC), complemented by Accuracy and F-Score. A benchmark with five classifiers was created and a Light Gradient Boost Model was chosen. After tuning and reducing the number of features, the model achieves 99.0% of accuracy, followed by 98.2% and 99.1% of F-score and ROC-AUC, respectively. 
+The predictor aims to be implemented in production to help the company understand better customer behavior. With that in mind, the first step was made moving the best classifier to the AWS SageMaker. There, it will be connected with the streaming data from the database and predict the customer next steps in real time.</p>
+
+<h2 id="project-overview">Project Overview</h2>
+
+<p>Immerse in a sector that expects to exceed $ 250 billion by 2022 [1], every improvement put you ahead of the competition. The FoodTech Industry is transforming the way we eat and it is being pulled by a generation which demands far more from services. In the US, 63% of Americans abandoned their cart due to bad customer experience [2].  Furthermore, because of the sectors wideness and variety, not only start ups are joining the race but corporate food companies as well. From the farm, passing through logistics and ending up in the customer’s table, the food sector is a rich soil to apply cutting edge technology. 
+Being part of the last mile agents, the food delivery apps are the very end of this food chain. Working in direct contact with the customers, it is the bridge between clients, drivers and restaurants. In the food delivery branch the platform is sticky: 80\% of consumers rarely or never change to a new application [4]. So retention techniques as reorder buttons, discounts and promotions are the core to get and keep an active base of digital consumers.
+Knowing your customer and predicting their next steps becomes essential in a such rapid pace environment. Predicting a customer purchase can influence directly in his user experience. It is possible to suggest his favorite cuisine, understand how logistics can scale or offer a discount code as an incentive. Thus, this project aims to create a classifier which is capable of predicting whether or not a customer will place an order soon after registration.</p>
+
+<h3 id="problem-statement">Problem Statement</h3>
+
+<p>Taking action upon belief can be naive in a fully connected measurable world. With an average transaction order between $ 25 to $ 50 [3], a discount coupon of $ 5 represents 10 to 20% of its value. At the same time, use discounts to convincing new customers to order is a common practice. Furthermore, to give discount code to everyone which is logging for the first time, could be a big waste of budget. From the dataset, is possible to notice that 36% of customers tend to buy in the same day of registration. Meaning that every improvement in this number increases directly the company’s revenue. In a scenario where we have 100.000 new orders a day and (using) a discount code of $ 5, if we have a solution that gives discount only to customers that will probably not place an order in the same day, it could represent savings of $ 180k/day.
+The solution for the problem stated before consist in identifying potential buyers and taking action to delivery a better user experience. And at the same time, instigate non buyers to place an order. This can be done using the biographic and demographic data present in the main dataset to understand these customers types.</p>
+
+<h3 id="metrics">Metrics</h3>
+
+<p>For binary classification problems the most common metric to evaluate model’s performance is the Area Under the Curve (AUC). It can tell us how good a classifier identify two classes. The AUC of a classifier is equal to the probability that the classifier will rank a randomly chosen positive example higher than a randomly chosen negative example. As scale-invariant, it can measure how well the predictions are ranked and does not consider its absolute values. Together with AUC, the use of Accuracy and F-score complement the evaluation step.</p>
+
+<h2 id="analysis">Analysis</h2>
+
+<p>For the inputs, we have two datasets: the main one which contains demographic (age, population, etc) and order information (date, payment type, delivery method). Together they have 464.969 lines where each one is an order. This dataset contains two years of data from part of the company’s operation. And we have a second dataset which translates peoples name to gender, called here “names.csv”. This is necessary because the raw information in the database is not complete. 
+The main dataset was obtained with consent from food delivery startup and is composed of the following dimensions:</p>
+
+<p><img src="assets/images/pred-buyers/featureset.png" alt="image-20200607150421443" /></p>
+
+<p><em>Figure 1. Type of variable associated with each feature</em></p>
+
+<p>While the first 10 columns tell us information about the client, the second part digs deeper into consumer habits. All the dimensions could influence the client desire to buy, hence all of them was used.</p>
+
+<p><img src="assets/images/pred-buyers/datasets_head.png" alt="image-2020060715042144332" /></p>
+
+<p><em>Figure 2. Datasets used to train the model</em></p>
+
+<p>The names to gender dataset were download from a public website [5] and are based in the 2010 Brazilian Sense. It is provided information about the environment such as city size, number of orders in this particular city (that may reveal that people in cities with more orders are likely to buy) and country’s region. We have timewise data, which indicate the likelihood o buy in some hours and days. And the logistic data telling if the client used a coupon, which kind of cuisine this kind of customer order, which payment type they prefer. All to try to find a pattern in people who buy soon after registration. 
+The binary classifier to classify each user is put manualy using Python during the code, in a column named ‘Buyer’ where 1 stands for True.</p>
+
+<h3 id="exploratory-visualization">Exploratory Visualization</h3>
+
+<p>In this section, we will have a closer look in the dataset and try to identify patterns already. A great way to start is to look a the datasets age:</p>
+
+<p><img src="assets/images/pred-buyers/male_female_buyers.png" alt="image-20200607151230421443" /></p>
+
+<p><img src="assets/images/pred-buyers/ageplot.png" alt="image-2020060127150421443" /></p>
+
+<p><em>Figure 3. Age and Gender Exploration</em></p>
+
+<p>Instantly we notice that there are several outliers. This may happen because of the input method in the registration form or by users deliberately choosing to put the wrong date of birth. A outliers removal technic is needed to improve the classifier accuracy.</p>
+
+<p>Another feature that comes to mind is gender. Gender may influence in customer desire to buy. But from Figure 3 we can not see a major influence upon putting a order or not. We can conclude that we have around 20\% more women in this dataset, but the target buyers are present in both genders equally.</p>
+
+<p>33<img src="assets/images/pred-buyers/orderpophue.png" alt="image-20200607150421443" /></p>
+
+<p><em>Figure 4. Order and Population from Target Users</em></p>
+
+<p>Taking a look in the relationship between number of orders and population, we can see that it isn’t a linear function. Most of the data is concentrated in cities with population less than 200.000 and with less than 25 thousand orders. With this in mind, we can look at our target users in this range, as in Figure 4, to try to find a pattern. Clearly this users are in small cities, where competition is not so fierce and the number of orders are small, indicating that the app is new in the town.,</p>
+
+<p><img src="assets/images/pred-buyers/orderspoprelation.png" alt="image-20200607112250421443" /></p>
+
+<p><em>Figure 5. Relationship between number of orders and population</em></p>
+
+<p>In other hand, we can identify a pattern looking to the scatter plot below (Figure \ref{fig:scatagehour}) of hour by age. There is two well defined groups: people younger than 20 years and seniors from 40 to 80 years old. This two groups tend to order their first order between 10 AM and 8 PM. The gap between 20 and 40 years old, are mostly compose of people that do some research before place an order, or are impacted by some marketing campaign but do not buy instantly.</p>
+
+<p><img src="assets/images/pred-buyers/scatter_agehour.png" alt="image-2020060217150421443" /></p>
+
+<p><em>Figure 6. Identifying buyers per age and hour</em></p>
+
+<h3 id="algorithms-and-techniques">Algorithms and Techniques</h3>
+
+<p>The first step is to prepare the data. We have two datasets: one containing information about customers who bought in the same day of registration and other containing customers that ordered the following day or after. These two must be merged as a main file. The main dataset does not contain buyers gender, which is main feature to predict customer behavior. So a name to gender dataset is needed as part of feature engineering, together with the creation of additional features tha would help the algoritm. Furthermore, a step to drop non relevant features as names and IDs is needed.</p>
+
+<p>Once the main dataset is put together, is proceed with preprocessing the data. Transforming skewed continuous features, such as orders and population that has vastly large numbers, as well as normalizing and hot-encoding variables performs a critical step. Although some algorithms can handle categorical features internally, this step will be performed to avoid future trouble. At the same time, outliers and null values must be removed, hence algorithms can be very sensitive to such numbers. We have seen already the need to remove outliers while looking to the age, population and orders range of the data.</p>
+
+<p>With all data prepared, is time to start understanding all features and which algorithm would be used. We start by defining a Naive Predictor, as stated before, which would set our lower boundary. Next we will explore three models: Random Forest, GradientBoost and LightGBM (LGBM).</p>
+
+<p><img src="assets/images/pred-buyers/decision-tree-example.png" alt="image-2020060217150421443" /></p>
+
+<p><em>Figure 7. Decision Tree Example</em></p>
+
+<p>This three algorithms are based in Decision Trees. Decision Trees works by creating questions and answering them. Here each node is a feature, each link is a class and each leaf is the output of such a branch, as stated below. For example, from Figure 7, we notice that people under 20 years old tend not to buy on business days. These models are part of the ensemble learning methods and predict by combining the outputs from multiple individual trees. While Random Forest Method create trees independently using random slices from data and choose from the best, the GradientBoost builds one tree at the time and improves over the last one in an iterative method, fixing errors from the previous. Although LGBM is also a tree based algorithm, it grows tree leaf-wise, maximizing classes and not deep-wise. Which can reduce the losses, choosing the leaf with max delta loss. \par
+For selecting the best model, first we need a training pipeline, which would provide an automated way for training multiple classifiers. Then, three models should be defined taking into consideration the data and the goal of the project. Since this project aims to go to production, prediction time is the key evaluation metric here. Also, recall is more important than precision, because we are more interested in find all possible customers instead of find only buyers that would buy. \par
+The next step is to improve the chosen model to obtain a better ROC Curve, F-score and Accuracy. To do this, is possible to use GridSearch from Sklearn library. With the best classifier in hands, we must then save it to use it later. It is possible too, to create a model with fewer features, in order to simplify a real-time predictor.</p>
+
+<h3 id="benchmark">Benchmark</h3>
+
+<p>The most simple benchmark is called the Naive Predictor. The Naive Predictor can be explained as follows: if we take the whole customer base, and instead of guessing which of them would buy in the same day of registration, we admitted that all of them are potential buyer. How often would we be right? Accordingly to the dataset, only 34.6% of the time we would be right. It is proposed also 3 more models to serve as benchmark.</p>
+
+<h2 id="results">Results</h2>
+
+<p>I’ll skip the methodology used and go directly to the results achieved. Data preprocessing, implementation metrics and refinements were excluded from this blog post to keep it short. This items and more can be found at the <a href="https://drive.google.com/file/d/13iXMpgMFs8mrL064gvzE7wOw6InA_FfF/view?usp=sharing">full article</a>.</p>
+
+<h3 id="model-evaluation-and-validation">Model Evaluation and Validation</h3>
+
+<p>Using the training pipeline stated before, the results for the three supervised learners are showed below. The dotted line in the image show the Naive Predictor performance for comparation.</p>
+
+<p><img src="assets/images/pred-buyers/trainingmodelds.png" alt="image-2020060217150421443" /></p>
+
+<p><em>Figure 8. Performance of the three models</em></p>
+
+<p>Looking to the training part, we can notice that the Gradient Boost Classifier takes up 20 times more time to train in the full training set. Furthermore, it has the worst performance when compared with the others on the accuracy and the F-score metrics. In other hand, the Random Forest Classifier seems to overfit the data, with accuracy close to 100\% on training. 
+The LGBM which, in turn, has the fastest training time, also has a more balanced accuracy and f-score performance. The downside of this model is that it has the longer time to predict if a customer is a truly target user, around 0,35 seconds.  But it owns the better general performance in the test set. 
+Once chosen the model is time to improve its performance through tuning the hyperparameters.  Using the <em>gridParams</em> and the scoring method as <code class="highlighter-rouge">scoring = 'AUC': 'roc_auc'</code> the following configuration was the best one achieved. The comparison before and after the Grid Search is showed below.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">grid_fit</span><span class="o">.</span><span class="n">best_estimator_</span><span class="p">)</span>
+<span class="n">LGBMClassifier</span><span class="p">(</span><span class="n">boosting_type</span><span class="o">=</span><span class="s">'gbdt'</span><span class="p">,</span> <span class="n">class_weight</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">colsample_bytree</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
+        <span class="n">importance_type</span><span class="o">=</span><span class="s">'split'</span><span class="p">,</span> <span class="n">learning_rate</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">max_bin</span><span class="o">=</span><span class="mi">512</span><span class="p">,</span>
+        <span class="n">max_depth</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">min_child_samples</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">min_child_weight</span><span class="o">=</span><span class="mf">0.001</span><span class="p">,</span>
+        <span class="n">min_data_in_leaf</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">min_split_gain</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">n_estimators</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
+        <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_leaves</span><span class="o">=</span><span class="mi">64</span><span class="p">,</span> <span class="n">objective</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span>
+        <span class="n">reg_alpha</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">reg_lambda</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">silent</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">subsample</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
+        <span class="n">subsample_for_bin</span><span class="o">=</span><span class="mi">200000</span><span class="p">,</span> <span class="n">subsample_freq</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>It could improve the ROC-AUC metric in 2,09%, which is the main metric for this project. Moreover, improvements of 2,89\% and 2,14% can be seen in accuracy and f-score.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Unoptimized</span> <span class="n">model</span>
+<span class="o">------</span>
+<span class="n">Accuracy</span> <span class="n">score</span> <span class="n">on</span> <span class="n">testing</span> <span class="n">data</span><span class="p">:</span> <span class="mf">0.9730</span> 
+<span class="n">F</span><span class="o">-</span><span class="n">score</span> <span class="n">on</span> <span class="n">testing</span> <span class="n">data</span><span class="p">:</span> <span class="mf">0.9633</span> 
+<span class="n">ROC</span><span class="o">-</span><span class="n">AUC</span> <span class="n">score</span> <span class="n">on</span> <span class="n">testing</span> <span class="n">data</span><span class="p">:</span> <span class="mf">0.9737</span> 
+
+<span class="n">Optimized</span> <span class="n">Model</span> 
+<span class="o">------</span> 
+<span class="n">Final</span> <span class="n">accuracy</span> <span class="n">score</span> <span class="n">on</span> <span class="n">the</span> <span class="n">testing</span> <span class="n">data</span><span class="p">:</span> <span class="mf">0.9944</span> 
+<span class="n">Final</span> <span class="n">F</span><span class="o">-</span><span class="n">score</span> <span class="n">on</span> <span class="n">the</span> <span class="n">testing</span> <span class="n">data</span><span class="p">:</span> <span class="mf">0.9922</span> 
+<span class="n">Final</span> <span class="n">ROC</span><span class="o">-</span><span class="n">AUC</span> <span class="n">score</span> <span class="n">on</span> <span class="n">the</span> <span class="n">testing</span> <span class="n">data</span><span class="p">:</span> <span class="mf">0.9946</span>
+</code></pre></div></div>
+
+<p>Last but not least, the ROC-AUC curve for the LGDM Classifier is showed in Figure 9. This plot show us the True Positives Rate (TPR) on the y-axis ax and the False Positive Rate (FPR) on x-axis. Showing the trade-off between sensitivity (TPR) and specificity (1 – FPR). From this analysis we can see that the model has a prediction rate of false positives closer to 0\% and 99\% to true positives. Meaning how well the model can distinguish from the two classes, buyers and non buyers. The blue line shows what we should expect from a random classifier, meaning the classifier can’t separate between classes.</p>
+
+<p><img src="assets/images/pred-buyers/roccurve.png" alt="image-2020060217150421443" /></p>
+
+<p><em>Figure 9. LGDM Classifier’s ROC-AUC Curve</em></p>
+
+<h3 id="justification">Justification</h3>
+
+<p>After careful consideration, the Light GBM was chosen. It has proven to have the best performance of all models. Despite its predicting time, it is still suitable for the application. The table below show the results of all models serving as a benchmark for this project.</p>
+
+<p><img src="assets/images/pred-buyers/roc-auc.png" alt="image-2020060217150421443" /></p>
+
+<p>The Tuned Light GBM is definitely the best solution for the problem proposed. It can clearly distinguish possible buyers from people that are only checking the platform. This model is only the first layer in a possible chain of predictors to better understand consumers behavior and add features to food delivery platforms. 
+Further, using PCA and Feature Importance, a model containing only 5 features were trained. Using these 5 features: ‘id’,’density’,’month’,’classification’,’day_of_week’, an Accuracy of 99.02%, F-Score of 98.42% and a ROC-AUC of 99.10% were achieved.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>The process to start this project began choosing a real problem to solve. With my experiences in grocery/food delivery platforms, I thought that a good feature to have would be predicting if a consumer would buy or not. Besides improving the customer experience, it could help the platform convert more users into buyers. The first step was to choose between a model that could generalize an identify if old and new customers would buy or just to understand new users behavior.  The last was chosen due its simplicity and probably better accuracy.
+A big challenge was to gather the data from the database. More than that, choose the right period of time to extract and which information would be more important. Once this was decided, the preprocessing phase was by far the most time-consuming. It is the most delicate step and can change the entire output from the model, if done incorrectly. I forgot to remove duplicate UserID once, which give the model accuracy as low as the naive predictor. 
+From then the project was pretty straight forward. The training pipeline and the use of GridSearch, although time-consuming as well, was simple to handle. With the LGBM tuned and working, I tried to use some feature reduction to see how much of its accuracy we could keep. I expect to deploy this classifier to production and hope to see applied in some feature in the future.</p>
+
+<hr />
+
+<p><a href="https://drive.google.com/file/d/13iXMpgMFs8mrL064gvzE7wOw6InA_FfF/view?usp=sharing">Read the full article here.</a></p>
+
+<hr />
+
+<p>Would you like to  receive the most important news and trends in AI in just one email every end of the month? Subscribe below and I’ll send you the 10 most important news in Artificial Intelligence</p>
+
+                </div>
+            </section>
+
+            <!-- Email subscribe form at the bottom of the page -->
+            
+                <section class="subscribe-form">
+                    <h3 class="subscribe-form-title">Subscribe to Edge AI Guru</h3>
+                    <p>Get the latest posts delivered right to your inbox</p>
+                    <!--
+<form method="post" action="/subscribe/" class="">
+    <input class="confirm" type="hidden" name="confirm"  /><input class="location" type="hidden" name="location"  /><input class="referrer" type="hidden" name="referrer"  />
+
+    <div class="form-group">
+        <input class="subscribe-email" type="email" name="email"  placeholder="youremail@example.com" />
+    </div>
+    <button class="" type="submit" disabled><span>Subscribe</span></button>
+    <script type="text/javascript">(function(g,h,o,s,t){h[o]('.location')[s]=h[o]('.location')[s] || g.location.href;h[o]('.referrer')[s]=h[o]('.referrer')[s] || h.referrer;})(window,document,'querySelector','value');</script>
+</form>
+Begin Mailchimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<div id="mc_embed_signup">
+<form action="https://live.us19.list-manage.com/subscribe/post?u=1a75f176c221a80d91de5e939&amp;id=671c7f7a46" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+    <input type="email" value="" name="EMAIL" class="subscribe-email" id="mce-EMAIL" placeholder="youremail@example.com" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1a75f176c221a80d91de5e939_671c7f7a46" tabindex="-1" value=""></div>
+    <!--<button class="" type="submit" disabled id="mc-embedded-subscribe"><span>Subscribe</span></button> -->
+    <div class=""><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div> 
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+                </section>
+            
+
+            <footer class="post-full-footer">
+                <!-- Everything inside the #author tags pulls data from the author -->
+                <!-- #author-->
+                
+                    
+                        <section class="author-card">
+                            
+                                <img class="author-profile-image" src="/assets/images/matheus.png" alt="matheus" />
+                            
+                            <section class="author-card-content">
+                                <h4 class="author-card-name"><a href="/author/matheus">Matheus Jacques</a></h4>
+                                
+                                    <p>Engineer and entrepreneur with 4 years in R&D, 2 years as a Startup Founder and 2 year dealing with Business/Data Analytics. Programming since 2010.</p>
+                                
+                            </section>
+                        </section>
+                        <div class="post-full-footer-right">
+                            <a class="author-card-button" href="/author/matheus">Read More</a>
+                        </div>
+                    
+                
+                    
+                
+                <!-- /author  -->
+            </footer>
+
+            <!-- If you use Disqus comments, just uncomment this block.
+            The only thing you need to change is "test-apkdzgmqhj" - which
+            should be replaced with your own Disqus site-id. -->
+            
+                <section class="post-full-comments">
+                    <div id="disqus_thread"></div>
+                    <script>
+                        var disqus_config = function () {
+                            this.page.url = 'http://localhost:4000/Predicting-Buyers-for-Food-Delivery-Platforms';
+                            this.page.identifier = '/Predicting Buyers for Food Delivery Platforms';
+                            this.page.title = 'Predicting Buyers for Food Delivery Platforms';
+                        };
+                        (function() {
+                            var d = document, s = d.createElement('script');
+                            s.src = 'https://edgeaiguru.disqus.com/embed.js';
+                            s.setAttribute('data-timestamp', +new Date());
+                            (d.head || d.body).appendChild(s);
+                        })();
+                    </script>
+                </section>
+            
+
+        </article>
+
+    </div>
+</main>
+
+<!-- Links to Previous/Next posts -->
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+            
+                
+                
+                
+                
+                    <article class="read-next-card"
+                        
+                            style="background-image: url(/assets/images/blog-cover.jpg)"
+                        
+                    >
+                        <header class="read-next-card-header">
+                            <small class="read-next-card-header-sitetitle">&mdash; Edge AI Guru &mdash;</small>
+                            
+                                <h3 class="read-next-card-header-title"><a href="/tag/projects/">Projects</a></h3>
+                            
+                        </header>
+                        <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
+</div>
+                        <div class="read-next-card-content">
+                            <ul>
+                                
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/3D-Object-Tracking">Tracking 3D objects with Lidar and Camera</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/Lidar-Obstacles-Detection">Lidar Obstacles Detection</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/Image-Captioning">Image Captioning</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                            </ul>
+                        </div>
+                        <footer class="read-next-card-footer">
+                            <a href="/tag/projects/">
+                                
+                                    See all 4 posts  →
+                                
+                            </a>
+                        </footer>
+                    </article>
+                
+            
+
+            <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
+            
+                
+
+    <article class="post-card post-template">
+        
+            <a class="post-card-image-link" href="/How-to-get-started-on-Spacenet-Challenge-6">
+                <div class="post-card-image" style="background-image: url(/assets/images/spacenet-6.jpg)"></div>
+            </a>
+        
+        <div class="post-card-content">
+            <a class="post-card-content-link" href="/How-to-get-started-on-Spacenet-Challenge-6">
+                <header class="post-card-header">
+                    
+                        
+                            
+                               <span class="post-card-tags">Tutorials</span>
+                            
+                        
+                            
+                                <span class="post-card-tags">Remote-sensing</span>
+                            
+                        
+                    
+
+                    <h2 class="post-card-title">How to get started on Spacenet Challenge 6 using CosmiQ Baseline</h2>
+                </header>
+                <section class="post-card-excerpt">
+                    
+                        <p></p>
+                    
+                </section>
+            </a>
+            <footer class="post-card-meta">
+                
+                    
+                        
+                        <img class="author-profile-image" src="/assets/images/matheus.png" alt="Matheus Jacques" />
+                        
+                        <span class="post-card-author">
+                            <a href="/author/matheus/">Matheus Jacques</a>
+                        </span>
+                    
+                
+                    
+                
+                <span class="reading-time">
+                    
+                    
+                      1 min read
+                    
+                </span>
+            </footer>
+        </div>
+    </article>
+
+            
+
+            <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
+            
+                
+
+    <article class="post-card post-template">
+        
+            <a class="post-card-image-link" href="/Destaques-de-Maio">
+                <div class="post-card-image" style="background-image: url(/assets/images/may-news/cover.png)"></div>
+            </a>
+        
+        <div class="post-card-content">
+            <a class="post-card-content-link" href="/Destaques-de-Maio">
+                <header class="post-card-header">
+                    
+                        
+                            
+                               <span class="post-card-tags">Portuguese</span>
+                            
+                        
+                            
+                                <span class="post-card-tags">News</span>
+                            
+                        
+                    
+
+                    <h2 class="post-card-title">Destaques de Maio em IA</h2>
+                </header>
+                <section class="post-card-excerpt">
+                    
+                        <p></p>
+                    
+                </section>
+            </a>
+            <footer class="post-card-meta">
+                
+                    
+                        
+                        <img class="author-profile-image" src="/assets/images/matheus.png" alt="Matheus Jacques" />
+                        
+                        <span class="post-card-author">
+                            <a href="/author/matheus/">Matheus Jacques</a>
+                        </span>
+                    
+                
+                    
+                
+                <span class="reading-time">
+                    
+                    
+                      1 min read
+                    
+                </span>
+            </footer>
+        </div>
+    </article>
+
+            
+
+        </div>
+    </div>
+</aside>
+
+<!-- Floating header which appears on-scroll, included from includes/floating-header.hbs -->
+<div class="floating-header">
+    <div class="floating-header-logo">
+        <a href="http://localhost:4000/">
+            
+                <img src="/assets/images/favicon.png" alt="Edge AI Guru icon" />
+            
+            <span>Edge AI Guru</span>
+        </a>
+    </div>
+    <span class="floating-header-divider">&mdash;</span>
+    <div class="floating-header-title">Predicting Buyers for Food Delivery Platforms</div>
+    <div class="floating-header-share">
+        <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
+</svg>
+</div>
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Predicting+Buyers+for+Food+Delivery+Platforms&amp;url=Predicting-Buyers-for-Food-Delivery-Platforms"
+            onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
+
+        </a>
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=Predicting-Buyers-for-Food-Delivery-Platforms"
+            onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
+
+        </a>
+    </div>
+    <progress class="progress" value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
+</div>
+
+
+<!-- /post -->
+
+<!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs -->
+
+
+        <!-- Previous/next page links - displayed on every page -->
+        
+
+        <!-- The footer at the very bottom of the screen -->
+        <footer class="site-footer outer">
+            <div class="site-footer-content inner">
+                <section class="copyright"><a href="http://localhost:4000/">Edge AI Guru</a> &copy; 2020</section>
+                <section class="poweredby">Proudly published with <a href="https://jekyllrb.com/">Jekyll</a> &
+                    <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a> using
+                    <a href="https://github.com/jekyller/jasper2" target="_blank" rel="noopener">Jasper2</a></section>
+                <nav class="site-footer-nav">
+                    <a href="/">Latest Posts</a>
+                    
+                    
+                    <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
+                </nav>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- The big email subscribe modal content -->
+    
+        <div id="subscribe" class="subscribe-overlay">
+            <a class="subscribe-overlay-close" href="#"></a>
+            <div class="subscribe-overlay-content">
+                
+                    <img class="subscribe-overlay-logo" src="/assets/images/blog-icon.png" alt="Edge AI Guru" />
+                
+                <h1 class="subscribe-overlay-title">Subscribe to Edge AI Guru</h1>
+                <p class="subscribe-overlay-description">Stay up to date! Get all the latest &amp; greatest posts delivered straight to your inbox</p>
+                <!--
+<form method="post" action="/subscribe/" class="">
+    <input class="confirm" type="hidden" name="confirm"  /><input class="location" type="hidden" name="location"  /><input class="referrer" type="hidden" name="referrer"  />
+
+    <div class="form-group">
+        <input class="subscribe-email" type="email" name="email"  placeholder="youremail@example.com" />
+    </div>
+    <button class="" type="submit" disabled><span>Subscribe</span></button>
+    <script type="text/javascript">(function(g,h,o,s,t){h[o]('.location')[s]=h[o]('.location')[s] || g.location.href;h[o]('.referrer')[s]=h[o]('.referrer')[s] || h.referrer;})(window,document,'querySelector','value');</script>
+</form>
+Begin Mailchimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<div id="mc_embed_signup">
+<form action="https://live.us19.list-manage.com/subscribe/post?u=1a75f176c221a80d91de5e939&amp;id=671c7f7a46" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+    <input type="email" value="" name="EMAIL" class="subscribe-email" id="mce-EMAIL" placeholder="youremail@example.com" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1a75f176c221a80d91de5e939_671c7f7a46" tabindex="-1" value=""></div>
+    <!--<button class="" type="submit" disabled id="mc-embedded-subscribe"><span>Subscribe</span></button> -->
+    <div class=""><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div> 
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+            </div>
+        </div>
+    
+
+    <!-- highlight.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.10.0/components/prism-abap.min.js"></script>
+    <script>$(document).ready(function() {
+      $('pre code').each(function(i, block) {
+        hljs.highlightBlock(block);
+      });
+    });</script>
+
+    <!-- jQuery + Fitvids, which makes all video embeds responsive -->
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="https://demo.ghost.io/assets/js/jquery.fitvids.js?v=724281a32e"></script>
+
+
+    <!-- Paginator increased to "infinit" in _config.yml -->
+    <!-- if paginator.posts  -->
+    <!-- <script>
+        var maxPages = parseInt('');
+    </script>
+    <script src="/assets/js/infinitescroll.js"></script> -->
+    <!-- /endif -->
+
+    
+
+
+    <!-- Add Google Analytics  -->
+    <!-- Google Analytics Tracking code -->
+ <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-166032640-1', 'auto');
+  ga('send', 'pageview');
+
+ </script>
+
+
+    <!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. -->
+    
+        <script>
+
+// NOTE: Scroll performance is poor in Safari
+// - this appears to be due to the events firing much more slowly in Safari.
+//   Dropping the scroll event and using only a raf loop results in smoother
+//   scrolling but continuous processing even when not scrolling
+$(document).ready(function () {
+    // Start fitVids
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+    // End fitVids
+
+    var progressBar = document.querySelector('progress');
+    var header = document.querySelector('.floating-header');
+    var title = document.querySelector('.post-full-title');
+
+    var lastScrollY = window.scrollY;
+    var lastWindowHeight = window.innerHeight;
+    var lastDocumentHeight = $(document).height();
+    var ticking = false;
+
+    function onScroll() {
+        lastScrollY = window.scrollY;
+        requestTick();
+    }
+
+    function onResize() {
+        lastWindowHeight = window.innerHeight;
+        lastDocumentHeight = $(document).height();
+        requestTick();
+    }
+
+    function requestTick() {
+        if (!ticking) {
+            requestAnimationFrame(update);
+        }
+        ticking = true;
+    }
+
+    function update() {
+        var trigger = title.getBoundingClientRect().top + window.scrollY;
+        var triggerOffset = title.offsetHeight + 35;
+        var progressMax = lastDocumentHeight - lastWindowHeight;
+
+        // show/hide floating header
+        if (lastScrollY >= trigger + triggerOffset) {
+            header.classList.add('floating-active');
+        } else {
+            header.classList.remove('floating-active');
+        }
+
+        progressBar.setAttribute('max', progressMax);
+        progressBar.setAttribute('value', lastScrollY);
+
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onResize, false);
+
+    update();
+});
+</script>
+
+    
+
+    <!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag -->
+    <!-- ghost_foot -->
+
+</body>
+</html>

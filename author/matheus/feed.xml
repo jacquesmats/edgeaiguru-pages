@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/author/matheus/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2020-08-18T00:22:08-03:00</updated>
+  <updated>2020-08-19T23:25:35-03:00</updated>
   <id>http://localhost:4000/author/matheus/feed.xml</id>
 
   
@@ -320,6 +320,50 @@ d = |A*x+B*y+C*z+D|/sqrt(A^2+B^2+C^2)
 
       
         <summary type="html">In this project, we create a simple 3d highway enviroment using Point Cloud Library for exploring self-driving car sensors.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Image Captioning</title>
+      <link href="http://localhost:4000/Image-Captioning" rel="alternate" type="text/html" title="Image Captioning" />
+      <published>2020-07-07T07:15:00-03:00</published>
+      <updated>2020-07-07T07:15:00-03:00</updated>
+      <id>http://localhost:4000/Image%20Captioning</id>
+      <content type="html" xml:base="http://localhost:4000/Image-Captioning">&lt;p&gt;In this project, we used a dataset of image-caption pairs to train a CNN-RNN model to automatically generate captions from images.&lt;/p&gt;
+
+&lt;p&gt;The Dataset&lt;/p&gt;
+
+&lt;p&gt;Downloaded using  &lt;a href=&quot;https://github.com/cocodataset/cocoapi&quot;&gt;COCO API&lt;/a&gt;, the Microsoft &lt;strong&gt;C&lt;/strong&gt;ommon &lt;strong&gt;O&lt;/strong&gt;bjects in &lt;strong&gt;CO&lt;/strong&gt;ntext (MS COCO) dataset is a large-scale dataset for scene understanding. The dataset is commonly used to train and benchmark object detection, segmentation, and captioning algorithms. Furthermore you can find more about the dataset on the &lt;a href=&quot;http://cocodataset.org/#home&quot;&gt;website&lt;/a&gt; or in the &lt;a href=&quot;https://arxiv.org/pdf/1405.0312.pdf&quot;&gt;research paper&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/img-captioning/coco-examples.jpg&quot; alt=&quot;image-20200607150421443&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Would you like to  receive the most important news and trends in AI in just one email every end of the month? Subscribe below and I’ll send you the 10 most important news in Artificial Intelligence&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Matheus Jacques</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="projects" />
+      
+
+      
+        <summary type="html">In this project, we used a dataset of image-caption pairs to train a CNN-RNN model to automatically generate captions from images.</summary>
       
 
       
@@ -1275,54 +1319,170 @@ transformed_sample = tx(sample)
     </entry>
   
     <entry>
-      <title type="html">Destaques de Maio em IA</title>
-      <link href="http://localhost:4000/Destaques-de-Maio" rel="alternate" type="text/html" title="Destaques de Maio em IA" />
-      <published>2000-05-28T07:15:00-03:00</published>
-      <updated>2000-05-28T07:15:00-03:00</updated>
-      <id>http://localhost:4000/Destaques%20de%20Maio</id>
-      <content type="html" xml:base="http://localhost:4000/Destaques-de-Maio">&lt;p&gt;As 5 principais notícias e tendências da IA que cruzei em maio de 2020.&lt;/p&gt;
+      <title type="html">Predicting Buyers for Food Delivery Platforms</title>
+      <link href="http://localhost:4000/Predicting-Buyers-for-Food-Delivery-Platforms" rel="alternate" type="text/html" title="Predicting Buyers for Food Delivery Platforms" />
+      <published>2019-02-18T07:15:00-03:00</published>
+      <updated>2019-02-18T07:15:00-03:00</updated>
+      <id>http://localhost:4000/Predicting%20Buyers%20for%20Food%20Delivery%20Platforms</id>
+      <content type="html" xml:base="http://localhost:4000/Predicting-Buyers-for-Food-Delivery-Platforms">&lt;p&gt;This project has the objective to create a Machine Learning Model to predict whether a user that just registered will buy or not. Predicting such action could influence from user experience until predicting demands for restaurants.&lt;/p&gt;
 
-&lt;p&gt;English version &lt;a href=&quot;http://edgeaiguru.com/May-Highlights&quot;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;tldr&quot;&gt;TL;DR&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;assets/images/may-news/google.gif&quot; alt=&quot;Aprendizado geral de representação visual do Google BiT&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;This project has the objective to create a Machine Learning Model to predict whether a user that just registered will buy or not. Predicting such action could influence from user experience until predicting demands for restaurants. The metrics used to evaluate this project was mainly Area Under the Curve (AUC), complemented by Accuracy and F-Score. A benchmark with five classifiers was created and a Light Gradient Boost Model was chosen. After tuning and reducing the number of features, the model achieves 99.0% of accuracy, followed by 98.2% and 99.1% of F-score and ROC-AUC, respectively. 
+The predictor aims to be implemented in production to help the company understand better customer behavior. With that in mind, the first step was made moving the best classifier to the AWS SageMaker. There, it will be connected with the streaming data from the database and predict the customer next steps in real time.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;Modelo BiT sendo usado após o pré-treinamento e aplicado a outras tarefas com poucos exemplos rotulados&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;project-overview&quot;&gt;Project Overview&lt;/h2&gt;
 
-&lt;h2 id=&quot;google-disponibiliza-bit-o-bert-para-visão-computacional&quot;&gt;Google disponibiliza BiT, o BERT para Visão Computacional&lt;/h2&gt;
+&lt;p&gt;Immerse in a sector that expects to exceed $ 250 billion by 2022 [1], every improvement put you ahead of the competition. The FoodTech Industry is transforming the way we eat and it is being pulled by a generation which demands far more from services. In the US, 63% of Americans abandoned their cart due to bad customer experience [2].  Furthermore, because of the sectors wideness and variety, not only start ups are joining the race but corporate food companies as well. From the farm, passing through logistics and ending up in the customer’s table, the food sector is a rich soil to apply cutting edge technology. 
+Being part of the last mile agents, the food delivery apps are the very end of this food chain. Working in direct contact with the customers, it is the bridge between clients, drivers and restaurants. In the food delivery branch the platform is sticky: 80\% of consumers rarely or never change to a new application [4]. So retention techniques as reorder buttons, discounts and promotions are the core to get and keep an active base of digital consumers.
+Knowing your customer and predicting their next steps becomes essential in a such rapid pace environment. Predicting a customer purchase can influence directly in his user experience. It is possible to suggest his favorite cuisine, understand how logistics can scale or offer a discount code as an incentive. Thus, this project aims to create a classifier which is capable of predicting whether or not a customer will place an order soon after registration.&lt;/p&gt;
 
-&lt;p&gt;Em 21 de maio, a equipe de inteligência artificial do Google abriu o código do Big Transfer (BiT): um aprendizado geral sobre representação visual. Este é um esforço para ajudar aplicações de Visão Computacional a avançarem com modelos pré-treinados em larga escala. O uso do BiT é possível para obter desempenho de ponta em muitas aplicações, usando apenas alguns exemplos rotulados. Para fazer o ajuste fino desse modelo, eles também introduziram o “BiT-HyperRule”, uma abordagem heurística para selecionar hiper parâmetros, como taxa de aprendizado. Após a transferência de aprendizado, usando o conjunto de dados CIFAR-10, o modelo alcançou 64% e 95% de precisão média em 1 e 5 em &lt;em&gt;One Shot Learning&lt;/em&gt;, respectivamente. O Google também mencionou que “o BiT-L combina ou supera resultados […] em vários benchmarks de visão computacional, como Oxford &lt;a href=&quot;https://www.robots.ox.ac.uk / ~ vgg / data / pets /&quot;&gt;Pets&lt;/a&gt; e &lt;a href=&quot;https://www.robots.ox.ac.uk/~vgg/data/flowers/&quot;&gt;Flowers&lt;/a&gt;, &lt;a href=&quot;https: //www.cs.toronto .edu / ~ kriz / cifar.html&quot;&gt;CIFAR&lt;/a&gt; etc. “. Você pode verificar o &lt;a href=&quot;https://arxiv.org/abs/1912.11370&quot;&gt;artigo&lt;/a&gt; e o &lt;a href=&quot;https://github.com/google-research/big_transfer&quot;&gt;código&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&quot;problem-statement&quot;&gt;Problem Statement&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;assets/images/may-news/tf_logo_social.png&quot; alt=&quot;Tensorflow Logo&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Taking action upon belief can be naive in a fully connected measurable world. With an average transaction order between $ 25 to $ 50 [3], a discount coupon of $ 5 represents 10 to 20% of its value. At the same time, use discounts to convincing new customers to order is a common practice. Furthermore, to give discount code to everyone which is logging for the first time, could be a big waste of budget. From the dataset, is possible to notice that 36% of customers tend to buy in the same day of registration. Meaning that every improvement in this number increases directly the company’s revenue. In a scenario where we have 100.000 new orders a day and (using) a discount code of $ 5, if we have a solution that gives discount only to customers that will probably not place an order in the same day, it could represent savings of $ 180k/day.
+The solution for the problem stated before consist in identifying potential buyers and taking action to delivery a better user experience. And at the same time, instigate non buyers to place an order. This can be done using the biographic and demographic data present in the main dataset to understand these customers types.&lt;/p&gt;
 
-&lt;h2 id=&quot;a-versão-220-do-tensorflow-chegou&quot;&gt;A versão 2.2.0 do Tensorflow chegou&lt;/h2&gt;
+&lt;h3 id=&quot;metrics&quot;&gt;Metrics&lt;/h3&gt;
 
-&lt;p&gt;Depois de quase quatro meses após o TF 2.1.0, este mês o Google também lançou o Tensorflow 2.2.0. As principais atualizações incluem um novo Profiler para CPU / GPU / TPU para ajudar a identificar gargalos de desempenho, melhorias de desempenho na computação entre dispositivos por meio de &lt;code class=&quot;highlighter-rouge&quot;&gt;tf.distrbuite&lt;/code&gt;, um novo tipo escalar para strings (de&lt;code class=&quot;highlighter-rouge&quot;&gt; std :: string&lt;/code&gt; para &lt;code class=&quot;highlighter-rouge&quot;&gt;tensorflow :: tstring&lt;/code&gt;) e a substituição do SWIG pelo pybind11 ao exportar funções C++. Também tivemos algumas melhorias no Keras, como o uso de lógicas de treinamento personalizadas com a substituição de &lt;code class=&quot;highlighter-rouge&quot;&gt;Model.fit&lt;/code&gt; pelo ` Model.train_step` e o formato SavedModel que agora suporta todas as camadas internas do Keras (incluindo métricas, camadas de pré-processamento e RNN com monitoração de estado). Além disso, outro destaque é que eles abandonaram o suporte ao Python 2, que não é mantido desde janeiro de 2020. Por último, nesta versão, o TensorFlow requer a versão gast 0.3.3. Verifique o texto completo &lt;a href=&quot;https://github.com/tensorflow/tensorflow/releases/tag/v2.2.0&quot;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For binary classification problems the most common metric to evaluate model’s performance is the Area Under the Curve (AUC). It can tell us how good a classifier identify two classes. The AUC of a classifier is equal to the probability that the classifier will rank a randomly chosen positive example higher than a randomly chosen negative example. As scale-invariant, it can measure how well the predictions are ranked and does not consider its absolute values. Together with AUC, the use of Accuracy and F-score complement the evaluation step.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;assets/images/may-news/nvidia-a100.jpg&quot; alt=&quot;NVIDIA A100&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;analysis&quot;&gt;Analysis&lt;/h2&gt;
 
-&lt;h2 id=&quot;nvidia-lança-a100-ai-gpu-o-melhor-instrumento-para-o-avanço-da-ia&quot;&gt;NVIDIA lança A100 AI GPU: o melhor instrumento para o avanço da IA&lt;/h2&gt;
+&lt;p&gt;For the inputs, we have two datasets: the main one which contains demographic (age, population, etc) and order information (date, payment type, delivery method). Together they have 464.969 lines where each one is an order. This dataset contains two years of data from part of the company’s operation. And we have a second dataset which translates peoples name to gender, called here “names.csv”. This is necessary because the raw information in the database is not complete. 
+The main dataset was obtained with consent from food delivery startup and is composed of the following dimensions:&lt;/p&gt;
 
-&lt;p&gt;Anunciado em 14 de maio durante o evento Nvidia GTC 2020, o &lt;a href=&quot;https://www.nvidia.com/en-us/data-center/a100/&quot;&gt;A100 AI Chip&lt;/a&gt; possui 54 bilhões de transistores e 5 petaflops de desempenho sendo a mais poderosa plataforma de IA e HPC para data centers, seguindo a tendência de HPC após &lt;a href=&quot;https://nvidianews.nvidia.com/news/nvidia-to-acquire-mellanox-for- 6 a 9 bilhões&quot;&gt;adquirir a Mellanox em março&lt;/a&gt;. Com base na arquitetura Ampere, o chip de 7 nanômetros pode ser usado para computação científica, gráficos em nuvem e análise de dados. Aqui estão alguns números, 20 vezes mais potente que a GPU Tesla V100 anterior, o A100 alcança 19.5 de potência computacional com seus 6.912 núcleos CUDA, 40 GB de memória, 1,6 TB de largura de banda e a terceira geração de Tensors Core. Uma aplicação desse chip é o sistema &lt;a href=&quot;https://www.nvidia.com/en-us/data-center/dgx-a100/&quot;&gt;DGX&lt;/a&gt;, baseado em 8 NVIDIA A100 e direcionado ao setor de Inteligência Artificial, custa US$ 1 milhão. Podemos esperar ver o novo chip AI em serviços de nuvem em um futuro próximo. A Alibaba Cloud, AWS, Baidu Cloud, Google Cloud, Microsoft Azure, Oracle e Tencent Cloud já firmaram parceria com a NVIDIA.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;assets/images/pred-buyers/featureset.png&quot; alt=&quot;image-20200607150421443&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;assets/images/may-news/fb.jpeg&quot; alt=&quot;Sudo&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Figure 1. Type of variable associated with each feature&lt;/em&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;facebook-ai-divulga-groknet-para-entendimento-avançado-do-produtos&quot;&gt;Facebook AI divulga GrokNet para entendimento avançado do produtos&lt;/h2&gt;
+&lt;p&gt;While the first 10 columns tell us information about the client, the second part digs deeper into consumer habits. All the dimensions could influence the client desire to buy, hence all of them was used.&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;“um sistema universal de visão computacional projetado para compras. Ele pode identificar atributos de produtos dentre bilhões de fotos - em diferentes categorias, como moda, automóveis e decoração de casa”.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;assets/images/pred-buyers/datasets_head.png&quot; alt=&quot;image-2020060715042144332&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Diferente da maioria dos modelos que tem apenas uma categoria para aprender, o GrokNet foi treinado em sete conjuntos de dados, com vários tipos de supervisão e 83 funções de transferência, conseguiu prever categorias, atributos como cor e textura e prováveis consultas de pesquisa. O modelo do FB é treinado por um banco de dados colossal com cerca de 100 milhões de imagens retiradas da plataforma. A empresa também afirma que o sistema é capaz de identificar objetos que foram fotografados com condições de iluminação não muito boas e ângulos que não favorecem uma boa visualização do produto. Para dar ao modelo a capacidade de entender tarefas fáceis e difíceis, eles deram às tarefas uma combinação de peso e imagens para treinamento, ou seja, tarefas mais fáceis não precisam de muita supervisão e podem receber um peso menor. Comparado aos sistemas de atribuição de texto, o novo modelo pode prever anúncios de casas e jardins com precisão de 90%, contra 33% do antigo. O Facebook espera que “no futuro, o GrokNet possa ser usado para ajudar os clientes a encontrar facilmente exatamente o que estão procurando, receber sugestões personalizadas das vitrines sobre quais produtos são mais relevantes para eles e quais são compatíveis”. Verifique o anúncio oficial &lt;a href=&quot;https://ai.facebook.com/blog/powered-by-ai-advancing-product-understanding-and-building-new-shopping-experiences&quot;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Figure 2. Datasets used to train the model&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;assets/images/may-news/sudo.gif&quot; alt=&quot;Sudo&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;The names to gender dataset were download from a public website [5] and are based in the 2010 Brazilian Sense. It is provided information about the environment such as city size, number of orders in this particular city (that may reveal that people in cities with more orders are likely to buy) and country’s region. We have timewise data, which indicate the likelihood o buy in some hours and days. And the logistic data telling if the client used a coupon, which kind of cuisine this kind of customer order, which payment type they prefer. All to try to find a pattern in people who buy soon after registration. 
+The binary classifier to classify each user is put manualy using Python during the code, in a column named ‘Buyer’ where 1 stands for True.&lt;/p&gt;
 
-&lt;h2 id=&quot;lançado-o-sudo-190-com-atualizações-de-segurança&quot;&gt;Lançado o Sudo 1.9.0 com atualizações de segurança&lt;/h2&gt;
+&lt;h3 id=&quot;exploratory-visualization&quot;&gt;Exploratory Visualization&lt;/h3&gt;
 
-&lt;p&gt;Comando básico em nossos trabalhos diários com nossos amados sistemas Unix, o sudo permite que os usuários executem programas como root. Em maio, o sudo recebeu uma atualização da versão 1.9.0 após 9 anos no &lt;em&gt;branch&lt;/em&gt; 1.8. Esta nova versão traz atualizações de segurança como, e centraliza o registro através do &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo_logsrvd&lt;/code&gt;, criando o sudo com a opção“ –enable-openssl ”, os dados são transmitidos através de um canal de comunicação criptografado (TLS). Agora também é possível usar softwares de terceiros para extrair dados de sessões sudo para auditoria. E embora o TF abandone o suporte ao Python 2, ele chega ao Sudo 1.9, onde os plugins podem ser escritos em python agora, que é ativado durante a compilação com a opção “–enable-python”. Verifique todas as alterações na versão completa &lt;a href=&quot;https://www.sudo.ws/stable.html#1.9.0&quot;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In this section, we will have a closer look in the dataset and try to identify patterns already. A great way to start is to look a the datasets age:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/pred-buyers/male_female_buyers.png&quot; alt=&quot;image-20200607151230421443&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/pred-buyers/ageplot.png&quot; alt=&quot;image-2020060127150421443&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Figure 3. Age and Gender Exploration&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Instantly we notice that there are several outliers. This may happen because of the input method in the registration form or by users deliberately choosing to put the wrong date of birth. A outliers removal technic is needed to improve the classifier accuracy.&lt;/p&gt;
+
+&lt;p&gt;Another feature that comes to mind is gender. Gender may influence in customer desire to buy. But from Figure 3 we can not see a major influence upon putting a order or not. We can conclude that we have around 20\% more women in this dataset, but the target buyers are present in both genders equally.&lt;/p&gt;
+
+&lt;p&gt;33&lt;img src=&quot;assets/images/pred-buyers/orderpophue.png&quot; alt=&quot;image-20200607150421443&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Figure 4. Order and Population from Target Users&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Taking a look in the relationship between number of orders and population, we can see that it isn’t a linear function. Most of the data is concentrated in cities with population less than 200.000 and with less than 25 thousand orders. With this in mind, we can look at our target users in this range, as in Figure 4, to try to find a pattern. Clearly this users are in small cities, where competition is not so fierce and the number of orders are small, indicating that the app is new in the town.,&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/pred-buyers/orderspoprelation.png&quot; alt=&quot;image-20200607112250421443&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Figure 5. Relationship between number of orders and population&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;In other hand, we can identify a pattern looking to the scatter plot below (Figure \ref{fig:scatagehour}) of hour by age. There is two well defined groups: people younger than 20 years and seniors from 40 to 80 years old. This two groups tend to order their first order between 10 AM and 8 PM. The gap between 20 and 40 years old, are mostly compose of people that do some research before place an order, or are impacted by some marketing campaign but do not buy instantly.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/pred-buyers/scatter_agehour.png&quot; alt=&quot;image-2020060217150421443&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Figure 6. Identifying buyers per age and hour&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;algorithms-and-techniques&quot;&gt;Algorithms and Techniques&lt;/h3&gt;
+
+&lt;p&gt;The first step is to prepare the data. We have two datasets: one containing information about customers who bought in the same day of registration and other containing customers that ordered the following day or after. These two must be merged as a main file. The main dataset does not contain buyers gender, which is main feature to predict customer behavior. So a name to gender dataset is needed as part of feature engineering, together with the creation of additional features tha would help the algoritm. Furthermore, a step to drop non relevant features as names and IDs is needed.&lt;/p&gt;
+
+&lt;p&gt;Once the main dataset is put together, is proceed with preprocessing the data. Transforming skewed continuous features, such as orders and population that has vastly large numbers, as well as normalizing and hot-encoding variables performs a critical step. Although some algorithms can handle categorical features internally, this step will be performed to avoid future trouble. At the same time, outliers and null values must be removed, hence algorithms can be very sensitive to such numbers. We have seen already the need to remove outliers while looking to the age, population and orders range of the data.&lt;/p&gt;
+
+&lt;p&gt;With all data prepared, is time to start understanding all features and which algorithm would be used. We start by defining a Naive Predictor, as stated before, which would set our lower boundary. Next we will explore three models: Random Forest, GradientBoost and LightGBM (LGBM).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/pred-buyers/decision-tree-example.png&quot; alt=&quot;image-2020060217150421443&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Figure 7. Decision Tree Example&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;This three algorithms are based in Decision Trees. Decision Trees works by creating questions and answering them. Here each node is a feature, each link is a class and each leaf is the output of such a branch, as stated below. For example, from Figure 7, we notice that people under 20 years old tend not to buy on business days. These models are part of the ensemble learning methods and predict by combining the outputs from multiple individual trees. While Random Forest Method create trees independently using random slices from data and choose from the best, the GradientBoost builds one tree at the time and improves over the last one in an iterative method, fixing errors from the previous. Although LGBM is also a tree based algorithm, it grows tree leaf-wise, maximizing classes and not deep-wise. Which can reduce the losses, choosing the leaf with max delta loss. \par
+For selecting the best model, first we need a training pipeline, which would provide an automated way for training multiple classifiers. Then, three models should be defined taking into consideration the data and the goal of the project. Since this project aims to go to production, prediction time is the key evaluation metric here. Also, recall is more important than precision, because we are more interested in find all possible customers instead of find only buyers that would buy. \par
+The next step is to improve the chosen model to obtain a better ROC Curve, F-score and Accuracy. To do this, is possible to use GridSearch from Sklearn library. With the best classifier in hands, we must then save it to use it later. It is possible too, to create a model with fewer features, in order to simplify a real-time predictor.&lt;/p&gt;
+
+&lt;h3 id=&quot;benchmark&quot;&gt;Benchmark&lt;/h3&gt;
+
+&lt;p&gt;The most simple benchmark is called the Naive Predictor. The Naive Predictor can be explained as follows: if we take the whole customer base, and instead of guessing which of them would buy in the same day of registration, we admitted that all of them are potential buyer. How often would we be right? Accordingly to the dataset, only 34.6% of the time we would be right. It is proposed also 3 more models to serve as benchmark.&lt;/p&gt;
+
+&lt;h2 id=&quot;results&quot;&gt;Results&lt;/h2&gt;
+
+&lt;p&gt;I’ll skip the methodology used and go directly to the results achieved. Data preprocessing, implementation metrics and refinements were excluded from this blog post to keep it short. This items and more can be found at the &lt;a href=&quot;https://drive.google.com/file/d/13iXMpgMFs8mrL064gvzE7wOw6InA_FfF/view?usp=sharing&quot;&gt;full article&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;model-evaluation-and-validation&quot;&gt;Model Evaluation and Validation&lt;/h3&gt;
+
+&lt;p&gt;Using the training pipeline stated before, the results for the three supervised learners are showed below. The dotted line in the image show the Naive Predictor performance for comparation.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/pred-buyers/trainingmodelds.png&quot; alt=&quot;image-2020060217150421443&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Figure 8. Performance of the three models&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Looking to the training part, we can notice that the Gradient Boost Classifier takes up 20 times more time to train in the full training set. Furthermore, it has the worst performance when compared with the others on the accuracy and the F-score metrics. In other hand, the Random Forest Classifier seems to overfit the data, with accuracy close to 100\% on training. 
+The LGBM which, in turn, has the fastest training time, also has a more balanced accuracy and f-score performance. The downside of this model is that it has the longer time to predict if a customer is a truly target user, around 0,35 seconds.  But it owns the better general performance in the test set. 
+Once chosen the model is time to improve its performance through tuning the hyperparameters.  Using the &lt;em&gt;gridParams&lt;/em&gt; and the scoring method as &lt;code class=&quot;highlighter-rouge&quot;&gt;scoring = 'AUC': 'roc_auc'&lt;/code&gt; the following configuration was the best one achieved. The comparison before and after the Grid Search is showed below.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;grid_fit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;best_estimator_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;LGBMClassifier&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;boosting_type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'gbdt'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;class_weight&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;colsample_bytree&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;importance_type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'split'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;learning_rate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;max_bin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;512&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;max_depth&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;min_child_samples&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;min_child_weight&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.001&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;min_data_in_leaf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;300&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;min_split_gain&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n_estimators&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;n_jobs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num_leaves&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;64&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;objective&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;random_state&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;reg_alpha&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reg_lambda&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;silent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;subsample&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;subsample_for_bin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;200000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;subsample_freq&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;It could improve the ROC-AUC metric in 2,09%, which is the main metric for this project. Moreover, improvements of 2,89\% and 2,14% can be seen in accuracy and f-score.&lt;/p&gt;
+
+&lt;div class=&quot;language-py highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;Unoptimized&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;------&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Accuracy&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;score&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;on&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;testing&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.9730&lt;/span&gt; 
+&lt;span class=&quot;n&quot;&gt;F&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;score&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;on&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;testing&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.9633&lt;/span&gt; 
+&lt;span class=&quot;n&quot;&gt;ROC&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;AUC&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;score&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;on&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;testing&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.9737&lt;/span&gt; 
+
+&lt;span class=&quot;n&quot;&gt;Optimized&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Model&lt;/span&gt; 
+&lt;span class=&quot;o&quot;&gt;------&lt;/span&gt; 
+&lt;span class=&quot;n&quot;&gt;Final&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;accuracy&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;score&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;on&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;testing&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.9944&lt;/span&gt; 
+&lt;span class=&quot;n&quot;&gt;Final&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;F&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;score&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;on&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;testing&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.9922&lt;/span&gt; 
+&lt;span class=&quot;n&quot;&gt;Final&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ROC&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;AUC&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;score&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;on&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;testing&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.9946&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Last but not least, the ROC-AUC curve for the LGDM Classifier is showed in Figure 9. This plot show us the True Positives Rate (TPR) on the y-axis ax and the False Positive Rate (FPR) on x-axis. Showing the trade-off between sensitivity (TPR) and specificity (1 – FPR). From this analysis we can see that the model has a prediction rate of false positives closer to 0\% and 99\% to true positives. Meaning how well the model can distinguish from the two classes, buyers and non buyers. The blue line shows what we should expect from a random classifier, meaning the classifier can’t separate between classes.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/pred-buyers/roccurve.png&quot; alt=&quot;image-2020060217150421443&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Figure 9. LGDM Classifier’s ROC-AUC Curve&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;justification&quot;&gt;Justification&lt;/h3&gt;
+
+&lt;p&gt;After careful consideration, the Light GBM was chosen. It has proven to have the best performance of all models. Despite its predicting time, it is still suitable for the application. The table below show the results of all models serving as a benchmark for this project.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/pred-buyers/roc-auc.png&quot; alt=&quot;image-2020060217150421443&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The Tuned Light GBM is definitely the best solution for the problem proposed. It can clearly distinguish possible buyers from people that are only checking the platform. This model is only the first layer in a possible chain of predictors to better understand consumers behavior and add features to food delivery platforms. 
+Further, using PCA and Feature Importance, a model containing only 5 features were trained. Using these 5 features: ‘id’,’density’,’month’,’classification’,’day_of_week’, an Accuracy of 99.02%, F-Score of 98.42% and a ROC-AUC of 99.10% were achieved.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;The process to start this project began choosing a real problem to solve. With my experiences in grocery/food delivery platforms, I thought that a good feature to have would be predicting if a consumer would buy or not. Besides improving the customer experience, it could help the platform convert more users into buyers. The first step was to choose between a model that could generalize an identify if old and new customers would buy or just to understand new users behavior.  The last was chosen due its simplicity and probably better accuracy.
+A big challenge was to gather the data from the database. More than that, choose the right period of time to extract and which information would be more important. Once this was decided, the preprocessing phase was by far the most time-consuming. It is the most delicate step and can change the entire output from the model, if done incorrectly. I forgot to remove duplicate UserID once, which give the model accuracy as low as the naive predictor. 
+From then the project was pretty straight forward. The training pipeline and the use of GridSearch, although time-consuming as well, was simple to handle. With the LGBM tuned and working, I tried to use some feature reduction to see how much of its accuracy we could keep. I expect to deploy this classifier to production and hope to see applied in some feature in the future.&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;p&gt;Quer receber as notícias e tendências mais importantes da IA em apenas um e-mail a cada final de mês? Inscreva-se abaixo e vou te enviar as 10 notícias mais importantes em Inteligência Artificial.&lt;/p&gt;</content>
+&lt;p&gt;&lt;a href=&quot;https://drive.google.com/file/d/13iXMpgMFs8mrL064gvzE7wOw6InA_FfF/view?usp=sharing&quot;&gt;Read the full article here.&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Would you like to  receive the most important news and trends in AI in just one email every end of the month? Subscribe below and I’ll send you the 10 most important news in Artificial Intelligence&lt;/p&gt;</content>
 
       
       
@@ -1339,184 +1499,11 @@ transformed_sample = tx(sample)
       
 
       
-        <category term="portuguese" />
-      
-        <category term="news" />
+        <category term="projects" />
       
 
       
-        <summary type="html">As 5 principais notícias e tendências da IA que cruzei em maio de 2020.</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">Introdução a Redes Neurais</title>
-      <link href="http://localhost:4000/Introdu%C3%A7%C3%A3o-a-Redes-Neurais" rel="alternate" type="text/html" title="Introdução a Redes Neurais" />
-      <published>2000-05-03T07:18:00-03:00</published>
-      <updated>2000-05-03T07:18:00-03:00</updated>
-      <id>http://localhost:4000/Introdu%C3%A7%C3%A3o%20a%20Redes%20Neurais</id>
-      <content type="html" xml:base="http://localhost:4000/Introdu%C3%A7%C3%A3o-a-Redes-Neurais">&lt;p&gt;Aprenda os principais conceitos por trás das Redes Neurais, um dos pilares do Deep Learning.&lt;/p&gt;
-
-&lt;p&gt;English version &lt;a href=&quot;http://edgeaiguru.com/Introduction-to-Neural-Networks&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;introdução&quot;&gt;Introdução&lt;/h2&gt;
-
-&lt;p&gt;A Inteligência Artificial vem revolucionando a indústria nos últimos anos e resolvendo problemas, que antes eram onerosos em tempo e dinheiro, de maneira muito mais eficaz. Problemas de visão computacional, processamento de linguagem natural e diversas outras aplicações só são possíveis graças aos avanços em Aprendizagem Profunda.&lt;/p&gt;
-
-&lt;p&gt;As Redes Neurais Artificiais (RNA) são um dos principais pilares dessa tecnologia. Inspiradas no cérebro humano, as RNA levam esse nome pois tem conexões e motivações biológicas. Assim como no cérebro humano, onde unidade mais básica de processamento é o neurônio, as RNA possuem um elemento que processa impulsos, ou entradas, e que também é chamado de neurônio ou nó.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/artificial-vs-biological-neuron.png&quot; alt=&quot;Artificial vs Biological Neuron&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Neurônio Biológico vs Neurônio Artificial. Fonte: &lt;a href=&quot;https://www.datacamp.com/community/tutorials/deep-learning-python&quot;&gt;Keras Tutorial: Deep Learning in Python&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Ambas estruturas compartilham o mesmo funcionamento para a transferência de informações: recebem uma entrada (impulso) que é carregada através do nó (corpo da célula) e ativam um certa saída (terminais axônicos). De mesma forma como nos neurônios biológicos, esse impulso nervoso que ativa o neurônios é reproduzida nas RNA através de funções de ativação.&lt;/p&gt;
-
-&lt;p&gt;Logo, esse elemento básico das redes neurais podem ser representado pela seguinte figura, retirada do curso &lt;a href=&quot;https://www.coursera.org/learn/neural-networks-deep-learning&quot;&gt;Neural Networks and Deep Learning&lt;/a&gt;:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/generic-neuron.png&quot; alt=&quot;Generic Neuron&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Onde, através do exemplo da necessidade de prever o preço de casas baseado no seu tamanho, podemos traçar um função que consiga representar esse problema. Nesse exemplo, uma função ReLU encaixa perfeitamente nos dados. Então, a mínima representação de um neurônio seria colocarmos na entrada a área de uma casa e, baseado na função matemática colocada “dentro” do neurônio, podemos estimar um preço para essa residência.&lt;/p&gt;
-
-&lt;p&gt;Dessa forma, treinamos cada neurônio para ser ativado quando um certo padrão aparece. Assim, o agrupamento de diversos neurônios em série e em paralelo, permite as Redes Neurais a aprender a reconhecer padrões em imagens, textos, áudios e nas mais diversas formas de dados.&lt;/p&gt;
-
-&lt;p&gt;Nesse artigo, será aprensentado os principais componentes das Redes Neurais Artificiais, algumas das principais arquiteturas, as funções de ativações mais comuns.&lt;/p&gt;
-
-&lt;h2 id=&quot;redes-neurais-artificias&quot;&gt;Redes Neurais Artificias&lt;/h2&gt;
-
-&lt;p&gt;Apesar das Redes Neurais terem algumas semelhanças com os neurônios do cérebro humano, essas são infinitamente mais simples do que seu correspondente biológico. Essas arquiteturas são compostas por blocos matemáticos que podem ser explicados utilizando álgebra e cálculo, muito diferentemente das diversas partes do cérebro que ainda não conseguimos entender.&lt;/p&gt;
-
-&lt;p&gt;Os principais componentes das RNA são: a camada de entrada, as camadas ocultas e as camadas de saída. Essas camadas são ligadas através de conexões que têm pesos, esses definem o quão importante aquela conexão é para a rede. Além disso, como vimos anteriormente, na saída de cada neurônio existe um função de ativação que definirá se o neurônio irá ativar ou não.&lt;/p&gt;
-
-&lt;h2 id=&quot;blocos-de-uma-rede-neural-artificial&quot;&gt;Blocos de uma Rede Neural Artificial&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/generic-3-layers-neural-network.png&quot; alt=&quot;Generic 3 Layer Neural Network&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Arquitetura de uma Rede Neural Genérica de 3 Camadas. Fonte: &lt;a href=&quot;https://cs231n.github.io/neural-networks-1/#nn&quot;&gt;Stanford CS231n&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;camada-de-entrada&quot;&gt;&lt;em&gt;Camada de Entrada&lt;/em&gt;&lt;/h3&gt;
-
-&lt;p&gt;Um bloco de neurônios pode ser chamado de camada. Mas perceba que apesar de os neurônios se interligarem entre camadas, eles não tem conexões dentro da mesma camada. Como mostra a figura acima, a primeira camada de uma Rede Neural é a camada de entrada. Esta tem apenas a função de passar as entradas do sistema para a próxima camada e não realiza nenhuma função matemática.&lt;/p&gt;
-
-&lt;h3 id=&quot;camadas-ocultas&quot;&gt;&lt;em&gt;Camadas Ocultas&lt;/em&gt;&lt;/h3&gt;
-
-&lt;p&gt;Essa camada é responsável por uma das principais funções das redes neurais: processar os dados e enviá-los para a camada seguinte. O valor de cada neurônio é encontrado multiplicando o pesos W pela entrada X e somando um viés b. Esse valor então passa por uma função de ativação e é enviada a próxima camada, como mostra a Fig. 2.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/hidden-layer-mathematics.png&quot; alt=&quot;Hidden Layer Mathematics&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Operações Matemáticas dentro do Neurônio. Fonte: Fonte: &lt;a href=&quot;https://cs231n.github.io/neural-networks-1/#nn&quot;&gt;Stanford CS231n&lt;/a&gt; Modificada.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Assim, se isolarmos o primeiro neurônio da primeira camada oculta, o valor de saída do neurônio será igual a z1. Onde &lt;em&gt;s1&lt;/em&gt; é a entrada do neurônio, onde multiplicamos os pesos pelas entradas e somamos um viés b. Após essa operação, é aplicada então uma função de transferência &lt;em&gt;g&lt;/em&gt; sobre o &lt;em&gt;s1.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;É importante notar que &lt;em&gt;X&lt;/em&gt; e &lt;em&gt;W&lt;/em&gt; na primeira equação são matrizes nesse caso, e representam todas as entradas e todos os pesos, respectivamente.&lt;/p&gt;
-
-&lt;p&gt;Chamamos essa camada de “Camada Oculta” pois durante o treinamento de redes neurais temos as entradas que são conhecidas e as saídas que são esperadas. Mas não vemos quais os valores dentro dos neurônios dessa camada. Esse bloco pode conter diversas camadas ocultas, e quanto mais camadas mais “profunda” é a rede neural, e mais padrões ela consegue aprender.&lt;/p&gt;
-
-&lt;h3 id=&quot;camadas-de-saída&quot;&gt;&lt;em&gt;Camadas de Saída&lt;/em&gt;&lt;/h3&gt;
-
-&lt;p&gt;A camada de saída é a responsável por mostrar os resultados obtidos através dos cálculos feitos nas camadas ocultas. Normalmente é utilizada uma função de ativação, assim como a dos neurônios das camadas anteriores, para simplificar o resultado.&lt;/p&gt;
-
-&lt;h3 id=&quot;pesos-e-viés&quot;&gt;&lt;em&gt;Pesos e Viés&lt;/em&gt;&lt;/h3&gt;
-
-&lt;p&gt;Os pesos são responsáveis por definir o quão importante aquela conexão é para a rede neural. Como existem diversas conexões dentro das RNA, é dessa forma que essa arquitetura entende quais padrões ela deve aprender e quais ela deve ignorar. Além disso, comumente é utilizado um valor chamado de viés junto aos pesos e as entradas. Esse valor ajuda a fazer um ajuste fino na rede neural. Dessa forma, se tivermos um neurônio i em uma camada e um neurônio j na camada seguinte, teremos um ligação com o peso Wij e um viés bij.&lt;/p&gt;
-
-&lt;h3 id=&quot;funções-de-ativação&quot;&gt;&lt;em&gt;Funções de Ativação&lt;/em&gt;&lt;/h3&gt;
-
-&lt;p&gt;Também chamada de função de transferência, é o último processamento matemático que acontece antes da informação sair do neurônio. Esta equação matemática define se o neurônio será ativado ou não, podendo ser pode ser uma função degrau, uma função linear ou uma função não linear.&lt;/p&gt;
-
-&lt;p&gt;A função de ativação mais simples seria a utilização de um degrau unitário. Onde o neurônio iria ativar somente caso a entrada fosse superior a um &lt;em&gt;threshold,&lt;/em&gt; e o sinal de entrada seria totalmente reproduzido na saída do nó.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/step-function.png&quot; alt=&quot;Step Function&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Esta pode retornar valores de 0 e 1, utilizado em problemas de classificação, ou entre 0 e 1, utilizado em problemas que estamos mais interessados em saber a probabilidade de certa entrada fazer parte de certa classe.&lt;/p&gt;
-
-&lt;h2 id=&quot;principais-tipos-de-redes-neurais-artificiais&quot;&gt;&lt;em&gt;Principais Tipos de Redes Neurais Artificiais&lt;/em&gt;&lt;/h2&gt;
-
-&lt;p&gt;Existem dois tipos principais de Redes Neurais: Redes Neurais Feedforward e Redes Neurais Recorrentes.&lt;/p&gt;
-
-&lt;h3 id=&quot;redes-neurais-feedforward-rnf&quot;&gt;&lt;em&gt;Redes Neurais Feedforward (RNF)&lt;/em&gt;&lt;/h3&gt;
-
-&lt;p&gt;Essa arquitetura é a mais comumente encontrada na literatura. Nela, a informação move-se em apenas uma direção: da entrada, passando pela camada oculta até o nós de saída, e não existem ciclos.&lt;/p&gt;
-
-&lt;p&gt;A unidade mais simples dessa topologia é o Perceptron, a rede neural mais simples que é composta apenas por um nó.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/perceptron.png&quot; alt=&quot;Perceptron&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;O Perceptron&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Alguns problemas simples podem ser resolvidos com o Perceptron, pois ele só funciona com funções linearmente separáveis.&lt;/p&gt;
-
-&lt;p&gt;Com a necessidade de resolver problemas mais complexos e a partir dessa unidade básica, surge o &lt;strong&gt;Perceptron Multicamadas (MLP)&lt;/strong&gt;. Composto por diversas camadas desses nós, sendo muito mais úteis e podendo aprender funções não lineares.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/multi-layer-perceptron.png&quot; alt=&quot;Multilayer Perceptron&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Uma arquitetura de um Perceptron Multicamadas. Fonte:&lt;a href=&quot;https://www.researchgate.net/figure/Architecture-of-a-multilayer-perceptron-neural-network_fig5_316351306&quot;&gt;Advanced Methods for the Processing and Analysis of Multidimensional Signals: Application to Wind Speed&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;E por fim, temos as &lt;strong&gt;Redes Neurais Convolucionais (CNN)&lt;/strong&gt;, que são o exemplo mais comum das Redes Neurais Feedforward. Inspiradas no Córtex Visual, essa topologia divide os dados em pequenos pedaços e tentar aprender padrões essenciais. Essa operação é chamada de Convolução. Mais eficientes que os MLP, essa topologia é encontrada vastamente em aplicações de visão computacional, vídeo e linguagem natural. Essa topologia possui seus blocos característicos próprios, como as camadas de convolução e de &lt;em&gt;pooling.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/convolution-neural-network.png&quot; alt=&quot;Convolutional Neural Network&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Exemplo de Rede Neural Convolucional. Fonte: &lt;a href=&quot;https://missinglink.ai/guides/convolutional-neural-networks/convolutional-neural-network-tutorial-basic-advanced/&quot;&gt;Convolutional Neural Network Tutorial&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;redes-neurais-recorrentes-rnn&quot;&gt;&lt;em&gt;Redes Neurais Recorrentes (RNN)&lt;/em&gt;&lt;/h3&gt;
-
-&lt;p&gt;Diferente das Redes Neurais Feedforward, nas RNN a informação flui não somente para frente, mas para trás também, formando um ciclo. Para isso, assim como as CNN, elas usam diversos blocos próprios, como um bloco de memória por exemplo. Isso permite essa topologia capturar padrões dinâmicos temporais e serem vastamente utilizados em problemas de reconhecimento de voz e problemas que exigem uma ligação sequencial.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/recorrent-neural-network.png&quot; alt=&quot;Recurrent Neural Network&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Exemplo de Rede Neural Recorrente Fonte: &lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Recurrent_neural_network_unfold.svg&quot;&gt;wikimedia&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;tipos-de-funções-de-ativação&quot;&gt;Tipos de Funções de Ativação&lt;/h2&gt;
-
-&lt;p&gt;Além da função degrau unitário, que acredito não ser usada na prática, existem diversas outras funções de ativação. Além de determinarem a saída de um modelo, elas também ajudam na precisão dos resultados e na eficiência com que o modelo será treinado. Na prática, os modelos modernos usam funções de ativação não-linear, que são capazes de capturar padrões em dados mais complexos.&lt;/p&gt;
-
-&lt;p&gt;As funções de ativação são usadas em dois momentos nas Redes Neurais: para processar a saída de um único neurônio, como vimos durante o tópico  de camadas ocultas, e para processar a saída da rede neural como um todo.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/sigmoid.png&quot; alt=&quot;Sigmoid Formula and Graph&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/tanh.png&quot; alt=&quot;Tanh Formula and Graph&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/relu.png&quot; alt=&quot;Relu Formula and Graph&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Normalmente são usadas funções &lt;em&gt;Rectified Linear Unit&lt;/em&gt; (ReLU) na prática. A função Sigmoid é normalmente utilizada para demostrar como esses elementos funcionam e normalmente é substituida pela Tangente Hiperbólica (TanH). Exceto no caso do problema tratar-se de uma classificação binária, nesse caso seria melhor uma função Sigmoid na saída do modelo pois está já entregaria o resultado entre 0 e 1.&lt;/p&gt;
-
-&lt;p&gt;A escolha da função de ativação é motivada pelas características do problema que está sendo resolvido. A Sigmoid, por exemplo, apesar ter um gradient mais suave e normalizar a saída entre 0 e 1, tem problemas com &lt;em&gt;vanish gradients&lt;/em&gt; e sua saída não está centrada em zero. Já TanH tem o seu centro em zero, o que facilita o aprendizado das camadas seguintes, mas desvantagens parecidas com a Sigmoid.&lt;/p&gt;
-
-&lt;p&gt;Além dessas, ainda podemos destacar:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Leaky ReLU&lt;/li&gt;
-  &lt;li&gt;Softmax&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;conclusão&quot;&gt;Conclusão&lt;/h2&gt;
-
-&lt;p&gt;Nesse artigo passamos por alguns dos principais conceitos de Redes Neurais Artificiais. Após essa revisão, espero que você já tenha uma idea mais concreta dos conceitos básicos que envolvem um dos principais tópicos de Aprendizagem Profunda. Entendendo os principais blocos construtores das RNA, as principais topologias e as funções de ativação mais comuns, podemos agora passar a tópicos mais avançados como &lt;strong&gt;Forward and Backward Propagation&lt;/strong&gt; e o &lt;strong&gt;Gradient Descent&lt;/strong&gt;.&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Matheus Jacques</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="portuguese" />
-      
-        <category term="neural-networks" />
-      
-
-      
-        <summary type="html">Aprenda os principais conceitos por trás das Redes Neurais, um dos pilares do Deep Learning.</summary>
+        <summary type="html">This project has the objective to create a Machine Learning Model to predict whether a user that just registered will buy or not. Predicting such action could influence from user experience until predicting demands for restaurants.</summary>
       
 
       
