@@ -1,4 +1,99 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-20T14:37:41-03:00</updated><id>http://localhost:4000/</id><title type="html">Edge AI Guru</title><subtitle>The guidance through your Artificial Intelligence journey</subtitle><entry><title type="html">Tracking 3D objects with Lidar and Camera</title><link href="http://localhost:4000/3D-Object-Tracking" rel="alternate" type="text/html" title="Tracking 3D objects with Lidar and Camera" /><published>2020-07-23T07:15:00-03:00</published><updated>2020-07-23T07:15:00-03:00</updated><id>http://localhost:4000/3D%20Object%20Tracking</id><content type="html" xml:base="http://localhost:4000/3D-Object-Tracking">&lt;p&gt;Integrating Lidar Point Clouds with Camera Images to compute Time To Collision (TTC)&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-02-02T23:38:44+01:00</updated><id>http://localhost:4000/</id><title type="html">Edge AI Guru</title><subtitle>The guidance through your Artificial Intelligence journey</subtitle><entry><title type="html">O impacto da Inteligência Artificial no Controle de Qualidade</title><link href="http://localhost:4000/Inspe%C3%A7%C3%A3o-usando-CV" rel="alternate" type="text/html" title="O impacto da Inteligência Artificial no Controle de Qualidade" /><published>2021-02-02T11:15:00+01:00</published><updated>2021-02-02T11:15:00+01:00</updated><id>http://localhost:4000/%20Inspe%C3%A7%C3%A3o%20usando%20CV</id><content type="html" xml:base="http://localhost:4000/Inspe%C3%A7%C3%A3o-usando-CV">&lt;p&gt;Abordamos o impulsionamento da indústria com a integração da IA e uma demonstração de um serviço de inspeção de qualidade em garrafas de refrigerante,&lt;/p&gt;
+
+&lt;p&gt;A Inteligência Artificial vem revolucionando a indústria nos últimos anos e resolvendo problemas, que antes eram onerosos em tempo e dinheiro, de maneira muito mais eficaz. Problemas de visão computacional, processamento de linguagem natural e diversas outras aplicações só são possíveis graças aos diversos avanços na área.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/inspection/ai-ml-dl.png&quot; alt=&quot;ai-ml-dl&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;A inteligência artificial e suas subáreas.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Inteligência artificial pode ser definida como qualquer método que permite computadores imitar a inteligência humana. Já a parte de Aprendizado de Máquina (Machine Learning) é a subárea de Inteligência Artificial que aprende com os dados utilizando métodos estatísticos sem ser diretamente programada para isso. Parte do Aprendizado de Máquina, o Aprendizado Profundo (Deep Learning) é a área em que programas aprendem sozinhos sobre características importantes sobre os dados, viabilizando tarefas como reconhecimento de padrões em voz ou imagens.&lt;/p&gt;
+
+&lt;p&gt;As Redes Neurais Artificiais (RNA) são um dos principais pilares dessa tecnologia. Inspiradas no cérebro humano, as RNA levam esse nome pois tem conexões e motivações biológicas. Assim como no cérebro humano, onde unidade mais básica de processamento é o neurônio, as RNA possuem um elemento que processa impulsos, ou entradas, e que também é chamado de neurônio ou nó.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Inteligência Artificial na Indústria como forma de reduzir custos&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Podemos utilizar todo o espectro da Inteligência Artificial na indústria, desde Machine Learning até Aprendizado Profundo. Com ela, é possível otimizar processos com sistemas de automação inteligentes, aumentar o trabalho humano e impulsionar inovações. Sistemas de predição usando Machine Learning já são encontrados em áreas como manutenção preventiva, segurança de rede, processo de logística, gestão de inventário, gestão de ativos e gestão da cadeia de abastecimento. Por outro lado, recentemente com os avanços dos métodos de aprendizado profundo se tornaram mais comum em aplicações de visão computacional, principalmente no controle de qualidade. Essa tecnologia dá às máquinas sentidos mais humanos, como diferenciar e identificar objetos. Aqui estão alguns exemplos de aplicação de aprendizagem profunda na indústria que otimizam processos já existentes: identificação de produtos com defeito, detecção de anomalias e manutenção preditiva com redes neurais. Quando falamos diretamente de custos para o cliente, modelos são criados com o objetivo de realizar uma tarefa com precisão e também de otimizar um processo que permite a economia de dinheiro aos cofres da empresa. Segundo um &lt;a href=&quot;https://www.accenture.com/pt-pt/insight-ai-industry-growth&quot;&gt;estudo feito pela Accenture Research&lt;/a&gt;, o crescimento da margem de lucro na indústria americana vem diminuindo desde 2010. Isso acontece devido a fatores como como a falta de investimento em inovação e P&amp;amp;D. Por outro lado, a inovação é o que ajudará a indústria a voltar a lucrar. Com o aumento do número de sensores nas fábricas, a queda do preço de poder computacional e avanços em campos coma a Inteligências Artificial, a tecnologia será cada vez mais comum em processos industriais. De fato, na manufatura, a Inteligência Artificial encontra um ambiente favorável para inovar, já que essa área tem precursores como a Internet das Coisas (IoT).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/inspection/ind-grow.png&quot; alt=&quot;ind-grow&quot; /&gt;&lt;em&gt;Taxas de crescimento anuais em 2035 do valor bruto acrescentado (aproximadas ao PIB), comparando a linha base de crescimento em 2035 com um cenário de inteligência artificial, onde a IA foi absorvida pela economia. Fonte: Accenture e Frontier Economics&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Normalmente atribuído a humanos, trabalhos repetitivos são os que geram um maior número de erros e muita vezes também são os com maiores riscos. Assim, a substituição da mão de obra humana por processos automatizados ajuda reduzir significativamente o número e erros e os riscos na produção, diminuindo assim os custos. A pesquisa da Accenture ainda mostra que a IA tem potencial para aumentar as taxas de lucratividade em uma média de 38% até 2035 e levar a um aumento econômico de US $ 14 trilhões em 16 setores em 12 economias até 2035. O impacto das tecnologias de IA nos negócios é projetado para aumentar a produtividade do trabalho em até 40 por cento - e permitir que as pessoas façam um uso mais eficiente de seu tempo.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Aplicação de Deep Learning em Sistemas de Controle de Qualidade:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;O uso da tecnologia de visão por máquina mostra-se como um verdadeiro aliado no controle de inspeção de qualidade de produtos em linhas de produção. Durante décadas, existem implementações que possibilitam analisar diversos produtos através de câmeras com algoritmos de processamento de imagem, onde um funcionário escolhe quais características são importantes para o problema, como arestas, cantos, cores, etc. A partir disso, definem-se regras através da extração manual de características que definem se há ou não problema no produto visualizado, tornando-se um método simples e consideravelmente eficaz.&lt;/p&gt;
+
+&lt;p&gt;Com a revolução da Indústria 4.0, o desenvolvimento de sistemas autônomos e automatizados vem ganhando espaço. Dessa forma, foram desenvolvidos algoritmos de &lt;em&gt;Deep Learning&lt;/em&gt;, que é uma ferramenta poderosa que possibilita alavancar os sistemas de inspeção de qualidade. Esse método possui uma característica única: aprender a partir dos próprios dados. O processo utiliza das fotografias capturadas pelas câmeras, e cria regras próprias, customizadas e adaptadas para cada problema, sem necessidade da presença humana.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/inspection/process.png&quot; alt=&quot;process&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Comparação entre sistemas de visão de máquina existentes e a simplificação através do uso de Deep Learning.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Além disso, essa tecnologia possui a flexibilidade de utilizar modelos treinados em problemas similares como um ponto de início para resolver um novo problema. Dessa forma, é possível otimizar as métricas de precisão e também economizar tempo de treino, visto que é necessário entregar ao modelo menos imagens para o aprendizado. Outro aliado da visão computacional são os algoritmos de detecção de objetos, que também partem de modelos pré-treinados em competições, e são necessários para localizar precisamente defeitos em objetos. Um exemplo de aplicação disso é o controle de qualidade em garrafas de plástico que implementamos na Fox IoT, em que o modelo consegue encontrar precisamente a localização de um rótulo defeituoso e consequentemente classifica-o corretamente.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/inspection/cola.png&quot; alt=&quot;cola&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Garrafa com rótulo defeituoso e inferência do algoritmo de inspeção visual.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Além do rótulo defeituoso, nossa inspeção de qualidade também é capaz de identificar quando a garrafa está amassada, sem tampa, sem rótulo ou com preenchimento de líquido incorreto, tornando uma solução completa para a indústria manufatureira. Devido à flexibilidade do serviço, podemos também fazer a contagem  de produtos na linha de produção e abrangir para outras manufaturas, desde integridade de caixas até falhas em confecções de tecidos.&lt;/p&gt;
+
+&lt;p&gt;Assim explicado de forma geral o impulsionamento da indústria com a integração da inteligência artificial e uma demonstração de um serviço de inspeção de qualidade em garrafas de refrigerante, percebe-se que esses processos otimizados geram cada vez mais valor ao cliente final, possibilitando a redução de tempo e custos na produção.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Would you like to  receive the most important news and trends in AI in just one email every end of the month? Subscribe below and I’ll send you the 10 most important news in Artificial Intelligence&lt;/p&gt;</content><author><name>Matheus Jacques</name></author><category term="projects" /><summary type="html">Abordamos o impulsionamento da indústria com a integração da IA e uma demonstração de um serviço de inspeção de qualidade em garrafas de refrigerante,</summary></entry><entry><title type="html">Radar Target Generation and Detection</title><link href="http://localhost:4000/Radar" rel="alternate" type="text/html" title="Radar Target Generation and Detection" /><published>2020-08-03T12:15:00+02:00</published><updated>2020-08-03T12:15:00+02:00</updated><id>http://localhost:4000/Radar</id><content type="html" xml:base="http://localhost:4000/Radar">&lt;p&gt;In this project, we’ll be localizing a robot in a 2D grid world. The basis for simultaneous localization and mapping (SLAM) is to gather information from a robot’s sensors and motions over time, and then use information about measurements and motion to re-construct a map of the world.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/radar/layout.png&quot; alt=&quot;image-20200607150421443&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;With the following Radar Specifications, was defined Range and Velocity of target and generated a FMCW Waveform, simulating signal generation and a moving target. A Range Doppler Response was performed using a 2D FFT and CFAR on the generated RDM Range Doppler Map Generation was implemented to display the target.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Frequency of operation = 77GHz&lt;/li&gt;
+  &lt;li&gt;Max Range = 200m&lt;/li&gt;
+  &lt;li&gt;Range Resolution = 1 m&lt;/li&gt;
+  &lt;li&gt;Max Velocity = 100 m/s&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;implementation-steps-for-the-2d-cfar-process&quot;&gt;Implementation steps for the 2D CFAR process.&lt;/h4&gt;
+
+&lt;p&gt;To implement the 2D CFAR, we have to slide the window through the complete Range Doppler Map. This map was generated by running a 2DFFT on the mixed signal (beat signal) output. As we can see below the output of the 2D FFT is an image that has its response in the range and doppler FFT bins, achieved after converting the axis from bin sizes to range and doppler based on their max values and taking just one side of signal from Range dimension.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/radar/2DFFT.jpg&quot; alt=&quot;image-20200607150421443&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We then choose the number of Training Cells in both the dimensions and the number of Guard Cells in both dimensions around the Cell Under Test (CUT) for accurate estimation. A vector stores the noise level for each iteration on training cells, using a loop such that it slides the CUT across range doppler map by giving margins at the edges for Training and Guard Cells. Summing the signal level and converting the value from logarithmic to linear using db2pow function, we average the summed values for all of the training cells used and convert it back to logarithmic using pow2db. Further adding the offset to it to determine the threshold and comparing the signal under CUT with this threshold, we assign value of 1 if the CUT level is greater than the threshold, or equal to 0 otherwise. Using the RDM as the matrix from the output of 2D FFT for implementing CFAR we achieve the following CA-CFAR result.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/radar/CA-CFAR.jpg&quot; alt=&quot;image-20200607150421443&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;selection-of-training-guard-cells-and-offset&quot;&gt;Selection of Training, Guard cells and offset.&lt;/h4&gt;
+
+&lt;p&gt;​	To slide through the complete Range Doppler Map, the following number of Training Cells in both the dimensions, the number of Guard Cells in both dimensions around the Cell Under Test (CUT) and the Offset threshold by SNR value in dB was chosen (&lt;em&gt;Lines 154~171&lt;/em&gt;). While the training values and the guard cell in the Range dimension was chosen after the project walk through video, the guard cell in the Doppler dimension  and the offset was chosen after some experimentations.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;%% CFAR implementation
+
+%Slide Window through the complete Range Doppler Map
+
+% *%TODO* :
+%Select the number of Training Cells in both the dimensions.
+tr_cells = 10;
+td_cells = 8;
+
+% *%TODO* :
+%Select the number of Guard Cells in both dimensions around the Cell under 
+%test (CUT) for accurate estimation
+gr_cells = 4;
+gd_cells = 2;
+
+% *%TODO* :
+% offset the threshold by SNR value in dB
+offset = 1.2;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;steps-taken-to-suppress-the-non-thresholded-cells-at-the-edges&quot;&gt;Steps taken to suppress the non-thresholded cells at the edges.&lt;/h4&gt;
+
+&lt;p&gt;We generate a thresholded block, which is smaller than the Range Doppler Map as the CUT cannot be located at the edges of matrix. While adding the offset to it to determine the threshold and comparing the signal under CUT with this threshold, we assigned values of 1 if the CUT level is greater than the threshold, or equal to 0 otherwise. These few cells will not be thresholded and to keep the map size same we set those values to 0 using &lt;code class=&quot;highlighter-rouge&quot;&gt;RDM(RDM~=0 &amp;amp; RDM~=1) = 0;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Would you like to  receive the most important news and trends in AI in just one email every end of the month? Subscribe below and I’ll send you the 10 most important news in Artificial Intelligence&lt;/p&gt;</content><author><name>Matheus Jacques</name></author><category term="projects" /><summary type="html">In this project, we’ll be localizing a robot in a 2D grid world. The basis for simultaneous localization and mapping (SLAM) is to gather information from a robot’s sensors and motions over time, and then use information about measurements and motion to re-construct a map of the world.</summary></entry><entry><title type="html">Tracking 3D objects with Lidar and Camera</title><link href="http://localhost:4000/Lex-Friedman" rel="alternate" type="text/html" title="Tracking 3D objects with Lidar and Camera" /><published>2020-07-23T12:15:00+02:00</published><updated>2020-07-23T12:15:00+02:00</updated><id>http://localhost:4000/%20Lex%20Friedman</id><content type="html" xml:base="http://localhost:4000/Lex-Friedman">&lt;p&gt;Integrating Lidar Point Clouds with Camera Images to compute Time To Collision (TTC)&lt;/p&gt;
 
 &lt;p&gt;
     Autonomous vehicles technology has been on my radar (no pun intended) for a while now. I was excited to apply AI to some very complex problems and this project was for sure one of the most amazing I ever did. More than Machine and Deep Learning techniques, solving autonomous driving requires several technologies and methods. All this is only possible through fusing sensors to make sense of the environment.
@@ -85,7 +180,94 @@
 &lt;/p&gt;
 &lt;p&gt;
     To check the complete code with comments, tasks and the results, please check the &lt;a href=&quot;https://github.com/jacquesmats/3D_Object_Tracking&quot;&gt;Github repository&lt;/a&gt;.
-&lt;/p&gt;</content><author><name>Matheus Jacques</name></author><category term="projects" /><summary type="html">Integrating Lidar Point Clouds with Camera Images to compute Time To Collision (TTC)</summary></entry><entry><title type="html">Lidar Obstacles Detection</title><link href="http://localhost:4000/Lidar-Obstacles-Detection" rel="alternate" type="text/html" title="Lidar Obstacles Detection" /><published>2020-07-18T07:15:00-03:00</published><updated>2020-07-18T07:15:00-03:00</updated><id>http://localhost:4000/Lidar%20Obstacles%20Detection</id><content type="html" xml:base="http://localhost:4000/Lidar-Obstacles-Detection">&lt;p&gt;In this project, we create a simple 3d highway enviroment using Point Cloud Library for exploring self-driving car sensors.&lt;/p&gt;
+&lt;/p&gt;</content><author><name>Matheus Jacques</name></author><category term="projects" /><summary type="html">Integrating Lidar Point Clouds with Camera Images to compute Time To Collision (TTC)</summary></entry><entry><title type="html">Tracking 3D objects with Lidar and Camera</title><link href="http://localhost:4000/3D-Object-Tracking" rel="alternate" type="text/html" title="Tracking 3D objects with Lidar and Camera" /><published>2020-07-23T12:15:00+02:00</published><updated>2020-07-23T12:15:00+02:00</updated><id>http://localhost:4000/3D%20Object%20Tracking</id><content type="html" xml:base="http://localhost:4000/3D-Object-Tracking">&lt;p&gt;Integrating Lidar Point Clouds with Camera Images to compute Time To Collision (TTC)&lt;/p&gt;
+
+&lt;p&gt;
+    Autonomous vehicles technology has been on my radar (no pun intended) for a while now. I was excited to apply AI to some very complex problems and this project was for sure one of the most amazing I ever did. More than Machine and Deep Learning techniques, solving autonomous driving requires several technologies and methods. All this is only possible through fusing sensors to make sense of the environment.
+&lt;/p&gt;
+&lt;p&gt;
+    To fusion two sensors was a completely new challenge for me and seeing the results is awesome. After some introduction on how camera technology works and how optics are applied in modern systems, some image processing, and computer vision applications were covered,  to better understand how to fusion Lidar and Camera data. From this point on, I tried to apply this knowledge to a collision avoidance project for vehicles. 
+&lt;/p&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/T2UWLYwpuv4?controls=1&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h2&gt;TL;DR&lt;/h2&gt;
+&lt;br&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/3d-obj-tracking/structure.png&quot; alt=&quot;Structure&quot;&gt;&lt;/p&gt;
+
+&lt;i&gt;Project Structure. Source: &lt;a href=&quot;https://www.udacity.com/course/sensor-fusion-engineer-nanodegree--nd313&quot;&gt;Udacity Sensor Fusion Nanodegree&lt;/a&gt;&lt;/i&gt;
+&lt;br&gt;
+
+
+
+&lt;p&gt;
+    From cameras we detect images key points, such as tail lights, extract these keypoints descriptors and match them between successive images and observe its distances, computing Camera TCC. From Lidar we take a 3D Point Cloud, crop the points(discard road and bad measurements) and cluster these into objects, identified using Neural Networks, and provided with bounding boxes. We than fusion both information, connecting them into space and tracking 3D object bounding boxes to compute the Lidar TCC on the object in front of the car. Conducting various tests with the framework, we tried to identify the most suitable detector/descriptor combination for TTC estimation and also to search for problems that can lead to faulty measurements by the camera or Lidar sensor.
+&lt;/p&gt;
+
+&lt;h2&gt;The Technology&lt;/h2&gt;
+&lt;br&gt;
+
+&lt;p&gt;	
+    To make it happen, everything was coded in C++ using the &lt;a href=&quot;http://www.cvlibs.net/datasets/kitti&quot;&gt;KITTI dataset&lt;/a&gt;. Besides, the whole code can be found in my &lt;a href=&quot;https://github.com/jacquesmats/3D_Object_Tracking&quot;&gt;github&lt;/a&gt;. This project is part of the &lt;a href=&quot;https://www.udacity.com/course/sensor-fusion-engineer-nanodegree--nd313&quot;&gt;Udacity Sensor Fusion Nanodegree&lt;/a&gt;.
+&lt;/p&gt;
+&lt;blockquote cite=&quot;http://www.cvlibs.net/datasets/kitti/setup.php&quot;&gt;
+    &lt;p&gt;Our recording platform is a Volkswagen Passat B6, which has been modified with actuators for the pedals (acceleration and brake) and the steering wheel. The data is recorded using an eight core i7 computer equipped with a RAID system, running Ubuntu Linux and a real-time database. We use the following sensors:&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li&gt;1 Inertial Navigation System (GPS/IMU): OXTS RT 3003&lt;/li&gt;
+        &lt;li&gt;1 Laserscanner: Velodyne HDL-64E&lt;/li&gt;
+        &lt;li&gt;2 Grayscale cameras, 1.4 Megapixels: Point Grey Flea 2 (FL2-14S3M-C)&lt;/li&gt;
+        &lt;li&gt;2 Color cameras, 1.4 Megapixels: Point Grey Flea 2 (FL2-14S3C-C)&lt;/li&gt;
+        &lt;li&gt;4 Varifocal lenses, 4-8 mm: Edmund Optics NT59-917&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+
+&lt;br&gt;
+&lt;p&gt;&lt;img src=&quot;assets/images/3d-obj-tracking/passat_sensors.png&quot; alt=&quot;Passat&quot;&gt;&lt;/p&gt;
+&lt;i&gt;KITTI Passat Sensor Setup. Source: &lt;a href=&quot;http://www.cvlibs.net/datasets/kitti/setup.php&quot;&gt;The KITTI Vision Benchmark Suite&lt;/a&gt;&lt;/i&gt;
+&lt;br&gt;
+
+
+
+
+
+&lt;h2&gt;The Project&lt;/h2&gt;
+&lt;br&gt;
+&lt;p&gt;
+    Cameras are one mature technology and the main sensor in autonomous vehicles. In a world made by humans, everything is adapted to our senses and driving would not be different. Therefore, its main advantage is to &quot;simulate&quot; the human vision being able to interpret 2D information as road signs and lanes. At the same time, it has challenges as we humans: bad performance in darkness or bad weather conditions. Thus, alone in some applications, the camera will fail, hence the need to add a second sensor such as Radar or Lidar. To fill the gap, Lidar has high resolution and can reconstruct 3D objects while Radar has a greater range and can detect velocity more accurately.
+&lt;/p&gt;
+&lt;p&gt;
+    In this project, the main objective was to estimate the Time to Collision(TCC) using a camera-based object classification to cluster Lidar points and from 3D bounding boxes compute TCC. Human reflection time is around 1 second, so the system has to warn us way before and starting breaking 2 to 3 seconds before the collision. But how do we tell a machine a collision is near? How do we compute such time? The first concern is to choose a Motion Model: Constant Velocity(CVM) or Constant Acceleration(CAM). While CAM models best real-world situations, CVM assumes that the velocity does not change and it was chosen for simplicity, leaving space for us to focus more on the computer vision aspects.  
+&lt;/p&gt;
+&lt;p&gt;
+    From that, the problem can be divided into two main parts: estimate TTC from Lidar points and estimate it using camera successive images. The former is pretty straightforward, addressing only the preceding car and calculating the time from the X component in the Point Cloud.  Based on the CVM, we can compute the velocity based in two Lidar measurements over time, taking the closest Lidar point in the path of the car and observing how it changes in a time window. To avoid erroneous measurements that would lead to false TCC, we perform a &lt;a href=&quot;https://www.khanacademy.org/math/statistics-probability/summarizing-quantitative-data/box-whisker-plots/a/identifying-outliers-iqr-rule&quot;&gt;IQR range values&lt;/a&gt; to remove outliers. Due to some measurement accuracy based on the amount of light reflected from an object, when using Lidar for TCC is advised to remove measurement of the road surface and low reflectivity points, making it easy to measure the distance of the preceding vehicle. Furthermore, instead of estimating the velocity after computing the vehicle velocity and two distance measurements, that could be noisy, we could use a Radar sensor that measures directly the relative speed. 
+&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;img src=&quot;assets/images/3d-obj-tracking/keypoints.jpg&quot; alt=&quot;Keypoints&quot;&gt;&lt;/p&gt;
+
+&lt;i&gt;Keypoints detection and tracking using descriptors. Source: &lt;a href=&quot;https://www.udacity.com/course/sensor-fusion-engineer-nanodegree--nd313&quot;&gt;Udacity Sensor Fusion Nanodegree&lt;/a&gt;&lt;/i&gt;
+&lt;br&gt;
+&lt;p&gt;    
+    In another hand, it is hard to measure metric distances using only one camera, some companies achieve measuring distance using a stereo camera setup, like &lt;a href=&quot;http://www.6d-vision.com/&quot;&gt;Mercedes-Benz which pioneered in this technology&lt;/a&gt;. With two pictures of the same place, taken from two different points of view, is possible to locate points of interest in both images and calculate its distance using geometry and perspective projection. Using a mono camera we can estimate TCC only by observing relative height change (or scale change) in the preceding car, for example, without distance measurement. Here enters Deep Learning, allowing us to identify cars in images. As showed in the figure above, it is also used CV techniques to find key points and track them using descriptors from one frame to the next, estimating the scale change in the object. Tracking how these descriptors change over time, we can estimate TTC.
+&lt;/p&gt;
+&lt;p&gt;
+    First, we focus on loading images, setting up data structures, and putting everything into a ring buffer to optimize memory load. Then, integrated several keypoint detectors such as HARRIS, FAST, BRISK, and SIFT and compare them with regard to the number of key points and speed. For the descriptor extraction and matching, we used brute force and also the FLANN approach and tested the various algorithms in different combinations and compare them with regard to some performance measures. 
+    Counting the number of key points on the preceding vehicle for 10 images and taking note of the distribution of their neighborhood size, doing this for several detectors implemented, we noted that FAST, BRISK, and AKASE were the detectors that identified the larger number of keypoints.
+&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;assets/images/3d-obj-tracking/comparision_table.png&quot; alt=&quot;Table&quot;&gt;&lt;/p&gt;
+&lt;i&gt;Comparision table between several detectors to identify keypoints&lt;/i&gt;
+&lt;br&gt;
+&lt;p&gt;
+    During the matching step, the Brute Force approach is used with the descriptor distance ratio set to 0.8, and the time it takes for keypoint detection and descriptor extraction was logged. A helper function was created to iterate through all the possible detectors and descriptors, saving its matches and times. From this was identified that the best Detector for this application is FAST, and the best Descriptors are BRIEF and ORB.
+&lt;/p&gt;
+&lt;p&gt;
+    Then we detected and classify images using the YOLO framework, which gives us a set of bounding boxes and augmenting them associating each bounding box to its respective Lidar points. Finally, we track these bounding boxes over time to estimate Time To Collision with Lidar and Camera measurements. When taking into account both TCC, twenty pairs of Detector/Descriptors were analyzed and AZAKE/FREAK was chosen based on the average error when compared to Lidar's TCC.
+&lt;/p&gt;
+&lt;p&gt;
+    To check the complete code with comments, tasks and the results, please check the &lt;a href=&quot;https://github.com/jacquesmats/3D_Object_Tracking&quot;&gt;Github repository&lt;/a&gt;.
+&lt;/p&gt;</content><author><name>Matheus Jacques</name></author><category term="projects" /><summary type="html">Integrating Lidar Point Clouds with Camera Images to compute Time To Collision (TTC)</summary></entry><entry><title type="html">Lidar Obstacles Detection</title><link href="http://localhost:4000/Lidar-Obstacles-Detection" rel="alternate" type="text/html" title="Lidar Obstacles Detection" /><published>2020-07-18T12:15:00+02:00</published><updated>2020-07-18T12:15:00+02:00</updated><id>http://localhost:4000/Lidar%20Obstacles%20Detection</id><content type="html" xml:base="http://localhost:4000/Lidar-Obstacles-Detection">&lt;p&gt;In this project, we create a simple 3d highway enviroment using Point Cloud Library for exploring self-driving car sensors.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;assets/images/lidar-obstacles/obstacledetectionfps.gif&quot; alt=&quot;image-20200607150421443&quot; /&gt;&lt;/p&gt;
 
@@ -223,7 +405,7 @@ d = |A*x+B*y+C*z+D|/sqrt(A^2+B^2+C^2)
 
 &lt;hr /&gt;
 
-&lt;p&gt;Would you like to  receive the most important news and trends in AI in just one email every end of the month? Subscribe below and I’ll send you the 10 most important news in Artificial Intelligence&lt;/p&gt;</content><author><name>Matheus Jacques</name></author><category term="projects" /><summary type="html">In this project, we create a simple 3d highway enviroment using Point Cloud Library for exploring self-driving car sensors.</summary></entry><entry><title type="html">Redes Neurais Convolucionais</title><link href="http://localhost:4000/Redes-Neurais-Convolucionais" rel="alternate" type="text/html" title="Redes Neurais Convolucionais" /><published>2020-07-13T07:15:00-03:00</published><updated>2020-07-13T07:15:00-03:00</updated><id>http://localhost:4000/Redes%20Neurais%20Convolucionais</id><content type="html" xml:base="http://localhost:4000/Redes-Neurais-Convolucionais">&lt;p&gt; Nesse post, vamos abordar um dos principais tópicos dentro da área de redes neurais, um dos pilares de Deep Learning e muito utilizado para resolver problemas de visão computacional: as Redes Neurais Convolucionais.&lt;/p&gt;
+&lt;p&gt;Would you like to  receive the most important news and trends in AI in just one email every end of the month? Subscribe below and I’ll send you the 10 most important news in Artificial Intelligence&lt;/p&gt;</content><author><name>Matheus Jacques</name></author><category term="projects" /><summary type="html">In this project, we create a simple 3d highway enviroment using Point Cloud Library for exploring self-driving car sensors.</summary></entry><entry><title type="html">Redes Neurais Convolucionais</title><link href="http://localhost:4000/Redes-Neurais-Convolucionais" rel="alternate" type="text/html" title="Redes Neurais Convolucionais" /><published>2020-07-13T12:15:00+02:00</published><updated>2020-07-13T12:15:00+02:00</updated><id>http://localhost:4000/Redes%20Neurais%20Convolucionais</id><content type="html" xml:base="http://localhost:4000/Redes-Neurais-Convolucionais">&lt;p&gt; Nesse post, vamos abordar um dos principais tópicos dentro da área de redes neurais, um dos pilares de Deep Learning e muito utilizado para resolver problemas de visão computacional: as Redes Neurais Convolucionais.&lt;/p&gt;
 
 &lt;p&gt; 
     A inteligência artificial tem se tornado um tópico em ascenção recentemente, principalmente devido aos avanços na área de Deep Learning, uma subárea de Machine Learning. Apesar de não notarmos, as Redes Neurais Convolucionais estão presentes em nosso dia a dia. Já parou para pensar como podemos pesquisar por imagens usando texto? ou como encontramos fotos na galeria do celular pesquisando pelo conteúdo que tem na  foto? ou ainda como desbloqueamos nossos smartphones utilizando reconhecimento facial? Tudo isso só é possível pois atualmente os algoritmos podem identificar o que há nas imagens, o que até alguns anos atrás era uma tarefa nada fácil e ainda hoje não é trivial.
@@ -323,7 +505,7 @@ Uma breve explicação de como funcionam as imagens, é que a representação qu
 
 
 
-* Capa retirada de &lt;a href=&quot;https://www.symmetrymagazine.org/image/inline-neural-networks-meet-space&quot;&gt;Symmetry Magazine&lt;/a&gt;&lt;/i&gt;</content><author><name>João Brum</name></author><category term="back-to-basics" /><summary type="html">Nesse post, vamos abordar um dos principais tópicos dentro da área de redes neurais, um dos pilares de Deep Learning e muito utilizado para resolver problemas de visão computacional: as Redes Neurais Convolucionais.</summary></entry><entry><title type="html">Image Captioning</title><link href="http://localhost:4000/Image-Captioning" rel="alternate" type="text/html" title="Image Captioning" /><published>2020-07-07T07:15:00-03:00</published><updated>2020-07-07T07:15:00-03:00</updated><id>http://localhost:4000/Image%20Captioning</id><content type="html" xml:base="http://localhost:4000/Image-Captioning">&lt;p&gt;In this project, we used a dataset of image-caption pairs to train a CNN-RNN model to automatically generate captions from images.&lt;/p&gt;
+* Capa retirada de &lt;a href=&quot;https://www.symmetrymagazine.org/image/inline-neural-networks-meet-space&quot;&gt;Symmetry Magazine&lt;/a&gt;&lt;/i&gt;</content><author><name>João Brum</name></author><category term="back-to-basics" /><summary type="html">Nesse post, vamos abordar um dos principais tópicos dentro da área de redes neurais, um dos pilares de Deep Learning e muito utilizado para resolver problemas de visão computacional: as Redes Neurais Convolucionais.</summary></entry><entry><title type="html">Image Captioning</title><link href="http://localhost:4000/Image-Captioning" rel="alternate" type="text/html" title="Image Captioning" /><published>2020-07-07T12:15:00+02:00</published><updated>2020-07-07T12:15:00+02:00</updated><id>http://localhost:4000/Image%20Captioning</id><content type="html" xml:base="http://localhost:4000/Image-Captioning">&lt;p&gt;In this project, we used a dataset of image-caption pairs to train a CNN-RNN model to automatically generate captions from images.&lt;/p&gt;
 
 &lt;p&gt;The Dataset&lt;/p&gt;
 
@@ -333,7 +515,7 @@ Uma breve explicação de como funcionam as imagens, é que a representação qu
 
 &lt;hr /&gt;
 
-&lt;p&gt;Would you like to  receive the most important news and trends in AI in just one email every end of the month? Subscribe below and I’ll send you the 10 most important news in Artificial Intelligence&lt;/p&gt;</content><author><name>Matheus Jacques</name></author><category term="projects" /><summary type="html">In this project, we used a dataset of image-caption pairs to train a CNN-RNN model to automatically generate captions from images.</summary></entry><entry><title type="html">Landmark Detection &amp;amp; Robot Tracking (SLAM)</title><link href="http://localhost:4000/Slam" rel="alternate" type="text/html" title="Landmark Detection &amp; Robot Tracking (SLAM)" /><published>2020-06-25T07:15:00-03:00</published><updated>2020-06-25T07:15:00-03:00</updated><id>http://localhost:4000/Slam</id><content type="html" xml:base="http://localhost:4000/Slam">&lt;p&gt;In this project, we’ll be localizing a robot in a 2D grid world. The basis for simultaneous localization and mapping (SLAM) is to gather information from a robot’s sensors and motions over time, and then use information about measurements and motion to re-construct a map of the world.&lt;/p&gt;
+&lt;p&gt;Would you like to  receive the most important news and trends in AI in just one email every end of the month? Subscribe below and I’ll send you the 10 most important news in Artificial Intelligence&lt;/p&gt;</content><author><name>Matheus Jacques</name></author><category term="projects" /><summary type="html">In this project, we used a dataset of image-caption pairs to train a CNN-RNN model to automatically generate captions from images.</summary></entry><entry><title type="html">Landmark Detection &amp;amp; Robot Tracking (SLAM)</title><link href="http://localhost:4000/Slam" rel="alternate" type="text/html" title="Landmark Detection &amp; Robot Tracking (SLAM)" /><published>2020-06-25T12:15:00+02:00</published><updated>2020-06-25T12:15:00+02:00</updated><id>http://localhost:4000/Slam</id><content type="html" xml:base="http://localhost:4000/Slam">&lt;p&gt;In this project, we’ll be localizing a robot in a 2D grid world. The basis for simultaneous localization and mapping (SLAM) is to gather information from a robot’s sensors and motions over time, and then use information about measurements and motion to re-construct a map of the world.&lt;/p&gt;
 
 &lt;h2 id=&quot;simultaneous-localization-and-mapping&quot;&gt;Simultaneous Localization and Mapping&lt;/h2&gt;
 
@@ -563,7 +745,7 @@ Uma breve explicação de como funcionam as imagens, é que a representação qu
 
 &lt;hr /&gt;
 
-&lt;p&gt;Would you like to  receive the most important news and trends in AI in just one email every end of the month? Subscribe below and I’ll send you the 10 most important news in Artificial Intelligence&lt;/p&gt;</content><author><name>Matheus Jacques</name></author><category term="projects" /><summary type="html">In this project, we’ll be localizing a robot in a 2D grid world. The basis for simultaneous localization and mapping (SLAM) is to gather information from a robot’s sensors and motions over time, and then use information about measurements and motion to re-construct a map of the world.</summary></entry><entry><title type="html">Facial Keypoint Detection</title><link href="http://localhost:4000/Facial-Keypoint-Detection" rel="alternate" type="text/html" title="Facial Keypoint Detection" /><published>2020-06-15T07:15:00-03:00</published><updated>2020-06-15T07:15:00-03:00</updated><id>http://localhost:4000/Facial%20Keypoint%20Detection</id><content type="html" xml:base="http://localhost:4000/Facial-Keypoint-Detection">&lt;p&gt;This project will be all about defining and training a convolutional neural network to perform facial keypoint detection, and using computer vision techniques to transform images of faces.&lt;/p&gt;
+&lt;p&gt;Would you like to  receive the most important news and trends in AI in just one email every end of the month? Subscribe below and I’ll send you the 10 most important news in Artificial Intelligence&lt;/p&gt;</content><author><name>Matheus Jacques</name></author><category term="projects" /><summary type="html">In this project, we’ll be localizing a robot in a 2D grid world. The basis for simultaneous localization and mapping (SLAM) is to gather information from a robot’s sensors and motions over time, and then use information about measurements and motion to re-construct a map of the world.</summary></entry><entry><title type="html">Facial Keypoint Detection</title><link href="http://localhost:4000/Facial-Keypoint-Detection" rel="alternate" type="text/html" title="Facial Keypoint Detection" /><published>2020-06-15T12:15:00+02:00</published><updated>2020-06-15T12:15:00+02:00</updated><id>http://localhost:4000/Facial%20Keypoint%20Detection</id><content type="html" xml:base="http://localhost:4000/Facial-Keypoint-Detection">&lt;p&gt;This project will be all about defining and training a convolutional neural network to perform facial keypoint detection, and using computer vision techniques to transform images of faces.&lt;/p&gt;
 
 &lt;p&gt;Let’s take a look at some examples of images and corresponding facial keypoints.&lt;/p&gt;
 
@@ -763,7 +945,7 @@ transformed_sample = tx(sample)
 
 &lt;hr /&gt;
 
-&lt;p&gt;Would you like to  receive the most important news and trends in AI in just one email every end of the month? Subscribe below and I’ll send you the 10 most important news in Artificial Intelligence&lt;/p&gt;</content><author><name>Matheus Jacques</name></author><category term="projects" /><summary type="html">This project will be all about defining and training a convolutional neural network to perform facial keypoint detection, and using computer vision techniques to transform images of faces.</summary></entry><entry><title type="html">Gradient Descent, Feedforward and Backpropagation</title><link href="http://localhost:4000/Feedforward-and-Backpropagation" rel="alternate" type="text/html" title="Gradient Descent, Feedforward and Backpropagation" /><published>2020-06-15T07:15:00-03:00</published><updated>2020-06-15T07:15:00-03:00</updated><id>http://localhost:4000/Feedforward%20and%20Backpropagation</id><content type="html" xml:base="http://localhost:4000/Feedforward-and-Backpropagation">&lt;p&gt;Let’s see three fundamentals concepts of Deep Learning: the Gradient Descent, Feedforward and Backpropagation steps.&lt;/p&gt;
+&lt;p&gt;Would you like to  receive the most important news and trends in AI in just one email every end of the month? Subscribe below and I’ll send you the 10 most important news in Artificial Intelligence&lt;/p&gt;</content><author><name>Matheus Jacques</name></author><category term="projects" /><summary type="html">This project will be all about defining and training a convolutional neural network to perform facial keypoint detection, and using computer vision techniques to transform images of faces.</summary></entry><entry><title type="html">Gradient Descent, Feedforward and Backpropagation</title><link href="http://localhost:4000/Feedforward-and-Backpropagation" rel="alternate" type="text/html" title="Gradient Descent, Feedforward and Backpropagation" /><published>2020-06-15T12:15:00+02:00</published><updated>2020-06-15T12:15:00+02:00</updated><id>http://localhost:4000/Feedforward%20and%20Backpropagation</id><content type="html" xml:base="http://localhost:4000/Feedforward-and-Backpropagation">&lt;p&gt;Let’s see three fundamentals concepts of Deep Learning: the Gradient Descent, Feedforward and Backpropagation steps.&lt;/p&gt;
 
 &lt;p&gt;Versão em português disponível em 26 de Junho &lt;a href=&quot;http://edgeaiguru.com/404&quot;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
 
@@ -887,299 +1069,4 @@ transformed_sample = tx(sample)
 
 &lt;hr /&gt;
 
-&lt;p&gt;Would you like to  receive the most important news and trends in AI in just one email every end of the month? Subscribe below and I’ll send you the 10 most important news in Artificial Intelligence.&lt;/p&gt;</content><author><name>Matheus Jacques</name></author><category term="back-to-basics" /><summary type="html">Let’s see three fundamentals concepts of Deep Learning: the Gradient Descent, Feedforward and Backpropagation steps.</summary></entry><entry><title type="html">AI May Highlights</title><link href="http://localhost:4000/May-Highlights" rel="alternate" type="text/html" title="AI May Highlights" /><published>2020-05-28T07:15:00-03:00</published><updated>2020-05-28T07:15:00-03:00</updated><id>http://localhost:4000/May%20Highlights</id><content type="html" xml:base="http://localhost:4000/May-Highlights">&lt;p&gt;Top 5 AI News and Trends I came across in May 2020.&lt;/p&gt;
-
-&lt;p&gt;Versão em português &lt;a href=&quot;http://edgeaiguru.com/Destaques-de-Maio&quot;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/images/may-news/google.gif&quot; alt=&quot;Google BiT General Visual Representation Learning&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;BiT model being used after pre-training and applied to other tasks with few labeled examples&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;google-open-sources-bit-the-bert-for-computer-vision&quot;&gt;Google open-sources BiT, the BERT for Computer Vision&lt;/h2&gt;
-
-&lt;p&gt;On May 21, Google’s AI Team open-sourced Big Transfer (BiT): A General Visual Representation Learning. This is an effort to help Computer Vision applications to advance through large scale pre-trained models. Using BiT is possible to achieve state-of-the-art performance in many applications just using few labeled examples. To address tunning this model they also introduced “BiT-HyperRule”, a heuristic approach to selecting hyperparameters such as learning-rate and weight-decay. After transfer learning, using  CIFAR-10 dataset, the model achieved 64% and 95% median accuracy in 1-shot and 5-shot, respectively. Google also mentioned that “BiT-L matches or surpasses state-of-the-art results […] in several standard computer vision benchmarks such as Oxford &lt;a href=&quot;https://www.robots.ox.ac.uk/~vgg/data/pets/&quot;&gt;Pets&lt;/a&gt; and &lt;a href=&quot;https://www.robots.ox.ac.uk/~vgg/data/flowers/&quot;&gt;Flowers&lt;/a&gt;, &lt;a href=&quot;https://www.cs.toronto.edu/~kriz/cifar.html&quot;&gt;CIFAR&lt;/a&gt;, etc.”  You can check the &lt;a href=&quot;https://arxiv.org/abs/1912.11370&quot;&gt;paper&lt;/a&gt; and &lt;a href=&quot;https://github.com/google-research/big_transfer&quot;&gt;code&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/images/may-news/tf_logo_social.png&quot; alt=&quot;Tensorflow Logo&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;tensorflow-version-220-is-here&quot;&gt;Tensorflow Version 2.2.0 is here&lt;/h2&gt;
-
-&lt;p&gt;After almost four months after TF 2.1.0, this month Google also released Tensorflow 2.2.0. Major updates include a new Profiler  for CPU/GPU/TPU to help identify performance bottlenecks, performance improvements in computation between devices through &lt;code class=&quot;highlighter-rouge&quot;&gt;tf.distrbuite&lt;/code&gt;, a new scalar type for strings (from &lt;code class=&quot;highlighter-rouge&quot;&gt;std::string&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;tensorflow::tstring&lt;/code&gt;) and the substitution from SWIG to pybind11 while exporting C++ functions.  We also had a few Keras improvements such as the use of custom training logics with &lt;code class=&quot;highlighter-rouge&quot;&gt;Model.fit&lt;/code&gt; overwriting &lt;code class=&quot;highlighter-rouge&quot;&gt;Model.train_step&lt;/code&gt; and the SavedModel format that now supports all Keras built-in layers (including metrics, preprocessing layers, and stateful RNN layers). Furthermore, another highlight is that they dropped Python 2 support, which is not maintained since January 2020. Last, in this release, TensorFlow requires gast version 0.3.3. Check the full text &lt;a href=&quot;https://github.com/tensorflow/tensorflow/releases/tag/v2.2.0&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/images/may-news/nvidia-a100.jpg&quot; alt=&quot;Tensorflow Logo&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;nvidia-launches-a100-ai-gpu-the-ultimate-instrument-for-advancing-ai&quot;&gt;NVIDIA launches A100 AI GPU: the ultimate instrument for advancing AI&lt;/h2&gt;
-
-&lt;p&gt;Announced on May 14 during the Nvidia GTC 2020 event, the &lt;a href=&quot;https://www.nvidia.com/en-us/data-center/a100/&quot;&gt;A100 AI Chip&lt;/a&gt; has 54 billion transistors and 5 petaflops of performance and is the most powerful end-to-end AI and HPC platform for data centers, following the trend of HPC after &lt;a href=&quot;https://nvidianews.nvidia.com/news/nvidia-to-acquire-mellanox-for-6-9-billion&quot;&gt;acquiring Mellanox in March&lt;/a&gt;. Based on the Ampere architecture, the 7-nanometer chip can be used for scientific computing, cloud graphics, and data analytics. Here are some numbers, 20 times more powerful than the previous Tesla V100 GPU the A100 achieves 19.5 computational power with its 6,912 CUDA cores, 40 GB of memory, 1.6 TB of bandwidth, and the third generation Tensor Cores. One application is the &lt;a href=&quot;https://www.nvidia.com/en-us/data-center/dgx-a100/&quot;&gt;DGX&lt;/a&gt; system, which is based in 8 NVIDIA A100 and is aiming the Artificial Intelligence sector, costing US$ 1 million. We can expect to see the new AI Chip in cloud services shortly. Alibaba Cloud, AWS, Baidu Cloud, Google Cloud, Microsoft Azure, Oracle, and Tencent Cloud had partnered up with NVIDIA already.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/images/may-news/fb.jpeg&quot; alt=&quot;Sudo&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;facebook-ai-announces-groknet-for-advancing-product-understanding&quot;&gt;Facebook AI announces GrokNet for advancing product understanding&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;“a universal computer vision system designed for shopping. It can identify fine-grained product attributes across billions of photos — in different categories, such as fashion, auto, and home decor.”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Unlikely most models which have only one category to learn, GrokNet was trained in seven datasets, with several types of supervision and 83 loss functions, been able to predict categories, attributes such as color and texture and likely search queries. The FB model is trained by a colossal database with about 100 million images, most of which, of course, is taken from the Marketplace. The company also states that the system is able to identify objects that were photographed with not very good lighting conditions and angles that do not favor a good product view. To give the model the ability to understand easy and difficult tasks, they gave tasks a combination of weight loss and images for training, that is, easier tasks don’t need much supervision and can be given a smaller weight. Compared to text-attribute systems the new FB model can predict home and garden listings with 90% accuracy, against the firsts 33%. Facebook expects that “in the future, GrokNet could be used to help customers easily find exactly what they’re looking for, receive personalized suggestions from storefronts on what products are most relevant to them, [and] which products are compatible”. Check the official announcement &lt;a href=&quot;https://ai.facebook.com/blog/powered-by-ai-advancing-product-understanding-and-building-new-shopping-experiences&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/images/may-news/sudo.gif&quot; alt=&quot;Sudo&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;sudo-190-launched-with-security-updates&quot;&gt;Sudo 1.9.0 launched with security updates&lt;/h2&gt;
-
-&lt;p&gt;Basic command in our daily works with our beloved Unix systems, sudo allows users to execute programs as root. In May sudo received an update to version 1.9.0 after 9 years in the 1.8 branch. This new version brings security updates such as, and centralizing logging through &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo_logsrvd&lt;/code&gt;, creating sudo with the option “–enable-openssl”, the data is transmitted through an encrypted communication channel (TLS). It is now possible to use thirty-party softwares to pull data from sudo sessions for auditing. And while TF drops Python 2 support, it arrives in Sudo 1.9, where plugins can be written in python now, which is activated during compilation with the “–enable-python” option. Check all the changes in the full release &lt;a href=&quot;https://www.sudo.ws/stable.html#1.9.0&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Would you like to  receive the most important news and trends in AI in just one email every end of the month? Subscribe below and I’ll send you the 10 most important news in Artificial Intelligence.&lt;/p&gt;</content><author><name>Matheus Jacques</name></author><category term="news" /><summary type="html">Top 5 AI News and Trends I came across in May 2020.</summary></entry><entry><title type="html">Introduction to Neural Networks</title><link href="http://localhost:4000/Introduction-to-Neural-Networks" rel="alternate" type="text/html" title="Introduction to Neural Networks" /><published>2020-05-03T07:18:00-03:00</published><updated>2020-05-03T07:18:00-03:00</updated><id>http://localhost:4000/Introduction%20to%20Neural%20Networks</id><content type="html" xml:base="http://localhost:4000/Introduction-to-Neural-Networks">&lt;p&gt;Learn the main concepts behind Neural Networks, one of Deep Learning’s pillars.&lt;/p&gt;
-
-&lt;p&gt;Versão em português &lt;a href=&quot;http://edgeaiguru.com/Introdução-a-Redes-Neurais&quot;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
-
-&lt;p&gt;Artificial Intelligence has been revolutionizing the industry in recent years and solving problems, which previously were costly in time and money, much more effectively. Computer vision problems, natural language processing, and several other applications are only possible thanks to advances in Deep Learning.&lt;/p&gt;
-
-&lt;p&gt;Artificial Neural Networks (ANN) are one of the main pillars of this technology. Inspired by the human brain, ANN carries this name because of its biological connections and motivations. Just as in the human brain, where the most basic processing unit is the neuron, ANNs have an element that processes impulses, or inputs, which is also called a neuron or node.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/artificial-vs-biological-neuron.png&quot; alt=&quot;Artificial vs Biological Neuron&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Biological Neuron vs Artificial Neuron. Source: [Keras Tutorial: Deep Learning in Python] (https://www.datacamp.com/community/tutorials/deep-learning-python)&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Both structures share the same function for transferring information: they receive an input (impulse) that is carried through the node (cell body) and activate a certain output (axon terminals). Just as in biological neurons, this impulse that fires neurons is reproduced in ANNs through activation functions.&lt;/p&gt;
-
-&lt;p&gt;Therefore, this basic element of neural networks can be represented by the following figure, taken from the course &lt;a href=&quot;https://www.coursera.org/learn/neural-networks-deep-learning&quot;&gt;Neural Networks and Deep Learning&lt;/a&gt;:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/generic-neuron.png&quot; alt=&quot;Generic Neuron&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Where, through the example of the necessity to predict the price of houses based on their size, we can determine a function that can represent this problem. In this example, a ReLU function fits the data perfectly. So, the minimum representation of a neuron would be input the house’s area and, based on the mathematical function stored “inside” the neuron, we can estimate a price for that residence.&lt;/p&gt;
-
-&lt;p&gt;In this way, we train each neuron to be activated when a certain pattern appears. Thus, grouping several neurons in series and parallel, allows Neural Networks to learn to recognize patterns in images, texts, audios, and in the most distinct forms of data.&lt;/p&gt;
-
-&lt;p&gt;In this article, the main components of Artificial Neural Networks, some of the main architectures and the most common activation functions will be presented.&lt;/p&gt;
-
-&lt;h2 id=&quot;artificial-neural-networks-ann&quot;&gt;Artificial Neural Networks (ANN)&lt;/h2&gt;
-
-&lt;p&gt;Although neural networks have some similarities to neurons in the human brain, they are infinitely simpler than their biological counterpart. These architectures are composed of mathematical blocks that can be explained using algebra and calculus, very different from the different parts of the brain that are not yet understood.&lt;/p&gt;
-
-&lt;p&gt;The main components of ANNs are input layers, hidden layers, and output layers. These layers are activated through weighted connections, which defines how important the connection is to the network. In addition, as we saw earlier, at the output of each neuron there is an activation function that defines whether the neuron will be fired or not.&lt;/p&gt;
-
-&lt;h2 id=&quot;neural-networks-building-blocks&quot;&gt;Neural Networks Building Blocks&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/generic-2-layers-neural-network.png&quot; alt=&quot;Generic 3 Layer Neural Network&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Generic 3 Layers Neural Network Architecture. Source: [Stanford CS231n] (https://cs231n.github.io/neural-networks-1/#nn)&lt;/em&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;input-layer&quot;&gt;&lt;em&gt;Input Layer&lt;/em&gt;&lt;/h3&gt;
-
-&lt;p&gt;A block of neurons can be called a layer. But note that although neurons are interconnected between layers, they do not have connections within the same layer. As shown in the figure above, the first layer of a Neural Network is the input layer. This has only the function of passing the system inputs to the next layer and does not perform any mathematical function.&lt;/p&gt;
-
-&lt;h3 id=&quot;hidden-layers&quot;&gt;&lt;em&gt;Hidden Layers&lt;/em&gt;&lt;/h3&gt;
-
-&lt;p&gt;This layer is responsible for one of the main functions of neural networks: to process the data and send it to the next layer. The value of each neuron is found by multiplying the weights W by the input X and adding a bias b. This value then goes through an activation function and is sent to the next layer, as shown in Fig. 2.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/hidden-layer-mathematics-en.png&quot; alt=&quot;Hidden Layer Mathematics&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Mathematical operations within the neuron. Source: Source: [Stanford CS231n] (https://cs231n.github.io/neural-networks-1/#nn) Modified.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Thus, if we isolate the first neuron from the first hidden layer, the output value of the neuron will be equal to z1. Where &lt;em&gt;s1&lt;/em&gt; is the neuron’s input, where we multiply the weights by the inputs and add a bias b. After this operation, a transfer function &lt;em&gt;g&lt;/em&gt; is applied over &lt;em&gt;s1&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;It is important to note that &lt;em&gt;X&lt;/em&gt; and &lt;em&gt;W&lt;/em&gt; in the first equation are matrices in this case and represent all inputs and all weights, respectively.&lt;/p&gt;
-
-&lt;p&gt;We call this layer “Hidden Layer” because during the training of neural networks we have the inputs that are known and the outputs that are expected. But we don’t see what values are inside the neurons in that layer. This block can contain several hidden layers, and the more layers the “deeper” the neural network is, and the more patterns it can learn.&lt;/p&gt;
-
-&lt;h3 id=&quot;output-layers&quot;&gt;&lt;em&gt;Output Layers&lt;/em&gt;&lt;/h3&gt;
-
-&lt;p&gt;The output layer is responsible for showing the results obtained through the calculations made in the hidden layers. Usually, an activation function is used, as well as that of the neurons in the previous layers, to simplify the result.&lt;/p&gt;
-
-&lt;h3 id=&quot;weights-and-bias&quot;&gt;&lt;em&gt;Weights and Bias&lt;/em&gt;&lt;/h3&gt;
-
-&lt;p&gt;Weights are responsible for defining how important that connection is to the neural network. As there are several connections within the ANN, this is how this architecture understands which patterns it should learn and which ones it should ignore. In addition, a value called bias is commonly used with weights and inputs. This value helps to fine-tune the neural network. Thus, if we have a neuron i in one layer and a neuron j in the next layer, we have a connection with the weight Wij and a bij bias.&lt;/p&gt;
-
-&lt;h3 id=&quot;activation-functions&quot;&gt;&lt;em&gt;Activation Functions&lt;/em&gt;&lt;/h3&gt;
-
-&lt;p&gt;Also called the transfer function, it is the last mathematical processing step that takes place before the information leaves the neuron. This mathematical equation defines whether the neuron will be activated or not, which may be a step function, a linear function, or a non-linear function.&lt;/p&gt;
-
-&lt;p&gt;The simplest activation function would be a step function. Where the neuron would activate only if the input was above a threshold, and the input signal would be fully reproduced at the node’s output.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/step-function.png&quot; alt=&quot;Step Function&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This can return values of 0 and 1, used in classification problems, or between 0 and 1, used in problems that we are more interested in knowing the probability of a certain entry being part of a certain class.&lt;/p&gt;
-
-&lt;h2 id=&quot;main-types-of-artificial-neural-networks&quot;&gt;&lt;em&gt;Main Types of Artificial Neural Networks&lt;/em&gt;&lt;/h2&gt;
-
-&lt;p&gt;There are two main types of Neural Networks: Feedforward Neural Networks and Recurrent Neural Networks.&lt;/p&gt;
-
-&lt;h3 id=&quot;feedforward-neural-networks-fnn&quot;&gt;&lt;em&gt;Feedforward Neural Networks (FNN)&lt;/em&gt;&lt;/h3&gt;
-
-&lt;p&gt;This architecture is the most commonly found in the literature. In it, information moves only in one direction: from the inputs, through the hidden layer to the output node, and there are no cycles.&lt;/p&gt;
-
-&lt;p&gt;The simplest unit of this topology is called Perceptron, the most simplistic neural network that is composed of just one node.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/perceptron.png&quot; alt=&quot;Perceptron&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;The Perceptron&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Some simple problems can be solved with Perceptron, as it only works with linearly separable functions.&lt;/p&gt;
-
-&lt;p&gt;With the need to solve more complex problems and from this basic unit, the &lt;strong&gt;Multilayer Perceptron (MLP)&lt;/strong&gt; was conceived. Composed of several layers of these nodes, being much more useful and being able to learn non-linear functions.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/multi-layer-perceptron.png&quot; alt=&quot;Multilayer Perceptron&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Multilayer Perceptron Architecture. Source: [Advanced Methods for the Processing and Analysis of Multidimensional Signals: Application to Wind Speed] (https://www.researchgate.net/figure/Architecture-of-a-multilayer-perceptron-neural-network_fig5_316351306)&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;And finally, we have the &lt;strong&gt;Convolutional Neural Networks (CNN)&lt;/strong&gt;, which are the most common example of Feedforward Neural Networks. Inspired by the Visual Cortex, this topology divides data into small pieces and tries to learn essential patterns. This operation is called Convolution. More efficient than MLP, this topology is found widely in computer vision, video, and natural language applications. This topology has its own characteristic blocks, such as the convolution and pooling layers.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/convolution-neural-network.png&quot; alt=&quot;Convolutional Neural Network&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Convolutional Neural Network Example. Source: &lt;a href=&quot;https://missinglink.ai/guides/convolutional-neural-networks/convolutional-neural-network-tutorial-basic-advanced/&quot;&gt;Convolutional Neural Network Tutorial&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;recurring-neural-networks-rnn&quot;&gt;&lt;em&gt;Recurring Neural Networks (RNN)&lt;/em&gt;&lt;/h3&gt;
-
-&lt;p&gt;Unlike Feedforward Neural Networks, in RNN information flows not only forward, but also backward, forming a cycle. For this, like CNN, they use several characteristical blocks, such as a memory block for example. This allows this topology to capture dynamic temporal patterns and be widely used in speech recognition problems and problems that require sequential linking.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/recorrent-neural-network.png&quot; alt=&quot;Recurrent Neural Network&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Example of Recurrent Neural Network. Source: &lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Recurrent_neural_network_unfold.svg&quot;&gt;wikimedia&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;types-of-activation-functions&quot;&gt;Types of Activation Functions&lt;/h2&gt;
-
-&lt;p&gt;In addition to the step function, which I believe is not used in practice, there are several other activation functions. In addition to determining the model’s output, they also help with the accuracy of the results and the efficiency training. In practice, modern models use nonlinear activation functions, which are able to capture patterns in more complex data.&lt;/p&gt;
-
-&lt;p&gt;The activation functions are used in two moments in the Neural Networks: to process the output of a single neuron, as we saw during the topic of hidden layers, and to process the output of the neural network as a whole.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/sigmoid.png&quot; alt=&quot;Sigmoid Formula and Graph&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/tanh.png&quot; alt=&quot;Tanh Formula and Graph&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/images/nn-intro/relu.png&quot; alt=&quot;Relu Formula and Graph&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Normally Rectified Linear Unit (ReLU) functions are used in practice. The Sigmoid function is normally used to demonstrate how these elements work and is usually replaced by the Hyperbolic Tangent (TanH). Except in the case of the problem being a binary classification, in that case a Sigmoid function would be better in the model’s output as it would already deliver the result between 0 and 1.&lt;/p&gt;
-
-&lt;p&gt;The choice of the activation function is motivated by the characteristics of the problem being solved. Sigmoid, for example, despite having a smoother gradient and normalizing the output between 0 and 1, has problems with vanish gradients and its output is not centered at zero. TanH has its center at zero, which facilitates the learning of the following layers, but disadvantages similar to Sigmoid.&lt;/p&gt;
-
-&lt;p&gt;In addition to these, we can also highlight:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Leaky ReLU&lt;/li&gt;
-  &lt;li&gt;Softmax&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
-
-&lt;p&gt;In this article we went through some of the main concepts of Artificial Neural Networks. After this review, I hope that you already have a more concrete idea of the basic concepts that involve one of the main topics of Deep Learning. Understanding the main building blocks of ANN, the main topologies and the most common activation functions, we can now move on to more advanced topics such as &lt;strong&gt;Forward and Backward Propagation&lt;/strong&gt; and &lt;strong&gt;Gradient Descent&lt;/strong&gt;.&lt;/p&gt;</content><author><name>Matheus Jacques</name></author><category term="back-to-basics" /><category term="neural-networks" /><summary type="html">Learn the main concepts behind Neural Networks, one of Deep Learning’s pillars.</summary></entry><entry><title type="html">Batch vs Mini-batch vs Stochastic Gradient Descent with Code Examples</title><link href="http://localhost:4000/Batch-vs-Mini-batch-vs-Stochastic-Gradient-Descent" rel="alternate" type="text/html" title="Batch vs Mini-batch vs Stochastic Gradient Descent with Code Examples" /><published>2020-04-26T07:18:00-03:00</published><updated>2020-04-26T07:18:00-03:00</updated><id>http://localhost:4000/Batch%20vs%20Mini%20batch%20vs%20Stochastic%20Gradient%20Descent</id><content type="html" xml:base="http://localhost:4000/Batch-vs-Mini-batch-vs-Stochastic-Gradient-Descent">&lt;p&gt;What is the difference between these three Gradient Descent variants?&lt;/p&gt;
-
-&lt;p&gt;One of the main questions that arises when studying Machine Learning and Deep Learning is the several types of Grandient Descent. Should I use Batch Gradient Descent? Mini-batch Gradient Descent or Stochastic Gradient Descent? In this post we are going to understand the difference between those concepts and take a look in code implementations from Gradient Descent, for the purpose of clarifying these methods.&lt;/p&gt;
-
-&lt;p&gt;At this point, we know that our matrix of weights &lt;strong&gt;W&lt;/strong&gt; and our vector of bias &lt;strong&gt;b&lt;/strong&gt; are the core values of our Neural Networks (NN) (Check the Deep Learning Basics post). We can make an analogy with these concepts with the memory in which a NN stores patterns, and it is through tuning these parameters that we teach a NN. The acting of tuning this is done through the optimization algorithms, the amazing feature that allows NN to learn. After some time training the network, these patterns are learned and we have a set of weights and biases that hopefully correct classifies the inputs.&lt;/p&gt;
-
-&lt;h2 id=&quot;gradient-descent&quot;&gt;&lt;strong&gt;Gradient Descent&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;p&gt;One of the most common algorithms that help the NN to reach the correct values of weights and bias. The Gradient Descent (GD) is a method/algorithm to minimize the cost function J(W,b) in each step. It iteratively updates the weights and bias trying to reach the global minimum in a cost function.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/images/gradient-descent-variants/gradient-descent.png&quot; alt=&quot;Gradient descent to minimize cost function&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Minimizing the Cost Function, a Gradient Descent Illustration. Source: &lt;a href=&quot;https://www.coursera.org/learn/machine-learning&quot;&gt;Stanford’s Andrew Ng’s MOOC Machine Learning Course&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Review this quickly, before we can compute the GD, first the inputs are taken and passed through all the nodes of a neural network, calculating the weighted sum of inputs, weights, and bias. This first pass is one of the main steps when calculating Gradient Descent and it is called &lt;strong&gt;Forward Propagation&lt;/strong&gt;. Once we have an output, we compare this output with the expected output and calculate how far it is from each other, the error. With this error, we can now propagate it backward, updating each and every weight and bias and trying to minimize this error. And this part is called, as you may anticipate, &lt;strong&gt;Backward Propagation&lt;/strong&gt;. The Backward Propagation step is calculated using derivatives and return the “gradients”, values that tell us in which direction we should follow to minimize the cost function.&lt;/p&gt;
-
-&lt;p&gt;We are now ready to update the weight matrix W and the bias vector b. The gradient descent rule is as follows:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/images/gradient-descent-variants/f1.png&quot; alt=&quot;math1&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;In other words, the new weight/bias value will be the last one minus the gradient, moving it close to the global minimum value of the cost function. We also multiply this gradient to a learning rate alpha, which controls how big the step would be. For a more deep approach to Forward and Backward Propagation, Compute Losses,  Gradient Descent, check this post.&lt;/p&gt;
-
-&lt;p&gt;This classic Gradient Descent is also called Batch Gradient Descent. In this method, every epoch runs through all the training dataset, to only then calculate the loss and update the W and b values. Although it provides stable convergence and a stable error, this method uses the entire training set; hence it is very slow for big datasets.&lt;/p&gt;
-
-&lt;h2 id=&quot;mini-batch-gradient-descent&quot;&gt;&lt;strong&gt;Mini-batch Gradient Descent&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;p&gt;Imagine taking your dataset and dividing it into several chunks, or batches. So instead of waiting until the algorithm runs through the entire dataset to only after update the weights and bias, it updates at the end of each, so-called, mini-batch. This allows us to move quickly to the global minimum in the cost function and update the weights and biases multiple times per epoch now. The most common mini-batch sizes are 16, 32, 64, 128, 256, and 512. Most of the projects use Mini-batch GD because it is faster in larger datasets.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Mini-batch Gradient Descent&lt;/strong&gt;:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data_input&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;labels&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;initialize_parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;layers_dims&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num_iterations&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-	
-	&lt;span class=&quot;n&quot;&gt;minibatches&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;random_mini_batches&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mini_batch_size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-	&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;minibatch&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;minibatches&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-
-	    &lt;span class=&quot;c&quot;&gt;# Select a minibatch&lt;/span&gt;
-	    &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;minibatch_X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;minibatch_Y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;minibatch&lt;/span&gt;
-	    &lt;span class=&quot;c&quot;&gt;# Forward propagation&lt;/span&gt;
-	    &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;caches&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;forward_propagation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-	    &lt;span class=&quot;c&quot;&gt;# Compute cost.&lt;/span&gt;
-	    &lt;span class=&quot;n&quot;&gt;cost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;compute_cost&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-	    &lt;span class=&quot;c&quot;&gt;# Backward propagation.&lt;/span&gt;
-	    &lt;span class=&quot;n&quot;&gt;grads&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;backward_propagation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;caches&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-	    &lt;span class=&quot;c&quot;&gt;# Update parameters.&lt;/span&gt;
-	    &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;update_parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grads&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;To prepare the mini-batches, one most apply some preprocessing steps: randomizing the dataset in order to random split the dataset and then partitioning it in the right number of chunks. But what happens if we chose to set the number of batches to 1 or equal to the number of training examples?&lt;/p&gt;
-
-&lt;h2 id=&quot;batch-gradient-descent&quot;&gt;&lt;strong&gt;Batch Gradient Descent&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;p&gt;As stated before, in this gradient descent, each batch is equal to the entire dataset. That is:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/images/gradient-descent-variants/f2.png&quot; alt=&quot;math2&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Where {1} denotes the first batch from the mini-batch. The downside is that it takes too long per iteration. This method can be used to training datasets with less than 2000 training examples.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;(Batch) Gradient Descent&lt;/strong&gt;:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data_input&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;labels&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;initialize_parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;layers_dims&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num_iterations&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;c&quot;&gt;# Forward propagation&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;caches&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;forward_propagation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;c&quot;&gt;# Compute cost.&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;cost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;compute_cost&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;c&quot;&gt;# Backward propagation.&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;grads&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;backward_propagation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;caches&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;c&quot;&gt;# Update parameters.&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;update_parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grads&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;stochastic-gradient-descent&quot;&gt;&lt;strong&gt;Stochastic Gradient Descent&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;p&gt;On other hand, in this method, each batch is equal to one example from the training set. In this example, the first mini-batch is equal to the first training example:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/images/gradient-descent-variants/f3.png&quot; alt=&quot;math3&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Where (1) denotes the first training example. Here the downside is that it loses the advantage gained from vectorization, has more oscilation but converges faster.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Stochastic Gradient Descent&lt;/strong&gt;:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data_input&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;labels&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;initialize_parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;layers_dims&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num_iterations&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-        &lt;span class=&quot;c&quot;&gt;# Forward propagation&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;caches&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;forward_propagation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-        &lt;span class=&quot;c&quot;&gt;# Compute cost&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;cost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;compute_cost&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
-        &lt;span class=&quot;c&quot;&gt;# Backward propagation&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;grads&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;backward_propagation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;caches&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-        &lt;span class=&quot;c&quot;&gt;# Update parameters.&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;update_parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grads&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
-
-&lt;p&gt;It is essential to understand the difference between these optimization algorithms, as they compose a key function for Neural Networks. In summary, although Batch GD has higher accuracy than Stochastic GD, the latter is faster. The middle ground of the two and the most adopted, Mini-batch GD, combine both to deliver good accuracy and good performance.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/images/gradient-descent-variants/batch-stochastic-mini-gd.png&quot; alt=&quot;Gradient descent variants&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Batch vs Stochastic vs Mini-batch Gradient Descent. Source: &lt;a href=&quot;https://www.coursera.org/learn/deep-neural-network/&quot;&gt;Stanford’s Andrew Ng’s MOOC Deep Learning Course&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;It is possible to use only the Mini-batch Gradient Descent code to implement all versions of Gradient Descent, you just need to set the mini_batch_size equals one to Stochastic GD or to the number of training examples to Batch GD. Thus, the main difference between Batch, Mini-batch and Stochastic Gradient Descent is the number of examples used for each epoch and the time and effort necessary to reach the global minimum value of the Cost Function.&lt;/p&gt;</content><author><name>Matheus Jacques</name></author><category term="back-to-basics" /><category term="gradient-descent" /><summary type="html">What is the difference between these three Gradient Descent variants?</summary></entry></feed>
+&lt;p&gt;Would you like to  receive the most important news and trends in AI in just one email every end of the month? Subscribe below and I’ll send you the 10 most important news in Artificial Intelligence.&lt;/p&gt;</content><author><name>Matheus Jacques</name></author><category term="back-to-basics" /><summary type="html">Let’s see three fundamentals concepts of Deep Learning: the Gradient Descent, Feedforward and Backpropagation steps.</summary></entry></feed>

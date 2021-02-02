@@ -8,13 +8,58 @@
     
       
       <item>
+        <title>O impacto da Inteligência Artificial no Controle de Qualidade</title>
+        
+          <description>&lt;p&gt;Abordamos o impulsionamento da indústria com a integração da IA e uma demonstração de um serviço de inspeção de qualidade em garrafas de refrigerante,&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Tue, 02 Feb 2021 11:15:00 +0100</pubDate>
+        <link>
+        http://localhost:4000/Inspe%C3%A7%C3%A3o-usando-CV</link>
+        <guid isPermaLink="true">http://localhost:4000/Inspe%C3%A7%C3%A3o-usando-CV</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Radar Target Generation and Detection</title>
+        
+          <description>&lt;p&gt;In this project, we’ll be localizing a robot in a 2D grid world. The basis for simultaneous localization and mapping (SLAM) is to gather information from a robot’s sensors and motions over time, and then use information about measurements and motion to re-construct a map of the world.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Mon, 03 Aug 2020 12:15:00 +0200</pubDate>
+        <link>
+        http://localhost:4000/Radar</link>
+        <guid isPermaLink="true">http://localhost:4000/Radar</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Tracking 3D objects with Lidar and Camera</title>
         
           <description>&lt;p&gt;Integrating Lidar Point Clouds with Camera Images to compute Time To Collision (TTC)&lt;/p&gt;
 
 </description>
         
-        <pubDate>Thu, 23 Jul 2020 07:15:00 -0300</pubDate>
+        <pubDate>Thu, 23 Jul 2020 12:15:00 +0200</pubDate>
+        <link>
+        http://localhost:4000/Lex-Friedman</link>
+        <guid isPermaLink="true">http://localhost:4000/Lex-Friedman</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Tracking 3D objects with Lidar and Camera</title>
+        
+          <description>&lt;p&gt;Integrating Lidar Point Clouds with Camera Images to compute Time To Collision (TTC)&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 23 Jul 2020 12:15:00 +0200</pubDate>
         <link>
         http://localhost:4000/3D-Object-Tracking</link>
         <guid isPermaLink="true">http://localhost:4000/3D-Object-Tracking</guid>
@@ -29,7 +74,7 @@
 
 </description>
         
-        <pubDate>Sat, 18 Jul 2020 07:15:00 -0300</pubDate>
+        <pubDate>Sat, 18 Jul 2020 12:15:00 +0200</pubDate>
         <link>
         http://localhost:4000/Lidar-Obstacles-Detection</link>
         <guid isPermaLink="true">http://localhost:4000/Lidar-Obstacles-Detection</guid>
@@ -44,7 +89,7 @@
 
 </description>
         
-        <pubDate>Mon, 13 Jul 2020 07:15:00 -0300</pubDate>
+        <pubDate>Mon, 13 Jul 2020 12:15:00 +0200</pubDate>
         <link>
         http://localhost:4000/Redes-Neurais-Convolucionais</link>
         <guid isPermaLink="true">http://localhost:4000/Redes-Neurais-Convolucionais</guid>
@@ -59,7 +104,7 @@
 
 </description>
         
-        <pubDate>Tue, 07 Jul 2020 07:15:00 -0300</pubDate>
+        <pubDate>Tue, 07 Jul 2020 12:15:00 +0200</pubDate>
         <link>
         http://localhost:4000/Image-Captioning</link>
         <guid isPermaLink="true">http://localhost:4000/Image-Captioning</guid>
@@ -74,7 +119,7 @@
 
 </description>
         
-        <pubDate>Thu, 25 Jun 2020 07:15:00 -0300</pubDate>
+        <pubDate>Thu, 25 Jun 2020 12:15:00 +0200</pubDate>
         <link>
         http://localhost:4000/Slam</link>
         <guid isPermaLink="true">http://localhost:4000/Slam</guid>
@@ -89,7 +134,7 @@
 
 </description>
         
-        <pubDate>Mon, 15 Jun 2020 07:15:00 -0300</pubDate>
+        <pubDate>Mon, 15 Jun 2020 12:15:00 +0200</pubDate>
         <link>
         http://localhost:4000/Facial-Keypoint-Detection</link>
         <guid isPermaLink="true">http://localhost:4000/Facial-Keypoint-Detection</guid>
@@ -104,7 +149,7 @@
 
 </description>
         
-        <pubDate>Mon, 15 Jun 2020 07:15:00 -0300</pubDate>
+        <pubDate>Mon, 15 Jun 2020 12:15:00 +0200</pubDate>
         <link>
         http://localhost:4000/Feedforward-and-Backpropagation</link>
         <guid isPermaLink="true">http://localhost:4000/Feedforward-and-Backpropagation</guid>
@@ -119,7 +164,7 @@
 
 </description>
         
-        <pubDate>Thu, 28 May 2020 07:15:00 -0300</pubDate>
+        <pubDate>Thu, 28 May 2020 12:15:00 +0200</pubDate>
         <link>
         http://localhost:4000/May-Highlights</link>
         <guid isPermaLink="true">http://localhost:4000/May-Highlights</guid>
@@ -134,7 +179,7 @@
 
 </description>
         
-        <pubDate>Sun, 03 May 2020 07:18:00 -0300</pubDate>
+        <pubDate>Sun, 03 May 2020 12:18:00 +0200</pubDate>
         <link>
         http://localhost:4000/Introduction-to-Neural-Networks</link>
         <guid isPermaLink="true">http://localhost:4000/Introduction-to-Neural-Networks</guid>
@@ -149,10 +194,25 @@
 
 </description>
         
-        <pubDate>Sun, 26 Apr 2020 07:18:00 -0300</pubDate>
+        <pubDate>Sun, 26 Apr 2020 12:18:00 +0200</pubDate>
         <link>
         http://localhost:4000/Batch-vs-Mini-batch-vs-Stochastic-Gradient-Descent</link>
         <guid isPermaLink="true">http://localhost:4000/Batch-vs-Mini-batch-vs-Stochastic-Gradient-Descent</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Camera Calibration using OpenCV</title>
+        
+          <description>&lt;p&gt;Let’s implement the SpaceNet Baseline to join the Spacenet Challenge 6 and extract buildings footprints from satellite imagery.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Mon, 20 Apr 2020 12:18:00 +0200</pubDate>
+        <link>
+        http://localhost:4000/Camera-Calibration-using-OpenCV</link>
+        <guid isPermaLink="true">http://localhost:4000/Camera-Calibration-using-OpenCV</guid>
       </item>
       
     
@@ -164,7 +224,7 @@
 
 </description>
         
-        <pubDate>Mon, 20 Apr 2020 07:18:00 -0300</pubDate>
+        <pubDate>Mon, 20 Apr 2020 12:18:00 +0200</pubDate>
         <link>
         http://localhost:4000/How-to-get-started-on-Spacenet-Challenge-6</link>
         <guid isPermaLink="true">http://localhost:4000/How-to-get-started-on-Spacenet-Challenge-6</guid>
@@ -179,7 +239,7 @@
 
 </description>
         
-        <pubDate>Mon, 18 Feb 2019 07:15:00 -0300</pubDate>
+        <pubDate>Mon, 18 Feb 2019 11:15:00 +0100</pubDate>
         <link>
         http://localhost:4000/Predicting-Buyers-for-Food-Delivery-Platforms</link>
         <guid isPermaLink="true">http://localhost:4000/Predicting-Buyers-for-Food-Delivery-Platforms</guid>
@@ -194,7 +254,7 @@
 
 </description>
         
-        <pubDate>Sun, 28 May 2000 07:15:00 -0300</pubDate>
+        <pubDate>Sun, 28 May 2000 12:15:00 +0200</pubDate>
         <link>
         http://localhost:4000/Destaques-de-Maio</link>
         <guid isPermaLink="true">http://localhost:4000/Destaques-de-Maio</guid>
@@ -209,7 +269,7 @@
 
 </description>
         
-        <pubDate>Wed, 03 May 2000 07:18:00 -0300</pubDate>
+        <pubDate>Wed, 03 May 2000 12:18:00 +0200</pubDate>
         <link>
         http://localhost:4000/Introdu%C3%A7%C3%A3o-a-Redes-Neurais</link>
         <guid isPermaLink="true">http://localhost:4000/Introdu%C3%A7%C3%A3o-a-Redes-Neurais</guid>

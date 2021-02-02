@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/author/joao/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2020-08-20T14:37:41-03:00</updated>
+  <updated>2021-02-02T23:38:44+01:00</updated>
   <id>http://localhost:4000/author/joao/feed.xml</id>
 
   
@@ -36,8 +36,8 @@
     <entry>
       <title type="html">Redes Neurais Convolucionais</title>
       <link href="http://localhost:4000/Redes-Neurais-Convolucionais" rel="alternate" type="text/html" title="Redes Neurais Convolucionais" />
-      <published>2020-07-13T07:15:00-03:00</published>
-      <updated>2020-07-13T07:15:00-03:00</updated>
+      <published>2020-07-13T12:15:00+02:00</published>
+      <updated>2020-07-13T12:15:00+02:00</updated>
       <id>http://localhost:4000/Redes%20Neurais%20Convolucionais</id>
       <content type="html" xml:base="http://localhost:4000/Redes-Neurais-Convolucionais">&lt;p&gt; Nesse post, vamos abordar um dos principais tópicos dentro da área de redes neurais, um dos pilares de Deep Learning e muito utilizado para resolver problemas de visão computacional: as Redes Neurais Convolucionais.&lt;/p&gt;
 
