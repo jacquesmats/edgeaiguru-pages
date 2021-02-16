@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/tag/projects/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2020-08-20T14:37:41-03:00</updated>
+  <updated>2021-02-16T20:27:07+01:00</updated>
   <id>http://localhost:4000/tag/projects/feed.xml</id>
 
   
@@ -34,10 +34,86 @@
 
   
     <entry>
+      <title type="html">O impacto da Inteligência Artificial no Controle de Qualidade</title>
+      <link href="http://localhost:4000/Inspe%C3%A7%C3%A3o-usando-CV" rel="alternate" type="text/html" title="O impacto da Inteligência Artificial no Controle de Qualidade" />
+      <published>2021-02-02T11:15:00+01:00</published>
+      <updated>2021-02-02T11:15:00+01:00</updated>
+      <id>http://localhost:4000/%20Inspe%C3%A7%C3%A3o%20usando%20CV</id>
+      <content type="html" xml:base="http://localhost:4000/Inspe%C3%A7%C3%A3o-usando-CV">&lt;p&gt;Abordamos o impulsionamento da indústria com a integração da IA e uma demonstração de um serviço de inspeção de qualidade em garrafas de refrigerante&lt;/p&gt;
+
+&lt;p&gt;A Inteligência Artificial vem revolucionando a indústria nos últimos anos e resolvendo problemas, que antes eram onerosos em tempo e dinheiro, de maneira muito mais eficaz. Problemas de visão computacional, processamento de linguagem natural e diversas outras aplicações só são possíveis graças aos diversos avanços na área.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/inspection/ai-ml-dl.png&quot; alt=&quot;ai-ml-dl&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;A inteligência artificial e suas subáreas.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Inteligência artificial pode ser definida como qualquer método que permite computadores imitar a inteligência humana. Já a parte de Aprendizado de Máquina (Machine Learning) é a subárea de Inteligência Artificial que aprende com os dados utilizando métodos estatísticos sem ser diretamente programada para isso. Parte do Aprendizado de Máquina, o Aprendizado Profundo (Deep Learning) é a área em que programas aprendem sozinhos sobre características importantes sobre os dados, viabilizando tarefas como reconhecimento de padrões em voz ou imagens.&lt;/p&gt;
+
+&lt;p&gt;As Redes Neurais Artificiais (RNA) são um dos principais pilares dessa tecnologia. Inspiradas no cérebro humano, as RNA levam esse nome pois tem conexões e motivações biológicas. Assim como no cérebro humano, onde unidade mais básica de processamento é o neurônio, as RNA possuem um elemento que processa impulsos, ou entradas, e que também é chamado de neurônio ou nó.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Inteligência Artificial na Indústria como forma de reduzir custos&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Podemos utilizar todo o espectro da Inteligência Artificial na indústria, desde Machine Learning até Aprendizado Profundo. Com ela, é possível otimizar processos com sistemas de automação inteligentes, aumentar o trabalho humano e impulsionar inovações. Sistemas de predição usando Machine Learning já são encontrados em áreas como manutenção preventiva, segurança de rede, processo de logística, gestão de inventário, gestão de ativos e gestão da cadeia de abastecimento. Por outro lado, recentemente com os avanços dos métodos de aprendizado profundo se tornaram mais comum em aplicações de visão computacional, principalmente no controle de qualidade. Essa tecnologia dá às máquinas sentidos mais humanos, como diferenciar e identificar objetos. Aqui estão alguns exemplos de aplicação de aprendizagem profunda na indústria que otimizam processos já existentes: identificação de produtos com defeito, detecção de anomalias e manutenção preditiva com redes neurais. Quando falamos diretamente de custos para o cliente, modelos são criados com o objetivo de realizar uma tarefa com precisão e também de otimizar um processo que permite a economia de dinheiro aos cofres da empresa. Segundo um &lt;a href=&quot;https://www.accenture.com/pt-pt/insight-ai-industry-growth&quot;&gt;estudo feito pela Accenture Research&lt;/a&gt;, o crescimento da margem de lucro na indústria americana vem diminuindo desde 2010. Isso acontece devido a fatores como como a falta de investimento em inovação e P&amp;amp;D. Por outro lado, a inovação é o que ajudará a indústria a voltar a lucrar. Com o aumento do número de sensores nas fábricas, a queda do preço de poder computacional e avanços em campos coma a Inteligências Artificial, a tecnologia será cada vez mais comum em processos industriais. De fato, na manufatura, a Inteligência Artificial encontra um ambiente favorável para inovar, já que essa área tem precursores como a Internet das Coisas (IoT).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/inspection/ind-grow.png&quot; alt=&quot;ind-grow&quot; /&gt;&lt;em&gt;Taxas de crescimento anuais em 2035 do valor bruto acrescentado (aproximadas ao PIB), comparando a linha base de crescimento em 2035 com um cenário de inteligência artificial, onde a IA foi absorvida pela economia. Fonte: Accenture e Frontier Economics&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Normalmente atribuído a humanos, trabalhos repetitivos são os que geram um maior número de erros e muita vezes também são os com maiores riscos. Assim, a substituição da mão de obra humana por processos automatizados ajuda reduzir significativamente o número e erros e os riscos na produção, diminuindo assim os custos. A pesquisa da Accenture ainda mostra que a IA tem potencial para aumentar as taxas de lucratividade em uma média de 38% até 2035 e levar a um aumento econômico de US $ 14 trilhões em 16 setores em 12 economias até 2035. O impacto das tecnologias de IA nos negócios é projetado para aumentar a produtividade do trabalho em até 40 por cento - e permitir que as pessoas façam um uso mais eficiente de seu tempo.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Aplicação de Deep Learning em Sistemas de Controle de Qualidade:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;O uso da tecnologia de visão por máquina mostra-se como um verdadeiro aliado no controle de inspeção de qualidade de produtos em linhas de produção. Durante décadas, existem implementações que possibilitam analisar diversos produtos através de câmeras com algoritmos de processamento de imagem, onde um funcionário escolhe quais características são importantes para o problema, como arestas, cantos, cores, etc. A partir disso, definem-se regras através da extração manual de características que definem se há ou não problema no produto visualizado, tornando-se um método simples e consideravelmente eficaz.&lt;/p&gt;
+
+&lt;p&gt;Com a revolução da Indústria 4.0, o desenvolvimento de sistemas autônomos e automatizados vem ganhando espaço. Dessa forma, foram desenvolvidos algoritmos de &lt;em&gt;Deep Learning&lt;/em&gt;, que é uma ferramenta poderosa que possibilita alavancar os sistemas de inspeção de qualidade. Esse método possui uma característica única: aprender a partir dos próprios dados. O processo utiliza das fotografias capturadas pelas câmeras, e cria regras próprias, customizadas e adaptadas para cada problema, sem necessidade da presença humana.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/inspection/process.png&quot; alt=&quot;process&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Comparação entre sistemas de visão de máquina existentes e a simplificação através do uso de Deep Learning.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Além disso, essa tecnologia possui a flexibilidade de utilizar modelos treinados em problemas similares como um ponto de início para resolver um novo problema. Dessa forma, é possível otimizar as métricas de precisão e também economizar tempo de treino, visto que é necessário entregar ao modelo menos imagens para o aprendizado. Outro aliado da visão computacional são os algoritmos de detecção de objetos, que também partem de modelos pré-treinados em competições, e são necessários para localizar precisamente defeitos em objetos. Um exemplo de aplicação disso é o controle de qualidade em garrafas de plástico que implementamos na Fox IoT, em que o modelo consegue encontrar precisamente a localização de um rótulo defeituoso e consequentemente classifica-o corretamente.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/inspection/cola.png&quot; alt=&quot;cola&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Garrafa com rótulo defeituoso e inferência do algoritmo de inspeção visual.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Além do rótulo defeituoso, nossa inspeção de qualidade também é capaz de identificar quando a garrafa está amassada, sem tampa, sem rótulo ou com preenchimento de líquido incorreto, tornando uma solução completa para a indústria manufatureira. Devido à flexibilidade do serviço, podemos também fazer a contagem  de produtos na linha de produção e abrangir para outras manufaturas, desde integridade de caixas até falhas em confecções de tecidos.&lt;/p&gt;
+
+&lt;p&gt;Assim explicado de forma geral o impulsionamento da indústria com a integração da inteligência artificial e uma demonstração de um serviço de inspeção de qualidade em garrafas de refrigerante, percebe-se que esses processos otimizados geram cada vez mais valor ao cliente final, possibilitando a redução de tempo e custos na produção.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Would you like to  receive the most important news and trends in AI in just one email every end of the month? Subscribe below and I’ll send you the 10 most important news in Artificial Intelligence&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Matheus Jacques</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="projects" />
+      
+
+      
+        <summary type="html">Abordamos o impulsionamento da indústria com a integração da IA e uma demonstração de um serviço de inspeção de qualidade em garrafas de refrigerante</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
       <title type="html">Tracking 3D objects with Lidar and Camera</title>
       <link href="http://localhost:4000/3D-Object-Tracking" rel="alternate" type="text/html" title="Tracking 3D objects with Lidar and Camera" />
-      <published>2020-07-23T07:15:00-03:00</published>
-      <updated>2020-07-23T07:15:00-03:00</updated>
+      <published>2020-07-23T12:15:00+02:00</published>
+      <updated>2020-07-23T12:15:00+02:00</updated>
       <id>http://localhost:4000/3D%20Object%20Tracking</id>
       <content type="html" xml:base="http://localhost:4000/3D-Object-Tracking">&lt;p&gt;Integrating Lidar Point Clouds with Camera Images to compute Time To Collision (TTC)&lt;/p&gt;
 
@@ -157,8 +233,8 @@
     <entry>
       <title type="html">Lidar Obstacles Detection</title>
       <link href="http://localhost:4000/Lidar-Obstacles-Detection" rel="alternate" type="text/html" title="Lidar Obstacles Detection" />
-      <published>2020-07-18T07:15:00-03:00</published>
-      <updated>2020-07-18T07:15:00-03:00</updated>
+      <published>2020-07-18T12:15:00+02:00</published>
+      <updated>2020-07-18T12:15:00+02:00</updated>
       <id>http://localhost:4000/Lidar%20Obstacles%20Detection</id>
       <content type="html" xml:base="http://localhost:4000/Lidar-Obstacles-Detection">&lt;p&gt;In this project, we create a simple 3d highway enviroment using Point Cloud Library for exploring self-driving car sensors.&lt;/p&gt;
 
@@ -329,8 +405,8 @@ d = |A*x+B*y+C*z+D|/sqrt(A^2+B^2+C^2)
     <entry>
       <title type="html">Image Captioning</title>
       <link href="http://localhost:4000/Image-Captioning" rel="alternate" type="text/html" title="Image Captioning" />
-      <published>2020-07-07T07:15:00-03:00</published>
-      <updated>2020-07-07T07:15:00-03:00</updated>
+      <published>2020-07-07T12:15:00+02:00</published>
+      <updated>2020-07-07T12:15:00+02:00</updated>
       <id>http://localhost:4000/Image%20Captioning</id>
       <content type="html" xml:base="http://localhost:4000/Image-Captioning">&lt;p&gt;In this project, we used a dataset of image-caption pairs to train a CNN-RNN model to automatically generate captions from images.&lt;/p&gt;
 
@@ -373,8 +449,8 @@ d = |A*x+B*y+C*z+D|/sqrt(A^2+B^2+C^2)
     <entry>
       <title type="html">Landmark Detection &amp;amp; Robot Tracking (SLAM)</title>
       <link href="http://localhost:4000/Slam" rel="alternate" type="text/html" title="Landmark Detection &amp; Robot Tracking (SLAM)" />
-      <published>2020-06-25T07:15:00-03:00</published>
-      <updated>2020-06-25T07:15:00-03:00</updated>
+      <published>2020-06-25T12:15:00+02:00</published>
+      <updated>2020-06-25T12:15:00+02:00</updated>
       <id>http://localhost:4000/Slam</id>
       <content type="html" xml:base="http://localhost:4000/Slam">&lt;p&gt;In this project, we’ll be localizing a robot in a 2D grid world. The basis for simultaneous localization and mapping (SLAM) is to gather information from a robot’s sensors and motions over time, and then use information about measurements and motion to re-construct a map of the world.&lt;/p&gt;
 
@@ -637,8 +713,8 @@ d = |A*x+B*y+C*z+D|/sqrt(A^2+B^2+C^2)
     <entry>
       <title type="html">Facial Keypoint Detection</title>
       <link href="http://localhost:4000/Facial-Keypoint-Detection" rel="alternate" type="text/html" title="Facial Keypoint Detection" />
-      <published>2020-06-15T07:15:00-03:00</published>
-      <updated>2020-06-15T07:15:00-03:00</updated>
+      <published>2020-06-15T12:15:00+02:00</published>
+      <updated>2020-06-15T12:15:00+02:00</updated>
       <id>http://localhost:4000/Facial%20Keypoint%20Detection</id>
       <content type="html" xml:base="http://localhost:4000/Facial-Keypoint-Detection">&lt;p&gt;This project will be all about defining and training a convolutional neural network to perform facial keypoint detection, and using computer vision techniques to transform images of faces.&lt;/p&gt;
 
@@ -871,8 +947,8 @@ transformed_sample = tx(sample)
     <entry>
       <title type="html">Predicting Buyers for Food Delivery Platforms</title>
       <link href="http://localhost:4000/Predicting-Buyers-for-Food-Delivery-Platforms" rel="alternate" type="text/html" title="Predicting Buyers for Food Delivery Platforms" />
-      <published>2019-02-18T07:15:00-03:00</published>
-      <updated>2019-02-18T07:15:00-03:00</updated>
+      <published>2019-02-18T11:15:00+01:00</published>
+      <updated>2019-02-18T11:15:00+01:00</updated>
       <id>http://localhost:4000/Predicting%20Buyers%20for%20Food%20Delivery%20Platforms</id>
       <content type="html" xml:base="http://localhost:4000/Predicting-Buyers-for-Food-Delivery-Platforms">&lt;p&gt;This project has the objective to create a Machine Learning Model to predict whether a user that just registered will buy or not. Predicting such action could influence from user experience until predicting demands for restaurants.&lt;/p&gt;
 

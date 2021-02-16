@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/tag/back-to-basics/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2020-08-20T14:37:41-03:00</updated>
+  <updated>2021-02-16T20:27:07+01:00</updated>
   <id>http://localhost:4000/tag/back-to-basics/feed.xml</id>
 
   
@@ -36,8 +36,8 @@
     <entry>
       <title type="html">Redes Neurais Convolucionais</title>
       <link href="http://localhost:4000/Redes-Neurais-Convolucionais" rel="alternate" type="text/html" title="Redes Neurais Convolucionais" />
-      <published>2020-07-13T07:15:00-03:00</published>
-      <updated>2020-07-13T07:15:00-03:00</updated>
+      <published>2020-07-13T12:15:00+02:00</published>
+      <updated>2020-07-13T12:15:00+02:00</updated>
       <id>http://localhost:4000/Redes%20Neurais%20Convolucionais</id>
       <content type="html" xml:base="http://localhost:4000/Redes-Neurais-Convolucionais">&lt;p&gt; Nesse post, vamos abordar um dos principais tópicos dentro da área de redes neurais, um dos pilares de Deep Learning e muito utilizado para resolver problemas de visão computacional: as Redes Neurais Convolucionais.&lt;/p&gt;
 
@@ -170,8 +170,8 @@ Uma breve explicação de como funcionam as imagens, é que a representação qu
     <entry>
       <title type="html">Gradient Descent, Feedforward and Backpropagation</title>
       <link href="http://localhost:4000/Feedforward-and-Backpropagation" rel="alternate" type="text/html" title="Gradient Descent, Feedforward and Backpropagation" />
-      <published>2020-06-15T07:15:00-03:00</published>
-      <updated>2020-06-15T07:15:00-03:00</updated>
+      <published>2020-06-15T12:15:00+02:00</published>
+      <updated>2020-06-15T12:15:00+02:00</updated>
       <id>http://localhost:4000/Feedforward%20and%20Backpropagation</id>
       <content type="html" xml:base="http://localhost:4000/Feedforward-and-Backpropagation">&lt;p&gt;Let’s see three fundamentals concepts of Deep Learning: the Gradient Descent, Feedforward and Backpropagation steps.&lt;/p&gt;
 
@@ -328,8 +328,8 @@ Uma breve explicação de como funcionam as imagens, é que a representação qu
     <entry>
       <title type="html">Introduction to Neural Networks</title>
       <link href="http://localhost:4000/Introduction-to-Neural-Networks" rel="alternate" type="text/html" title="Introduction to Neural Networks" />
-      <published>2020-05-03T07:18:00-03:00</published>
-      <updated>2020-05-03T07:18:00-03:00</updated>
+      <published>2020-05-03T12:18:00+02:00</published>
+      <updated>2020-05-03T12:18:00+02:00</updated>
       <id>http://localhost:4000/Introduction%20to%20Neural%20Networks</id>
       <content type="html" xml:base="http://localhost:4000/Introduction-to-Neural-Networks">&lt;p&gt;Learn the main concepts behind Neural Networks, one of Deep Learning’s pillars.&lt;/p&gt;
 
@@ -499,8 +499,8 @@ Uma breve explicação de como funcionam as imagens, é que a representação qu
     <entry>
       <title type="html">Batch vs Mini-batch vs Stochastic Gradient Descent with Code Examples</title>
       <link href="http://localhost:4000/Batch-vs-Mini-batch-vs-Stochastic-Gradient-Descent" rel="alternate" type="text/html" title="Batch vs Mini-batch vs Stochastic Gradient Descent with Code Examples" />
-      <published>2020-04-26T07:18:00-03:00</published>
-      <updated>2020-04-26T07:18:00-03:00</updated>
+      <published>2020-04-26T12:18:00+02:00</published>
+      <updated>2020-04-26T12:18:00+02:00</updated>
       <id>http://localhost:4000/Batch%20vs%20Mini%20batch%20vs%20Stochastic%20Gradient%20Descent</id>
       <content type="html" xml:base="http://localhost:4000/Batch-vs-Mini-batch-vs-Stochastic-Gradient-Descent">&lt;p&gt;What is the difference between these three Gradient Descent variants?&lt;/p&gt;
 

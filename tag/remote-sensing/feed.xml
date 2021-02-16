@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/tag/remote-sensing/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2020-08-20T14:37:41-03:00</updated>
+  <updated>2021-02-16T20:27:07+01:00</updated>
   <id>http://localhost:4000/tag/remote-sensing/feed.xml</id>
 
   
@@ -36,8 +36,8 @@
     <entry>
       <title type="html">How to get started on Spacenet Challenge 6 using CosmiQ Baseline</title>
       <link href="http://localhost:4000/How-to-get-started-on-Spacenet-Challenge-6" rel="alternate" type="text/html" title="How to get started on Spacenet Challenge 6 using CosmiQ Baseline" />
-      <published>2020-04-20T07:18:00-03:00</published>
-      <updated>2020-04-20T07:18:00-03:00</updated>
+      <published>2020-04-20T12:18:00+02:00</published>
+      <updated>2020-04-20T12:18:00+02:00</updated>
       <id>http://localhost:4000/How%20to%20get%20started%20on%20Spacenet%20Challenge%206</id>
       <content type="html" xml:base="http://localhost:4000/How-to-get-started-on-Spacenet-Challenge-6">&lt;p&gt;Let’s implement the SpaceNet Baseline to join the Spacenet Challenge 6 and extract buildings footprints from satellite imagery.&lt;/p&gt;
 

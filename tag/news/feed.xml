@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/tag/news/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2020-08-20T14:37:41-03:00</updated>
+  <updated>2021-02-16T20:27:07+01:00</updated>
   <id>http://localhost:4000/tag/news/feed.xml</id>
 
   
@@ -36,8 +36,8 @@
     <entry>
       <title type="html">AI May Highlights</title>
       <link href="http://localhost:4000/May-Highlights" rel="alternate" type="text/html" title="AI May Highlights" />
-      <published>2020-05-28T07:15:00-03:00</published>
-      <updated>2020-05-28T07:15:00-03:00</updated>
+      <published>2020-05-28T12:15:00+02:00</published>
+      <updated>2020-05-28T12:15:00+02:00</updated>
       <id>http://localhost:4000/May%20Highlights</id>
       <content type="html" xml:base="http://localhost:4000/May-Highlights">&lt;p&gt;Top 5 AI News and Trends I came across in May 2020.&lt;/p&gt;
 
@@ -112,8 +112,8 @@
     <entry>
       <title type="html">Destaques de Maio em IA</title>
       <link href="http://localhost:4000/Destaques-de-Maio" rel="alternate" type="text/html" title="Destaques de Maio em IA" />
-      <published>2000-05-28T07:15:00-03:00</published>
-      <updated>2000-05-28T07:15:00-03:00</updated>
+      <published>2000-05-28T12:15:00+02:00</published>
+      <updated>2000-05-28T12:15:00+02:00</updated>
       <id>http://localhost:4000/Destaques%20de%20Maio</id>
       <content type="html" xml:base="http://localhost:4000/Destaques-de-Maio">&lt;p&gt;As 5 principais notícias e tendências da IA que cruzei em maio de 2020.&lt;/p&gt;
 
